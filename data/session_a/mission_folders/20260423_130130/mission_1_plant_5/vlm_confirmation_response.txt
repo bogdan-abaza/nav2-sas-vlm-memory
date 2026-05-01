@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant near window on tiled floor",
+  "scene_context": "plant sits right of window frame against white wall",
+  "reasoning": "plant_5 matches expected landmark; window and pot clearly visible",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "plant",
+        "position": "right",
+        "salience": "high"
+      },
+      {
+        "label": "window",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "bottom",
+        "salience": "medium"
+      }
+    ]
+  }
+}

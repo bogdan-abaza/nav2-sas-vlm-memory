@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "open doorway leading to hallway with glass walls",
+  "scene_context": "doorway frames view into corridor with furniture",
+  "reasoning": "no clear lab features visible, only generic hallway"
+}

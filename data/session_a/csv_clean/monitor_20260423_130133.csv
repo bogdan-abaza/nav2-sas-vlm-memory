@@ -1,0 +1,4 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776938545.3935444,13:02:25,S3old,1,"It is too hot in here, take me somewhere I can get some fres",L3a_m3_preference,14,plant_5,mission_complete,1,0.05340576171875,0.0,47.15,0.125,8.108,True,1.0,vlm_landmark,True,xplorer-c
+1776938657.0568986,13:04:17,S3old,2,"It is too hot in here, take me somewhere I can get some fres",L3a_m3_preference,14,plant_5,mission_complete,1,0.05650520324707031,0.0,60.22,0.17,8.024,True,1.0,vlm_landmark,True,xplorer-c
+1776938768.4493372,13:06:08,S3old,3,"It is too hot in here, take me somewhere I can get some fres",L3a_m3_preference,14,plant_5,mission_complete,1,0.1652240753173828,0.0,48.92,0.147,8.029,True,1.0,vlm_landmark,True,xplorer-c

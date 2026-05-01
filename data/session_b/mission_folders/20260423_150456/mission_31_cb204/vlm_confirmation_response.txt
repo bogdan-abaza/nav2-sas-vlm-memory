@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with open brown doors",
+  "scene_context": "hallway leading to room with visible furniture",
+  "reasoning": "no clear lab or cb204 landmark visible in frame",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "door",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "all",
+        "salience": "high"
+      },
+      {
+        "label": "furniture",
+        "position": "center",
+        "salience": "medium"
+      }
+    ]
+  }
+}

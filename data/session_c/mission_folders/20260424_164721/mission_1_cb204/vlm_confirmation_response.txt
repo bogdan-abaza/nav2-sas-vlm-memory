@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with dark strip, brown doors, cardboard box",
+  "scene_context": "indoor hallway, box near door, no visible lab signage",
+  "reasoning": "no lab indicators seen, box suggests delivery but not location confirmation",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "door",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "box",
+        "position": "center",
+        "salience": "medium"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "high"
+      }
+    ]
+  }
+}

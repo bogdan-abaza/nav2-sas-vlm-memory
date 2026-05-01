@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant near window on tiled floor",
+  "scene_context": "plant sits left of wall baseboard",
+  "reasoning": "plant_3 clearly visible as terracotta pot with green leaves",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "plant",
+        "position": "left",
+        "salience": "high"
+      },
+      {
+        "label": "window",
+        "position": "left",
+        "salience": "medium"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "medium"
+      }
+    ]
+  }
+}

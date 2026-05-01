@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with dark strip leading to doorway",
+  "scene_context": "doorway opens into lab area with equipment",
+  "reasoning": "floor pattern and doorway align with expected lab entrance"
+}

@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor leading into lab room",
+  "scene_context": "centered view through open doorway",
+  "reasoning": "floor pattern and room layout match expected lab location",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "doorway",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "lab equipment",
+        "position": "right",
+        "salience": "medium"
+      }
+    ]
+  }
+}

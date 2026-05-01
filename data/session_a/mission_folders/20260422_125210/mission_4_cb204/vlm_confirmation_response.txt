@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with open doorway to room",
+  "scene_context": "doorway leads to lab area with furniture",
+  "reasoning": "floor pattern matches but room interior differs from expected landmark"
+}

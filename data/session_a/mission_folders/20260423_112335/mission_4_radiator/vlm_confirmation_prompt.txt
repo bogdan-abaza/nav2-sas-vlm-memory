@@ -1,0 +1,13 @@
+You are confirming if the robot reached POI 'radiator' (node 9).
+Expected landmarks: radiator_main
+Identify max 3 most prominent objects. Use simple lowercase labels.
+Respond ONLY with valid JSON, no preamble, no markdown:
+{
+  "at_target": true|false,
+  "confidence": "HIGH"|"MEDIUM"|"LOW",
+  "signature_type": "landmark",
+  "scene_description": "<max 12 words: what you see right in front>",
+  "scene_context": "<max 20 words: spatial relations with surroundings>",
+  "reasoning": "<brief, max 20 words>",
+  "payload": {"identified_objects": [{"label": "<short>", "position": "left|center|right", "salience": "high|medium|low"}]}
+}

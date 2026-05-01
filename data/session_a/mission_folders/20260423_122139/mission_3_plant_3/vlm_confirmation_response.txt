@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant on floor near wall",
+  "scene_context": "plant sits left of white wall base",
+  "reasoning": "plant_3 clearly visible as terracotta pot",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "plant",
+        "position": "left",
+        "salience": "high"
+      },
+      {
+        "label": "wall",
+        "position": "right",
+        "salience": "medium"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "low"
+      }
+    ]
+  }
+}

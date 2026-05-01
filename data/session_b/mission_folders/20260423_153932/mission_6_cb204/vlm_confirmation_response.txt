@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor leading into a room with furniture",
+  "scene_context": "view through doorway into adjacent space",
+  "reasoning": "floor pattern and room layout suggest location but no specific landmark visible",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "doorway",
+        "position": "center",
+        "salience": "medium"
+      },
+      {
+        "label": "furniture",
+        "position": "right",
+        "salience": "low"
+      }
+    ]
+  }
+}

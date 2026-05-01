@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ROS 2 build artifacts
+install/
+log/
+build/
+
+# Generated figures (reproducible from scripts)
+analysis/figures/*.pdf
+analysis/figures/*.tiff
+analysis/figures/*.eps
+analysis/figures/*.png
+
+# Temporary files
+*.tmp
+*.bak
+*.log

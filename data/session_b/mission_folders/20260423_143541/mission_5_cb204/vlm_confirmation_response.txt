@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with dark strip leading to brown doors",
+  "scene_context": "indoor hallway with white walls and baseboards",
+  "reasoning": "no visible lab or cb204 markers present in scene",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "doors",
+        "position": "center",
+        "salience": "medium"
+      },
+      {
+        "label": "walls",
+        "position": "left|right",
+        "salience": "low"
+      }
+    ]
+  }
+}

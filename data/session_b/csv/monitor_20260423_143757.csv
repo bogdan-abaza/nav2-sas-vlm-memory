@@ -1,0 +1,15 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776944373.9037993,14:39:33,S1,1,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,mission_complete,1,0.07510185241699219,0.0,28.88,0.272,6.076,True,1.0,pose_based,True,xplorer-b
+1776944491.9146106,14:41:31,S1,2,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,missed,1,0.06031990051269531,0.0,35.4,3.724,1.901,True,1.0,,,xplorer-b
+1776944513.8817315,14:41:53,S1,3,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,mission_complete,2,0.056743621826171875,0.0,21.85,0.269,4.762,True,1.0,pose_based,True,xplorer-b
+1776944610.210517,14:43:30,S1,4,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,mission_complete,1,0.05817413330078125,0.0,34.8,0.278,5.779,True,1.0,pose_based,True,xplorer-b
+1776944706.399212,14:45:06,S1,5,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,missed,1,0.047206878662109375,0.0,35.8,3.761,2.122,True,1.0,,,xplorer-b
+1776944729.5352516,14:45:29,S1,6,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,mission_complete,2,0.05555152893066406,0.0,23.03,0.346,4.673,True,1.0,pose_based,True,xplorer-b
+1776944806.330423,14:46:46,S1,7,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,missed,1,0.06699562072753906,0.0,34.22,3.879,1.425,True,1.0,,,xplorer-b
+1776944826.6924152,14:47:06,S1,8,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,mission_complete,2,0.06365776062011719,0.0,20.25,0.283,4.926,True,1.0,pose_based,True,xplorer-b
+1776944910.108912,14:48:30,S1,9,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,missed,1,0.0629425048828125,0.0,36.16,3.773,1.832,True,1.0,,,xplorer-b
+1776944934.1891038,14:48:54,S1,10,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,mission_complete,2,0.0591278076171875,0.0,23.96,0.357,4.909,True,1.0,pose_based,True,xplorer-b
+1776945040.2232113,14:50:40,S1,11,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,mission_complete,1,0.0667572021484375,0.0,54.69,0.289,6.155,True,1.0,pose_based,True,xplorer-b
+1776945123.434864,14:52:03,S1,12,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,mission_complete,1,0.06127357482910156,0.0,38.21,0.254,6.989,True,1.0,pose_based,True,xplorer-b
+1776945210.887573,14:53:30,S1,13,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,mission_complete,1,0.07414817810058594,0.0,37.08,0.322,6.877,True,1.0,pose_based,True,xplorer-b
+1776945283.8869977,14:54:43,S1,14,go to a place to take a short break for personal needs,L3a_m3_preference,0,toilet_m,mission_complete,1,0.07295608520507812,0.0,30.71,0.347,6.531,True,1.0,pose_based,True,xplorer-b

@@ -1,0 +1,2 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776870391.6556194,18:06:31,S3new,1,Take me somewhere I can sit and relax,L3b_vlm,14,plant_5,mission_complete,1,0.7245540618896484,9839.835166931152,50.05,0.216,8.414,False,,vlm_landmark,True,xplorer-c

@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with open doorways",
+  "scene_context": "corridor leading to rooms, no lab visible",
+  "reasoning": "no lab indicators seen, only generic doors and floor",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "door",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "wall",
+        "position": "left",
+        "salience": "medium"
+      }
+    ]
+  }
+}

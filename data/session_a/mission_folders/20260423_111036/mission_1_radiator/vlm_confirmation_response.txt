@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white vertical radiator pipes against wall",
+  "scene_context": "radiator mounted on floor near tiled baseboard",
+  "reasoning": "clearly visible radiator structure matches expected landmark",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "radiator",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "bottom",
+        "salience": "medium"
+      },
+      {
+        "label": "wall",
+        "position": "background",
+        "salience": "low"
+      }
+    ]
+  }
+}

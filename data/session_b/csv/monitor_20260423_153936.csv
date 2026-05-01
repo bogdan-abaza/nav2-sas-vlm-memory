@@ -1,0 +1,6 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776948020.8833754,15:40:20,S5,1,Take me to the closest plant,L3a_deterministic,19,plant_3,mission_complete,1,0.4749298095703125,0.0,37.82,0.3,6.821,False,,vlm_landmark,True,xplorer-b
+1776948081.0328994,15:41:21,???,1,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.053882598876953125,0.0,32.98,0.261,6.746,False,,,,xplorer-b
+1776948121.985949,15:42:01,S5,2,Take me to the closest plant,L3a_deterministic,19,plant_3,mission_complete,1,0.3483295440673828,0.0,33.67,0.331,6.619,False,,vlm_landmark,True,xplorer-b
+1776948159.9440417,15:42:39,???,2,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.049114227294921875,0.0,31.51,0.291,6.414,False,,,,xplorer-b
+1776948215.782345,15:43:35,S5,3,Take me to the closest plant,L3a_deterministic,19,plant_3,mission_complete,1,0.377655029296875,0.0,35.26,0.357,7.247,False,,vlm_landmark,True,xplorer-b

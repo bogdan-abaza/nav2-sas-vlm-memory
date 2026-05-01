@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "brown doors on speckled floor",
+  "scene_context": "doors are centered, floor extends forward",
+  "reasoning": "no visible lab or fire hydrant, just doors",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "doors",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "bottom",
+        "salience": "medium"
+      },
+      {
+        "label": "wall",
+        "position": "left",
+        "salience": "low"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "open doorway into a lab with equipment",
+  "scene_context": "doorway leads to lab area with glass walls",
+  "reasoning": "lab equipment visible through open door confirms location",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "doorway",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "lab equipment",
+        "position": "center",
+        "salience": "medium"
+      },
+      {
+        "label": "floor tiles",
+        "position": "foreground",
+        "salience": "high"
+      }
+    ]
+  }
+}

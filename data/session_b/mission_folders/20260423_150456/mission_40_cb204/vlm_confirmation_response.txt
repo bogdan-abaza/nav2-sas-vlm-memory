@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with dark strip leading to open door",
+  "scene_context": "doorway opens to room with furniture visible inside",
+  "reasoning": "floor pattern and door suggest approach but no specific landmark visible",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "door",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "furniture",
+        "position": "center",
+        "salience": "medium"
+      }
+    ]
+  }
+}

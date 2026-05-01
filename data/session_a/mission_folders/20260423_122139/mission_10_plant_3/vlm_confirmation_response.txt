@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant on window sill",
+  "scene_context": "plant sits beside white wall and black baseboard",
+  "reasoning": "plant_3 is clearly visible as the terracotta pot with green leaves",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "plant",
+        "position": "left",
+        "salience": "high"
+      },
+      {
+        "label": "pot",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "wall",
+        "position": "right",
+        "salience": "medium"
+      }
+    ]
+  }
+}

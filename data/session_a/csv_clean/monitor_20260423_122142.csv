@@ -1,0 +1,13 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776936128.2581453,12:22:08,S5,1,Take me to the closest plant,L3a_deterministic,19,plant_3,mission_complete,1,0.3390312194824219,0.0,19.34,0.167,0.884,False,,vlm_landmark,True,xplorer-c
+1776936176.3527496,12:22:56,???,1,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.05936622619628906,0.0,37.73,0.183,6.525,False,,,,xplorer-c
+1776936222.49561,12:23:42,S5,2,Take me to the closest plant,L3a_deterministic,19,plant_3,mission_complete,1,0.2658367156982422,0.0,43.22,0.149,6.082,False,,vlm_landmark,True,xplorer-c
+1776936282.367073,12:24:42,???,2,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.05435943603515625,0.0,55.56,0.207,6.158,False,,,,xplorer-c
+1776936334.5903604,12:25:34,S5,3,Take me to the closest plant,L3a_deterministic,19,plant_3,mission_complete,1,0.23245811462402344,0.0,46.3,0.154,6.093,False,,vlm_landmark,True,xplorer-c
+1776936376.075584,12:26:16,???,3,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.048160552978515625,0.0,35.7,0.186,6.169,False,,,,xplorer-c
+1776936380.7982059,12:26:20,???,4,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.04482269287109375,0.0,0.0,0.186,0.0,False,,,,xplorer-c
+1776936436.7714152,12:27:16,S5,4,Take me to the closest plant,L3a_deterministic,19,plant_3,mission_complete,1,0.2429485321044922,0.0,48.05,0.143,6.129,False,,vlm_landmark,True,xplorer-c
+1776936491.8281932,12:28:11,???,5,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.04553794860839844,0.0,51.82,0.199,6.167,False,,,,xplorer-c
+1776936548.694858,12:29:08,S5,5,Take me to the closest plant,L3a_deterministic,19,plant_3,mission_complete,1,0.2627372741699219,0.0,49.93,0.2,6.259,False,,vlm_landmark,True,xplorer-c
+1776936592.846964,12:29:52,???,6,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.05412101745605469,0.0,36.77,0.194,6.157,False,,,,xplorer-c
+1776936644.7362335,12:30:44,S5,6,Take me to the closest plant,L3a_deterministic,19,plant_3,mission_complete,1,0.2651214599609375,0.0,45.32,0.162,6.237,False,,vlm_landmark,True,xplorer-c

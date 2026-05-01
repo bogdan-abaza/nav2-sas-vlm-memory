@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "fire extinguisher on floor near door",
+  "scene_context": "fire extinguisher is right of door, no hydrant visible",
+  "reasoning": "fire extinguisher present but not fire hydrant, target not reached",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "fire_extinguisher",
+        "position": "right",
+        "salience": "high"
+      },
+      {
+        "label": "door",
+        "position": "left",
+        "salience": "medium"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "low"
+      }
+    ]
+  }
+}

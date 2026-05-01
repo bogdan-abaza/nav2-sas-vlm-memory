@@ -1,0 +1,339 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "description": "SAIM Xplorer - Static Semantic Objects (FIIR Corridor)",
+    "frame": "map",
+    "source": "manual_survey",
+    "version": "sprint7_v2",
+    "last_updated": "2026-04-15T00:00:00+00:00",
+    "schema_changes_v2": "Added visual_signature_type and category per Sprint 7 Task 7.0"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [0.3, 0.0] },
+      "properties": {
+        "obj_id": "restroom_men",
+        "class_name": "restroom",
+        "source": "manual",
+        "nearest_node_id": 0,
+        "visual_signature_type": "none",
+        "category": "infrastructure",
+        "attributes": {
+          "type": "men",
+          "floor": "ground",
+          "location_description": "Western end of corridor, near CB202"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [0.3, 6.5] },
+      "properties": {
+        "obj_id": "restroom_women",
+        "class_name": "restroom",
+        "source": "manual",
+        "nearest_node_id": 4,
+        "visual_signature_type": "none",
+        "category": "infrastructure",
+        "attributes": {
+          "type": "women",
+          "floor": "ground",
+          "location_description": "Western end of corridor, past CB204"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [0.5, 1.65] },
+      "properties": {
+        "obj_id": "hall_entrance",
+        "class_name": "emergency_exit",
+        "source": "manual",
+        "nearest_node_id": 1,
+        "visual_signature_type": "landmark",
+        "category": "safety",
+        "attributes": {
+          "type": "entrance",
+          "floor": "ground",
+          "location_description": "Hall entry, western corridor"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [0.5, 3.2] },
+      "properties": {
+        "obj_id": "hall_exit",
+        "class_name": "emergency_exit",
+        "source": "manual",
+        "nearest_node_id": 2,
+        "visual_signature_type": "landmark",
+        "category": "safety",
+        "attributes": {
+          "type": "exit",
+          "floor": "ground",
+          "location_description": "Hall exit, western corridor"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.2, 0.0] },
+      "properties": {
+        "obj_id": "lab_cb202",
+        "class_name": "laboratory",
+        "source": "manual",
+        "nearest_node_id": 8,
+        "visual_signature_type": "landmark",
+        "category": "infrastructure",
+        "attributes": {
+          "room_number": "CB202",
+          "department": "manufacturing",
+          "access": "card",
+          "floor": "ground",
+          "location_description": "South side, near hall entry"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.1, 0.3] },
+      "properties": {
+        "obj_id": "fire_hydrant_cb202",
+        "class_name": "fire hydrant",
+        "source": "manual",
+        "nearest_node_id": 8,
+        "visual_signature_type": "landmark",
+        "category": "safety",
+        "attributes": {
+          "type": "wall_mounted",
+          "location_description": "Corridor wall, next to CB202 door"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [8.2, 1.65] },
+      "properties": {
+        "obj_id": "lab_cb203_entrance",
+        "class_name": "laboratory",
+        "source": "manual",
+        "nearest_node_id": 22,
+        "visual_signature_type": "landmark",
+        "category": "infrastructure",
+        "attributes": {
+          "room_number": "CB203",
+          "department": "manufacturing",
+          "access": "card",
+          "floor": "ground",
+          "entrance": "main",
+          "location_description": "Eastern end, entrance side"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [8.2, 3.67] },
+      "properties": {
+        "obj_id": "lab_cb203_exit",
+        "class_name": "laboratory",
+        "source": "manual",
+        "nearest_node_id": 23,
+        "visual_signature_type": "landmark",
+        "category": "infrastructure",
+        "attributes": {
+          "room_number": "CB203",
+          "department": "manufacturing",
+          "access": "card",
+          "floor": "ground",
+          "entrance": "exit",
+          "location_description": "Eastern end, exit side"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.2, 4.8] },
+      "properties": {
+        "obj_id": "lab_cb204",
+        "class_name": "laboratory",
+        "source": "manual",
+        "nearest_node_id": 5,
+        "visual_signature_type": "landmark",
+        "category": "infrastructure",
+        "attributes": {
+          "room_number": "CB204",
+          "department": "manufacturing",
+          "access": "card",
+          "floor": "ground",
+          "location_description": "West side, near toilets"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.5, -0.8] },
+      "properties": {
+        "obj_id": "radiator_main",
+        "class_name": "radiator",
+        "source": "manual",
+        "nearest_node_id": 9,
+        "visual_signature_type": "landmark",
+        "category": "environmental",
+        "attributes": {
+          "seating": true,
+          "use": "resting spot",
+          "location_description": "South wall, center of corridor, can sit on it"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7.5, -0.95] },
+      "properties": {
+        "obj_id": "plant_1",
+        "class_name": "potted plant",
+        "source": "manual",
+        "nearest_node_id": 21,
+        "visual_signature_type": "landmark",
+        "category": "environmental",
+        "attributes": {
+          "species": "TODO",
+          "size": "TODO",
+          "pot_color": "TODO",
+          "near_window": true,
+          "location_description": "South wall, easternmost plant, next to window"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7.0, -0.95] },
+      "properties": {
+        "obj_id": "plant_2",
+        "class_name": "potted plant",
+        "source": "manual",
+        "nearest_node_id": 20,
+        "visual_signature_type": "contextual",
+        "category": "environmental",
+        "facing_override_yaw_deg": -90.0,
+        "attributes": {
+          "species": "TODO",
+          "size": "TODO",
+          "pot_color": "TODO",
+          "near_window": true,
+          "location_description": "South wall, middle plant, next to window"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [6.55, -0.95] },
+      "properties": {
+        "obj_id": "plant_3",
+        "class_name": "potted plant",
+        "source": "manual",
+        "nearest_node_id": 19,
+        "visual_signature_type": "landmark",
+        "category": "environmental",
+        "attributes": {
+          "species": "TODO",
+          "size": "TODO",
+          "pot_color": "TODO",
+          "near_window": true,
+          "location_description": "South wall, westernmost of east cluster, next to window"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7.7, 5.4] },
+      "properties": {
+        "obj_id": "plant_4",
+        "class_name": "potted plant",
+        "source": "manual",
+        "nearest_node_id": 13,
+        "visual_signature_type": "landmark",
+        "category": "environmental",
+        "attributes": {
+          "species": "TODO",
+          "size": "TODO",
+          "pot_color": "TODO",
+          "near_window": true,
+          "location_description": "North area, easternmost plant, next to window"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [6.55, 4.8] },
+      "properties": {
+        "obj_id": "plant_5",
+        "class_name": "potted plant",
+        "source": "manual",
+        "nearest_node_id": 14,
+        "visual_signature_type": "landmark",
+        "category": "environmental",
+        "attributes": {
+          "species": "TODO",
+          "size": "TODO",
+          "pot_color": "TODO",
+          "near_window": true,
+          "location_description": "North area, western plant, next to window"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [6.55, 4.8] },
+      "properties": {
+        "obj_id": "lab_chair",
+        "class_name": "chair",
+        "source": "manual",
+        "nearest_node_id": 15,
+        "visual_signature_type": "landmark",
+        "category": "environmental",
+        "attributes": {
+          "seating": true,
+          "use": "resting spot",
+          "location_description": "North area, black chair, western plant, next to window"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [6.55, 5.2] },
+      "properties": {
+        "obj_id": "window_north",
+        "class_name": "window",
+        "source": "manual",
+        "nearest_node_id": 14,
+        "visual_signature_type": "landmark",
+        "category": "environmental",
+        "attributes": {
+          "opens": true,
+          "side": "north",
+          "location_description": "North wall window, near plant_4 and plant_5, opens"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [6.9, -1.1] },
+      "properties": {
+        "obj_id": "window_south",
+        "class_name": "window",
+        "source": "manual",
+        "nearest_node_id": 19,
+        "visual_signature_type": "landmark",
+        "category": "environmental",
+        "attributes": {
+          "opens": false,
+          "side": "south",
+          "location_description": "South wall window, near plant_1/2/3, does not close properly"
+        }
+      }
+    }
+  ]
+}

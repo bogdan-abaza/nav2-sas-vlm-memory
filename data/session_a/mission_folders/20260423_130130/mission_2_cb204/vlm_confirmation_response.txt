@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "brown doors on speckled floor",
+  "scene_context": "doors centered, walls on sides",
+  "reasoning": "no lab visible, only doors and floor",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "doors",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "walls",
+        "position": "left|right",
+        "salience": "medium"
+      }
+    ]
+  }
+}

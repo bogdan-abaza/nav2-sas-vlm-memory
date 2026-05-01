@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant on window sill",
+  "scene_context": "next to another plant, near window",
+  "reasoning": "plant_1 is clearly visible in center",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "plant_1",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "window",
+        "position": "background",
+        "salience": "medium"
+      },
+      {
+        "label": "counter",
+        "position": "foreground",
+        "salience": "medium"
+      }
+    ]
+  }
+}

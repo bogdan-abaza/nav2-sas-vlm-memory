@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with dark strip and brown doors",
+  "scene_context": "indoor hallway, no visible lab or fire hydrant",
+  "reasoning": "no expected landmarks detected in scene",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "doors",
+        "position": "right",
+        "salience": "high"
+      },
+      {
+        "label": "wall",
+        "position": "left",
+        "salience": "medium"
+      }
+    ]
+  }
+}

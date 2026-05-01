@@ -1,0 +1,21 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776932097.140846,11:14:57,S3new,1,Take me somewhere I can sit and relax,L3b_vlm,9,radiator,mission_complete,1,0.4544258117675781,8202.574729919434,35.94,0.184,4.504,False,,vlm_landmark,True,xplorer-c
+1776932158.1349497,11:15:58,???,1,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.05316734313964844,0.0,37.07,0.151,4.214,False,,,,xplorer-c
+1776932195.069546,11:16:35,S3new,2,Take me somewhere I can sit and relax,L3b_vlm,9,radiator,missed,1,0.1888275146484375,8935.262441635132,22.74,1.983,2.164,False,,,,xplorer-c
+1776932218.9355707,11:16:58,S3new,3,Take me somewhere I can sit and relax,L3b_vlm,9,radiator,mission_complete,2,0.2541542053222656,2566.354751586914,20.85,0.182,2.32,False,,vlm_landmark,True,xplorer-c
+1776932269.2069006,11:17:49,???,2,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.08535385131835938,0.0,33.63,0.132,4.213,False,,,,xplorer-c
+1776932324.120223,11:18:44,S3new,4,Take me somewhere I can sit and relax,L3b_vlm,15,junction_e1,mission_complete,1,0.2090930938720703,7920.875310897827,41.0,0.223,7.611,False,,,,xplorer-c
+1776932359.5825338,11:19:19,???,3,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,1,0.03933906555175781,0.0,8.56,5.247,0.0,False,,,,xplorer-c
+1776932367.212006,11:19:27,???,4,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,2,0.04220008850097656,0.0,7.54,5.247,0.0,False,,,,xplorer-c
+1776932374.819293,11:19:34,???,5,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,3,0.034332275390625,0.0,7.54,5.247,0.0,False,,,,xplorer-c
+1776932382.4485502,11:19:42,???,6,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,4,0.04315376281738281,0.0,7.54,5.247,0.0,False,,,,xplorer-c
+1776932390.0422757,11:19:50,???,7,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,5,0.05626678466796875,0.0,7.52,5.247,0.0,False,,,,xplorer-c
+1776932397.6436791,11:19:57,???,8,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,6,0.0400543212890625,0.0,7.53,5.247,0.0,False,,,,xplorer-c
+1776932405.247686,11:20:05,???,9,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,7,0.03504753112792969,0.0,7.53,5.247,0.0,False,,,,xplorer-c
+1776932412.8838768,11:20:12,???,10,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,8,0.04935264587402344,0.0,7.54,5.247,0.0,False,,,,xplorer-c
+1776932421.731027,11:20:21,???,11,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,9,0.03528594970703125,0.0,8.77,5.247,0.0,False,,,,xplorer-c
+1776932429.3331594,11:20:29,???,12,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,10,0.05650520324707031,0.0,7.53,5.247,7.258,False,,,,xplorer-c
+1776932436.9598029,11:20:36,???,13,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,11,0.034809112548828125,0.0,7.52,5.247,0.0,False,,,,xplorer-c
+1776932444.5413375,11:20:44,???,14,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,12,0.031948089599609375,0.0,7.52,5.247,0.0,False,,,,xplorer-c
+1776932452.1480036,11:20:52,???,15,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,13,0.03337860107421875,0.0,7.53,5.247,0.0,False,,,,xplorer-c
+1776932459.7748735,11:20:59,???,16,go to node 7,L3a_deterministic,7,junction_w2,fallback_missed,14,0.05793571472167969,0.0,7.52,5.247,0.0,False,,,,xplorer-c

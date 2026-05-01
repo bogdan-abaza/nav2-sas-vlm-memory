@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with plant and chair leg",
+  "scene_context": "plant on right, chair leg on left, wall behind",
+  "reasoning": "no plant_5 or lab_chair visible in frame",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "plant",
+        "position": "right",
+        "salience": "high"
+      },
+      {
+        "label": "chair",
+        "position": "left",
+        "salience": "low"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "medium"
+      }
+    ]
+  }
+}

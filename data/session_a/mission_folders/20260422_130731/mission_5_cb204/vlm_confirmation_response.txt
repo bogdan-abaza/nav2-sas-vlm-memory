@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor leading into a room with glass walls",
+  "scene_context": "doorway opens to hallway with lab equipment visible",
+  "reasoning": "no clear lab markers seen, only generic room interior",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "door",
+        "position": "left",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "glass wall",
+        "position": "right",
+        "salience": "medium"
+      }
+    ]
+  }
+}

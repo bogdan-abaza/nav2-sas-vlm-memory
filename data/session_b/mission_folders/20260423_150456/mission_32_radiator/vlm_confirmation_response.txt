@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator fins and support leg",
+  "scene_context": "radiator mounted on floor with visible base",
+  "reasoning": "clear radiator structure confirms target location",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "radiator",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "support leg",
+        "position": "center",
+        "salience": "medium"
+      },
+      {
+        "label": "floor",
+        "position": "bottom",
+        "salience": "low"
+      }
+    ]
+  }
+}

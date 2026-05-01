@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor near window with potted plant",
+  "scene_context": "plant sits on floor beside window frame",
+  "reasoning": "plant_5 visible at window location, confirms target reached",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "plant",
+        "position": "right",
+        "salience": "high"
+      },
+      {
+        "label": "window",
+        "position": "center",
+        "salience": "medium"
+      },
+      {
+        "label": "floor",
+        "position": "left",
+        "salience": "low"
+      }
+    ]
+  }
+}

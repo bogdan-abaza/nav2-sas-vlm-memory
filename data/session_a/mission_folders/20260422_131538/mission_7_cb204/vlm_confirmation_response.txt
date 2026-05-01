@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "open doorway leading to lab with equipment",
+  "scene_context": "doorway frames view into lab space with white walls",
+  "reasoning": "doorway visible but no clear lab equipment or distinct landmarks",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "doorway",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "lab equipment",
+        "position": "center",
+        "salience": "medium"
+      },
+      {
+        "label": "floor tiles",
+        "position": "foreground",
+        "salience": "low"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+{"node_id": 15, "reason": "Node 15 contains a chair with 'seating: True' and 'use: resting spot', matching the instruction to sit and relax. It is a static object and relatively close (5.4m) compared to other seating options."}

@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "sunlit floor with plant shadows near window",
+  "scene_context": "plant in white pot beside window frame",
+  "reasoning": "plant_5 visible at window edge, shadows confirm location",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "plant",
+        "position": "right",
+        "salience": "high"
+      },
+      {
+        "label": "window",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "medium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots: Hybrid Deterministic Reasoning and Cross-Robot Adaptive Memory"
+type: software
+authors:
+  - family-names: Abaza
+    given-names: Bogdan Felician
+    email: bogdan.abaza@upb.ro
+    orcid: ""
+    affiliation: "National University of Science and Technology POLITEHNICA Bucharest"
+  - family-names: Staicu
+    given-names: Andrei-Alexandru
+    affiliation: "National University of Science and Technology POLITEHNICA Bucharest"
+  - family-names: Doicin
+    given-names: Cristian Vasile
+    affiliation: "National University of Science and Technology POLITEHNICA Bucharest"
+repository-code: "https://github.com/bogdan-abaza/nav2-sas-vlm-memory"
+license: MIT
+preferred-citation:
+  type: article
+  title: "A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots: Hybrid Deterministic Reasoning and Cross-Robot Adaptive Memory"
+  authors:
+    - family-names: Abaza
+      given-names: Bogdan Felician
+    - family-names: Staicu
+      given-names: Andrei-Alexandru
+    - family-names: Doicin
+      given-names: Cristian Vasile
+  journal: "Robotics and Computer-Integrated Manufacturing"
+  year: 2026

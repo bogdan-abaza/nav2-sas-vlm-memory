@@ -1,0 +1,2 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776934683.5188043,11:58:03,???,1,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.11444091796875,0.0,29.41,0.161,4.758,False,,,,xplorer-c

@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "fire extinguisher near brown doors on tiled floor",
+  "scene_context": "fire extinguisher is right, doors are behind, floor is foreground",
+  "reasoning": "fire extinguisher visible but no lab or hydrant seen",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "fire_extinguisher",
+        "position": "right",
+        "salience": "high"
+      },
+      {
+        "label": "doors",
+        "position": "center",
+        "salience": "medium"
+      },
+      {
+        "label": "floor",
+        "position": "left",
+        "salience": "low"
+      }
+    ]
+  }
+}

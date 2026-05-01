@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant on floor near wall",
+  "scene_context": "plant sits beside white wall and black baseboard",
+  "reasoning": "clearly visible potted plant matches expected landmark",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "plant",
+        "position": "left",
+        "salience": "high"
+      },
+      {
+        "label": "pot",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "wall",
+        "position": "right",
+        "salience": "medium"
+      }
+    ]
+  }
+}

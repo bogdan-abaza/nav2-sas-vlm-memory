@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with dark strip leading to doorway",
+  "scene_context": "view through open door into lab area with glass walls",
+  "reasoning": "floor pattern matches but no clear lab equipment visible yet"
+}

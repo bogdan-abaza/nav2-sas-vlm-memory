@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with open door and trash bin",
+  "scene_context": "doorway leads to lab, bin near wall",
+  "reasoning": "no clear lab features visible, only floor and door"
+}

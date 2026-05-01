@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator with person standing nearby",
+  "scene_context": "radiator on floor, person's jeans visible on right",
+  "reasoning": "radiator clearly visible, person adjacent, confirms target reached",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "radiator",
+        "position": "left",
+        "salience": "high"
+      },
+      {
+        "label": "jeans",
+        "position": "right",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "medium"
+      }
+    ]
+  }
+}

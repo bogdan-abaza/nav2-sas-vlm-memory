@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with dark strip, brown doors open",
+  "scene_context": "indoor hallway, view through doorway into another room",
+  "reasoning": "no clear lab or cb204 landmark visible, only generic interior"
+}

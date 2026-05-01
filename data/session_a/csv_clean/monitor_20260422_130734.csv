@@ -1,0 +1,5 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776852550.6257265,13:09:10,S2,1,"the washroom got on fire, help me find something to stop the",L3a_m3_preference,8,cb202,mission_complete,1,0.04553794860839844,0.0,33.68,0.17,5.147,True,1.0,vlm_landmark,False,xplorer-c
+1776852671.8231497,13:11:11,S2,2,"the washroom got on fire, help me find something to stop the",L3a_m3_preference,8,cb202,mission_complete,1,0.052928924560546875,0.0,37.29,0.213,5.15,True,1.0,vlm_landmark,False,xplorer-c
+1776852776.58402,13:12:56,S2,3,"the washroom got on fire, help me find something to stop the",L3a_m3_preference,8,cb202,mission_complete,1,0.05245208740234375,0.0,33.91,0.182,5.101,True,1.0,vlm_landmark,False,xplorer-c
+1776852865.5242891,13:14:25,S2,4,"the washroom got on fire, help me find something to stop the",L3a_m3_preference,8,cb202,mission_complete,1,0.047206878662109375,0.0,37.83,0.174,5.078,True,1.0,vlm_landmark,False,xplorer-c

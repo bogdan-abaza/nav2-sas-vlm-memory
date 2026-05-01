@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with brown doors in background",
+  "scene_context": "indoor hallway, no visible lab signage",
+  "reasoning": "no lab indicators seen, doors do not match expected landmark",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "door",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "wall",
+        "position": "left",
+        "salience": "medium"
+      }
+    ]
+  }
+}

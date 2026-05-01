@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with open doors and wall corner",
+  "scene_context": "doors lead to room with furniture; wall on right",
+  "reasoning": "no visible lab or cb204 marker; generic interior space"
+}

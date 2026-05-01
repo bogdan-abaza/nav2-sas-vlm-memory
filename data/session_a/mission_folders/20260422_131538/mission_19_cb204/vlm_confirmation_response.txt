@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor leading to lab doorway",
+  "scene_context": "corridor view into lab with cabinets and sink",
+  "reasoning": "floor pattern matches but no specific cb204 landmark visible"
+}

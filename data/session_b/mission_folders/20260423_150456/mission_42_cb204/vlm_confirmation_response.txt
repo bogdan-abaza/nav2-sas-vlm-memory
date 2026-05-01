@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor near brown door and white wall",
+  "scene_context": "floor tiles lead to doorway; no visible lab signage",
+  "reasoning": "no lab indicators seen; only generic interior floor and door",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "door",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "wall",
+        "position": "left",
+        "salience": "medium"
+      }
+    ]
+  }
+}

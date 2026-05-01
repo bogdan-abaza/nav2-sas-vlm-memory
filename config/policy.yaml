@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────────────────────────
+# SAIM Xplorer -- Executive Contract Safety Policy
+# Sprint 7 -- v7.3
+#
+# Used by executive_contract.py validate_action().
+# Place at: /VLM/policy.yaml
+# ─────────────────────────────────────────────────────────────────
+
+# Nav2 actions the robot is allowed to execute
+allowed_actions:
+  - ComputeRoute
+  - FollowPath
+  - NavigateToPose
+  - Spin
+  - Stop
+
+# Node types accepted as valid navigation targets
+allowed_node_types:
+  - POI
+  - junction
+
+# Velocity limits (informational, enforced by Nav2 controller)
+velocity_bounds:
+  linear_max_ms: 0.5
+  angular_max_rads: 1.0
+
+# Safety checks applied by validate_action()
+safety:
+  # Block if target node_id is not in the graph
+  require_node_exists: true
+
+  # Block if action_type is not in allowed_actions
+  require_action_in_allowlist: true
+
+  # Block ComputeRoute/FollowPath while a Spin is active
+  block_navigation_during_spin: true
+
+  # Block if goal is farther than this (catches VLM hallucinations)
+  max_goal_distance_m: 50.0

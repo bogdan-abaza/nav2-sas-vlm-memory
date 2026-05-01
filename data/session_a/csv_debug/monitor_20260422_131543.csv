@@ -1,0 +1,12 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776853034.532198,13:17:14,S2,1,"the washroom got on fire, help me find something to stop the",L3a_m3_preference,8,cb202,mission_complete,1,0.07367134094238281,0.0,37.45,0.142,5.119,True,1.0,vlm_landmark,False,xplorer-c
+1776853204.3146496,13:20:04,S3old,1,"It is too hot in here, take me somewhere I can get some fres",L3a_m3_preference,14,plant_5,mission_complete,1,0.07104873657226562,0.0,92.75,0.219,11.496,True,1.0,vlm_landmark,True,xplorer-c
+1776853344.450468,13:22:24,S3old,2,"It is too hot in here, take me somewhere I can get some fres",L3a_m3_preference,14,plant_5,mission_complete,1,0.05602836608886719,0.0,71.0,0.125,11.373,True,1.0,vlm_landmark,True,xplorer-c
+1776853496.0008752,13:24:56,S3old,3,"It is too hot in here, take me somewhere I can get some fres",L3a_m3_preference,14,plant_5,mission_complete,1,0.072479248046875,0.0,76.8,0.193,11.498,True,1.0,vlm_landmark,True,xplorer-c
+1776853635.5499687,13:27:15,S3old,4,"It is too hot in here, take me somewhere I can get some fres",L3a_m3_preference,14,plant_5,mission_complete,1,0.05435943603515625,0.0,62.42,0.159,11.466,True,1.0,vlm_landmark,True,xplorer-c
+1776853772.1668904,13:29:32,S3old,5,"It is too hot in here, take me somewhere I can get some fres",L3a_m3_preference,14,plant_5,mission_complete,1,0.04696846008300781,0.0,71.66,0.22,11.461,True,1.0,vlm_landmark,True,xplorer-c
+1776853870.8858576,13:31:10,S3new,1,Take me somewhere I can sit and relax,L3b_vlm,5,cb204,mission_complete,1,0.7560253143310547,10472.873210906982,0.0,0.18,0.0,False,,,,xplorer-c
+1776853947.04251,13:32:27,S3new,2,Take me somewhere I can sit and relax,L3b_vlm,5,cb204,mission_complete,1,0.7908344268798828,7456.660032272339,0.0,0.18,0.0,False,,,,xplorer-c
+1776854077.5248437,13:34:37,S3new,3,Take me somewhere I can sit and relax,L3b_vlm,14,plant_5,mission_complete,1,0.8518695831298828,7530.126094818115,59.62,0.223,11.558,False,,vlm_landmark,True,xplorer-c
+1776854161.4025066,13:36:01,S3new,4,Take me somewhere I can sit and relax,L3b_vlm,5,cb204,mission_complete,1,0.8375644683837891,10257.548093795776,0.0,0.226,0.0,False,,,,xplorer-c
+1776854200.4623883,13:36:40,S3new,5,Take me somewhere I can sit and relax,L3b_vlm,5,cb204,mission_complete,1,0.9140968322753906,7620.988607406616,0.0,0.226,0.0,False,,,,xplorer-c

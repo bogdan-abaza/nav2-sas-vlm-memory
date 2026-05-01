@@ -1,0 +1,27 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor leading into lab room",
+  "scene_context": "doorway opens to lab with cabinets and sink",
+  "reasoning": "floor pattern suggests approach but no clear lab markers visible yet",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "doorway",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor tiles",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "lab cabinets",
+        "position": "right",
+        "salience": "medium"
+      }
+    ]
+  }
+}

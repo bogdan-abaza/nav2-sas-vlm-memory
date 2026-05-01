@@ -1,0 +1,2 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776938104.932175,12:55:04,S3old,1,"It is too hot in here, take me somewhere I can get some fres",L3b_vlm,15,junction_e1,mission_complete,1,0.35071372985839844,5009.894371032715,61.62,0.144,7.134,False,,vlm_landmark,False,xplorer-c

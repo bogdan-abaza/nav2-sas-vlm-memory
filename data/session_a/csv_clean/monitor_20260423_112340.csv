@@ -1,0 +1,6 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776932669.9389787,11:24:29,???,1,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.12755393981933594,0.0,43.08,0.137,7.757,False,,,,xplorer-c
+1776932716.5597217,11:25:16,S3new,1,Take me somewhere I can sit and relax,L3b_vlm,9,radiator,mission_complete,1,0.4355907440185547,5316.559076309204,35.38,0.153,4.408,False,,vlm_landmark,True,xplorer-c
+1776932760.5072432,11:26:00,???,2,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.03695487976074219,0.0,39.49,0.176,4.72,False,,,,xplorer-c
+1776932829.0769258,11:27:09,S3new,2,Take me somewhere I can sit and relax,L3b_vlm,9,radiator,mission_complete,1,0.6234645843505859,5633.916139602661,41.44,0.189,4.189,False,,vlm_landmark,True,xplorer-c
+1776932875.1710417,11:27:55,???,3,go to node 7,L3a_deterministic,7,junction_w2,mission_complete,1,0.034809112548828125,0.0,32.2,0.214,4.613,False,,,,xplorer-c

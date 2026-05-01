@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with dark strip leading to open doorway",
+  "scene_context": "doorway leads to room with furniture; trash bin on right wall",
+  "reasoning": "no visible lab equipment or specific cb204 markers present"
+}

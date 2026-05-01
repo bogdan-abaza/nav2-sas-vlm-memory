@@ -1,0 +1,2 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776933888.6902673,11:44:48,S5,1,Take me to the closest plant,L3a_deterministic,8,cb202,mission_complete,1,0.3304481506347656,0.0,19.12,0.175,1.715,False,,vlm_landmark,False,xplorer-c

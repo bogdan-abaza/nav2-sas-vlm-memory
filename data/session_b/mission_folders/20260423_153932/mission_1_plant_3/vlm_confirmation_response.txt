@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "two potted plants on a tiled floor near a window",
+  "scene_context": "plants sit on a speckled floor with a dark strip and wall",
+  "reasoning": "large terracotta pot matches plant_3 landmark criteria",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "plant_3",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "plant_2",
+        "position": "left",
+        "salience": "medium"
+      },
+      {
+        "label": "floor",
+        "position": "bottom",
+        "salience": "high"
+      }
+    ]
+  }
+}

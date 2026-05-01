@@ -1,0 +1,117 @@
+You are the navigation brain of SAIM Xplorer, an autonomous mobile robot navigating a corridor.
+
+OBSERVED ENVIRONMENT (from cross-session memory):
+Frequently visited entities:
+  - lab_cb204 (node 5): 31 visits, success_rate=0.00, sig_type=landmark
+  - plant_5 (node 14): 25 visits, success_rate=0.08, sig_type=landmark
+  - window_north (node 14): 25 visits, success_rate=0.08, sig_type=landmark
+  - lab_cb202 (node 8): 11 visits, success_rate=0.00, sig_type=landmark
+  - fire_hydrant_cb202 (node 8): 11 visits, success_rate=0.00, sig_type=landmark
+Global stats: 112 prior tasks, success_rate=0.14
+---
+CURRENT STATE:
+  Robot pose: x=2.25, y=1.51, yaw=-3.12 rad
+
+NAVIGATION GRAPH NODES (frame: map):
+  - node 0 'toilet_m': x=0.50, y=0.00
+  - node 1 'hall_entry': x=0.50, y=1.65
+  - node 2 'hall_exit': x=0.50, y=3.20
+  - node 3 'corridor_w_mid': x=0.50, y=4.80
+  - node 4 'toilet_f': x=0.50, y=6.40
+  - node 5 'cb204': x=2.20, y=4.80
+  - node 6 'junction_w1': x=2.20, y=3.00
+  - node 7 'junction_w2': x=2.20, y=1.65
+  - node 8 'cb202': x=2.20, y=0.00
+  - node 9 'radiator': x=4.50, y=-0.80
+  - node 10 'junction_s1': x=4.50, y=0.00
+  - node 11 'junction_s2': x=4.50, y=1.65
+  - node 12 'junction_s3': x=4.50, y=3.00
+  - node 13 'plant_4': x=7.70, y=5.40
+  - node 14 'plant_5': x=6.55, y=5.40
+  - node 15 'junction_e1': x=6.55, y=4.80
+  - node 16 'junction_e2': x=6.55, y=3.00
+  - node 17 'junction_e3': x=6.55, y=1.65
+  - node 18 'junction_e4': x=6.55, y=0.00
+  - node 19 'plant_3': x=6.55, y=-0.90
+  - node 20 'plant_2': x=7.00, y=-0.90
+  - node 21 'plant_1': x=7.50, y=-0.90
+  - node 22 'cb203_entrance': x=8.20, y=1.65
+  - node 23 'cb203_exit': x=8.20, y=3.67
+
+SEMANTIC OBJECTS BY ZONE:
+ZONE 'toilet_m' (node 0, x=0.50, y=0.00):
+  - restroom "restroom_men" [type: men, floor: ground] (static) -> node 0 (2.5m from robot)
+
+ZONE 'hall_entry' (node 1, x=0.50, y=1.65):
+  - emergency_exit "hall_entrance" [type: entrance, floor: ground] (static) -> node 1 (1.8m from robot)
+
+ZONE 'hall_exit' (node 2, x=0.50, y=3.20):
+  - emergency_exit "hall_exit" [type: exit, floor: ground] (static) -> node 2 (2.4m from robot)
+  - chair "chair_11" (yolo, conf=0.60) -> node 2 (3.5m from robot)
+
+ZONE 'toilet_f' (node 4, x=0.50, y=6.40):
+  - restroom "restroom_women" [type: women, floor: ground] (static) -> node 4 (5.4m from robot)
+
+ZONE 'cb204' (node 5, x=2.20, y=4.80):
+  - laboratory "lab_cb204" [room_number: CB204, department: automatica, access: card, floor: ground] (static) -> node 5 (3.3m from robot)
+
+ZONE 'cb202' (node 8, x=2.20, y=0.00):
+  - laboratory "lab_cb202" [room_number: CB202, department: automatica, access: card, floor: ground] (static) -> node 8 (1.5m from robot)
+  - fire hydrant "fire_hydrant_cb202" [type: wall_mounted] (static) -> node 8 (1.2m from robot)
+
+ZONE 'radiator' (node 9, x=4.50, y=-0.80):
+  - radiator "radiator_main" [seating: True, use: resting spot] (static) -> node 9 (3.2m from robot)
+  - bench "bench_6" (yolo, conf=0.81) -> node 9 (3.6m from robot)
+
+ZONE 'junction_s3' (node 12, x=4.50, y=3.00):
+  - refrigerator "refrigerator_10" (yolo, conf=0.59) -> node 12 (3.2m from robot)
+
+ZONE 'plant_4' (node 13, x=7.70, y=5.40):
+  - potted plant "plant_4" [species: TODO, size: TODO, pot_color: TODO, near_window: True] (static) -> node 13 (6.7m from robot)
+  - potted plant "potted plant_9" (yolo, conf=0.60) -> node 13 (7.9m from robot)
+  - potted plant "potted plant_16" (yolo, conf=0.58) -> node 13 (7.8m from robot)
+
+ZONE 'plant_5' (node 14, x=6.55, y=5.40):
+  - window "window_north" [opens: True, side: north] (static) -> node 14 (5.7m from robot)
+  - potted plant "potted plant_8" (yolo, conf=0.72) -> node 14 (6.9m from robot)
+
+ZONE 'junction_e1' (node 15, x=6.55, y=4.80):
+  - potted plant "plant_5" [species: TODO, size: TODO, pot_color: TODO, near_window: True] (static) -> node 15 (5.4m from robot)
+  - chair "lab_chair" [seating: True, use: resting spot] (static) -> node 15 (5.4m from robot)
+
+ZONE 'plant_3' (node 19, x=6.55, y=-0.90):
+  - potted plant "plant_3" [species: TODO, size: TODO, pot_color: TODO, near_window: True] (static, currently detected (conf=0.78)) -> node 19 (5.0m from robot)
+
+ZONE 'plant_2' (node 20, x=7.00, y=-0.90):
+  - potted plant "plant_2" [species: TODO, size: TODO, pot_color: TODO, near_window: True] (static, currently detected (conf=0.66)) -> node 20 (5.3m from robot)
+  - window "window_south" [opens: False, side: south] (static) -> node 20 (5.3m from robot)
+  - potted plant "potted plant_7" (yolo, conf=0.75) -> node 20 (6.0m from robot)
+
+ZONE 'plant_1' (node 21, x=7.50, y=-0.90):
+  - potted plant "plant_1" [species: TODO, size: TODO, pot_color: TODO, near_window: True] (static, currently detected (conf=0.66)) -> node 21 (5.8m from robot)
+  - bench "bench_3" (yolo, conf=0.69) -> node 21 (6.5m from robot)
+  - bench "bench_26" (yolo, conf=0.53) -> node 21 (6.4m from robot)
+
+ZONE 'cb203_entrance' (node 22, x=8.20, y=1.65):
+  - laboratory "lab_cb203_entrance" [room_number: CB203, department: automatica, access: card, floor: ground, entrance: main] (static) -> node 22 (6.0m from robot)
+  - chair "chair_2" (yolo, conf=0.50) -> node 22 (7.1m from robot)
+  - bench "bench_5" (yolo, conf=0.60) -> node 22 (7.1m from robot)
+
+ZONE 'cb203_exit' (node 23, x=8.20, y=3.67):
+  - laboratory "lab_cb203_exit" [room_number: CB203, department: automatica, access: card, floor: ground, entrance: exit] (static) -> node 23 (6.3m from robot)
+
+
+TASK:
+The operator said: "Take me somewhere I can sit and relax"
+Based on the instruction, the semantic objects and their attributes, the robot's current position, and the camera image, decide which graph node the robot should navigate to.
+
+RULES:
+- You MUST pick a node_id from the navigation graph above.
+- Match instruction terms against object attributes.
+- If multiple objects match, pick the one closest to the robot unless the instruction specifies otherwise.
+- Static objects (source=static) are permanent and reliable.
+- Dynamic objects (source=yolo) are live YOLO detections with confidence scores.
+- Prefer static objects when both match the instruction.
+
+RESPOND with ONLY a JSON object, no markdown, no explanation:
+{"node_id": <int>, "reason": "<brief reason>"}

@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with dark strip leading to open doors",
+  "scene_context": "corridor view with two brown doors and white walls",
+  "reasoning": "no visible lab or cb204 markers; only generic interior floor"
+}

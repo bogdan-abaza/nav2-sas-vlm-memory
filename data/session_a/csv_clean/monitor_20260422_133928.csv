@@ -1,0 +1,12 @@
+timestamp,time,scenario,run_num,instruction,resolution_method,node_id,node_name,nav_outcome,cycle,resolve_ms,vlm_ms,nav_total_s,xy_error_m,distance_m,m3_triggered,jaccard,confirmation_method,confirmed,platform_id
+1776854382.0839937,13:39:42,S4,1,go to lab_cb204,L3a_deterministic,5,cb204,mission_complete,1,0.21505355834960938,0.0,0.0,0.167,0.0,False,,,,xplorer-c
+1776854511.5829906,13:41:51,S4,2,go to lab_cb204,L3a_deterministic,5,cb204,mission_complete,1,0.07152557373046875,0.0,45.79,0.14,6.679,False,,vlm_landmark,True,xplorer-c
+1776854623.9929173,13:43:43,S4,3,go to lab_cb204,L3a_deterministic,5,cb204,mission_complete,1,0.08606910705566406,0.0,40.94,0.223,6.197,False,,vlm_landmark,False,xplorer-c
+1776854665.7025485,13:44:25,S5,1,Take me to the closest plant,L3a_deterministic,5,cb204,mission_complete,1,0.6556510925292969,0.0,0.0,0.223,0.0,False,,,,xplorer-c
+1776854703.9864388,13:45:03,S5,2,Take me to the closest plant,L3a_deterministic,5,cb204,mission_complete,1,0.7920265197753906,0.0,0.0,0.223,0.0,False,,,,xplorer-c
+1776854735.3656833,13:45:35,S5,3,Take me to the closest plant,L3a_deterministic,5,cb204,mission_complete,1,0.9543895721435547,0.0,0.0,0.223,0.0,False,,,,xplorer-c
+1776854848.8064106,13:47:28,???,1,Take me to the farthest plant,L3b_vlm,21,plant_1,mission_complete,1,0.6442070007324219,10090.140104293823,78.49,0.265,10.9,False,,vlm_landmark,True,xplorer-c
+1776855132.5266695,13:52:12,???,2,Take me to the farthest plant,L3b_vlm,21,plant_1,mission_complete,1,0.759124755859375,10864.646673202515,72.56,0.283,10.825,False,,vlm_landmark,True,xplorer-c
+1776855138.8960204,13:52:18,S5,4,Take me to the closest plant,L3a_deterministic,20,plant_2,mission_complete,1,0.9129047393798828,0.0,0.0,0.219,0.0,False,,,,xplorer-c
+1776855223.0317407,13:53:43,S5,5,Take me to the closest plant,L3a_deterministic,5,cb204,mission_complete,1,0.8420944213867188,0.0,0.0,0.201,0.0,False,,,,xplorer-c
+1776855309.5541103,13:55:09,S5,6,Take me to the closest plant,L3a_deterministic,5,cb204,mission_complete,1,0.6933212280273438,0.0,0.0,0.201,0.0,False,,,,xplorer-c

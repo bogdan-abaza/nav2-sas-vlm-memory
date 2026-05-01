@@ -1,0 +1,27 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "brown door and tiled floor at entrance",
+  "scene_context": "door meets wall with black baseboard",
+  "reasoning": "door matches expected landmark location",
+  "payload": {
+    "identified_objects": [
+      {
+        "label": "door",
+        "position": "center",
+        "salience": "high"
+      },
+      {
+        "label": "floor",
+        "position": "bottom",
+        "salience": "medium"
+      },
+      {
+        "label": "wall",
+        "position": "right",
+        "salience": "low"
+      }
+    ]
+  }
+}

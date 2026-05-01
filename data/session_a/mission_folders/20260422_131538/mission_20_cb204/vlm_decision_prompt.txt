@@ -1,0 +1,373 @@
+You are the navigation brain of SAIM Xplorer, an autonomous mobile robot navigating a corridor.
+
+OBSERVED ENVIRONMENT (from cross-session memory):
+Frequently visited entities:
+  - lab_cb204 (node 5): 31 visits, success_rate=0.00, sig_type=landmark
+  - plant_5 (node 14): 25 visits, success_rate=0.08, sig_type=landmark
+  - window_north (node 14): 25 visits, success_rate=0.08, sig_type=landmark
+  - lab_cb202 (node 8): 11 visits, success_rate=0.00, sig_type=landmark
+  - fire_hydrant_cb202 (node 8): 11 visits, success_rate=0.00, sig_type=landmark
+Global stats: 112 prior tasks, success_rate=0.14
+---
+CURRENT STATE:
+  Robot pose: x=2.20, y=4.57, yaw=1.57 rad
+
+NAVIGATION GRAPH NODES (frame: map):
+  - node 0 'toilet_m': x=0.50, y=0.00
+  - node 1 'hall_entry': x=0.50, y=1.65
+  - node 2 'hall_exit': x=0.50, y=3.20
+  - node 3 'corridor_w_mid': x=0.50, y=4.80
+  - node 4 'toilet_f': x=0.50, y=6.40
+  - node 5 'cb204': x=2.20, y=4.80
+  - node 6 'junction_w1': x=2.20, y=3.00
+  - node 7 'junction_w2': x=2.20, y=1.65
+  - node 8 'cb202': x=2.20, y=0.00
+  - node 9 'radiator': x=4.50, y=-0.80
+  - node 10 'junction_s1': x=4.50, y=0.00
+  - node 11 'junction_s2': x=4.50, y=1.65
+  - node 12 'junction_s3': x=4.50, y=3.00
+  - node 13 'plant_4': x=7.70, y=5.40
+  - node 14 'plant_5': x=6.55, y=5.40
+  - node 15 'junction_e1': x=6.55, y=4.80
+  - node 16 'junction_e2': x=6.55, y=3.00
+  - node 17 'junction_e3': x=6.55, y=1.65
+  - node 18 'junction_e4': x=6.55, y=0.00
+  - node 19 'plant_3': x=6.55, y=-0.90
+  - node 20 'plant_2': x=7.00, y=-0.90
+  - node 21 'plant_1': x=7.50, y=-0.90
+  - node 22 'cb203_entrance': x=8.20, y=1.65
+  - node 23 'cb203_exit': x=8.20, y=3.67
+
+SEMANTIC OBJECTS BY ZONE:
+ZONE 'toilet_m' (node 0, x=0.50, y=0.00):
+  - restroom "restroom_men" [type: men, floor: ground] (static) -> node 0 (5.0m from robot)
+  - chair "chair_31" (yolo, conf=0.72) -> node 0 (6.6m from robot)
+  - chair "chair_54" (yolo, conf=0.63) -> node 0 (4.8m from robot)
+  - chair "chair_86" (yolo, conf=0.54) -> node 0 (5.5m from robot)
+  - potted plant "potted plant_106" (yolo, conf=0.63) -> node 0 (6.5m from robot)
+  - chair "chair_240" (yolo, conf=0.60) -> node 0 (5.0m from robot)
+  - chair "chair_260" (yolo, conf=0.65) -> node 0 (6.5m from robot)
+  - potted plant "potted plant_262" (yolo, conf=0.83) -> node 0 (4.8m from robot)
+  - potted plant "potted plant_263" (yolo, conf=0.77) -> node 0 (5.0m from robot)
+  - bench "bench_265" (yolo, conf=0.63) -> node 0 (6.4m from robot)
+  - bench "bench_327" (yolo, conf=0.64) -> node 0 (5.5m from robot)
+  - backpack "backpack_969" (yolo, conf=0.57) -> node 0 (6.7m from robot)
+  - person "person_1356" (yolo, conf=0.89) -> node 0 (6.4m from robot)
+  - person "person_1357" (yolo, conf=0.75) -> node 0 (6.6m from robot)
+
+ZONE 'hall_entry' (node 1, x=0.50, y=1.65):
+  - emergency_exit "hall_entrance" [type: entrance, floor: ground] (static) -> node 1 (3.4m from robot)
+  - chair "chair_53" (yolo, conf=0.62) -> node 1 (3.9m from robot)
+  - laptop "laptop_100" (yolo, conf=0.65) -> node 1 (3.8m from robot)
+  - chair "chair_226" (yolo, conf=0.60) -> node 1 (3.6m from robot)
+  - bench "bench_717" (yolo, conf=0.65) -> node 1 (5.1m from robot)
+  - potted plant "potted plant_761" (yolo, conf=0.56) -> node 1 (4.3m from robot)
+  - bench "bench_1235" (yolo, conf=0.65) -> node 1 (4.8m from robot)
+
+ZONE 'hall_exit' (node 2, x=0.50, y=3.20):
+  - emergency_exit "hall_exit" [type: exit, floor: ground] (static) -> node 2 (2.2m from robot)
+  - chair "chair_29" (yolo, conf=0.72) -> node 2 (3.0m from robot)
+  - potted plant "potted plant_333" (yolo, conf=0.68) -> node 2 (3.1m from robot)
+  - potted plant "potted plant_334" (yolo, conf=0.61) -> node 2 (2.5m from robot)
+  - bench "bench_352" (yolo, conf=0.71) -> node 2 (2.9m from robot)
+  - bench "bench_353" (yolo, conf=0.69) -> node 2 (4.2m from robot)
+  - chair "chair_355" (yolo, conf=0.68) -> node 2 (2.7m from robot)
+  - chair "chair_1164" (yolo, conf=0.74) -> node 2 (3.8m from robot)
+  - dining table "dining table_1326" (yolo, conf=0.65) -> node 2 (3.7m from robot)
+
+ZONE 'corridor_w_mid' (node 3, x=0.50, y=4.80):
+  - chair "chair_335" (yolo, conf=0.65) -> node 3 (2.1m from robot)
+  - chair "chair_395" (yolo, conf=0.51) -> node 3 (2.1m from robot)
+  - chair "chair_427" (yolo, conf=0.64) -> node 3 (2.6m from robot)
+  - laptop "laptop_601" (yolo, conf=0.54) -> node 3 (2.5m from robot)
+
+ZONE 'toilet_f' (node 4, x=0.50, y=6.40):
+  - restroom "restroom_women" [type: women, floor: ground] (static) -> node 4 (2.7m from robot)
+  - chair "chair_247" (yolo, conf=0.71) -> node 4 (2.4m from robot)
+  - chair "chair_329" (yolo, conf=0.77) -> node 4 (3.2m from robot)
+  - chair "chair_330" (yolo, conf=0.82) -> node 4 (2.8m from robot)
+  - bench "bench_347" (yolo, conf=0.67) -> node 4 (2.4m from robot)
+  - chair "chair_380" (yolo, conf=0.65) -> node 4 (2.5m from robot)
+  - chair "chair_381" (yolo, conf=0.58) -> node 4 (1.8m from robot)
+  - bed "bed_382" (yolo, conf=0.56) -> node 4 (3.3m from robot)
+  - bench "bench_397" (yolo, conf=0.64) -> node 4 (2.2m from robot)
+  - chair "chair_480" (yolo, conf=0.55) -> node 4 (2.3m from robot)
+  - laptop "laptop_894" (yolo, conf=0.84) -> node 4 (4.1m from robot)
+  - laptop "laptop_895" (yolo, conf=0.83) -> node 4 (6.2m from robot)
+  - bed "bed_1125" (yolo, conf=0.55) -> node 4 (2.5m from robot)
+
+ZONE 'cb204' (node 5, x=2.20, y=4.80):
+  - laboratory "lab_cb204" [room_number: CB204, department: automatica, access: card, floor: ground] (static) -> node 5 (0.2m from robot)
+  - chair "chair_2" (yolo, conf=0.70) -> node 5 (1.9m from robot)
+  - chair "chair_23" (yolo, conf=0.90) -> node 5 (1.9m from robot)
+  - chair "chair_33" (yolo, conf=0.67) -> node 5 (1.3m from robot)
+  - chair "chair_55" (yolo, conf=0.91) -> node 5 (2.4m from robot)
+  - potted plant "potted plant_244" (yolo, conf=0.86) -> node 5 (2.1m from robot)
+  - potted plant "potted plant_337" (yolo, conf=0.51) -> node 5 (1.3m from robot)
+  - microwave "microwave_348" (yolo, conf=0.52) -> node 5 (1.6m from robot)
+  - chair "chair_445" (yolo, conf=0.75) -> node 5 (1.8m from robot)
+  - bench "bench_462" (yolo, conf=0.62) -> node 5 (1.6m from robot)
+  - couch "couch_529" (yolo, conf=0.73) -> node 5 (1.0m from robot)
+  - bench "bench_572" (yolo, conf=0.56) -> node 5 (1.0m from robot)
+  - chair "chair_594" (yolo, conf=0.76) -> node 5 (2.4m from robot)
+  - chair "chair_595" (yolo, conf=0.54) -> node 5 (2.5m from robot)
+  - refrigerator "refrigerator_760" (yolo, conf=0.52) -> node 5 (1.6m from robot)
+
+ZONE 'junction_w1' (node 6, x=2.20, y=3.00):
+  - laptop "laptop_99" (yolo, conf=0.62) -> node 6 (2.0m from robot)
+  - suitcase "suitcase_694" (yolo, conf=0.68) -> node 6 (0.8m from robot)
+
+ZONE 'junction_w2' (node 7, x=2.20, y=1.65):
+  - bench "bench_342" (yolo, conf=0.70) -> node 7 (2.9m from robot)
+
+ZONE 'cb202' (node 8, x=2.20, y=0.00):
+  - laboratory "lab_cb202" [room_number: CB202, department: automatica, access: card, floor: ground] (static) -> node 8 (4.6m from robot)
+  - fire hydrant "fire_hydrant_cb202" [type: wall_mounted] (static) -> node 8 (4.3m from robot)
+  - chair "chair_30" (yolo, conf=0.81) -> node 8 (6.4m from robot)
+  - chair "chair_59" (yolo, conf=0.80) -> node 8 (6.5m from robot)
+  - chair "chair_60" (yolo, conf=0.76) -> node 8 (6.5m from robot)
+  - chair "chair_61" (yolo, conf=0.72) -> node 8 (5.7m from robot)
+  - bench "bench_72" (yolo, conf=0.72) -> node 8 (5.5m from robot)
+  - bench "bench_73" (yolo, conf=0.78) -> node 8 (6.5m from robot)
+  - chair "chair_93" (yolo, conf=0.74) -> node 8 (5.7m from robot)
+  - potted plant "potted plant_101" (yolo, conf=0.63) -> node 8 (6.5m from robot)
+  - dining table "dining table_105" (yolo, conf=0.50) -> node 8 (6.4m from robot)
+  - bench "bench_264" (yolo, conf=0.77) -> node 8 (6.4m from robot)
+  - chair "chair_383" (yolo, conf=0.52) -> node 8 (4.5m from robot)
+  - potted plant "potted plant_470" (yolo, conf=0.52) -> node 8 (7.7m from robot)
+  - toilet "toilet_644" (yolo, conf=0.58) -> node 8 (4.3m from robot)
+  - chair "chair_645" (yolo, conf=0.68) -> node 8 (4.3m from robot)
+  - backpack "backpack_1019" (yolo, conf=0.51) -> node 8 (4.2m from robot)
+
+ZONE 'radiator' (node 9, x=4.50, y=-0.80):
+  - radiator "radiator_main" [seating: True, use: resting spot] (static) -> node 9 (5.8m from robot)
+  - bench "bench_38" (yolo, conf=0.78) -> node 9 (6.9m from robot)
+  - chair "chair_43" (yolo, conf=0.78) -> node 9 (6.2m from robot)
+  - bench "bench_56" (yolo, conf=0.85) -> node 9 (6.4m from robot)
+  - potted plant "potted plant_57" (yolo, conf=0.78) -> node 9 (6.5m from robot)
+  - chair "chair_89" (yolo, conf=0.69) -> node 9 (5.9m from robot)
+  - chair "chair_90" (yolo, conf=0.56) -> node 9 (6.1m from robot)
+  - chair "chair_104" (yolo, conf=0.56) -> node 9 (6.4m from robot)
+  - backpack "backpack_166" (yolo, conf=0.52) -> node 9 (6.0m from robot)
+  - backpack "backpack_168" (yolo, conf=0.55) -> node 9 (6.1m from robot)
+  - bench "bench_225" (yolo, conf=0.81) -> node 9 (6.6m from robot)
+  - potted plant "potted plant_236" (yolo, conf=0.66) -> node 9 (7.0m from robot)
+  - potted plant "potted plant_238" (yolo, conf=0.76) -> node 9 (6.8m from robot)
+  - chair "chair_250" (yolo, conf=0.75) -> node 9 (7.2m from robot)
+  - chair "chair_266" (yolo, conf=0.67) -> node 9 (6.6m from robot)
+  - potted plant "potted plant_332" (yolo, conf=0.78) -> node 9 (6.5m from robot)
+  - potted plant "potted plant_350" (yolo, conf=0.78) -> node 9 (6.5m from robot)
+  - bench "bench_426" (yolo, conf=0.80) -> node 9 (6.6m from robot)
+  - potted plant "potted plant_469" (yolo, conf=0.68) -> node 9 (7.6m from robot)
+  - chair "chair_552" (yolo, conf=0.60) -> node 9 (6.5m from robot)
+  - bench "bench_602" (yolo, conf=0.81) -> node 9 (6.3m from robot)
+  - bench "bench_805" (yolo, conf=0.81) -> node 9 (7.2m from robot)
+  - backpack "backpack_819" (yolo, conf=0.55) -> node 9 (6.6m from robot)
+  - laptop "laptop_849" (yolo, conf=0.81) -> node 9 (6.5m from robot)
+  - bed "bed_852" (yolo, conf=0.59) -> node 9 (6.9m from robot)
+  - bench "bench_871" (yolo, conf=0.68) -> node 9 (6.3m from robot)
+  - backpack "backpack_962" (yolo, conf=0.63) -> node 9 (6.6m from robot)
+  - potted plant "potted plant_1208" (yolo, conf=0.56) -> node 9 (5.8m from robot)
+  - potted plant "potted plant_1283" (yolo, conf=0.63) -> node 9 (6.4m from robot)
+  - person "person_1349" (yolo, conf=0.87) -> node 9 (6.3m from robot)
+  - person "person_1350" (yolo, conf=0.89) -> node 9 (6.7m from robot)
+  - person "person_1351" (yolo, conf=0.91) -> node 9 (6.8m from robot)
+  - person "person_1355" (yolo, conf=0.87) -> node 9 (6.8m from robot)
+  - person "person_1358" (yolo, conf=0.76) -> node 9 (6.4m from robot)
+
+ZONE 'junction_s1' (node 10, x=4.50, y=0.00):
+  - bench "bench_12" (yolo, conf=0.71) -> node 10 (4.5m from robot)
+  - backpack "backpack_172" (yolo, conf=0.62) -> node 10 (4.3m from robot)
+
+ZONE 'junction_s2' (node 11, x=4.50, y=1.65):
+  - chair "chair_18" (yolo, conf=0.50) -> node 11 (4.1m from robot)
+
+ZONE 'junction_s3' (node 12, x=4.50, y=3.00):
+  - chair "chair_1" (yolo, conf=0.91) -> node 12 (2.9m from robot)
+  - chair "chair_32" (yolo, conf=0.89) -> node 12 (3.2m from robot)
+  - chair "chair_34" (yolo, conf=0.68) -> node 12 (2.3m from robot)
+  - chair "chair_62" (yolo, conf=0.73) -> node 12 (2.5m from robot)
+  - chair "chair_63" (yolo, conf=0.73) -> node 12 (2.4m from robot)
+  - chair "chair_65" (yolo, conf=0.73) -> node 12 (1.8m from robot)
+  - laptop "laptop_97" (yolo, conf=0.71) -> node 12 (3.0m from robot)
+  - laptop "laptop_98" (yolo, conf=0.68) -> node 12 (2.2m from robot)
+  - chair "chair_222" (yolo, conf=0.91) -> node 12 (2.8m from robot)
+  - bench "bench_336" (yolo, conf=0.56) -> node 12 (2.9m from robot)
+  - potted plant "potted plant_340" (yolo, conf=0.57) -> node 12 (2.9m from robot)
+  - bench "bench_436" (yolo, conf=0.64) -> node 12 (2.0m from robot)
+  - refrigerator "refrigerator_826" (yolo, conf=0.61) -> node 12 (2.6m from robot)
+  - bench "bench_1046" (yolo, conf=0.68) -> node 12 (2.5m from robot)
+  - bench "bench_1113" (yolo, conf=0.56) -> node 12 (2.1m from robot)
+
+ZONE 'plant_4' (node 13, x=7.70, y=5.40):
+  - potted plant "plant_4" [species: TODO, size: TODO, pot_color: TODO, near_window: True] (static) -> node 13 (5.6m from robot)
+  - chair "chair_36" (yolo, conf=0.62) -> node 13 (6.4m from robot)
+  - chair "chair_51" (yolo, conf=0.84) -> node 13 (5.9m from robot)
+  - potted plant "potted plant_52" (yolo, conf=0.92) -> node 13 (6.0m from robot)
+  - chair "chair_69" (yolo, conf=0.65) -> node 13 (7.1m from robot)
+  - chair "chair_78" (yolo, conf=0.79) -> node 13 (6.0m from robot)
+  - potted plant "potted plant_80" (yolo, conf=0.91) -> node 13 (7.0m from robot)
+  - dining table "dining table_81" (yolo, conf=0.52) -> node 13 (7.0m from robot)
+  - dining table "dining table_82" (yolo, conf=0.67) -> node 13 (6.2m from robot)
+  - potted plant "potted plant_230" (yolo, conf=0.94) -> node 13 (6.1m from robot)
+  - potted plant "potted plant_231" (yolo, conf=0.59) -> node 13 (6.7m from robot)
+  - potted plant "potted plant_232" (yolo, conf=0.80) -> node 13 (6.1m from robot)
+  - potted plant "potted plant_233" (yolo, conf=0.92) -> node 13 (6.4m from robot)
+  - chair "chair_234" (yolo, conf=0.58) -> node 13 (7.1m from robot)
+  - potted plant "potted plant_243" (yolo, conf=0.87) -> node 13 (7.4m from robot)
+  - potted plant "potted plant_261" (yolo, conf=0.58) -> node 13 (8.4m from robot)
+  - dining table "dining table_392" (yolo, conf=0.75) -> node 13 (5.9m from robot)
+  - chair "chair_393" (yolo, conf=0.81) -> node 13 (5.3m from robot)
+  - chair "chair_421" (yolo, conf=0.73) -> node 13 (6.9m from robot)
+  - chair "chair_422" (yolo, conf=0.68) -> node 13 (6.6m from robot)
+  - dining table "dining table_459" (yolo, conf=0.72) -> node 13 (5.9m from robot)
+  - potted plant "potted plant_851" (yolo, conf=0.93) -> node 13 (6.0m from robot)
+  - potted plant "potted plant_853" (yolo, conf=0.93) -> node 13 (6.6m from robot)
+  - chair "chair_867" (yolo, conf=0.50) -> node 13 (6.2m from robot)
+  - potted plant "potted plant_1231" (yolo, conf=0.52) -> node 13 (6.1m from robot)
+
+ZONE 'plant_5' (node 14, x=6.55, y=5.40):
+  - potted plant "plant_5" [species: TODO, size: TODO, pot_color: TODO, near_window: True] (static, currently detected (conf=0.68)) -> node 14 (4.4m from robot)
+  - window "window_north" [opens: True, side: north] (static) -> node 14 (4.4m from robot)
+  - potted plant "potted plant_6" (yolo, conf=0.93) -> node 14 (5.0m from robot)
+  - potted plant "potted plant_8" (yolo, conf=0.93) -> node 14 (5.0m from robot)
+  - chair "chair_22" (yolo, conf=0.91) -> node 14 (3.1m from robot)
+  - chair "chair_35" (yolo, conf=0.92) -> node 14 (4.2m from robot)
+  - chair "chair_37" (yolo, conf=0.72) -> node 14 (5.0m from robot)
+  - bench "bench_70" (yolo, conf=0.81) -> node 14 (3.8m from robot)
+  - chair "chair_76" (yolo, conf=0.84) -> node 14 (5.2m from robot)
+  - dining table "dining table_77" (yolo, conf=0.69) -> node 14 (4.8m from robot)
+  - chair "chair_79" (yolo, conf=0.91) -> node 14 (3.3m from robot)
+  - refrigerator "refrigerator_83" (yolo, conf=0.74) -> node 14 (3.1m from robot)
+  - chair "chair_84" (yolo, conf=0.90) -> node 14 (4.1m from robot)
+  - chair "chair_85" (yolo, conf=0.85) -> node 14 (2.9m from robot)
+  - chair "chair_220" (yolo, conf=0.87) -> node 14 (3.8m from robot)
+  - chair "chair_229" (yolo, conf=0.91) -> node 14 (4.0m from robot)
+  - chair "chair_242" (yolo, conf=0.86) -> node 14 (4.5m from robot)
+  - potted plant "potted plant_325" (yolo, conf=0.81) -> node 14 (3.3m from robot)
+  - chair "chair_328" (yolo, conf=0.92) -> node 14 (3.4m from robot)
+  - dining table "dining table_423" (yolo, conf=0.60) -> node 14 (4.8m from robot)
+  - potted plant "potted plant_557" (yolo, conf=0.92) -> node 14 (4.9m from robot)
+  - potted plant "potted plant_823" (yolo, conf=0.76) -> node 14 (3.8m from robot)
+  - chair "chair_866" (yolo, conf=0.90) -> node 14 (3.7m from robot)
+  - chair "chair_870" (yolo, conf=0.85) -> node 14 (2.6m from robot)
+  - potted plant "potted plant_896" (yolo, conf=0.73) -> node 14 (7.0m from robot)
+  - chair "chair_1144" (yolo, conf=0.72) -> node 14 (4.5m from robot)
+  - chair "chair_1229" (yolo, conf=0.81) -> node 14 (4.0m from robot)
+  - potted plant "potted plant_1230" (yolo, conf=0.59) -> node 14 (4.6m from robot)
+  - potted plant "potted plant_1232" (yolo, conf=0.54) -> node 14 (4.2m from robot)
+  - potted plant "potted plant_1233" (yolo, conf=0.82) -> node 14 (4.8m from robot)
+  - potted plant "potted plant_1352" (yolo, conf=0.76) -> node 14 (5.1m from robot)
+  - potted plant "potted plant_1353" (yolo, conf=0.87) -> node 14 (3.0m from robot)
+
+ZONE 'junction_e1' (node 15, x=6.55, y=4.80):
+  - potted plant "potted plant_24" (yolo, conf=0.53) -> node 15 (3.1m from robot)
+  - chair "chair_75" (yolo, conf=0.90) -> node 15 (3.2m from robot)
+  - chair "chair_221" (yolo, conf=0.84) -> node 15 (3.6m from robot)
+  - chair "chair_444" (yolo, conf=0.79) -> node 15 (3.7m from robot)
+  - dining table "dining table_592" (yolo, conf=0.61) -> node 15 (3.5m from robot)
+  - refrigerator "refrigerator_604" (yolo, conf=0.54) -> node 15 (2.4m from robot)
+  - suitcase "suitcase_1301" (yolo, conf=0.54) -> node 15 (3.5m from robot)
+  - potted plant "potted plant_1343" (yolo, conf=0.85) -> node 15 (3.6m from robot)
+  - backpack "backpack_1354" (yolo, conf=0.63) -> node 15 (3.6m from robot)
+
+ZONE 'junction_e2' (node 16, x=6.55, y=3.00):
+  - chair "chair_50" (yolo, conf=0.83) -> node 16 (3.5m from robot)
+  - potted plant "potted plant_339" (yolo, conf=0.52) -> node 16 (5.0m from robot)
+
+ZONE 'junction_e3' (node 17, x=6.55, y=1.65):
+  - potted plant "potted plant_27" (yolo, conf=0.71) -> node 17 (5.3m from robot)
+  - bench "bench_40" (yolo, conf=0.68) -> node 17 (5.3m from robot)
+  - potted plant "potted plant_42" (yolo, conf=0.69) -> node 17 (5.6m from robot)
+  - microwave "microwave_46" (yolo, conf=0.51) -> node 17 (5.2m from robot)
+
+ZONE 'junction_e4' (node 18, x=6.55, y=0.00):
+  - potted plant "potted plant_26" (yolo, conf=0.69) -> node 18 (5.9m from robot)
+  - chair "chair_621" (yolo, conf=0.59) -> node 18 (5.5m from robot)
+  - chair "chair_643" (yolo, conf=0.70) -> node 18 (6.4m from robot)
+  - suitcase "suitcase_646" (yolo, conf=0.51) -> node 18 (6.3m from robot)
+  - chair "chair_648" (yolo, conf=0.59) -> node 18 (6.6m from robot)
+
+ZONE 'plant_3' (node 19, x=6.55, y=-0.90):
+  - potted plant "plant_3" [species: TODO, size: TODO, pot_color: TODO, near_window: True] (static, currently detected (conf=0.91)) -> node 19 (7.0m from robot)
+  - potted plant "potted plant_4" (yolo, conf=0.90) -> node 19 (7.6m from robot)
+  - chair "chair_9" (yolo, conf=0.79) -> node 19 (7.8m from robot)
+  - potted plant "potted plant_11" (yolo, conf=0.91) -> node 19 (7.8m from robot)
+  - potted plant "potted plant_25" (yolo, conf=0.77) -> node 19 (7.8m from robot)
+  - potted plant "potted plant_48" (yolo, conf=0.90) -> node 19 (8.1m from robot)
+  - potted plant "potted plant_87" (yolo, conf=0.77) -> node 19 (7.0m from robot)
+  - potted plant "potted plant_110" (yolo, conf=0.92) -> node 19 (7.8m from robot)
+  - chair "chair_217" (yolo, conf=0.76) -> node 19 (6.6m from robot)
+  - dining table "dining table_249" (yolo, conf=0.58) -> node 19 (6.4m from robot)
+  - chair "chair_300" (yolo, conf=0.76) -> node 19 (7.3m from robot)
+  - potted plant "potted plant_349" (yolo, conf=0.71) -> node 19 (7.6m from robot)
+  - chair "chair_354" (yolo, conf=0.57) -> node 19 (7.7m from robot)
+  - chair "chair_373" (yolo, conf=0.70) -> node 19 (7.3m from robot)
+
+ZONE 'plant_2' (node 20, x=7.00, y=-0.90):
+  - potted plant "plant_2" [species: TODO, size: TODO, pot_color: TODO, near_window: True] (static, currently detected (conf=0.91)) -> node 20 (7.3m from robot)
+  - window "window_south" [opens: False, side: south] (static) -> node 20 (7.4m from robot)
+  - potted plant "potted plant_0" (yolo, conf=0.87) -> node 20 (8.3m from robot)
+  - bench "bench_107" (yolo, conf=0.65) -> node 20 (9.3m from robot)
+  - bench "bench_351" (yolo, conf=0.55) -> node 20 (8.1m from robot)
+  - potted plant "potted plant_822" (yolo, conf=0.87) -> node 20 (8.2m from robot)
+  - potted plant "potted plant_1148" (yolo, conf=0.91) -> node 20 (8.4m from robot)
+
+ZONE 'plant_1' (node 21, x=7.50, y=-0.90):
+  - potted plant "plant_1" [species: TODO, size: TODO, pot_color: TODO, near_window: True] (static, currently detected (conf=0.90)) -> node 21 (7.7m from robot)
+  - chair "chair_10" (yolo, conf=0.75) -> node 21 (8.2m from robot)
+  - chair "chair_17" (yolo, conf=0.58) -> node 21 (7.9m from robot)
+  - potted plant "potted plant_71" (yolo, conf=0.60) -> node 21 (9.3m from robot)
+  - chair "chair_94" (yolo, conf=0.63) -> node 21 (8.5m from robot)
+  - potted plant "potted plant_102" (yolo, conf=0.50) -> node 21 (8.8m from robot)
+  - bench "bench_108" (yolo, conf=0.72) -> node 21 (8.5m from robot)
+  - chair "chair_235" (yolo, conf=0.78) -> node 21 (8.9m from robot)
+  - chair "chair_241" (yolo, conf=0.71) -> node 21 (8.5m from robot)
+  - chair "chair_248" (yolo, conf=0.84) -> node 21 (7.6m from robot)
+  - chair "chair_443" (yolo, conf=0.56) -> node 21 (8.3m from robot)
+  - bench "bench_446" (yolo, conf=0.77) -> node 21 (8.8m from robot)
+  - dining table "dining table_448" (yolo, conf=0.60) -> node 21 (8.4m from robot)
+  - dining table "dining table_553" (yolo, conf=0.52) -> node 21 (7.9m from robot)
+  - chair "chair_630" (yolo, conf=0.64) -> node 21 (7.2m from robot)
+  - bench "bench_737" (yolo, conf=0.66) -> node 21 (8.3m from robot)
+  - bench "bench_821" (yolo, conf=0.70) -> node 21 (8.6m from robot)
+  - bench "bench_827" (yolo, conf=0.59) -> node 21 (10.9m from robot)
+  - bench "bench_831" (yolo, conf=0.58) -> node 21 (9.2m from robot)
+
+ZONE 'cb203_entrance' (node 22, x=8.20, y=1.65):
+  - laboratory "lab_cb203_entrance" [room_number: CB203, department: automatica, access: card, floor: ground, entrance: main] (static) -> node 22 (6.7m from robot)
+  - chair "chair_58" (yolo, conf=0.76) -> node 22 (7.8m from robot)
+  - chair "chair_88" (yolo, conf=0.58) -> node 22 (7.7m from robot)
+  - laptop "laptop_95" (yolo, conf=0.74) -> node 22 (7.7m from robot)
+  - laptop "laptop_96" (yolo, conf=0.69) -> node 22 (7.4m from robot)
+  - potted plant "potted plant_103" (yolo, conf=0.58) -> node 22 (7.7m from robot)
+  - chair "chair_219" (yolo, conf=0.62) -> node 22 (7.2m from robot)
+  - chair "chair_299" (yolo, conf=0.59) -> node 22 (7.3m from robot)
+  - potted plant "potted plant_338" (yolo, conf=0.53) -> node 22 (7.0m from robot)
+  - chair "chair_419" (yolo, conf=0.53) -> node 22 (8.1m from robot)
+  - bench "bench_420" (yolo, conf=0.58) -> node 22 (7.9m from robot)
+  - bench "bench_736" (yolo, conf=0.75) -> node 22 (7.7m from robot)
+  - bench "bench_832" (yolo, conf=0.59) -> node 22 (8.1m from robot)
+
+ZONE 'cb203_exit' (node 23, x=8.20, y=3.67):
+  - laboratory "lab_cb203_exit" [room_number: CB203, department: automatica, access: card, floor: ground, entrance: exit] (static) -> node 23 (6.1m from robot)
+  - chair "chair_7" (yolo, conf=0.66) -> node 23 (7.0m from robot)
+  - chair "chair_21" (yolo, conf=0.90) -> node 23 (7.0m from robot)
+  - chair "chair_64" (yolo, conf=0.63) -> node 23 (7.1m from robot)
+  - fire hydrant "fire hydrant_809" (yolo, conf=0.59) -> node 23 (7.0m from robot)
+
+
+TASK:
+The operator said: "Take me somewhere I can sit and relax"
+Based on the instruction, the semantic objects and their attributes, the robot's current position, and the camera image, decide which graph node the robot should navigate to.
+
+RULES:
+- You MUST pick a node_id from the navigation graph above.
+- Match instruction terms against object attributes.
+- If multiple objects match, pick the one closest to the robot unless the instruction specifies otherwise.
+- Static objects (source=static) are permanent and reliable.
+- Dynamic objects (source=yolo) are live YOLO detections with confidence scores.
+- Prefer static objects when both match the instruction.
+
+RESPOND with ONLY a JSON object, no markdown, no explanation:
+{"node_id": <int>, "reason": "<brief reason>"}
