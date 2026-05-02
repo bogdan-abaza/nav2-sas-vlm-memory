@@ -8,7 +8,7 @@
 
 This repository contains the source code, experimental data, and analysis scripts accompanying the manuscript:
 
-> **B. F. Abaza, A.-A. Staicu, and C. V. Doicin**, "A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots: Hybrid Deterministic Reasoning and Cross-Robot Adaptive Memory," submitted to *Robotics and Computer-Integrated Manufacturing* (Elsevier), 2026.
+> **B. F. Abaza, A.-A. Staicu, and C. V. Doicin**, "A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots: Hybrid Deterministic Reasoning and Cross-Robot Adaptive Memory," 2026. Preprint available on arXiv.
 
 **Companion repository:** The perception and route planning layers (L1–L2) are available at [nav2-semantic-route-server](https://github.com/bogdan-abaza/nav2-semantic-route-server), accompanying the published Sensors paper ([DOI: 10.3390/s26072232](https://doi.org/10.3390/s26072232)).
 
@@ -68,6 +68,7 @@ nav2-sas-vlm-memory/
 │       └── M5_task_history.jsonl         #     Per-decision summaries
 ├── analysis/                             # Reproducibility
 │   └── figures/                          #   Python scripts for paper figures
+│       ├── data_loader.py                #     Read experimental data from `data/session_*/audits/*.jsonl`
 │       ├── Fig8.py                       #     Learning cycle VLM times (bar chart)
 │       ├── Fig9.py                       #     Resolve times by category (box plot)
 │       ├── Fig10.py                      #     L3b vs L3a speedup (log-scale)
@@ -81,16 +82,15 @@ nav2-sas-vlm-memory/
 
 ## Reproducing Paper Figures
 
-All figure scripts read from hardcoded data extracted from the audit logs. To reproduce:
+All figure scripts read experimental data from `data/session_*/audits/*.jsonl` via the shared `data_loader.py` module. To reproduce:
 
 ```bash
 cd analysis/figures
 pip install matplotlib numpy scipy
-python3 Fig7.py   # Learning cycle bar chart
-python3 Fig8.py   # Resolve times box plot
-python3 Fig9.py   # Speedup comparison
-python3 Fig10.py  # Navigation outcomes
-python3 Fig11.py  # Comparison radar chart
+python3 Fig8.py   # Learning cycle VLM times (bar chart)
+python3 Fig9.py   # Resolve times by category (box plot)
+python3 Fig10.py  # L3b vs L3a speedup (log-scale)
+python3 Fig11.py  #  Navigation outcomes (stacked bar)
 ```
 
 Each script produces PDF, TIFF, EPS, and PNG outputs at 600 DPI (Elsevier-compliant).
@@ -110,14 +110,17 @@ The `data/` directory contains all experimental data from the three-session vali
 
 ### Audit log format
 
-Each decision is logged as a JSONL entry containing: timestamp, instruction, resolution method (L3a_m3_preference / L3a_deterministic / L3b_vlm), target node, timing breakdown (resolve_ms, vlm_ms, nav_total_s), navigation outcome, confirmation data, images, and platform-specific metrics. See `src/executive_contract.py` for the complete schema.
+Each decision is logged as a JSONL entry containing: timestamp, instruction, resolution method (L3a_m3_preference / L3a_deterministic / L3b_vlm), target node, timing breakdown (resolve_ms, vlm_ms, nav_total_s), navigation outcome, confirmation data, images, and platform-specific metrics. The complete audit entry schema is described in Section 4.5 of the paper.
 
 ### Memory digest
 
 The compiled digest used for Sessions B and C (`data/memory/memory_digest.json`, MD5: `97241265`) contains 6 M3 preferences promoted from VLM interactions. This is the artifact that enables cross-robot transfer without retraining.
 
 ---
+## Source Code
 
+The navigator, executive contract, and memory extractor source code 
+is available from the corresponding author upon reasonable request.
 ## Citation
 
 ```bibtex
@@ -127,9 +130,8 @@ The compiled digest used for Sessions B and C (`data/memory/memory_digest.json`,
                Cross-Robot Adaptive Memory},
   author    = {Abaza, Bogdan Felician and Staicu, Andrei-Alexandru
                and Doicin, Cristian Vasile},
-  journal   = {Robotics and Computer-Integrated Manufacturing},
   year      = {2026},
-  note      = {Submitted},
+  note      = {Preprint},
 }
 ```
 
