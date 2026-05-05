@@ -5,10 +5,11 @@
 [![ROS 2](https://img.shields.io/badge/ROS_2-Jazzy-blue)](https://docs.ros.org/en/jazzy/)
 [![Nav2](https://img.shields.io/badge/Nav2-1.3.x-green)](https://docs.nav2.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![arXiv](https://img.shields.io/badge/arXiv-2605.02525-b31b1b.svg)](https://arxiv.org/abs/2605.02525)
 
 This repository contains the source code, experimental data, and analysis scripts accompanying the manuscript:
 
-> **B. F. Abaza, A.-A. Staicu, and C. V. Doicin**, "A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots: Hybrid Deterministic Reasoning and Cross-Robot Adaptive Memory," 2026. Preprint available on arXiv.
+> **B. F. Abaza, A.-A. Staicu, and C. V. Doicin**, "A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots: Hybrid Deterministic Reasoning and Cross-Robot Adaptive Memory," 2026. [arXiv:2605.02525](https://arxiv.org/abs/2605.02525).
 
 **Companion repository:** The perception and route planning layers (L1–L2) are available at [nav2-semantic-route-server](https://github.com/bogdan-abaza/nav2-semantic-route-server), accompanying the published Sensors paper ([DOI: 10.3390/s26072232](https://doi.org/10.3390/s26072232)).
 
@@ -131,8 +132,10 @@ is available from the corresponding author upon reasonable request.
   author    = {Abaza, Bogdan Felician and Staicu, Andrei-Alexandru
                and Doicin, Cristian Vasile},
   year      = {2026},
+  eprint    = {2605.02525},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
   note      = {Preprint},
-}
 ```
 
 ---
