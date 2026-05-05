@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![arXiv](https://img.shields.io/badge/arXiv-2605.02525-b31b1b.svg)](https://arxiv.org/abs/2605.02525)
 
-This repository contains the source code, experimental data, and analysis scripts accompanying the manuscript:
+This repository contains experimental data, and analysis scripts accompanying the manuscript:
 
 > **B. F. Abaza, A.-A. Staicu, and C. V. Doicin**, "A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots: Hybrid Deterministic Reasoning and Cross-Robot Adaptive Memory," 2026. [arXiv:2605.02525](https://arxiv.org/abs/2605.02525).
 
