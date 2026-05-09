@@ -94,7 +94,7 @@ python3 Fig10.py  # L3b vs L3a speedup (log-scale)
 python3 Fig11.py  #  Navigation outcomes (stacked bar)
 ```
 
-Each script produces PDF, TIFF, EPS, and PNG outputs at 600 DPI (Elsevier-compliant).
+Each script produces PDF, TIFF, EPS, and PNG outputs at 600 DPI (publication-ready).
 
 ---
 
