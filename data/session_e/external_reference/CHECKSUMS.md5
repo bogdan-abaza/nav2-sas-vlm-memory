@@ -1,0 +1,9 @@
+59f951a414b5eab85ce7c91fdeb74187  README.md
+446879d8636ea83a3909f82657874405  apriltag_reference.py
+a4b7f1be36cbda74fd01f2b6626f9b6a  detections.csv
+b6a00bff1421add7c1a92f6f0c4fb3e7  hd_pro_webcam_c920_v2.yaml
+4cfe9bac5c0ac5e21f53d8f1c5b549ac  platform_extrinsics.csv
+0a454f9cac382447a9bd32273ca9d0be  pose_estimates.csv
+ad7bc0f5d645d24869b41e3dcd7ed20f  summary.json
+0dcf98c78ab11ad74f2f91ee3dd9262b  tag_survey.csv
+97146ade9811cbc732a0ea73e9e3148e  visibility_analysis.csv

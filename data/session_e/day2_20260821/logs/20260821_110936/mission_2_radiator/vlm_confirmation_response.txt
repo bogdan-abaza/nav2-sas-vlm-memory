@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white vertical radiator on tiled floor with support block",
+  "scene_context": "radiator mounted low near ground against wall baseboard",
+  "reasoning": "clearly visible white cast iron radiators confirm target presence"
+}

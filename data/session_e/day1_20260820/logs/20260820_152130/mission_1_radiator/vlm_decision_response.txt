@@ -1,0 +1,6 @@
+```json
+{
+  "node_id": 9,
+  "reason": "The operator requested to go 'other than the restroom'. The designated resting location at node 9 (radiator) is explicitly listed as a valid seating spot and does not match any refused nodes."
+}
+```

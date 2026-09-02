@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator fins against dark wall",
+  "scene_context": "floor below with speckled tile section visible",
+  "reasoning": "radiator structure matches expected landmark features clearly"
+}

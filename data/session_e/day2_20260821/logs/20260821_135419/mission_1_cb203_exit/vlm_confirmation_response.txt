@@ -1,0 +1,13 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "corridor end with door frame visible ahead",
+  "scene_context": "centered view of hallway leading to exit area",
+  "reasoning": "door frame at corridor end matches expected cue for cb203_exit",
+  "payload": {
+    "neighborhood_cues": [
+      {"cue": "exit door frame", "distance": "near", "direction": "center"}
+    ]
+  }
+}

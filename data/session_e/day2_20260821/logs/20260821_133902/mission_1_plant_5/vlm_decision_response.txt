@@ -1,0 +1,1 @@
+{"node_id": 14, "reason": "The instruction 'fresh air' matches the attribute [opens: True] of window_north at node 14."}

@@ -1,0 +1,14 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "open doorway with glass partition and dark floor strip",
+  "scene_context": "doorway leads to room; red bin on right wall nearby.",
+  "reasoning": "Expected cues match observed scene elements clearly visible in front.",
+  "payload": {
+    "neighborhood_cues": [
+      {"cue": "open doorway with glass partition", "distance": "near", "direction": "center"},
+      {"cue": "dark floor strip", "distance": "near", "direction": "center"}
+    ]
+  }
+}

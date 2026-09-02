@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator on tiled floor with dark baseboard.",
+  "scene_context": "radiator stands above speckled terrazzo flooring near wall corner.",
+  "reasoning": "clearly visible white radiators confirm target location match.",
+  "payload": {
+    "identified_objects": [
+      {"label": "radiator", "position": "center", "salience": "high"},
+      {"label": "floor tiles", "position": "bottom", "salience": "medium"},
+      {"label": "baseboard gap", "position": "left-center", "salience": "low"}
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "open doorway with glass partition wall and dark floor strip",
+  "scene_context": "center view shows expected cues directly ahead in hallway",
+  "reasoning": "observed open door, glass walls, and dark stripe match POI definition exactly",
+  "payload": {
+    "neighborhood_cues": [
+      {"cue": "open doorway with glass partition wall", "distance": "near", "direction": "center"},
+      {"cue": "dark floor strip running parallel to door frame", "distance": "near", "direction": "right"}
+    ]
+  }
+}

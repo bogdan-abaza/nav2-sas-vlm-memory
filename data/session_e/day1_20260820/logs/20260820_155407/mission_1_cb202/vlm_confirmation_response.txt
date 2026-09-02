@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "fire extinguisher on tiled floor near brown doors",
+  "scene_context": "object placed against wall beside large sliding door panels",
+  "reasoning": "clearly visible fire extinguisher matches expected landmark cb202 location"
+}

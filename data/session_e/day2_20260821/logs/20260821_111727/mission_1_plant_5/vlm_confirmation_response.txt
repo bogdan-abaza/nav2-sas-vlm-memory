@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "office chair base near window and plant pot on floor.",
+  "scene_context": "chair centered; radiator left; bright light from right window illuminates scene.",
+  "reasoning": "plant_5 is visible to the right of center, confirming target reached with high confidence."
+}

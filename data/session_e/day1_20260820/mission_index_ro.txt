@@ -1,0 +1,99 @@
+linii de decizie: 89
+intentii distincte: 40
+
+nav_outcome:
+  mission_complete                 59
+  clarification_requested          22
+  missed                           7
+  mission_complete_fallback        1
+
+intent rep  platforma  exp  astept  nod   xy      confirm  incred  ciclu  rezultat                   audit
+AD     1    xplorer-b  E0   8       8     0.308   True     HIGH    1      mission_complete_fallback  audit_20260820_121926.jsonl
+AD     1    xplorer-b  E0   8       8     0.207   True     HIGH    1      mission_complete           audit_20260820_160313.jsonl
+AD     1    xplorer-c  E0   8       8     0.207   True     HIGH    1      mission_complete           audit_20260820_115934.jsonl
+AS     1    xplorer-c  E0   0       1     0.221                    1      mission_complete           audit_20260820_155612.jsonl
+AS     2    xplorer-c  E0   8       8     0.132   True     HIGH    1      mission_complete           audit_20260820_155830.jsonl
+E1bA   1    xplorer-b  E1   8       8     0.173   False    LOW     1      mission_complete           audit_20260820_142701.jsonl
+E1bA   2    xplorer-b  E1   8       8     0.152   False    LOW     1      mission_complete           audit_20260820_142805.jsonl
+E1bA   1    xplorer-c  E1   8       8     0.066   False    LOW     1      mission_complete           audit_20260820_141656.jsonl
+E1bA   2    xplorer-c  E1   8       8     0.1     False    LOW     1      mission_complete           audit_20260820_141906.jsonl
+E1bP   1    xplorer-b  E1   8       8     0.213   True     HIGH    1      mission_complete           audit_20260820_140042.jsonl
+E1bP   2    xplorer-b  E1   8       8     0.044   True     HIGH    1      mission_complete           audit_20260820_140207.jsonl
+E1bP   1    xplorer-c  E1   8       8     0.156   True     HIGH    1      mission_complete           audit_20260820_141007.jsonl
+E1bP   2    xplorer-c  E1   8       8     0.185   True     HIGH    1      mission_complete           audit_20260820_141131.jsonl
+E1c    1    xplorer-b  E1   5       5     0.212   True     HIGH    1      mission_complete           audit_20260820_143504.jsonl
+E1c    2    xplorer-b  E1   5       5     0.243   True     HIGH    1      mission_complete           audit_20260820_143557.jsonl
+E1c    3    xplorer-b  E1   5       5     0.201   True     HIGH    1      mission_complete           audit_20260820_143644.jsonl
+E1c    4    xplorer-b  E1   5       5     0.227   True     HIGH    1      mission_complete           audit_20260820_143732.jsonl
+E1c    1    xplorer-c  E1   5       5     0.168   True     HIGH    1      mission_complete           audit_20260820_144036.jsonl
+E1c    2    xplorer-c  E1   5       5     0.213   True     HIGH    1      mission_complete           audit_20260820_144134.jsonl
+E1c    3    xplorer-c  E1   5       5     0.104   True     HIGH    1      mission_complete           audit_20260820_144235.jsonl
+E1c    4    xplorer-c  E1   5       5     0.203   True     HIGH    1      mission_complete           audit_20260820_144319.jsonl
+E1d    1    xplorer-b  E1           19    0.161   True     HIGH    1      mission_complete           audit_20260820_145232.jsonl
+E1d    2    xplorer-b  E1           19    4.545                    1      missed                     audit_20260820_145354.jsonl
+E1d    2    xplorer-b  E1           19    0.241   True     HIGH    2      mission_complete           audit_20260820_145354.jsonl
+E1d    1    xplorer-c  E1           19    0.134   False    MEDIUM  1      mission_complete           audit_20260820_144526.jsonl
+E1d    2    xplorer-c  E1           19    0.306   False    MEDIUM  1      mission_complete           audit_20260820_144633.jsonl
+SW00   1    xplorer-c  E1   0       0     0.198   True     HIGH    1      mission_complete           audit_20260820_122950.jsonl
+SW01   1    xplorer-c  E1   1       1     0.189                    1      mission_complete           audit_20260820_123127.jsonl
+SW02   1    xplorer-c  E1   2       2     0.223                    1      mission_complete           audit_20260820_123233.jsonl
+SW04   1    xplorer-c  E1   4       4     0.15    True     HIGH    1      mission_complete           audit_20260820_123335.jsonl
+SW05   1    xplorer-c  E1   5       5     0.168   True     HIGH    1      mission_complete           audit_20260820_123503.jsonl
+SW08   1    xplorer-c  E1   8       8     0.085   True     HIGH    1      mission_complete           audit_20260820_123638.jsonl
+SW09   1    xplorer-c  E1   9       9     0.175   True     HIGH    1      mission_complete           audit_20260820_124328.jsonl
+SW13   1    xplorer-c  E1   13      13    0.215   True     HIGH    1      mission_complete           audit_20260820_124531.jsonl
+SW14   1    xplorer-c  E1   14      14    3.274                    1      missed                     audit_20260820_124642.jsonl
+SW14   1    xplorer-c  E1   14      14    0.168   True     HIGH    1      mission_complete           audit_20260820_125530.jsonl
+SW15   1    xplorer-c  E1   15      15    5.208                    1      missed                     audit_20260820_125656.jsonl
+SW15   1    xplorer-c  E1   15      15    5.585                    2      missed                     audit_20260820_125656.jsonl
+SW15   1    xplorer-c  E1   15      15    0.156   True     HIGH    3      mission_complete           audit_20260820_125656.jsonl
+SW19   1    xplorer-c  E1   19      19    0.167   False    MEDIUM  1      mission_complete           audit_20260820_125837.jsonl
+SW20   1    xplorer-c  E1   20      20    0.197   True     HIGH    1      mission_complete           audit_20260820_125951.jsonl
+SW21   1    xplorer-c  E1   21      21    0.26    True     HIGH    1      mission_complete           audit_20260820_130207.jsonl
+SW22   1    xplorer-c  E1   22      22    0.232   True     HIGH    1      mission_complete           audit_20260820_130331.jsonl
+SW23   1    xplorer-c  E1   23      23    0.259   True     HIGH    1      mission_complete           audit_20260820_130509.jsonl
+A01    1    xplorer-b  E2   0       0     0.254   True     HIGH    1      mission_complete           audit_20260820_152656.jsonl
+A01    1    xplorer-c  E2   0       0     0.1     True     HIGH    1      mission_complete           audit_20260820_155310.jsonl
+A02    1    xplorer-b  E2   8       8     0.147   True     HIGH    1      mission_complete           audit_20260820_152803.jsonl
+A02    1    xplorer-c  E2   8       8     0.21    True     HIGH    1      mission_complete           audit_20260820_155407.jsonl
+A03    1    xplorer-b  E2   5       5     0.134   True     HIGH    1      mission_complete           audit_20260820_153008.jsonl
+A03    1    xplorer-c  E2   5       5     0.163   True     HIGH    1      mission_complete           audit_20260820_155439.jsonl
+C01    1    xplorer-b  E2   23      8     0.186   True     HIGH    1      mission_complete           audit_20260820_152450.jsonl
+C01    1    xplorer-c  E2   23      8     0.208   True     HIGH    1      mission_complete           audit_20260820_155048.jsonl
+C02    1    xplorer-b  E2   5       5     0.223   True     HIGH    1      mission_complete           audit_20260820_152555.jsonl
+C02    1    xplorer-c  E2   5       5     0.165   True     HIGH    1      mission_complete           audit_20260820_155138.jsonl
+N01    1    xplorer-b  E2           5     0.228   True     HIGH    1      mission_complete           audit_20260820_150456.jsonl
+N01    1    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_153622.jsonl
+N02    1    xplorer-b  E2           -1                             1      clarification_requested    audit_20260820_150614.jsonl
+N02    1    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_153654.jsonl
+N03    1    xplorer-b  E2           9     0.191   True     HIGH    1      mission_complete           audit_20260820_150652.jsonl
+N03    1    xplorer-c  E2           9     0.17    True     HIGH    1      mission_complete           audit_20260820_153723.jsonl
+N04    1    xplorer-b  E2           -1                             1      clarification_requested    audit_20260820_150808.jsonl
+N04    1    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_153859.jsonl
+N05    1    xplorer-b  E2           -1                             1      clarification_requested    audit_20260820_150840.jsonl
+N05    1    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_153927.jsonl
+N06    1    xplorer-b  E2           -1                             1      clarification_requested    audit_20260820_150904.jsonl
+N06    1    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_153951.jsonl
+N07    1    xplorer-b  E2           9     0.219   True     HIGH    1      mission_complete           audit_20260820_150931.jsonl
+N07    1    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_154012.jsonl
+N08    1    xplorer-b  E2           9     0.224   True     HIGH    1      mission_complete           audit_20260820_151214.jsonl
+N08    1    xplorer-c  E2           1     0.153                    1      mission_complete           audit_20260820_154029.jsonl
+N09    1    xplorer-b  E2           -1                             1      clarification_requested    audit_20260820_151349.jsonl
+N09    1    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_154142.jsonl
+N10    1    xplorer-b  E2           -1                             1      clarification_requested    audit_20260820_151423.jsonl
+N10    1    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_154206.jsonl
+X01    1    xplorer-b  E2           9     2.696                    1      missed                     audit_20260820_151458.jsonl
+X01    2    xplorer-b  E2           -1                             1      clarification_requested    audit_20260820_152059.jsonl
+X01    1    xplorer-b  E2           9     0.173   True     HIGH    2      mission_complete           audit_20260820_151458.jsonl
+X01    2    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_154819.jsonl
+X02    1    xplorer-b  E2           -1                             1      clarification_requested    audit_20260820_151704.jsonl
+X02    2    xplorer-b  E2           9     0.133   True     HIGH    1      mission_complete           audit_20260820_152130.jsonl
+X02    1    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_154348.jsonl
+X02    2    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_154847.jsonl
+X03    2    xplorer-b  E2           9     0.194   True     HIGH    1      mission_complete           audit_20260820_152237.jsonl
+X04    1    xplorer-b  E2           9     0.188   True     HIGH    1      mission_complete           audit_20260820_151916.jsonl
+X04    2    xplorer-b  E2           -1                             1      clarification_requested    audit_20260820_152411.jsonl
+X04    1    xplorer-c  E2           15    4.906                    1      missed                     audit_20260820_154520.jsonl
+X04    1    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_154745.jsonl
+X04    2    xplorer-c  E2           -1                             1      clarification_requested    audit_20260820_155021.jsonl
+X04    1    xplorer-c  E2           9     6.485                    2      missed                     audit_20260820_154520.jsonl

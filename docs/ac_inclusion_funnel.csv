@@ -1,0 +1,15 @@
+row_type,label,session_a,session_b,session_c,total
+logged_decisions,all decision records in the 17 audit logs,85,76,4,165
+scenario_classified,S1,6,14,1,21
+scenario_classified,S2,4,10,1,15
+scenario_classified,S3new,7,3,0,10
+scenario_classified,S3old,5,6,0,11
+scenario_classified,S4,3,5,1,9
+scenario_classified,S4_cb203,0,0,1,1
+scenario_classified,S5,12,3,0,15
+scenario_subtotal,classified by classify() in analysis/figures/data_loader.py,37,41,4,82
+outside_scenario_subset,go to cb204,18,29,0,47
+outside_scenario_subset,go to node 7,26,2,0,28
+outside_scenario_subset,go to toilet m,2,4,0,6
+outside_scenario_subset,Take me to the farthest plant,2,0,0,2
+outside_subtotal,not classified as one of the seven controlled scenarios,48,35,0,83

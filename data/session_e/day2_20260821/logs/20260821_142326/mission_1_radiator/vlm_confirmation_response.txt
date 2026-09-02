@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator fins on tiled floor",
+  "scene_context": "radiator mounted low against wall with support leg visible",
+  "reasoning": "clearly identifiable white cast iron radiator at ground level"
+}

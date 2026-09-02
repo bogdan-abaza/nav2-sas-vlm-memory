@@ -1,0 +1,17 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "open doorway with glass partition and dark floor strip",
+  "scene_context": "doorway leads to hallway; dark strip runs along right side of path",
+  "reasoning": "Expected cues match observed features in the scene.",
+  "payload": {
+    "neighborhood_cues": [
+      {
+        "cue": "open doorway with glass partition wall and dark floor strip",
+        "distance": "near",
+        "direction": "center"
+      }
+    ]
+  }
+}

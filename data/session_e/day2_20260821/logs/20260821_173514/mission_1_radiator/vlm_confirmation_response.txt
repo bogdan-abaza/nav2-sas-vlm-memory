@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator on tiled floor with support leg",
+  "scene_context": "radiator sits above black and beige terrazzo tiles",
+  "reasoning": "clearly visible white cast iron radiator matches expected landmark",
+  "payload": {
+    "identified_objects": [
+      {"label": "radiator_main", "position": "center", "salience": "high"},
+      {"label": "support_leg", "position": "center", "salience": "medium"},
+      {"label": "floor_tiles", "position": "bottom", "salience": "low"}
+    ]
+  }
+}

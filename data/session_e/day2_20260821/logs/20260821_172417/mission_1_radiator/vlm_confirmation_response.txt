@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white vertical radiator fins on floor",
+  "scene_context": "radiator stands near wall with tiled baseboard below",
+  "reasoning": "clearly visible white cast iron radiator matches expected landmark type and position"
+}

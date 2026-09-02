@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-08-21T06:57:29.385727Z",
+  "platforms": [
+    "unknown"
+  ],
+  "navigator_version": null,
+  "global_stats": {
+    "total_tasks": 0,
+    "arrival_rate": null,
+    "confirmation_rate": null,
+    "confirmation_denominator": 0
+  },
+  "sas_text_version": "1.2.0",
+  "top_entities": [],
+  "top_patterns": [],
+  "l3a_promotions_ready": [],
+  "content_md5": "59a7c9cfa25549c9de6ec3c6e0f988d2"
+}

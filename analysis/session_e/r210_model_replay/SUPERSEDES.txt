@@ -1,0 +1,3 @@
+R210-AN-02 canonical analyzer: analyze_r210_an02_frozen.py
+Supersedes as report generator: analyze_r210_v3_final.py / analyze_r210_v3_final(1).py
+The predecessor remains numerically useful but contains superseded reporting logic and hard-coded Session E population fields.

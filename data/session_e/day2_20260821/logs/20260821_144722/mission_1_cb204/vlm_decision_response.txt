@@ -1,0 +1,4 @@
+{
+"node_id": 5,
+"reason": "Node 5 (lab_cb204) is the designated delivery arrival point based on semantic object attributes."
+}

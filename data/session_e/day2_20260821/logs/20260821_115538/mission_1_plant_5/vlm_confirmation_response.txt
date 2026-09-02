@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white potted plant near window sill",
+  "scene_context": "plant sits on floor beside glass pane with outdoor greenery visible beyond",
+  "reasoning": "clearly matches expected landmark; bright natural light confirms location at POI",
+  "payload": {
+    "identified_objects": [
+      {"label": "potted plant", "position": "center", "salience": "high"},
+      {"label": "window frame", "position": "background", "salience": "medium"},
+      {"label": "floor tiles", "position": "foreground", "salience": "low"}
+    ]
+  }
+}

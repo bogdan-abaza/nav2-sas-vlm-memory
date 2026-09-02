@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "LOW",
+  "signature_type": "landmark",
+  "scene_description": "brown doors on speckled floor with dark stripe",
+  "scene_context": "doors aligned against wall in hallway or corridor area",
+  "reasoning": "no fire extinguisher visible; only plain brown doors present"
+}

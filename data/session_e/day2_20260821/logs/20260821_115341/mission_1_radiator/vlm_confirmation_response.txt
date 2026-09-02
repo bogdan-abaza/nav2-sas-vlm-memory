@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white cast iron radiator on tiled floor",
+  "scene_context": "radiator mounted low against wall above dark baseboard",
+  "reasoning": "object matches expected landmark; visible vertical fins and support leg confirm identity",
+  "payload": {
+    "identified_objects": [
+      {"label": "radiator_main", "position": "center", "salience": "high"},
+      {"label": "support_leg", "position": "left", "salience": "medium"},
+      {"label": "floor_tiles", "position": "bottom", "salience": "low"}
+    ]
+  }
+}

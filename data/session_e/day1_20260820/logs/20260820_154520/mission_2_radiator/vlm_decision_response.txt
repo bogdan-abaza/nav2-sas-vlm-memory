@@ -1,0 +1,6 @@
+```json
+{
+  "node_id": 9,
+  "reason": "The instruction 'go anywhere but cb204' excludes node 5. Node 9 (radiator) is a designated resting location and offers the most direct path forward in the corridor without entering any lab rooms."
+}
+```

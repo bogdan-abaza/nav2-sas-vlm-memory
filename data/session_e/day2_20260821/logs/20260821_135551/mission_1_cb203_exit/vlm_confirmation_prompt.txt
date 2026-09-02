@@ -1,0 +1,15 @@
+You are at POI 'cb203_exit' (node 23). This POI has no
+landmark of its own -- it is identified by what is visible in the neighborhood.
+Expected nearby cues: door frame at corridor end, exit side
+Look in the direction of navigation. Describe what cues you observe nearby.
+Decide at_target based on whether expected cues are visible from this position.
+Respond ONLY with valid JSON, no preamble, no markdown:
+{
+  "at_target": true|false,
+  "confidence": "HIGH"|"MEDIUM"|"LOW",
+  "signature_type": "contextual",
+  "scene_description": "<max 12 words: what you see right in front>",
+  "scene_context": "<max 20 words: spatial relations with surroundings>",
+  "reasoning": "<brief, max 20 words>",
+  "payload": {"neighborhood_cues": [{"cue": "<short>", "distance": "near|medium|far", "direction": "left|center|right"}]}
+}

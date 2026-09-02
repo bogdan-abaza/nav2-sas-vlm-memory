@@ -1,0 +1,1 @@
+{"node_id": 23, "reason": "The operator wants to wait for someone finishing lab work in CB203. Node 23 corresponds to 'cb203_exit', which is the designated exit location for laboratory cb203 and contains a stop sign indicating an endpoint or waiting area."}

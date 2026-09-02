@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant by bright window on tiled floor",
+  "scene_context": "plant centered near glass; office chair wheel visible left",
+  "reasoning": "white bucket pot matches target POI location at north-facing window"
+}

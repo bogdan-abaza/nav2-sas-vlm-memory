@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "corridor with stairs and exit signs ahead",
+  "scene_context": "centered view of hallway leading to stairwell area",
+  "reasoning": "exit signage visible at corridor end confirms target location"
+}

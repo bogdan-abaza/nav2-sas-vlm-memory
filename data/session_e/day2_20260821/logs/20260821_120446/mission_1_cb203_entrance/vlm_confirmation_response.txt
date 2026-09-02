@@ -1,0 +1,16 @@
+```json
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "Brown door frame at corridor end with black base.",
+  "scene_context": "Entrance side visible; red tape marks corner on right wall.",
+  "reasoning": "Door frame and entrance cues match expected POI definition perfectly.",
+  "payload": {
+    "neighborhood_cues": [
+      {"cue": "Brown door", "distance": "near", "direction": "center"},
+      {"cue": "Red tape corner", "distance": "near", "direction": "right"}
+    ]
+  }
+}
+```

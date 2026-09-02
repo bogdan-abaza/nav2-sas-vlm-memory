@@ -1,0 +1,1 @@
+{"node_id": 0, "reason": "The instruction 'get some water' matches the bottle detected in zone toilet_m (bottle_19), which is a static object and closer than other potential targets."}

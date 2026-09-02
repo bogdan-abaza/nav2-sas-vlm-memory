@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-08-21T11:58:44.715415Z",
+  "platforms": [
+    "xplorer-c"
+  ],
+  "navigator_version": "v4.8-review",
+  "global_stats": {
+    "total_tasks": 8,
+    "arrival_rate": 0.88,
+    "confirmation_rate": 1.0,
+    "confirmation_denominator": 5
+  },
+  "sas_text_version": "1.2.0",
+  "top_entities": [
+    {
+      "obj_id": "radiator_main",
+      "node_id": 9,
+      "visits": 3,
+      "arrival_rate": 1.0,
+      "sig_type": "landmark"
+    }
+  ],
+  "top_patterns": [],
+  "l3a_promotions_ready": [],
+  "content_md5": "d221ef8ad689de168b2020995693791c"
+}

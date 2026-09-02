@@ -1,0 +1,599 @@
+{
+  "analysis": {
+    "id": "A1",
+    "version": "A1-v1",
+    "date": "2026-08-24",
+    "status": "candidate_for_freeze_after_author_validation",
+    "type": "direct_log_query",
+    "causal_ablation": false
+  },
+  "source_chain": {
+    "missions_enriched": {
+      "path_basename": "missions(2).csv",
+      "sha256": "7759648cf0014de914aae5b87f27edfefdde66e1cb9b0d49f8ffe760884d970a",
+      "md5": "a3ad3e7bf2ffdb3899f67a08f7297699",
+      "rows": 226,
+      "columns": 67
+    },
+    "E_zip": {
+      "path_basename": "E.zip",
+      "sha256": "9e2f1dbc0269a056efac7594e679c9b643a59b0a22a0916e8dde8c422f945f33",
+      "raw_missions_member": "data/session_e/missions.csv",
+      "raw_missions_member_sha256": "f19f380877522c6c2db64a8c8d573226b83b713602e51fce3f1847ba67004bf7",
+      "raw_missions_member_md5": "9b9f0cb79499e5a25963066b148346f6",
+      "rows": 226,
+      "columns": 58
+    },
+    "session_e_v3_zip": {
+      "path_basename": "session_e_v3.zip",
+      "sha256": "e8d863f1ea748152be67b42788cd15cf8bef782c47c7ae29f18652205948931f",
+      "crosscheck_member": "session_e/results_E.json"
+    }
+  },
+  "validation_gates": {
+    "enriched_matches_raw_common_columns": true,
+    "raw_cascade_matches_results_E_v3": true,
+    "raw_count_match_results_E_v3": true,
+    "raw_records_without_step_match_results_E_v3": true,
+    "raw_latency_summary_match_results_E_v3": true,
+    "e0_exclusion_reconciles": true,
+    "enriched_vs_raw_detail": {
+      "raw_rows": 226,
+      "enriched_rows": 226,
+      "raw_columns": 58,
+      "enriched_columns": 67,
+      "common_columns": 58,
+      "missing_raw_columns_in_enriched": [],
+      "added_enriched_columns": [
+        "escalation_reason",
+        "negation_intent",
+        "negation_markers",
+        "m3_jaccard_score",
+        "m3_runner_up_score",
+        "m3_matched_example",
+        "vlm_eval_count",
+        "vlm_raw_reason",
+        "vlm_error"
+      ],
+      "same_row_count": true,
+      "all_common_values_identical_in_order": true
+    }
+  },
+  "primary": {
+    "exclusion": "experiment_id == E0",
+    "all_decisions": 216,
+    "fast_path_decisions": 112,
+    "non_step_decisions": 104,
+    "fast_path_pct_of_all_decisions": 51.851852,
+    "step_counts": {
+      "0": 39,
+      "1": 18,
+      "2": 17,
+      "3": 8,
+      "4": 13,
+      "5": 3,
+      "6": 14
+    },
+    "latency": {
+      "latency_n": 112,
+      "mean_ms": 0.281123,
+      "sd_sample_ms": 0.16326,
+      "median_ms": 0.244975,
+      "q1_ms": 0.137031,
+      "q3_ms": 0.389516,
+      "min_ms": 0.072241,
+      "max_ms": 0.96035,
+      "p95_ms": 0.523138,
+      "under_0_1_ms_n": 4,
+      "under_1_ms_n": 112
+    }
+  },
+  "raw_archival": {
+    "all_decisions": 226,
+    "fast_path_decisions": 121,
+    "non_step_decisions": 105,
+    "fast_path_pct_of_all_decisions": 53.539823,
+    "step_counts": {
+      "0": 43,
+      "1": 18,
+      "2": 22,
+      "3": 8,
+      "4": 13,
+      "5": 3,
+      "6": 14
+    },
+    "latency": {
+      "latency_n": 121,
+      "mean_ms": 0.280126,
+      "sd_sample_ms": 0.160675,
+      "median_ms": 0.257015,
+      "q1_ms": 0.136852,
+      "q3_ms": 0.389099,
+      "min_ms": 0.072241,
+      "max_ms": 0.96035,
+      "p95_ms": 0.519276,
+      "under_0_1_ms_n": 4,
+      "under_1_ms_n": 121
+    }
+  },
+  "E0": {
+    "all_decisions": 10,
+    "fast_path_decisions": 9,
+    "step_counts": {
+      "0": 4,
+      "1": 0,
+      "2": 5,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0
+    }
+  },
+  "primary_step_table": [
+    {
+      "scope_type": "overall",
+      "scope_value": "primary_E0_excluded",
+      "step": 0,
+      "step_label": "M3 learned association",
+      "n": 39,
+      "denominator_fast_path": 112,
+      "pct_of_fast_path": 34.821429,
+      "denominator_all_decisions": 216,
+      "pct_of_all_decisions": 18.055556,
+      "methods": {
+        "L3a_m3_preference": 39
+      },
+      "latency_n": 39,
+      "mean_ms": 0.135293,
+      "sd_sample_ms": 0.028772,
+      "median_ms": 0.131845,
+      "q1_ms": 0.125527,
+      "q3_ms": 0.141382,
+      "min_ms": 0.085354,
+      "max_ms": 0.257015,
+      "p95_ms": 0.165701
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "primary_E0_excluded",
+      "step": 1,
+      "step_label": "explicit node ID",
+      "n": 18,
+      "denominator_fast_path": 112,
+      "pct_of_fast_path": 16.071429,
+      "denominator_all_decisions": 216,
+      "pct_of_all_decisions": 8.333333,
+      "methods": {
+        "L3a_deterministic": 18
+      },
+      "latency_n": 18,
+      "mean_ms": 0.178019,
+      "sd_sample_ms": 0.04141,
+      "median_ms": 0.191331,
+      "q1_ms": 0.163913,
+      "q3_ms": 0.195622,
+      "min_ms": 0.072241,
+      "max_ms": 0.232935,
+      "p95_ms": 0.227463
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "primary_E0_excluded",
+      "step": 2,
+      "step_label": "node name",
+      "n": 17,
+      "denominator_fast_path": 112,
+      "pct_of_fast_path": 15.178571,
+      "denominator_all_decisions": 216,
+      "pct_of_all_decisions": 7.87037,
+      "methods": {
+        "L3a_deterministic": 17
+      },
+      "latency_n": 17,
+      "mean_ms": 0.396504,
+      "sd_sample_ms": 0.108377,
+      "median_ms": 0.389099,
+      "q1_ms": 0.366926,
+      "q3_ms": 0.399113,
+      "min_ms": 0.286341,
+      "max_ms": 0.780344,
+      "p95_ms": 0.501871
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "primary_E0_excluded",
+      "step": 3,
+      "step_label": "object ID (obj_id)",
+      "n": 8,
+      "denominator_fast_path": 112,
+      "pct_of_fast_path": 7.142857,
+      "denominator_all_decisions": 216,
+      "pct_of_all_decisions": 3.703704,
+      "methods": {
+        "L3a_deterministic": 8
+      },
+      "latency_n": 8,
+      "mean_ms": 0.374973,
+      "sd_sample_ms": 0.146231,
+      "median_ms": 0.347495,
+      "q1_ms": 0.299573,
+      "q3_ms": 0.354886,
+      "min_ms": 0.279188,
+      "max_ms": 0.72813,
+      "p95_ms": 0.59762
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "primary_E0_excluded",
+      "step": 4,
+      "step_label": "attribute match",
+      "n": 13,
+      "denominator_fast_path": 112,
+      "pct_of_fast_path": 11.607143,
+      "denominator_all_decisions": 216,
+      "pct_of_all_decisions": 6.018519,
+      "methods": {
+        "L3a_deterministic": 13
+      },
+      "latency_n": 13,
+      "mean_ms": 0.499138,
+      "sd_sample_ms": 0.151258,
+      "median_ms": 0.464678,
+      "q1_ms": 0.418425,
+      "q3_ms": 0.527859,
+      "min_ms": 0.354052,
+      "max_ms": 0.96035,
+      "p95_ms": 0.720453
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "primary_E0_excluded",
+      "step": 5,
+      "step_label": "single class match",
+      "n": 3,
+      "denominator_fast_path": 112,
+      "pct_of_fast_path": 2.678571,
+      "denominator_all_decisions": 216,
+      "pct_of_all_decisions": 1.388889,
+      "methods": {
+        "L3a_deterministic": 3
+      },
+      "latency_n": 3,
+      "mean_ms": 0.444174,
+      "sd_sample_ms": 0.063688,
+      "median_ms": 0.457048,
+      "q1_ms": 0.41604,
+      "q3_ms": 0.478745,
+      "min_ms": 0.375032,
+      "max_ms": 0.500441,
+      "p95_ms": 0.496101
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "primary_E0_excluded",
+      "step": 6,
+      "step_label": "class + proximity",
+      "n": 14,
+      "denominator_fast_path": 112,
+      "pct_of_fast_path": 12.5,
+      "denominator_all_decisions": 216,
+      "pct_of_all_decisions": 6.481481,
+      "methods": {
+        "L3a_deterministic": 14
+      },
+      "latency_n": 14,
+      "mean_ms": 0.38881,
+      "sd_sample_ms": 0.087777,
+      "median_ms": 0.382662,
+      "q1_ms": 0.313759,
+      "q3_ms": 0.481367,
+      "min_ms": 0.262976,
+      "max_ms": 0.519276,
+      "p95_ms": 0.507808
+    }
+  ],
+  "raw_step_table": [
+    {
+      "scope_type": "overall",
+      "scope_value": "raw_including_E0",
+      "step": 0,
+      "step_label": "M3 learned association",
+      "n": 43,
+      "denominator_fast_path": 121,
+      "pct_of_fast_path": 35.53719,
+      "denominator_all_decisions": 226,
+      "pct_of_all_decisions": 19.026549,
+      "methods": {
+        "L3a_m3_preference": 43
+      },
+      "latency_n": 43,
+      "mean_ms": 0.134817,
+      "sd_sample_ms": 0.027747,
+      "median_ms": 0.131845,
+      "q1_ms": 0.123739,
+      "q3_ms": 0.141382,
+      "min_ms": 0.085354,
+      "max_ms": 0.257015,
+      "p95_ms": 0.161004
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "raw_including_E0",
+      "step": 1,
+      "step_label": "explicit node ID",
+      "n": 18,
+      "denominator_fast_path": 121,
+      "pct_of_fast_path": 14.876033,
+      "denominator_all_decisions": 226,
+      "pct_of_all_decisions": 7.964602,
+      "methods": {
+        "L3a_deterministic": 18
+      },
+      "latency_n": 18,
+      "mean_ms": 0.178019,
+      "sd_sample_ms": 0.04141,
+      "median_ms": 0.191331,
+      "q1_ms": 0.163913,
+      "q3_ms": 0.195622,
+      "min_ms": 0.072241,
+      "max_ms": 0.232935,
+      "p95_ms": 0.227463
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "raw_including_E0",
+      "step": 2,
+      "step_label": "node name",
+      "n": 22,
+      "denominator_fast_path": 121,
+      "pct_of_fast_path": 18.181818,
+      "denominator_all_decisions": 226,
+      "pct_of_all_decisions": 9.734513,
+      "methods": {
+        "L3a_deterministic": 22
+      },
+      "latency_n": 22,
+      "mean_ms": 0.392242,
+      "sd_sample_ms": 0.095174,
+      "median_ms": 0.384808,
+      "q1_ms": 0.366211,
+      "q3_ms": 0.397325,
+      "min_ms": 0.286341,
+      "max_ms": 0.780344,
+      "p95_ms": 0.431895
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "raw_including_E0",
+      "step": 3,
+      "step_label": "object ID (obj_id)",
+      "n": 8,
+      "denominator_fast_path": 121,
+      "pct_of_fast_path": 6.61157,
+      "denominator_all_decisions": 226,
+      "pct_of_all_decisions": 3.539823,
+      "methods": {
+        "L3a_deterministic": 8
+      },
+      "latency_n": 8,
+      "mean_ms": 0.374973,
+      "sd_sample_ms": 0.146231,
+      "median_ms": 0.347495,
+      "q1_ms": 0.299573,
+      "q3_ms": 0.354886,
+      "min_ms": 0.279188,
+      "max_ms": 0.72813,
+      "p95_ms": 0.59762
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "raw_including_E0",
+      "step": 4,
+      "step_label": "attribute match",
+      "n": 13,
+      "denominator_fast_path": 121,
+      "pct_of_fast_path": 10.743802,
+      "denominator_all_decisions": 226,
+      "pct_of_all_decisions": 5.752212,
+      "methods": {
+        "L3a_deterministic": 13
+      },
+      "latency_n": 13,
+      "mean_ms": 0.499138,
+      "sd_sample_ms": 0.151258,
+      "median_ms": 0.464678,
+      "q1_ms": 0.418425,
+      "q3_ms": 0.527859,
+      "min_ms": 0.354052,
+      "max_ms": 0.96035,
+      "p95_ms": 0.720453
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "raw_including_E0",
+      "step": 5,
+      "step_label": "single class match",
+      "n": 3,
+      "denominator_fast_path": 121,
+      "pct_of_fast_path": 2.479339,
+      "denominator_all_decisions": 226,
+      "pct_of_all_decisions": 1.327434,
+      "methods": {
+        "L3a_deterministic": 3
+      },
+      "latency_n": 3,
+      "mean_ms": 0.444174,
+      "sd_sample_ms": 0.063688,
+      "median_ms": 0.457048,
+      "q1_ms": 0.41604,
+      "q3_ms": 0.478745,
+      "min_ms": 0.375032,
+      "max_ms": 0.500441,
+      "p95_ms": 0.496101
+    },
+    {
+      "scope_type": "overall",
+      "scope_value": "raw_including_E0",
+      "step": 6,
+      "step_label": "class + proximity",
+      "n": 14,
+      "denominator_fast_path": 121,
+      "pct_of_fast_path": 11.570248,
+      "denominator_all_decisions": 226,
+      "pct_of_all_decisions": 6.19469,
+      "methods": {
+        "L3a_deterministic": 14
+      },
+      "latency_n": 14,
+      "mean_ms": 0.38881,
+      "sd_sample_ms": 0.087777,
+      "median_ms": 0.382662,
+      "q1_ms": 0.313759,
+      "q3_ms": 0.481367,
+      "min_ms": 0.262976,
+      "max_ms": 0.519276,
+      "p95_ms": 0.507808
+    }
+  ],
+  "experiment_breakdown": {
+    "E1": {
+      "all_decisions": 39,
+      "fast_path_decisions": 39,
+      "step_counts": {
+        "0": 8,
+        "1": 18,
+        "2": 8,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 5
+      }
+    },
+    "E2": {
+      "all_decisions": 49,
+      "fast_path_decisions": 8,
+      "step_counts": {
+        "0": 4,
+        "1": 0,
+        "2": 4,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      }
+    },
+    "E3": {
+      "all_decisions": 56,
+      "fast_path_decisions": 56,
+      "step_counts": {
+        "0": 23,
+        "1": 0,
+        "2": 4,
+        "3": 8,
+        "4": 12,
+        "5": 0,
+        "6": 9
+      }
+    },
+    "E4": {
+      "all_decisions": 23,
+      "fast_path_decisions": 0,
+      "step_counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      }
+    },
+    "E4b": {
+      "all_decisions": 10,
+      "fast_path_decisions": 4,
+      "step_counts": {
+        "0": 4,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      }
+    },
+    "E5": {
+      "all_decisions": 6,
+      "fast_path_decisions": 0,
+      "step_counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      }
+    },
+    "E6": {
+      "all_decisions": 4,
+      "fast_path_decisions": 0,
+      "step_counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      }
+    },
+    "E7": {
+      "all_decisions": 29,
+      "fast_path_decisions": 5,
+      "step_counts": {
+        "0": 0,
+        "1": 0,
+        "2": 1,
+        "3": 0,
+        "4": 1,
+        "5": 3,
+        "6": 0
+      }
+    }
+  },
+  "platform_breakdown": {
+    "xplorer-b": {
+      "all_decisions": 119,
+      "fast_path_decisions": 55,
+      "step_counts": {
+        "0": 22,
+        "1": 0,
+        "2": 9,
+        "3": 4,
+        "4": 7,
+        "5": 3,
+        "6": 10
+      }
+    },
+    "xplorer-c": {
+      "all_decisions": 97,
+      "fast_path_decisions": 57,
+      "step_counts": {
+        "0": 17,
+        "1": 18,
+        "2": 8,
+        "3": 4,
+        "4": 6,
+        "5": 0,
+        "6": 4
+      }
+    }
+  },
+  "interpretation_guardrails": [
+    "Counts identify the first deterministic step that resolved the observed instruction.",
+    "They are workload-composition statistics, not independent semantic-unit frequencies.",
+    "They are not leave-one-step-out causal ablation effects.",
+    "A decision not resolved at one step could fall through to another deterministic step or L3b.",
+    "The complete deterministic fast path is supported as sub-millisecond; <0.1 ms is not supported as a general claim."
+  ]
+}

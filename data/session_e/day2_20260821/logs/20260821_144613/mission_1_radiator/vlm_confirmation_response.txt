@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white metal radiator against wall with tiled floor below.",
+  "scene_context": "radiator mounted on baseboard above speckled tile flooring.",
+  "reasoning": "clearly visible white cast iron or steel panel heater matches expected landmark type and location contextually consistent."
+}

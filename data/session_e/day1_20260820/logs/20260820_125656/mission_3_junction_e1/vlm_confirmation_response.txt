@@ -1,0 +1,14 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "floor with plants and chair near window",
+  "scene_context": "indoor office space with natural light from glass wall",
+  "reasoning": "visible plant_5 (center) and lab_chair (left), confirming POI presence at junction_e1",
+  "payload": {
+    "identified_objects": [
+      {"label": "plant_5", "position": "center", "salience": "high"},
+      {"label": "lab_chair", "position": "left", "salience": "medium"}
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "plant in white pot near window sill",
+  "scene_context": "office floor with chair base nearby and outdoor greenery visible through glass pane behind plant container resting on tiled surface.",
+  "reasoning": "clearly sees potted plant directly adjacent to north-facing window frame, matching expected landmark location for node 14 target area confirmation within indoor workspace environment context",
+  "payload": {
+    "identified_objects": [
+      {"label": "plant_5", "position": "center", "salience": "high"},
+      {"label": "window_north", "position": "right", "salience": "medium"},
+      {"label": "chair_base", "position": "left", "salience": "low"}
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "at_target": false,
+  "confidence": "LOW",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with dark strip and brown cabinet door",
+  "scene_context": "floor level view near wall baseboard; no fire extinguisher visible in frame.",
+  "reasoning": "no expected landmark detected; only generic architectural elements present.",
+  "payload": {
+    "identified_objects": [
+      {"label": "door", "position": "center", "salience": "high"},
+      {"label": "floor", "position": "all", "salience": "medium"},
+      {"label": "wall baseboard", "position": "left", "salience": "low"}
+    ]
+  }
+}

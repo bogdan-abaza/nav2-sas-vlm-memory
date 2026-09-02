@@ -1,0 +1,3 @@
+f973aa0 unitatea 2b: poarta de negatie pe expresii + inchidere doar pe referent de clasa
+c21ba17 unitatea 2b: poarta de negatie recunoaste expresiile
+57671df fix: run_id gol (mission_dir e cale absoluta)

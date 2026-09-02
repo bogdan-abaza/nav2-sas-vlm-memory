@@ -1,0 +1,166 @@
+{
+  "analysis_id": "A2",
+  "status": "candidate_not_frozen",
+  "scope": "Step-0 M3 matcher sensitivity only",
+  "nominal": {
+    "jaccard_threshold": 0.75,
+    "abstention_margin": 0.1
+  },
+  "inputs": {
+    "sha256": {
+      "missions": "f19f380877522c6c2db64a8c8d573226b83b713602e51fce3f1847ba67004bf7",
+      "sessions": "e997c2a097ba2f2cbe45e594715d160556d5a480c9ebdbc48705e804e21683f2",
+      "sas_text": "aa211dc76cb2f19f3ff3c9b27c7ba56242b04a4a1ef2fc10d6ad6ad14eb005b1",
+      "standard_digest": "1fe64ed09a96343bac5abd0cae476545bd0100dd496dc25122b1ca4a2cd7c3ab",
+      "e4b_digest": "ee981d9c6fb6b8c8e281d8bb6abc70b537bbb43d324c01b741b8dad694dcdc30"
+    },
+    "digest_content_md5": {
+      "standard": "0fd61f9e82e8fe6991f0311014384e0c",
+      "E4b": "5b3f14bc71a1896da5b29a4e655479fa"
+    },
+    "sas_text_version": "1.2.0"
+  },
+  "population": {
+    "session_e_raw_decisions": 226,
+    "E0_excluded_primary_decisions": 216,
+    "M3_active_primary_records": 212,
+    "M3_empty_E6_records_excluded": 4,
+    "digest_distribution": {
+      "0fd61f9e82e8fe6991f0311014384e0c": 207,
+      "5b3f14bc71a1896da5b29a4e655479fa": 5
+    },
+    "unique_instruction_texts": 84,
+    "unique_semantic_intents": 86,
+    "negation_detected_records": 39,
+    "nonnegated_matcher_records": 173
+  },
+  "reproduction_gate": {
+    "pass": true,
+    "accept_abstain_agreement": "212/212",
+    "accepted_node_agreement": "39/39",
+    "observed_step0_matches": 39,
+    "nominal_simulated_matches": 39
+  },
+  "nominal_summary": {
+    "threshold": 0.75,
+    "margin": 0.1,
+    "n_active_m3_records": 212,
+    "n_nonnegated_records": 173,
+    "accepted_records": 39,
+    "accepted_rate_all_active_pct": 18.39622641509434,
+    "accepted_rate_nonnegated_pct": 22.54335260115607,
+    "accepted_unique_instruction_texts": 5,
+    "accepted_unique_semantic_intents": 9,
+    "abstain_negation": 39,
+    "abstain_below_threshold": 134,
+    "abstain_ambiguous_margin": 0,
+    "abstain_no_candidate": 0,
+    "accepted_with_runner_up": 35,
+    "accepted_without_runner_up": 4,
+    "accepted_with_expected_node": 35,
+    "expected_node_agree": 35,
+    "expected_node_disagree": 0,
+    "expected_node_agreement_pct": 100.0,
+    "new_accepts_vs_nominal": 0,
+    "lost_accepts_vs_nominal": 0
+  },
+  "former_threshold_0_60_summary": {
+    "threshold": 0.6,
+    "margin": 0.1,
+    "n_active_m3_records": 212,
+    "n_nonnegated_records": 173,
+    "accepted_records": 43,
+    "accepted_rate_all_active_pct": 20.28301886792453,
+    "accepted_rate_nonnegated_pct": 24.85549132947977,
+    "accepted_unique_instruction_texts": 7,
+    "accepted_unique_semantic_intents": 11,
+    "abstain_negation": 39,
+    "abstain_below_threshold": 130,
+    "abstain_ambiguous_margin": 0,
+    "abstain_no_candidate": 0,
+    "accepted_with_runner_up": 39,
+    "accepted_without_runner_up": 4,
+    "accepted_with_expected_node": 39,
+    "expected_node_agree": 35,
+    "expected_node_disagree": 4,
+    "expected_node_agreement_pct": 89.74358974358974,
+    "new_accepts_vs_nominal": 4,
+    "lost_accepts_vs_nominal": 0
+  },
+  "score_distribution_nonnegated": {
+    "0.0": 72,
+    "0.111111111": 11,
+    "0.125": 4,
+    "0.142857143": 7,
+    "0.166666667": 20,
+    "0.2": 6,
+    "0.25": 9,
+    "0.375": 1,
+    "0.625": 4,
+    "1.0": 39
+  },
+  "gap_distribution_nonnegated": {
+    "0.0": 71,
+    "1.0": 14,
+    "0.041666667": 20,
+    "0.625": 4,
+    "0.888888889": 12,
+    "0.8": 9,
+    "0.057142857": 5,
+    "0.025": 4,
+    "0.031746032": 7,
+    "0.111111111": 11,
+    "0.375": 1,
+    "0.2": 1,
+    "0.107142857": 9,
+    "NONE": 5
+  },
+  "newly_admitted_at_0_60_vs_0_75": [
+    {
+      "record_key": "day1_20260820/logs/audit_20260820_152450.jsonl#1",
+      "experiment_id": "E2",
+      "semantic_intent_id": "C01",
+      "instruction_text": "lab cb203 got on fire, help me find something to stop the fire",
+      "candidate_node": 8,
+      "top_score": 0.625,
+      "gap": 0.625,
+      "expected_node_id": 23
+    },
+    {
+      "record_key": "day1_20260820/logs/audit_20260820_152555.jsonl#1",
+      "experiment_id": "E2",
+      "semantic_intent_id": "C02",
+      "instruction_text": "lab cb204 got on fire, help me find something to stop the fire",
+      "candidate_node": 8,
+      "top_score": 0.625,
+      "gap": 0.625,
+      "expected_node_id": 5
+    },
+    {
+      "record_key": "day1_20260820/logs/audit_20260820_155048.jsonl#1",
+      "experiment_id": "E2",
+      "semantic_intent_id": "C01",
+      "instruction_text": "lab cb203 got on fire, help me find something to stop the fire",
+      "candidate_node": 8,
+      "top_score": 0.625,
+      "gap": 0.625,
+      "expected_node_id": 23
+    },
+    {
+      "record_key": "day1_20260820/logs/audit_20260820_155138.jsonl#1",
+      "experiment_id": "E2",
+      "semantic_intent_id": "C02",
+      "instruction_text": "lab cb204 got on fire, help me find something to stop the fire",
+      "candidate_node": 8,
+      "top_score": 0.625,
+      "gap": 0.625,
+      "expected_node_id": 5
+    }
+  ],
+  "interpretation_flags": {
+    "threshold_plateau": "At the frozen margin 0.10, thresholds >0.625 and <=1.0 retain the same 39 matcher-level accepts in this released primary population.",
+    "margin_nominal_inactive": "At threshold 0.75, no accepted multi-candidate record has a runner-up gap below 0.80; margin 0.10 therefore does not trigger.",
+    "not_full_resolver": "Counterfactual matcher accepts are not final navigation decisions; downstream cascade steps and the separate location-conflict guard are outside A2.",
+    "not_parameter_tuning": "This is a post-hoc sensitivity analysis of a threshold/margin pair frozen before Session E, not optimization on Session E outcomes."
+  }
+}

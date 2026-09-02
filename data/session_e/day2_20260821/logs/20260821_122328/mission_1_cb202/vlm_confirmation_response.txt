@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "fire extinguisher on floor near brown doors",
+  "scene_context": "extinguisher positioned right of center against wall",
+  "reasoning": "clear fire extinguisher visible at expected location matching landmark signature"
+}

@@ -1,0 +1,1 @@
+{"node_id": 15, "reason": "The instruction is to work on a computer; the designated resting location at node 15 includes a 'lab_chair' and a nearby window, which are suitable for working."}

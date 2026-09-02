@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "potted plant and taped paper on floor near window",
+  "scene_context": "plant left of wall; tape sign right against baseboard",
+  "reasoning": "target not visible, only potted plant seen at target location"
+}

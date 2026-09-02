@@ -1,0 +1,4 @@
+{
+"node_id": 9,
+"reason": "Node 9 (radiator) is the only designated seating location listed in the system for resting or sitting down."
+}

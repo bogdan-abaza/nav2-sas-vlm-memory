@@ -1,0 +1,4 @@
+{
+"node_id": 1,
+"reason": "The instruction 'main entrance' matches the semantic attribute of node 1 ('hall_entry'), which contains an object with type='entrance'. This is a static landmark and represents the primary entry point."
+}

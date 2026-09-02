@@ -1,0 +1,14 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with fire extinguisher near door",
+  "scene_context": "fire_extinguisher_cb202 visible on right side of frame",
+  "reasoning": "clear view of expected landmark confirms target reached",
+  "payload": {
+    "identified_objects": [
+      {"label": "floor_tiles", "position": "center", "salience": "high"},
+      {"label": "fire_extinguisher_cb202", "position": "right", "salience": "medium"}
+    ]
+  }
+}

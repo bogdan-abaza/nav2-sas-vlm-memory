@@ -1,0 +1,159 @@
+linii de decizie: 123
+intentii distincte: 49
+
+linii per bloc:
+  E0     5
+  E3     56
+  E4     23
+  E4b    10
+  E5     6
+  E6     4
+  E7     29
+
+nav_outcome:
+  mission_complete                 112
+  missed                           11
+
+resolution_method:
+  L3b_vlm                          53
+  L3a_deterministic                43
+  L3a_m3_preference                27
+
+esecuri L3b: 10 din 63 apeluri = 15.9%
+
+esecuri VLM, verbatim:
+  E7    S-P2    Expecting property name enclosed in double quotes: line 1 column 2 (char 1)                  audit_20260821_133151.jsonl
+  E7    P-P4    Expecting value: line 1 column 26 (char 25)                                                  audit_20260821_134645.jsonl
+  E7    H-P3    Expecting value: line 3 column 11 (char 27)                                                  audit_20260821_135001.jsonl
+  E4    P1      raspuns L3b fara JSON (done_reason=length, eval_count=500): 'Based on the instruction to g   audit_20260821_144154.jsonl
+  E4    P1      raspuns L3b fara JSON (done_reason=length, eval_count=500): 'Based on the provided data an   audit_20260821_151342.jsonl
+  E4    P2      Expecting value: line 1 column 26 (char 25)                                                  audit_20260821_151517.jsonl
+  E4    P1      Expecting value: line 1 column 26 (char 25)                                                  audit_20260821_151846.jsonl
+  E4    P2      Expecting value: line 3 column 11 (char 26)                                                  audit_20260821_152624.jsonl
+  E4    P1      Expecting value: line 1 column 27 (char 26)                                                  audit_20260821_153019.jsonl
+  E4    P2      Expecting value: line 1 column 26 (char 25)                                                  audit_20260821_153221.jsonl
+
+intent   rep  platforma  exp   faza    astept  nod   pas   metoda                 xy      confirm  incred  ciclu  rezultat             audit
+AD       1    xplorer-b  E0            8       8     2     L3a_deterministic      0.233   False    LOW     1      mission_complete     audit_20260821_104534.jsonl
+AD       1    xplorer-b  E0            8       8     2     L3a_deterministic      0.14    True     HIGH    1      mission_complete     audit_20260821_105438.jsonl
+AD       1    xplorer-c  E0            8       8     2     L3a_deterministic      0.02    True     HIGH    1      mission_complete     audit_20260821_103929.jsonl
+AS       1    xplorer-b  E0            8       8     2     L3a_deterministic      0.226   False    LOW     1      mission_complete     audit_20260821_170007.jsonl
+AS       1    xplorer-c  E0            8       8     2     L3a_deterministic      0.182   True     HIGH    1      mission_complete     audit_20260821_170226.jsonl
+S1       1    xplorer-b  E3            0       0     0     L3a_m3_preference      1.647                    1      missed               audit_20260821_110624.jsonl
+S1       3    xplorer-b  E3            0       0     0     L3a_m3_preference      0.249   True     HIGH    1      mission_complete     audit_20260821_112225.jsonl
+S1       2    xplorer-b  E3            0       0     0     L3a_m3_preference      0.22    True     HIGH    1      mission_complete     audit_20260821_113656.jsonl
+S1       4    xplorer-b  E3            0       0     0     L3a_m3_preference      0.228   True     HIGH    1      mission_complete     audit_20260821_113738.jsonl
+S1       1    xplorer-b  E3            0       0     0     L3a_m3_preference      0.133   True     HIGH    2      mission_complete     audit_20260821_110624.jsonl
+S1       1    xplorer-c  E3            0       0     0     L3a_m3_preference      0.192   True     HIGH    1      mission_complete     audit_20260821_115152.jsonl
+S1       3    xplorer-c  E3            0       0     0     L3a_m3_preference      0.142   True     HIGH    1      mission_complete     audit_20260821_120808.jsonl
+S1       2    xplorer-c  E3            0       0     0     L3a_m3_preference      0.11    True     HIGH    1      mission_complete     audit_20260821_122430.jsonl
+S1       4    xplorer-c  E3            0       0     0     L3a_m3_preference      0.147   True     HIGH    1      mission_complete     audit_20260821_122544.jsonl
+S1       5    xplorer-c  E3            0       0     0     L3a_m3_preference      0.044   True     HIGH    1      mission_complete     audit_20260821_122656.jsonl
+S10      1    xplorer-b  E3            23      23    4     L3a_deterministic      0.376   True     HIGH    1      mission_complete     audit_20260821_112108.jsonl
+S10      2    xplorer-b  E3            23      23    4     L3a_deterministic      2.164   True     HIGH    1      mission_complete     audit_20260821_112314.jsonl
+S10      1    xplorer-c  E3            23      23    4     L3a_deterministic      0.332   True     HIGH    1      mission_complete     audit_20260821_120634.jsonl
+S10      2    xplorer-c  E3            23      23    4     L3a_deterministic      0.271   True     HIGH    1      mission_complete     audit_20260821_120902.jsonl
+S2       1    xplorer-b  E3            8       8     0     L3a_m3_preference      0.051   True     HIGH    1      mission_complete     audit_20260821_110814.jsonl
+S2       2    xplorer-b  E3            8       8     0     L3a_m3_preference      0.253   True     HIGH    1      mission_complete     audit_20260821_113623.jsonl
+S2       1    xplorer-c  E3            8       8     0     L3a_m3_preference      0.207   True     HIGH    1      mission_complete     audit_20260821_115254.jsonl
+S2       2    xplorer-c  E3            8       8     0     L3a_m3_preference      0.085   True     HIGH    1      mission_complete     audit_20260821_122328.jsonl
+S3       1    xplorer-b  E3            9       9     0     L3a_m3_preference      2.865                    1      missed               audit_20260821_110936.jsonl
+S3       2    xplorer-b  E3            9       9     0     L3a_m3_preference      0.177   True     HIGH    1      mission_complete     audit_20260821_113529.jsonl
+S3       1    xplorer-b  E3            9       9     0     L3a_m3_preference      0.17    True     HIGH    2      mission_complete     audit_20260821_110936.jsonl
+S3       1    xplorer-c  E3            9       9     0     L3a_m3_preference      0.188   True     HIGH    1      mission_complete     audit_20260821_115341.jsonl
+S3       2    xplorer-c  E3            9       9     0     L3a_m3_preference      0.145   True     HIGH    1      mission_complete     audit_20260821_122227.jsonl
+S3o      1    xplorer-b  E3            14      14    0     L3a_m3_preference      0.159   True     HIGH    1      mission_complete     audit_20260821_111058.jsonl
+S3o      2    xplorer-b  E3            14      14    0     L3a_m3_preference      0.241   True     HIGH    1      mission_complete     audit_20260821_113407.jsonl
+S3o      1    xplorer-c  E3            14      14    0     L3a_m3_preference      0.186   True     HIGH    1      mission_complete     audit_20260821_115538.jsonl
+S3o      2    xplorer-c  E3            14      14    0     L3a_m3_preference      0.132   True     HIGH    1      mission_complete     audit_20260821_122052.jsonl
+S4       1    xplorer-b  E3            5       5     2     L3a_deterministic      0.15    True     HIGH    1      mission_complete     audit_20260821_111235.jsonl
+S4       2    xplorer-b  E3            5       5     2     L3a_deterministic      0.217   True     HIGH    1      mission_complete     audit_20260821_113258.jsonl
+S4       1    xplorer-c  E3            5       5     2     L3a_deterministic      0.217   True     HIGH    1      mission_complete     audit_20260821_115711.jsonl
+S4       2    xplorer-c  E3            5       5     2     L3a_deterministic      0.219   True     HIGH    1      mission_complete     audit_20260821_121837.jsonl
+S5       1    xplorer-b  E3                    19    6     L3a_deterministic      4.439                    1      missed               audit_20260821_111411.jsonl
+S5       2    xplorer-b  E3                    19    6     L3a_deterministic      0.175   True     HIGH    1      mission_complete     audit_20260821_113110.jsonl
+S5       1    xplorer-b  E3                    19    6     L3a_deterministic      3.666                    2      missed               audit_20260821_111411.jsonl
+S5       1    xplorer-b  E3                    19    6     L3a_deterministic      3.224                    3      missed               audit_20260821_111411.jsonl
+S5       1    xplorer-b  E3                    19    6     L3a_deterministic      2.94                     4      missed               audit_20260821_111411.jsonl
+S5       1    xplorer-b  E3                    19    6     L3a_deterministic      2.182                    5      missed               audit_20260821_111411.jsonl
+S5       1    xplorer-b  E3                    19    6     L3a_deterministic      0.172   True     HIGH    6      mission_complete     audit_20260821_111411.jsonl
+S5       1    xplorer-c  E3                    19    6     L3a_deterministic      0.161   False    MEDIUM  1      mission_complete     audit_20260821_115814.jsonl
+S5       2    xplorer-c  E3                    19    6     L3a_deterministic      0.136   True     HIGH    1      mission_complete     audit_20260821_121718.jsonl
+S6       1    xplorer-b  E3            15      15    3     L3a_deterministic      0.216   True     HIGH    1      mission_complete     audit_20260821_111601.jsonl
+S6       2    xplorer-b  E3            15      15    3     L3a_deterministic      0.423   False    MEDIUM  1      mission_complete     audit_20260821_112926.jsonl
+S6       1    xplorer-c  E3            15      15    3     L3a_deterministic      0.206   True     HIGH    1      mission_complete     audit_20260821_115924.jsonl
+S6       2    xplorer-c  E3            15      15    3     L3a_deterministic      0.153   True     HIGH    1      mission_complete     audit_20260821_121432.jsonl
+S7       1    xplorer-b  E3            14      14    3     L3a_deterministic      0.21    True     HIGH    1      mission_complete     audit_20260821_111727.jsonl
+S7       2    xplorer-b  E3            14      14    3     L3a_deterministic      0.279   True     HIGH    1      mission_complete     audit_20260821_112757.jsonl
+S7       1    xplorer-c  E3            14      14    3     L3a_deterministic      0.194   True     HIGH    1      mission_complete     audit_20260821_120124.jsonl
+S7       2    xplorer-c  E3            14      14    3     L3a_deterministic      0.098   True     HIGH    1      mission_complete     audit_20260821_121300.jsonl
+S8       1    xplorer-b  E3            4       4     4     L3a_deterministic      0.092   True     HIGH    1      mission_complete     audit_20260821_111905.jsonl
+S8       2    xplorer-b  E3            4       4     4     L3a_deterministic      0.135   True     HIGH    1      mission_complete     audit_20260821_112657.jsonl
+S8       1    xplorer-c  E3            4       4     4     L3a_deterministic      0.111   True     HIGH    1      mission_complete     audit_20260821_120305.jsonl
+S8       2    xplorer-c  E3            4       4     4     L3a_deterministic      0.1     True     HIGH    1      mission_complete     audit_20260821_121153.jsonl
+S9       1    xplorer-b  E3            22      22    4     L3a_deterministic      0.253   True     HIGH    1      mission_complete     audit_20260821_112007.jsonl
+S9       2    xplorer-b  E3            22      22    4     L3a_deterministic      0.216   True     HIGH    1      mission_complete     audit_20260821_112534.jsonl
+S9       1    xplorer-c  E3            22      22    4     L3a_deterministic      0.293   True     HIGH    1      mission_complete     audit_20260821_120446.jsonl
+S9       2    xplorer-c  E3            22      22    4     L3a_deterministic      0.16    True     HIGH    1      mission_complete     audit_20260821_121016.jsonl
+P1       0    xplorer-c  E4    E4.0            8           L3b_vlm                0.144   True     HIGH    1      mission_complete     audit_20260821_143549.jsonl
+P2       0    xplorer-c  E4    E4.0            9           L3b_vlm                0.168   True     HIGH    1      mission_complete     audit_20260821_143713.jsonl
+P1       1    xplorer-c  E4    E4.1            10          L3b_vlm                0.164                    1      mission_complete     audit_20260821_143913.jsonl
+P1       3    xplorer-c  E4    E4.1            10          L3b_vlm                0.133                    1      mission_complete     audit_20260821_144452.jsonl
+P1       4    xplorer-c  E4    E4.1            5           L3b_vlm                0.128   True     HIGH    1      mission_complete     audit_20260821_144722.jsonl
+P2       1    xplorer-c  E4    E4.1            9           L3b_vlm                0.176   True     HIGH    1      mission_complete     audit_20260821_144018.jsonl
+P2       2    xplorer-c  E4    E4.1            15          L3b_vlm                0.201   True     HIGH    1      mission_complete     audit_20260821_144333.jsonl
+P2       3    xplorer-c  E4    E4.1            9           L3b_vlm                0.136   True     HIGH    1      mission_complete     audit_20260821_144613.jsonl
+P2       4    xplorer-c  E4    E4.1            9           L3b_vlm                0.181   True     HIGH    1      mission_complete     audit_20260821_144850.jsonl
+NEG1     1    xplorer-b  E4    E4.3            9           L3b_vlm                2.544                    1      missed               audit_20260821_153343.jsonl
+NEG1     1    xplorer-b  E4    E4.3            9           L3b_vlm                0.199   True     HIGH    2      mission_complete     audit_20260821_153343.jsonl
+NEG2     1    xplorer-b  E4    E4.3            14          L3b_vlm                2.462                    1      missed               audit_20260821_153503.jsonl
+NEG2     1    xplorer-b  E4    E4.3            15          L3b_vlm                0.091   True     HIGH    2      mission_complete     audit_20260821_153503.jsonl
+P1       2    xplorer-b  E4    E4.3            8           L3b_vlm                0.201   True     HIGH    1      mission_complete     audit_20260821_152524.jsonl
+P2       1    xplorer-b  E4    E4.3            9           L3b_vlm                0.177   True     HIGH    1      mission_complete     audit_20260821_152359.jsonl
+P2       2    xplorer-b  E4    E4.3            9           L3b_vlm                2.6                      1      missed               audit_20260821_152624.jsonl
+E4b-G    0    xplorer-b  E4b   E4b.0           9           L3b_vlm                0.212   True     HIGH    1      mission_complete     audit_20260821_172025.jsonl
+E4b-G    1    xplorer-c  E4b   E4b.1           9           L3b_vlm                0.119   True     HIGH    1      mission_complete     audit_20260821_172417.jsonl
+E4b-G    2    xplorer-c  E4b   E4b.1           9           L3b_vlm                0.176   True     HIGH    1      mission_complete     audit_20260821_172547.jsonl
+E4b-G    3    xplorer-c  E4b   E4b.1           9           L3b_vlm                0.203   True     HIGH    1      mission_complete     audit_20260821_172706.jsonl
+E4b-G    4    xplorer-c  E4b   E4b.1           9           L3b_vlm                0.163   True     HIGH    1      mission_complete     audit_20260821_172836.jsonl
+E4b-G    1    xplorer-b  E4b   E4b.3           9     0     L3a_m3_preference      0.186   True     HIGH    1      mission_complete     audit_20260821_173339.jsonl
+E4b-G    2    xplorer-b  E4b   E4b.3           9     0     L3a_m3_preference      0.179   True     HIGH    1      mission_complete     audit_20260821_173514.jsonl
+E4b-G    3    xplorer-b  E4b   E4b.3           9     0     L3a_m3_preference      0.176   True     HIGH    1      mission_complete     audit_20260821_173618.jsonl
+E4b-G    4    xplorer-b  E4b   E4b.3           9     0     L3a_m3_preference      0.186   True     HIGH    1      mission_complete     audit_20260821_173717.jsonl
+E4b-NEG  1    xplorer-b  E4b   E4b.N           9           L3b_vlm                0.186   True     HIGH    1      mission_complete     audit_20260821_173949.jsonl
+pair1    1    xplorer-b  E5                    0           L3b_vlm                0.162   True     HIGH    1      mission_complete     audit_20260821_164323.jsonl
+pair1    1    xplorer-c  E5                    15          L3b_vlm                0.175   True     HIGH    1      mission_complete     audit_20260821_164326.jsonl
+pair2    1    xplorer-b  E5                    0           L3b_vlm                0.206   True     HIGH    1      mission_complete     audit_20260821_164941.jsonl
+pair2    1    xplorer-c  E5                    13          L3b_vlm                0.18    True     HIGH    1      mission_complete     audit_20260821_164945.jsonl
+pair3    1    xplorer-b  E5                    0           L3b_vlm                0.172   True     HIGH    1      mission_complete     audit_20260821_165317.jsonl
+pair3    1    xplorer-c  E5                    14          L3b_vlm                0.119   True     HIGH    1      mission_complete     audit_20260821_165320.jsonl
+AB-S1    1    xplorer-b  E6                    9           L3b_vlm                0.213   True     HIGH    1      mission_complete     audit_20260821_140457.jsonl
+AB-S1    1    xplorer-c  E6                    9           L3b_vlm                0.137   True     HIGH    1      mission_complete     audit_20260821_142326.jsonl
+AB-S3o   1    xplorer-b  E6                    15          L3b_vlm                0.196   True     HIGH    1      mission_complete     audit_20260821_140856.jsonl
+AB-S3o   1    xplorer-c  E6                    15          L3b_vlm                0.16    False    MEDIUM  1      mission_complete     audit_20260821_142441.jsonl
+G-1      1    xplorer-b  E7            5       5           L3b_vlm                0.175   True     HIGH    1      mission_complete     audit_20260821_135311.jsonl
+G-2      1    xplorer-b  E7            23      23          L3b_vlm                0.285   True     HIGH    1      mission_complete     audit_20260821_135419.jsonl
+G-3      1    xplorer-b  E7                    23    5     L3a_deterministic      0.431   True     HIGH    1      mission_complete     audit_20260821_135551.jsonl
+G-4      1    xplorer-b  E7            15      15    5     L3a_deterministic      0.093   True     HIGH    1      mission_complete     audit_20260821_135704.jsonl
+H-P1     1    xplorer-b  E7            2       2     2     L3a_deterministic      0.187                    1      mission_complete     audit_20260821_134743.jsonl
+H-P2     1    xplorer-b  E7                    9           L3b_vlm                0.162   True     HIGH    1      mission_complete     audit_20260821_134844.jsonl
+H-P4     1    xplorer-b  E7            1       9           L3b_vlm                1.967                    1      missed               audit_20260821_135113.jsonl
+H-P4     1    xplorer-b  E7            1       9           L3b_vlm                0.183   True     HIGH    2      mission_complete     audit_20260821_135113.jsonl
+L-P1     1    xplorer-b  E7            22      23          L3b_vlm                0.341   True     HIGH    1      mission_complete     audit_20260821_131951.jsonl
+L-P2     1    xplorer-b  E7            5       15          L3b_vlm                0.192   True     HIGH    1      mission_complete     audit_20260821_132139.jsonl
+L-P3     1    xplorer-b  E7            5       5           L3b_vlm                0.248   True     HIGH    1      mission_complete     audit_20260821_132326.jsonl
+L-P4     1    xplorer-b  E7            5       9           L3b_vlm                0.263   True     HIGH    1      mission_complete     audit_20260821_132452.jsonl
+P-P1     1    xplorer-b  E7            13      13          L3b_vlm                0.174   True     HIGH    1      mission_complete     audit_20260821_134202.jsonl
+P-P2     1    xplorer-b  E7            13      20          L3b_vlm                0.57    True     HIGH    1      mission_complete     audit_20260821_134402.jsonl
+P-P3     1    xplorer-b  E7            14      9           L3b_vlm                0.2     True     HIGH    1      mission_complete     audit_20260821_134532.jsonl
+S-P1     1    xplorer-b  E7            15      15    5     L3a_deterministic      0.168   True     HIGH    1      mission_complete     audit_20260821_133032.jsonl
+S-P3     1    xplorer-b  E7            9       9           L3b_vlm                0.184   True     HIGH    1      mission_complete     audit_20260821_133316.jsonl
+S-P4     1    xplorer-b  E7            9       9           L3b_vlm                0.201   True     HIGH    1      mission_complete     audit_20260821_133431.jsonl
+T-P1     1    xplorer-b  E7            0       0     4     L3a_deterministic      0.226   True     HIGH    1      mission_complete     audit_20260821_132616.jsonl
+T-P2     1    xplorer-b  E7            0       0           L3b_vlm                0.16    True     HIGH    1      mission_complete     audit_20260821_132710.jsonl
+T-P3     1    xplorer-b  E7            0       0           L3b_vlm                0.168   True     HIGH    1      mission_complete     audit_20260821_132810.jsonl
+T-P4     1    xplorer-b  E7            0       9           L3b_vlm                0.183   True     HIGH    1      mission_complete     audit_20260821_132911.jsonl
+W-P1     1    xplorer-b  E7            14      14          L3b_vlm                0.166   True     HIGH    1      mission_complete     audit_20260821_133600.jsonl
+W-P2     1    xplorer-b  E7            13      14          L3b_vlm                0.157   True     HIGH    1      mission_complete     audit_20260821_133732.jsonl
+W-P3     1    xplorer-b  E7            14      14          L3b_vlm                0.149   True     HIGH    1      mission_complete     audit_20260821_133902.jsonl
+W-P4     1    xplorer-b  E7            9       9           L3b_vlm                0.209   True     HIGH    1      mission_complete     audit_20260821_134044.jsonl

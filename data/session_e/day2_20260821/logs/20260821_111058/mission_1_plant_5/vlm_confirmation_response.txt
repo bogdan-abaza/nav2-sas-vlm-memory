@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "office chair base near window and potted plant",
+  "scene_context": "chair on terrazzo floor beside white planter by bright window",
+  "reasoning": "plant_5 is the visible greenery in pot at right; confirmed landmark match.",
+  "payload": {
+    "identified_objects": [
+      {"label": "office chair base", "position": "center", "salience": "high"},
+      {"label": "potted plant", "position": "right", "salience": "medium"},
+      {"label": "window light", "position": "background right", "salience": "low"}
+    ]
+  }
+}

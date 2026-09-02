@@ -1,0 +1,3 @@
+Based on the instruction to go anywhere but `cb204` (refusing node 5), and given that this is likely a request for resting or relaxing based on the context of previous tasks, I will select from the designated seating locations. The closest valid option listed in "DESIGNATED SEATING/RESTING LOCATIONS" is **node 9** (`radiator_main`), which is at approximately 3.3m distance and explicitly marked as a resting spot.
+
+{"node_id": 9, "reason": "Closest designated seating/resting location that satisfies the 'not cb204' constraint."}

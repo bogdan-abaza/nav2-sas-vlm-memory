@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator on tiled floor with support leg visible.",
+  "scene_context": "radiator mounted low against wall above speckled flooring.",
+  "reasoning": "clearly identifiable white radiators match expected landmark features and location context confirms presence at target POI.",
+  "payload": {
+    "identified_objects": [
+      {"label": "radiators", "position": "center", "salience": "high"},
+      {"label": "support_leg", "position": "center", "salience": "medium"},
+      {"label": "floor_tiles", "position": "bottom", "salience": "low"}
+    ]
+  }
+}

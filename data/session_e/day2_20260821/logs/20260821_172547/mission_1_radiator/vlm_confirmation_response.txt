@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white cast iron radiator with vertical fins and support leg",
+  "scene_context": "radiator mounted on wall above floor near baseboard heater area",
+  "reasoning": "clearly visible white painted metal structure matches expected landmark features"
+}

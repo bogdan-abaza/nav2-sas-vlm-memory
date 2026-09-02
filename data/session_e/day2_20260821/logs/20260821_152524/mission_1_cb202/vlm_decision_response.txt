@@ -1,0 +1,4 @@
+{
+"node_id": 8,
+"reason": "The fire extinguisher at node 8 is the only static semantic object explicitly identified as 'wall_mounted' in a delivery zone context (CB202), matching the instruction to find where deliveries arrive."
+}

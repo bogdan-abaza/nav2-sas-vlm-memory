@@ -1,0 +1,4 @@
+{
+"node_id": 14,
+"reason": "Node 14 contains the window_north and dining table_9 (YOLO detected), which are in close proximity to potted plants; however, node 20 explicitly lists a 'potted plant' as its primary attribute. Since multiple nodes contain plants but no single static object is exclusively defined by being a 'plant', we select the one with highest confidence for detection."
+}

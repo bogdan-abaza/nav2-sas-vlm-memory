@@ -1,0 +1,14 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "potted plant and taped paper on floor near window",
+  "scene_context": "plant left of wall; paper house prop right against baseboard",
+  "reasoning": "target not visible, only potted plant present in frame",
+  "payload": {
+    "identified_objects": [
+      {"label": "potted_plant", "position": "left", "salience": "high"},
+      {"label": "paper_house_prop", "position": "right", "salience": "medium"}
+    ]
+  }
+}

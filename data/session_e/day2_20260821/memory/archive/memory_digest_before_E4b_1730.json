@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-04-23T10:19:36.377832Z",
+  "platforms": [
+    "xplorer-b",
+    "xplorer-c"
+  ],
+  "navigator_version": "v4.7.4",
+  "global_stats": {
+    "total_tasks": 373,
+    "success_rate": 0.29
+  },
+  "top_entities": [
+    {
+      "obj_id": "lab_cb204",
+      "node_id": 5,
+      "visits": 105,
+      "success_rate": 0.1,
+      "sig_type": "landmark"
+    },
+    {
+      "obj_id": "radiator_main",
+      "node_id": 9,
+      "visits": 43,
+      "success_rate": 0.42,
+      "sig_type": "landmark"
+    },
+    {
+      "obj_id": "restroom_men",
+      "node_id": 0,
+      "visits": 42,
+      "success_rate": 0.74,
+      "sig_type": "none"
+    }
+  ],
+  "top_patterns": [
+    {
+      "node_id": 20,
+      "description": "floor near plant tiled window",
+      "confidence": 0.64
+    },
+    {
+      "node_id": 19,
+      "description": "baseboard left plant wall window",
+      "confidence": 0.62
+    }
+  ],
+  "l3a_promotions_ready": [
+    {
+      "instruction_examples": [
+        "It is too hot in here, take me somewhere I can get some fresh air"
+      ],
+      "node_id": 14,
+      "frequency": 19
+    },
+    {
+      "instruction_examples": [
+        "go to a place to take a short break for personal needs"
+      ],
+      "node_id": 0,
+      "frequency": 17
+    },
+    {
+      "instruction_examples": [
+        "go to the female ward"
+      ],
+      "node_id": 4,
+      "frequency": 17
+    },
+    {
+      "instruction_examples": [
+        "the washroom got on fire, help me find something to stop the fire"
+      ],
+      "node_id": 8,
+      "frequency": 16
+    },
+    {
+      "instruction_examples": [
+        "go to the male ward"
+      ],
+      "node_id": 0,
+      "frequency": 9
+    },
+    {
+      "instruction_examples": [
+        "Take me somewhere I can sit and relax"
+      ],
+      "node_id": 9,
+      "frequency": 8
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "window with potted plant in front on floor.",
+  "scene_context": "plant sits near window sill beside office chair base.",
+  "reasoning": "clear view of target landmark and associated object at expected location.",
+  "payload": {
+    "identified_objects": [
+      {"label": "window", "position": "center", "salience": "high"},
+      {"label": "plant", "position": "left-center", "salience": "medium"},
+      {"label": "chair base", "position": "far-left", "salience": "low"}
+    ]
+  }
+}

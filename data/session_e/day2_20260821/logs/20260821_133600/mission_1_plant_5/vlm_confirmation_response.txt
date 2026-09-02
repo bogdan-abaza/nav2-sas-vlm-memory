@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "office chair base on terrazzo floor near window and plant pot.",
+  "scene_context": "chair centered; white wall left; bright window right with potted jade plant nearby.",
+  "reasoning": "plant_5 is the visible succulent in white pot at POI location under light from north-facing window.",
+  "payload": {
+    "identified_objects": [
+      {"label": "chair_base", "position": "center", "salience": "high"},
+      {"label": "jade_plant", "position": "right", "salience": "medium"},
+      {"label": "window_north", "position": "background_right", "salience": "low"}
+    ]
+  }
+}

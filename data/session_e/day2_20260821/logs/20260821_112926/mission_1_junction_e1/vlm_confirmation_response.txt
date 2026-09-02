@@ -1,0 +1,14 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "floor with chair base and radiator visible",
+  "scene_context": "indoor office space near window",
+  "reasoning": "no plant_5 detected; only lab_chair present",
+  "payload": {
+    "identified_objects": [
+      {"label": "chair_base", "position": "center", "salience": "high"},
+      {"label": "radiator", "position": "left", "salience": "medium"}
+    ]
+  }
+}

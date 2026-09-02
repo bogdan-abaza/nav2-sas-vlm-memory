@@ -1,0 +1,4 @@
+{
+"node_id": 9,
+"reason": "The user requested to rest because they are tired; node 9 (radiator) is the highest priority designated resting location listed in the rules."
+}

@@ -1,0 +1,6 @@
+```json
+{
+"node_id": 5,
+"reason": "The instruction asks for the 'class lab'. The semantic data identifies node 5 as a laboratory ('lab_cb204') in the manufacturing department. This is the only explicit match to the requested entity type."
+}
+```

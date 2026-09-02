@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant on window sill with terrazzo floor below.",
+  "scene_context": "plant sits near wall and glass pane; tape marks nearby object right.",
+  "reasoning": "clearly visible potted greenery matches expected landmark location.",
+  "payload": {
+    "identified_objects": [
+      {"label": "potted plant", "position": "center", "salience": "high"},
+      {"label": "window sill", "position": "left-center", "salience": "medium"},
+      {"label": "floor tiles", "position": "bottom", "salience": "low"}
+    ]
+  }
+}

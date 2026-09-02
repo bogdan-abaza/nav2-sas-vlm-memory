@@ -1,0 +1,632 @@
+{
+  "analysis_id": "R210-AN-02",
+  "status": "FROZEN",
+  "core_claim": "L3b interface-level model portability, not semantic model invariance.",
+  "provenance": {
+    "acquisition_sha256": "f59063c0e55fbc9a021c80c97c2e0897f161f620ebb374a887ba0ee4ed54ad04",
+    "replay_package_sha256": "3b5f8c0dc4d596ea9d94a2bb412f2a9e9c07ffc2323780bc737e0b747623e254",
+    "session_e_reference_sha256": "83bd07360c0b39baada146804a0f81672d6934848ae2da7517b418c42239bac5",
+    "session_e_source_zip_sha256": "9e2f1dbc0269a056efac7594e679c9b643a59b0a22a0916e8dde8c422f945f33",
+    "runner_sha256": "58cafa07d7dca62ea249218bb317590fe9d8874c0456f804a12bc9137a4e4c7e",
+    "host": "fiir-eq2-Yoga-Pro-9-16IAH10",
+    "ollama": "0.30.2",
+    "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU, 580.173.02, 8151 MiB, 12.0",
+    "sampler_md5": "17d8f94f0f63578f4116e53d39219fff",
+    "control_model_digest": "0c8faadc50c205b83c634430c1dae6d1a4896c9b818cb8f290aa34d535265018",
+    "transport_failures": 0,
+    "retried_calls": 0
+  },
+  "population": {
+    "session_e_audit_sessions": 214,
+    "session_e_decisions": 226,
+    "vlm_call_path_attempts": 105,
+    "timed_vlm_records": 91,
+    "accepted_node_image_complete_cohort": 69,
+    "negation_blocked_clarification": 22,
+    "error_parse": 14,
+    "primary_records_excluding_E0": 68,
+    "primary_replay_outputs": 612,
+    "clustering_unit": "68 records, not 612 repeated outputs"
+  },
+  "primary_model_comparison": {
+    "qwen3.5:4b": {
+      "contract_ok": 181,
+      "accepted_node": 160,
+      "negation_abstention": 21,
+      "other_abstention": 0,
+      "contract_failure": 23,
+      "forbidden_selection": 0,
+      "archive_agree": 137,
+      "median_wall_ms": 7196.594999999999,
+      "mean_wall_ms": 7718.220490196079,
+      "p95_wall_ms": 11878.129,
+      "max_wall_ms": 15011.27
+    },
+    "gemma4:e2b": {
+      "contract_ok": 204,
+      "accepted_node": 194,
+      "negation_abstention": 10,
+      "other_abstention": 0,
+      "contract_failure": 0,
+      "forbidden_selection": 0,
+      "archive_agree": 131,
+      "median_wall_ms": 6772.245,
+      "mean_wall_ms": 6703.517009803922,
+      "p95_wall_ms": 7065.8555,
+      "max_wall_ms": 7172.42
+    },
+    "qwen3.5:9b": {
+      "contract_ok": 199,
+      "accepted_node": 165,
+      "negation_abstention": 33,
+      "other_abstention": 1,
+      "contract_failure": 5,
+      "forbidden_selection": 0,
+      "archive_agree": 120,
+      "median_wall_ms": 14628.875,
+      "mean_wall_ms": 15607.11955882353,
+      "p95_wall_ms": 18973.4035,
+      "max_wall_ms": 43998.35
+    }
+  },
+  "per_seed": [
+    {
+      "model": "qwen3.5:4b",
+      "seed": 1,
+      "contract_ok": 59,
+      "archive_agree": 46
+    },
+    {
+      "model": "qwen3.5:4b",
+      "seed": 2,
+      "contract_ok": 63,
+      "archive_agree": 49
+    },
+    {
+      "model": "qwen3.5:4b",
+      "seed": 3,
+      "contract_ok": 59,
+      "archive_agree": 42
+    },
+    {
+      "model": "gemma4:e2b",
+      "seed": 1,
+      "contract_ok": 68,
+      "archive_agree": 44
+    },
+    {
+      "model": "gemma4:e2b",
+      "seed": 2,
+      "contract_ok": 68,
+      "archive_agree": 44
+    },
+    {
+      "model": "gemma4:e2b",
+      "seed": 3,
+      "contract_ok": 68,
+      "archive_agree": 43
+    },
+    {
+      "model": "qwen3.5:9b",
+      "seed": 1,
+      "contract_ok": 66,
+      "archive_agree": 40
+    },
+    {
+      "model": "qwen3.5:9b",
+      "seed": 2,
+      "contract_ok": 65,
+      "archive_agree": 40
+    },
+    {
+      "model": "qwen3.5:9b",
+      "seed": 3,
+      "contract_ok": 68,
+      "archive_agree": 40
+    }
+  ],
+  "intra_model_stability": {
+    "qwen3.5:4b": {
+      "all_three_contract_valid": 48,
+      "unanimous_exact_node": 40
+    },
+    "gemma4:e2b": {
+      "all_three_contract_valid": 68,
+      "unanimous_exact_node": 66
+    },
+    "qwen3.5:9b": {
+      "all_three_contract_valid": 63,
+      "unanimous_exact_node": 50
+    }
+  },
+  "cross_model_pairwise": {
+    "qwen3.5:4b vs gemma4:e2b": {
+      "agree": 115,
+      "both_valid": 181
+    },
+    "qwen3.5:4b vs qwen3.5:9b": {
+      "agree": 133,
+      "both_valid": 177
+    },
+    "gemma4:e2b vs qwen3.5:9b": {
+      "agree": 117,
+      "both_valid": 199
+    }
+  },
+  "three_model": {
+    "same_exact_node": 97,
+    "all_three_valid": 177
+  },
+  "session_e_negation": {
+    "activations": 39,
+    "reached_guard": 35,
+    "clarification_minus1": 22,
+    "actionable_nonforbidden": 13,
+    "error_parse_before_guard": 4,
+    "forbidden_proposals": 0,
+    "full_population_clarification_rate": 0.6285714285714286,
+    "comparability_note": "22/35 is descriptive full-population context and is not directly comparable with replay rates on the 13 outcome-conditioned cases."
+  },
+  "replay_negation": {
+    "records": 13,
+    "outcomes": 117,
+    "by_model": {
+      "qwen3.5:4b": {
+        "overall_minus1": 21,
+        "prohibition_minus1": 8,
+        "exclusion_minus1": 13,
+        "exclusion_actionable": 7,
+        "forbidden": 0
+      },
+      "gemma4:e2b": {
+        "overall_minus1": 10,
+        "prohibition_minus1": 10,
+        "exclusion_minus1": 0,
+        "exclusion_actionable": 21,
+        "forbidden": 0
+      },
+      "qwen3.5:9b": {
+        "overall_minus1": 33,
+        "prohibition_minus1": 18,
+        "exclusion_minus1": 15,
+        "exclusion_actionable": 5,
+        "forbidden": 0
+      }
+    },
+    "forbidden_selections_total": 0
+  },
+  "failure_morphology": {
+    "qwen3.5:4b": {
+      "failures": 23,
+      "unique_records": 20,
+      "modes": {
+        "truncation": 9,
+        "other": 1,
+        "backslash_escaping": 13
+      },
+      "recoverable_integer": 14
+    },
+    "gemma4:e2b": {
+      "failures": 0,
+      "unique_records": 0,
+      "modes": {},
+      "recoverable_integer": 0
+    },
+    "qwen3.5:9b": {
+      "failures": 5,
+      "unique_records": 5,
+      "modes": {
+        "truncation": 4,
+        "python_literal_quoting": 1
+      },
+      "recoverable_integer": 5
+    }
+  },
+  "latency_ratios": {
+    "gemma4:e2b/qwen3.5:4b": {
+      "median": 0.935835510393777,
+      "iqr": [
+        0.8916317998818994,
+        0.9713395274851677
+      ]
+    },
+    "qwen3.5:9b/qwen3.5:4b": {
+      "median": 2.0081781306560504,
+      "iqr": [
+        1.8678290467900482,
+        2.182007048128292
+      ]
+    }
+  },
+  "promotion": {
+    "archived": {
+      "quiet": {
+        "nodes": [
+          9,
+          15,
+          9,
+          9
+        ],
+        "dominant": 9,
+        "consistency": 0.75,
+        "promote": false
+      },
+      "delivery": {
+        "nodes": [
+          10,
+          null,
+          10,
+          5
+        ],
+        "dominant": 10,
+        "consistency": 0.5,
+        "promote": false
+      },
+      "gloves": {
+        "nodes": [
+          9,
+          9,
+          9,
+          9
+        ],
+        "dominant": 9,
+        "consistency": 1.0,
+        "promote": true
+      }
+    },
+    "replay": {
+      "qwen3.5:4b": {
+        "1": {
+          "quiet": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "gloves": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "delivery_partial": {
+            "nodes": [
+              23,
+              null,
+              9,
+              null
+            ],
+            "dominant": null,
+            "consistency": 0.5,
+            "promote": false
+          }
+        },
+        "2": {
+          "quiet": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "gloves": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "delivery_partial": {
+            "nodes": [
+              1,
+              null,
+              9,
+              5
+            ],
+            "dominant": 1,
+            "consistency": 0.25,
+            "promote": false
+          }
+        },
+        "3": {
+          "quiet": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "gloves": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "delivery_partial": {
+            "nodes": [
+              null,
+              null,
+              null,
+              15
+            ],
+            "dominant": null,
+            "consistency": 0.75,
+            "promote": false
+          }
+        }
+      },
+      "gemma4:e2b": {
+        "1": {
+          "quiet": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "gloves": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "delivery_partial": {
+            "nodes": [
+              9,
+              null,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 0.75,
+            "promote": false
+          }
+        },
+        "2": {
+          "quiet": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "gloves": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "delivery_partial": {
+            "nodes": [
+              9,
+              null,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 0.75,
+            "promote": false
+          }
+        },
+        "3": {
+          "quiet": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "gloves": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "delivery_partial": {
+            "nodes": [
+              9,
+              null,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 0.75,
+            "promote": false
+          }
+        }
+      },
+      "qwen3.5:9b": {
+        "1": {
+          "quiet": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "gloves": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "delivery_partial": {
+            "nodes": [
+              23,
+              null,
+              23,
+              null
+            ],
+            "dominant": 23,
+            "consistency": 0.5,
+            "promote": false
+          }
+        },
+        "2": {
+          "quiet": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "gloves": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "delivery_partial": {
+            "nodes": [
+              10,
+              null,
+              23,
+              23
+            ],
+            "dominant": 23,
+            "consistency": 0.5,
+            "promote": false
+          }
+        },
+        "3": {
+          "quiet": {
+            "nodes": [
+              9,
+              9,
+              9,
+              15
+            ],
+            "dominant": 9,
+            "consistency": 0.75,
+            "promote": false
+          },
+          "gloves": {
+            "nodes": [
+              9,
+              9,
+              9,
+              9
+            ],
+            "dominant": 9,
+            "consistency": 1.0,
+            "promote": true
+          },
+          "delivery_partial": {
+            "nodes": [
+              23,
+              null,
+              23,
+              23
+            ],
+            "dominant": 23,
+            "consistency": 0.75,
+            "promote": false
+          }
+        }
+      }
+    }
+  },
+  "promotion_summary": {
+    "quiet_promote_arms": 8,
+    "gloves_promote_arms": 9,
+    "delivery_promote_arms": 0
+  },
+  "noimage": {
+    "qwen3.5:4b": {
+      "n": 42,
+      "contract_ok": 3,
+      "median_wall_ms": 2108.52
+    },
+    "gemma4:e2b": {
+      "n": 42,
+      "contract_ok": 42,
+      "median_wall_ms": 1286.65
+    },
+    "qwen3.5:9b": {
+      "n": 42,
+      "contract_ok": 37,
+      "median_wall_ms": 8160.805
+    }
+  },
+  "limitations": [
+    "Multimodal replay is outcome-conditioned on original accepted-node, image-complete L3b outcomes.",
+    "Archived node is a reference outcome, not semantic ground truth.",
+    "Three seed bases characterize but do not exhaust decoder variability.",
+    "Replay covers L3b destination selection, not the separate post-arrival visual-confirmation VLM interface.",
+    "Delivery promotion is only a partial multimodal counterfactual because one original image is missing.",
+    "Latency is same-machine descriptive evidence.",
+    "The 22 guard-handled original clarification cases preserve parsed node_id=-1 but lack raw reply text/reason and image_start."
+  ]
+}

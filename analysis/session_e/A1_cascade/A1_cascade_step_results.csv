@@ -1,0 +1,85 @@
+scope_type,scope_value,step,step_label,n,denominator_fast_path,pct_of_fast_path,denominator_all_decisions,pct_of_all_decisions,latency_n,mean_ms,sd_sample_ms,median_ms,q1_ms,q3_ms,min_ms,max_ms,p95_ms,methods
+overall,raw_including_E0,0,M3 learned association,43,121,35.53719,226,19.026549,43,0.134817,0.027747,0.131845,0.123739,0.141382,0.085354,0.257015,0.161004,"{""L3a_m3_preference"": 43}"
+overall,raw_including_E0,1,explicit node ID,18,121,14.876033,226,7.964602,18,0.178019,0.04141,0.191331,0.163913,0.195622,0.072241,0.232935,0.227463,"{""L3a_deterministic"": 18}"
+overall,raw_including_E0,2,node name,22,121,18.181818,226,9.734513,22,0.392242,0.095174,0.384808,0.366211,0.397325,0.286341,0.780344,0.431895,"{""L3a_deterministic"": 22}"
+overall,raw_including_E0,3,object ID (obj_id),8,121,6.61157,226,3.539823,8,0.374973,0.146231,0.347495,0.299573,0.354886,0.279188,0.72813,0.59762,"{""L3a_deterministic"": 8}"
+overall,raw_including_E0,4,attribute match,13,121,10.743802,226,5.752212,13,0.499138,0.151258,0.464678,0.418425,0.527859,0.354052,0.96035,0.720453,"{""L3a_deterministic"": 13}"
+overall,raw_including_E0,5,single class match,3,121,2.479339,226,1.327434,3,0.444174,0.063688,0.457048,0.41604,0.478745,0.375032,0.500441,0.496101,"{""L3a_deterministic"": 3}"
+overall,raw_including_E0,6,class + proximity,14,121,11.570248,226,6.19469,14,0.38881,0.087777,0.382662,0.313759,0.481367,0.262976,0.519276,0.507808,"{""L3a_deterministic"": 14}"
+overall,primary_E0_excluded,0,M3 learned association,39,112,34.821429,216,18.055556,39,0.135293,0.028772,0.131845,0.125527,0.141382,0.085354,0.257015,0.165701,"{""L3a_m3_preference"": 39}"
+overall,primary_E0_excluded,1,explicit node ID,18,112,16.071429,216,8.333333,18,0.178019,0.04141,0.191331,0.163913,0.195622,0.072241,0.232935,0.227463,"{""L3a_deterministic"": 18}"
+overall,primary_E0_excluded,2,node name,17,112,15.178571,216,7.87037,17,0.396504,0.108377,0.389099,0.366926,0.399113,0.286341,0.780344,0.501871,"{""L3a_deterministic"": 17}"
+overall,primary_E0_excluded,3,object ID (obj_id),8,112,7.142857,216,3.703704,8,0.374973,0.146231,0.347495,0.299573,0.354886,0.279188,0.72813,0.59762,"{""L3a_deterministic"": 8}"
+overall,primary_E0_excluded,4,attribute match,13,112,11.607143,216,6.018519,13,0.499138,0.151258,0.464678,0.418425,0.527859,0.354052,0.96035,0.720453,"{""L3a_deterministic"": 13}"
+overall,primary_E0_excluded,5,single class match,3,112,2.678571,216,1.388889,3,0.444174,0.063688,0.457048,0.41604,0.478745,0.375032,0.500441,0.496101,"{""L3a_deterministic"": 3}"
+overall,primary_E0_excluded,6,class + proximity,14,112,12.5,216,6.481481,14,0.38881,0.087777,0.382662,0.313759,0.481367,0.262976,0.519276,0.507808,"{""L3a_deterministic"": 14}"
+experiment,E1,0,M3 learned association,8,39,20.512821,39,20.512821,8,0.137419,0.01116,0.134468,0.129282,0.148118,0.123739,0.153065,0.151396,"{""L3a_m3_preference"": 8}"
+experiment,E1,1,explicit node ID,18,39,46.153846,39,46.153846,18,0.178019,0.04141,0.191331,0.163913,0.195622,0.072241,0.232935,0.227463,"{""L3a_deterministic"": 18}"
+experiment,E1,2,node name,8,39,20.512821,39,20.512821,8,0.37697,0.027182,0.384092,0.3739,0.394106,0.315189,0.399113,0.398362,"{""L3a_deterministic"": 8}"
+experiment,E1,3,object ID (obj_id),0,39,0.0,39,0.0,,,,,,,,,,{}
+experiment,E1,4,attribute match,0,39,0.0,39,0.0,,,,,,,,,,{}
+experiment,E1,5,single class match,0,39,0.0,39,0.0,,,,,,,,,,{}
+experiment,E1,6,class + proximity,5,39,12.820513,39,12.820513,5,0.432396,0.075155,0.459194,0.390053,0.488758,0.322342,0.501633,0.499058,"{""L3a_deterministic"": 5}"
+experiment,E2,0,M3 learned association,4,8,50.0,49,8.163265,4,0.137627,0.008486,0.136495,0.134051,0.140071,0.128508,0.149012,0.147223,"{""L3a_m3_preference"": 4}"
+experiment,E2,1,explicit node ID,0,8,0.0,49,0.0,,,,,,,,,,{}
+experiment,E2,2,node name,4,8,50.0,49,8.163265,4,0.479341,0.209225,0.420809,0.386238,0.513911,0.295401,0.780344,0.727057,"{""L3a_deterministic"": 4}"
+experiment,E2,3,object ID (obj_id),0,8,0.0,49,0.0,,,,,,,,,,{}
+experiment,E2,4,attribute match,0,8,0.0,49,0.0,,,,,,,,,,{}
+experiment,E2,5,single class match,0,8,0.0,49,0.0,,,,,,,,,,{}
+experiment,E2,6,class + proximity,0,8,0.0,49,0.0,,,,,,,,,,{}
+experiment,E3,0,M3 learned association,23,56,41.071429,56,41.071429,23,0.140055,0.033334,0.133991,0.128627,0.141025,0.103474,0.257015,0.201941,"{""L3a_m3_preference"": 23}"
+experiment,E3,1,explicit node ID,0,56,0.0,56,0.0,,,,,,,,,,{}
+experiment,E3,2,node name,4,56,7.142857,56,7.142857,4,0.380278,0.050798,0.389218,0.36943,0.400066,0.310421,0.432253,0.425816,"{""L3a_deterministic"": 4}"
+experiment,E3,3,object ID (obj_id),8,56,14.285714,56,14.285714,8,0.374973,0.146231,0.347495,0.299573,0.354886,0.279188,0.72813,0.59762,"{""L3a_deterministic"": 8}"
+experiment,E3,4,attribute match,12,56,21.428571,56,21.428571,12,0.507832,0.154555,0.472069,0.424683,0.530481,0.354052,0.96035,0.740445,"{""L3a_deterministic"": 12}"
+experiment,E3,5,single class match,0,56,0.0,56,0.0,,,,,,,,,,{}
+experiment,E3,6,class + proximity,9,56,16.071429,56,16.071429,9,0.364595,0.088595,0.325441,0.310659,0.388622,0.262976,0.519276,0.507736,"{""L3a_deterministic"": 9}"
+experiment,E4,0,M3 learned association,0,0,,23,0.0,,,,,,,,,,{}
+experiment,E4,1,explicit node ID,0,0,,23,0.0,,,,,,,,,,{}
+experiment,E4,2,node name,0,0,,23,0.0,,,,,,,,,,{}
+experiment,E4,3,object ID (obj_id),0,0,,23,0.0,,,,,,,,,,{}
+experiment,E4,4,attribute match,0,0,,23,0.0,,,,,,,,,,{}
+experiment,E4,5,single class match,0,0,,23,0.0,,,,,,,,,,{}
+experiment,E4,6,class + proximity,0,0,,23,0.0,,,,,,,,,,{}
+experiment,E4b,0,M3 learned association,4,4,100.0,10,40.0,4,0.101328,0.015605,0.098705,0.093579,0.106454,0.085354,0.122547,0.119328,"{""L3a_m3_preference"": 4}"
+experiment,E4b,1,explicit node ID,0,4,0.0,10,0.0,,,,,,,,,,{}
+experiment,E4b,2,node name,0,4,0.0,10,0.0,,,,,,,,,,{}
+experiment,E4b,3,object ID (obj_id),0,4,0.0,10,0.0,,,,,,,,,,{}
+experiment,E4b,4,attribute match,0,4,0.0,10,0.0,,,,,,,,,,{}
+experiment,E4b,5,single class match,0,4,0.0,10,0.0,,,,,,,,,,{}
+experiment,E4b,6,class + proximity,0,4,0.0,10,0.0,,,,,,,,,,{}
+experiment,E5,0,M3 learned association,0,0,,6,0.0,,,,,,,,,,{}
+experiment,E5,1,explicit node ID,0,0,,6,0.0,,,,,,,,,,{}
+experiment,E5,2,node name,0,0,,6,0.0,,,,,,,,,,{}
+experiment,E5,3,object ID (obj_id),0,0,,6,0.0,,,,,,,,,,{}
+experiment,E5,4,attribute match,0,0,,6,0.0,,,,,,,,,,{}
+experiment,E5,5,single class match,0,0,,6,0.0,,,,,,,,,,{}
+experiment,E5,6,class + proximity,0,0,,6,0.0,,,,,,,,,,{}
+experiment,E6,0,M3 learned association,0,0,,4,0.0,,,,,,,,,,{}
+experiment,E6,1,explicit node ID,0,0,,4,0.0,,,,,,,,,,{}
+experiment,E6,2,node name,0,0,,4,0.0,,,,,,,,,,{}
+experiment,E6,3,object ID (obj_id),0,0,,4,0.0,,,,,,,,,,{}
+experiment,E6,4,attribute match,0,0,,4,0.0,,,,,,,,,,{}
+experiment,E6,5,single class match,0,0,,4,0.0,,,,,,,,,,{}
+experiment,E6,6,class + proximity,0,0,,4,0.0,,,,,,,,,,{}
+experiment,E7,0,M3 learned association,0,5,0.0,29,0.0,,,,,,,,,,{}
+experiment,E7,1,explicit node ID,0,5,0.0,29,0.0,,,,,,,,,,{}
+experiment,E7,2,node name,1,5,20.0,29,3.448276,1,0.286341,,0.286341,0.286341,0.286341,0.286341,0.286341,0.286341,"{""L3a_deterministic"": 1}"
+experiment,E7,3,object ID (obj_id),0,5,0.0,29,0.0,,,,,,,,,,{}
+experiment,E7,4,attribute match,1,5,20.0,29,3.448276,1,0.394821,,0.394821,0.394821,0.394821,0.394821,0.394821,0.394821,"{""L3a_deterministic"": 1}"
+experiment,E7,5,single class match,3,5,60.0,29,10.344828,3,0.444174,0.063688,0.457048,0.41604,0.478745,0.375032,0.500441,0.496101,"{""L3a_deterministic"": 3}"
+experiment,E7,6,class + proximity,0,5,0.0,29,0.0,,,,,,,,,,{}
+platform,xplorer-b,0,M3 learned association,22,55,40.0,119,18.487395,22,0.129841,0.025438,0.130415,0.113606,0.137568,0.085354,0.20647,0.15918,"{""L3a_m3_preference"": 22}"
+platform,xplorer-b,1,explicit node ID,0,55,0.0,119,0.0,,,,,,,,,,{}
+platform,xplorer-b,2,node name,9,55,16.363636,119,7.563025,9,0.405179,0.147891,0.376225,0.315189,0.396967,0.286341,0.780344,0.638247,"{""L3a_deterministic"": 9}"
+platform,xplorer-b,3,object ID (obj_id),4,55,7.272727,119,3.361345,4,0.428736,0.202345,0.352383,0.332654,0.448465,0.282049,0.72813,0.672197,"{""L3a_deterministic"": 4}"
+platform,xplorer-b,4,attribute match,7,55,12.727273,119,5.882353,7,0.54339,0.196512,0.527859,0.410914,0.549436,0.394821,0.96035,0.840402,"{""L3a_deterministic"": 7}"
+platform,xplorer-b,5,single class match,3,55,5.454545,119,2.521008,3,0.444174,0.063688,0.457048,0.41604,0.478745,0.375032,0.500441,0.496101,"{""L3a_deterministic"": 3}"
+platform,xplorer-b,6,class + proximity,10,55,18.181818,119,8.403361,10,0.357389,0.079753,0.323892,0.310719,0.386715,0.262976,0.519276,0.492239,"{""L3a_deterministic"": 10}"
+platform,xplorer-c,0,M3 learned association,17,57,29.824561,97,17.525773,17,0.14235,0.031984,0.135899,0.1297,0.144243,0.103712,0.257015,0.18034,"{""L3a_m3_preference"": 17}"
+platform,xplorer-c,1,explicit node ID,18,57,31.578947,97,18.556701,18,0.178019,0.04141,0.191331,0.163913,0.195622,0.072241,0.232935,0.227463,"{""L3a_deterministic"": 18}"
+platform,xplorer-c,2,node name,8,57,14.035088,97,8.247423,8,0.386745,0.04056,0.391245,0.384212,0.403464,0.295401,0.432253,0.426745,"{""L3a_deterministic"": 8}"
+platform,xplorer-c,3,object ID (obj_id),4,57,7.017544,97,4.123711,4,0.321209,0.03526,0.325441,0.298858,0.347793,0.279188,0.354767,0.353372,"{""L3a_deterministic"": 4}"
+platform,xplorer-c,4,attribute match,6,57,10.526316,97,6.185567,6,0.447512,0.051279,0.464082,0.435948,0.475764,0.354052,0.496626,0.492334,"{""L3a_deterministic"": 6}"
+platform,xplorer-c,5,single class match,0,57,0.0,97,0.0,,,,,,,,,,{}
+platform,xplorer-c,6,class + proximity,4,57,7.017544,97,4.123711,4,0.46736,0.052802,0.489593,0.463724,0.493228,0.388622,0.501633,0.499952,"{""L3a_deterministic"": 4}"

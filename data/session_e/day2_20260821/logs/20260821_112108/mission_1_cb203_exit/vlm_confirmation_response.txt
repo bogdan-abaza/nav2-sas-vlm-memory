@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "open corridor with stairs ahead and pillars on right",
+  "scene_context": "centered in hallway; exit likely at stairwell or end of passage",
+  "reasoning": "visible door frame implied by open space leading to staircase area"
+}

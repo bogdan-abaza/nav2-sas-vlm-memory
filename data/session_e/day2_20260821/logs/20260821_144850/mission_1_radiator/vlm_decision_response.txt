@@ -1,0 +1,1 @@
+{"node_id": 9, "reason": "The radiator is the only designated seating/RESTING location listed in the rules that matches 'quiet corner to read', and it is closer than other static options."}

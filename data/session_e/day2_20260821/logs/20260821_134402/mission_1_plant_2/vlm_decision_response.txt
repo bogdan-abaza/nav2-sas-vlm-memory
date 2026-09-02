@@ -1,0 +1,10 @@
+Based on the instruction to go to a **green zone**, I analyzed the semantic objects for color attributes (e.g., `pot_color`). None of the detected plants (`plant_1` through `plant_5`) have explicit green colors listed in their metadata. However, given that these are potted plants and "green" is the standard attribute associated with vegetation/plants, **node 20** represents a valid target for this instruction (containing `potted plant`).
+
+Applying navigation rules:
+1.  **Match:** Node 20 contains a potted plant (`plant_2`), which fits the semantic category of "green".
+2.  **Preference Check:** The user did not specify sitting or resting, so I do not apply the strict rule to prefer designated seating locations (like node 9). However, even if it were preferred, Node 15 is a chair in an area described as having plants and windows but lacks explicit "green" color data.
+3.  **Proximity:** The instruction does not specify distance preference ("closest"), so I select the first valid match found that fits the semantic description of a plant zone.
+
+Therefore, the robot should navigate to node 20.
+
+{"node_id": 20, "reason": "Node 20 contains 'plant_2', which matches the instruction for a green zone."}

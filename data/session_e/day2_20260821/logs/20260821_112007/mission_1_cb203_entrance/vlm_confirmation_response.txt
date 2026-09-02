@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "brown door at corridor end with red arrow sign nearby",
+  "scene_context": "entrance side visible; floor tiles and wall corner present",
+  "reasoning": "door frame matches expected cue for entrance location"
+}

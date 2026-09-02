@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "corridor end with door frame visible ahead",
+  "scene_context": "exit side cues align with corridor termination point",
+  "reasoning": "door frame at corridor end matches expected exit cue location"
+}

@@ -1,0 +1,10 @@
+artefact               md5 fisier                         content_md5 compact (=audit)       content_md5 implicit               promovari
+publicat (arhivat)     97241265217eb4b08e26fb718eb21f40   0fd61f9e82e8fe6991f0311014384e0c   bdc89fcf1e17f8c577a941cd80be70ab   6
+inainte de E4b         97241265217eb4b08e26fb718eb21f40   0fd61f9e82e8fe6991f0311014384e0c   bdc89fcf1e17f8c577a941cd80be70ab   6
+gol, E6                b01717118e1e479f49d931a5c96cc0c5   59a7c9cfa25549c9de6ec3c6e0f988d2   7c50796626c60f1706167dd97135fc58   0
+E4.2, neinstalat       3751babfc573f36665648833ab0c98ed   d221ef8ad689de168b2020995693791c   498d7ee8789a983efd198120495492f4   0
+E4b, instalat          eca5dbc8061bc3fdafdc49e12bc2c900   5b3f14bc71a1896da5b29a4e655479fa   3fe27bc685a5af206115e98a82113415   1
+ACTIV la sfarsit       eca5dbc8061bc3fdafdc49e12bc2c900   5b3f14bc71a1896da5b29a4e655479fa   3fe27bc685a5af206115e98a82113415   1
+
+Conventia din audit este cea COMPACTA (amendament D4).
+Digestul publicat nu contine cheia content_md5; cele produse de extractor o contin.

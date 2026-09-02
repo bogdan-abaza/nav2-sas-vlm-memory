@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "floor with plant and chair nearby",
+  "scene_context": "plant on right, lab chair behind center",
+  "reasoning": "visible plant_5 matches expected landmark at target location"
+}

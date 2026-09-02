@@ -1,0 +1,399 @@
+<!doctype html><html lang=ro><meta charset=utf-8>
+<title>Fișe de rulaj — ZIUA 2 · sesiunea E · ROBOT-D-26-01090</title>
+<style>
+body{font:13px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;max-width:1180px;margin:24px auto;padding:0 18px;color:#1a1a1a}
+h1{font-size:22px;margin:0 0 4px} h2{font-size:17px;margin:32px 0 8px;padding-top:10px;border-top:2px solid #222}
+h3{font-size:14px;margin:18px 0 6px}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:12px}
+th,td{border:1px solid #ccc;padding:4px 6px;text-align:left;vertical-align:top}
+th{background:#eee;font-weight:600}
+tr.blk td{background:#f2f2f2;font-weight:600;font-size:12px}
+td.num{text-align:right;width:34px} td.chk{width:56px;background:#fffdf0}
+td.id{font-family:ui-monospace,monospace;white-space:nowrap}
+td.ins{max-width:330px} td.note{width:90px;background:#fffdf0}
+.gate{background:#fff7e6;border-left:5px solid #e08b00;padding:10px 14px;margin:14px 0}
+.stop{background:#ffecec;border-left:5px solid #c00}
+.ok{background:#eefaee;border-left:5px solid #2a8}
+pre{background:#f6f6f6;border:1px solid #ddd;padding:8px 10px;overflow-x:auto;font-size:11.5px;margin:6px 0}
+code{background:#f0f0f0;padding:1px 4px;font-size:12px}
+.bad{color:#c00} .fill{display:inline-block;min-width:150px;border-bottom:1px solid #888}
+.meta{font-size:12px;color:#555}
+@media print{body{max-width:none;margin:0} h2{page-break-before:always} .gate{break-inside:avoid}}
+</style>
+
+<h1>Fișe de rulaj — <b>ZIUA 2</b> · sesiunea E</h1>
+<p class=meta>ROBOT-D-26-01090 · 21 august 2026 · implementare înghețată <code>f973aa0</code> ·
+<b>112 misiuni</b> (E3 50 · E7 28 · E4 20 · E5 6 · E6 4 · ancore 4) ·
+la ritmul măsurat de 2 min/misiune, ≈ 3 h 45 min de rulaj efectiv.</p>
+
+<div class="gate stop"><b>ORDINEA BLOCURILOR NU E NEGOCIABILĂ: E3 → E7 → E6 → E4 → E5.</b><br>
+E4 regenerează digestul și promovează două preferințe noi. Orice bloc rulat după E4 sub digestul nou
+nu mai e comparabil cu E1–E3. E7 trebuie să vadă <b>același digest publicat</b> ca E3.</div>
+
+<div class="gate"><b>IDENTITATE — se copiază în antetul zilei</b><br>
+<code>git_commit</code> = <code>f973aa0</code>, arbore curat &nbsp;·&nbsp;
+<code>memory_digest.json</code> md5 = <code>97241265217eb4b08e26fb718eb21f40</code> &nbsp;·&nbsp;
+<code>content_md5</code> = <code>0fd61f9e82e8fe6991f0311014384e0c</code><br>
+<code>semantic_objects_static_v2.geojson</code> = <code>2e48375071c0e4ea7cd38c0e48ef97c5</code> &nbsp;·&nbsp;
+<code>route_graph_fiir.geojson</code> pe disc = <code>440522bc9f0c32997698310f680bfb89</code><br>
+<b>sigiliu E7</b> <code>E7_set_sigilat_v2.csv</code> md5 = <code>1ebb16730b30a1ee8c97f11e6b6f2cdd</code>, 28 de instrucțiuni<br>
+<b>Cum se calculează J:</b> cu <code>sas_text.tokenize</code> + <code>sas_text.jaccard</code> din <code>f973aa0</code> — aceleași funcții pe care le importă <code>sas_l3a.py</code> pentru pasul 0. Numărarea pe cuvinte brute dă alte valori (stopwords și alias-urile RO cad) și <b>nu</b> e cea folosită de sistem.<br>
+<b>Ceasul:</b> timestamp-urile din audit sunt <b>UTC</b>. Ora locală = UTC + 3. Toate orele notate
+manual se citesc <b>de pe ceasul robotului</b>, nu de pe telefon.</div>
+
+<h2>A · ÎNAINTE DE PRIMA MISIUNE — o singură dată</h2>
+
+<div class="gate ok"><b>A1–A4 se pot rula dintr-o singură comandă:</b><pre>./verifica_start.sh &lt;cale_src&gt; &lt;cale_config&gt; &lt;cale_maps&gt;</pre>Iese cu cod 0 numai dacă trec toate. Detaliile de mai jos rămân pentru cazul în care ceva pică.</div><h3>A1. Identitatea codului</h3>
+<pre>cd &lt;cale_src&gt;
+git rev-parse --short HEAD      # trebuie sa fie f973aa0
+git status --porcelain          # trebuie sa fie GOL</pre>
+<div class="gate stop">Dacă arborele nu e curat sau commit-ul diferă, <b>ziua nu începe.</b>
+Orice modificare de cod invalidează cele 273 de înregistrări din ziua 1 și repornește sesiunea.</div>
+
+<h3>A2. Graful, pe ambele platforme</h3>
+<pre>./check_graph.sh xplorer-b xplorer-c</pre>
+Trebuie cod 0. Verdictul „DIFERIT, dar echivalent" <b>nu</b> blochează — se consemnează în antet.
+Verdictul „ALT GRAF" blochează.
+
+<h3>A3. Hash-urile de configurație</h3>
+<pre>md5sum config/memory_digest.json          # 97241265217eb4b08e26fb718eb21f40
+md5sum config/semantic_objects_static_v2.geojson  # 2e48375071c0e4ea7cd38c0e48ef97c5
+md5sum maps/route_graph_fiir.geojson              # 440522bc9f0c32997698310f680bfb89</pre>
+
+<h3>A4. Sigiliul E7</h3>
+<pre>md5sum E7_set_sigilat_v2.csv     # 1ebb16730b30a1ee8c97f11e6b6f2cdd
+tail -n +2 E7_set_sigilat_v2.csv | wc -l   # 28</pre>
+<div class="gate stop">Dacă md5-ul diferă, fișierul a fost atins după sigilare și <b>E7 nu se rulează.</b>
+Instrucțiunile din fișa de mai jos sunt copii; sursa autoritativă e fișierul cu acest md5.</div>
+
+<h3>A5. Digestul GOL pentru E6 — de pregătit ACUM, nu la momentul blocului</h3>
+<div class="gate stop"><b>Corecție față de prima versiune a fișei.</b>
+<code>memory_extractor.py</code> <b>nu are</b> flag <code>--empty</code>, iar <code>-o</code> este
+<b>director</b>, nu fișier. Comanda din varianta anterioară nu ar fi funcționat. Se folosește scriptul:</div>
+<pre>./genereaza_digest_gol.sh &lt;cale_src&gt; &lt;cale_config&gt;</pre>
+<p>Metoda: se dă extractorului înghețat un director de log-uri care conține <b>un singur audit gol</b>.
+Extractorul rulează normal și produce un digest cu 0 promovări. Verificat aici înainte de livrare —
+funcționează, iar rezultatul e determinist.</p>
+<div class="gate ok"><b>Valoare prezisă:</b> <code>content_md5 = 59a7c9cfa25549c9de6ec3c6e0f988d2</code>,
+<code>l3a_promotions_ready = 0</code>.<br>
+Scriptul verifică singur și se oprește dacă digestul nu e gol. Dacă <code>content_md5</code> diferă de
+valoarea prezisă, nu blochează, dar <b>se consemnează și se raportează înainte de E6</b> — înseamnă că
+extractorul de pe robot produce alt rezultat decât cel din pachet.</div>
+<div class="gate stop"><b>Digestul înghețat <code>config/memory_digest.json</code> NU se suprascrie
+și NU se mută.</b> Digestul gol stă în <code>$HOME/digest_gol/</code>; E6 doar redirecționează
+<code>MEMORY_DIGEST_PATH</code> către el.</div>
+<p><b>De completat în fișă:</b> digest gol · md5 fișier = <span class=fill></span> ·
+<code>content_md5</code> = <span class=fill></span> · promovări = <span class=fill></span> (trebuie <b>0</b>)</p>
+
+<h3>A6. Profilurile de bloc</h3>
+<b>Se instalează <code>blocuri.env</code> din pachetul de azi</b> (v2, amendament A10) — conține profilurile <code>E0</code>, <code>E6</code>, <code>E7</code>, plus o poartă care refuză blocul E6 dacă <code>MEMORY_DIGEST_PATH</code> nu e setat sau nu are 0 promovări. Se verifică o dată:
+<pre>source blocuri.env E7 &amp;&amp; echo &quot;$EXPERIMENT_ID&quot;   # trebuie E7
+source blocuri.env E6 &amp;&amp; echo &quot;$EXPERIMENT_ID&quot;   # trebuie E6
+source blocuri.env E0 &amp;&amp; echo &quot;$EXPERIMENT_ID&quot;   # trebuie E0</pre>
+<p class=meta>Amendament A10, 20 august 2026: <code>blocuri.env</code> este unealtă de teren, nu sistem
+măsurat; <code>src/</code> rămâne la <code>f973aa0</code>. Modificarea se declară, nu rupe îngheţul.</p>
+
+<h3>A7. Platforma și lansarea</h3>
+<pre># pe fiecare robot, o singura data
+export XPLORER_PLATFORM_ID=xplorer-b      # respectiv xplorer-c
+export SAS_LAUNCH=&quot;ros2 launch sas_navigator navigator.launch.py&quot;
+echo $ROS_DOMAIN_ID                        # trebuie sa fie DIFERIT intre B si C</pre>
+
+<h3>A8. Ancorele de dimineață — 2 misiuni</h3>
+<table><tr><th>#</th><th>rob</th><th>intent</th><th>rep</th><th>instrucțiune</th><th>țintă așteptată</th><th>pas</th><th>nod obținut</th><th>xy</th><th>obs</th></tr><tr><td class=num>1</td><td>B</td><td class=id>AD</td><td class=num>1</td><td class=ins>take me to cb202</td><td>cb202 · 8</td><td class=num>2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>2</td><td>C</td><td class=id>AD</td><td class=num>1</td><td class=ins>take me to cb202</td><td>cb202 · 8</td><td class=num>2</td><td class=chk></td><td class=chk></td><td class=note></td></tr></table>
+<div class="gate">Ancorele confirmă că extinctorul e la locul lui și că nodul 8 se comportă ca ieri.
+Se așteaptă <code>at_target: true</code>, <code>HIGH</code>, pe ambele platforme.
+Dacă vreuna nu confirmă, <b>se oprește</b> — extinctorul nu e pe conturul marcat sau scena s-a schimbat.</div>
+
+<h3>A9. Auditul de pornire — după primele două misiuni, obligatoriu</h3>
+<pre>python3 preflight_audit.py &lt;ultimul_audit.jsonl&gt; --graph-ref maps/route_graph_fiir.geojson</pre>
+Cod 0 doar dacă totul e populat. <b>Fals pozitiv cunoscut:</b> scriptul nu aplică excepția
+<code>pose_based</code> pentru nodurile 0 și 4, deci marchează <code>raw_response_truncated</code> și
+<code>expected_cue_text</code> ca ABSENT deși absența e legitimă. Se ignoră doar aceste două.
+Orice alt câmp gol <b>blochează</b>.
+
+<h2>B · BLOCUL E3 — rezoluție semantică · 50 misiuni</h2>
+
+<div class="gate"><b>ÎNAINTE DE E3</b><br>
+<pre>source blocuri.env E3</pre>
+Apoi golirea magaziei pe <b>XPLORER-B</b> (vezi caseta de mai jos). E3 rulează întâi complet pe B,
+apoi complet pe C — <b>nu alternat</b>.</div>
+<div class="gate"><b>GOLIRE MAGAZIE YOLO — înainte de E3-B</b><br>
+Pe <b>XPLORER-B</b>, în această ordine:
+<pre># 1. numara si arhiveaza
+curl -s http://$XPLORER_PLATFORM_ID:8080/dynamic_objects &gt; ~/dyn_arhiva/dyn_$(date +%H%M%S)_inainte.json
+python3 -c &quot;import json,sys;print(&#x27;obiecte brute:&#x27;,len(json.load(open(sys.argv[1]))))&quot; ~/dyn_arhiva/dyn_*_inainte.json | tail -1
+# 2. goleste
+ros2 service call /semantic_localizer/clear_dynamic_store std_srvs/srv/Trigger
+# 3. confirma golirea
+curl -s http://$XPLORER_PLATFORM_ID:8080/dynamic_objects | python3 -c &quot;import json,sys;print(&#x27;dupa golire:&#x27;,len(json.load(sys.stdin)))&quot;</pre>
+<b>Se scrie în fișă numărul dinainte și numărul de după.</b> Dacă numele serviciului diferă la voi,
+se folosește procedura pe care ai aplicat-o ieri — important e că se arhivează, se golește și se notează
+cifra. <b>Nu se oprește <code>semantic_localizer</code>.</b>
+</div>
+<div class="gate"><b>Lansarea fiecărei misiuni</b>
+<pre>./run_mission.sh &lt;INTENT_ID&gt; &lt;REP_INDEX&gt; &lt;EXPECTED_NODE&gt;</pre>
+Scriptul refuză dacă lipsește vreunul dintre cei trei. Navigatorul repornește la fiecare misiune.<br>
+<b>La <code>S5</code> se notează nodul de pornire</b> — ținta e stabilită prin proximitate, deci
+depinde de poză. Fără nodul de pornire, rândul nu e interpretabil.</div>
+<table><tr><th>#</th><th>rob</th><th>intent</th><th>rep</th><th>instrucțiune</th><th>țintă așteptată</th><th>pas</th><th>nod obținut</th><th>xy</th><th>obs</th></tr><tr class=blk><td colspan=10>XPLORER-B · repetiția 1, ordine directă</td></tr><tr><td class=num>1</td><td>B</td><td class=id>S1</td><td class=num>1</td><td class=ins>go to a place to take a short break for personal needs</td><td>toilet_m · 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>2</td><td>B</td><td class=id>S2</td><td class=num>1</td><td class=ins>the washroom got on fire, help me find something to stop the fire</td><td>cb202 · 8</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>3</td><td>B</td><td class=id>S3</td><td class=num>1</td><td class=ins>Take me somewhere I can sit and relax</td><td>radiator · 9</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>4</td><td>B</td><td class=id>S3o</td><td class=num>1</td><td class=ins>It is too hot in here, take me somewhere I can get some fresh air</td><td>plant_5 · 14</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>5</td><td>B</td><td class=id>S4</td><td class=num>1</td><td class=ins>take me to cb204</td><td>cb204 · 5</td><td class=num>2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>6</td><td>B</td><td class=id>S5</td><td class=num>1</td><td class=ins>take me to the nearest plant</td><td><b>depinde de poză</b> — se notează nodul de pornire</td><td class=num>6</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>7</td><td>B</td><td class=id>S6</td><td class=num>1</td><td class=ins>go to lab_chair</td><td>junction_e1 · 15</td><td class=num>3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>8</td><td>B</td><td class=id>S7</td><td class=num>1</td><td class=ins>navigate to window_north</td><td>plant_5 · 14</td><td class=num>3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>9</td><td>B</td><td class=id>S8</td><td class=num>1</td><td class=ins>take me to the women restroom</td><td>toilet_f · 4</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>10</td><td>B</td><td class=id>S9</td><td class=num>1</td><td class=ins>take me to the main entrance of lab CB203</td><td>cb203_entrance · 22</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>11</td><td>B</td><td class=id>S10</td><td class=num>1</td><td class=ins>take me to the exit of lab CB203</td><td>cb203_exit · 23</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>XPLORER-B · S1 suplimentar (H3.5 — aglomerarea la nodul 0)</td></tr><tr><td class=num>12</td><td>B</td><td class=id>S1</td><td class=num>3</td><td class=ins>go to a place to take a short break for personal needs</td><td>toilet_m · 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>XPLORER-B · repetiția 2, ordine inversă</td></tr><tr><td class=num>13</td><td>B</td><td class=id>S10</td><td class=num>2</td><td class=ins>take me to the exit of lab CB203</td><td>cb203_exit · 23</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>14</td><td>B</td><td class=id>S9</td><td class=num>2</td><td class=ins>take me to the main entrance of lab CB203</td><td>cb203_entrance · 22</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>15</td><td>B</td><td class=id>S8</td><td class=num>2</td><td class=ins>take me to the women restroom</td><td>toilet_f · 4</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>16</td><td>B</td><td class=id>S7</td><td class=num>2</td><td class=ins>navigate to window_north</td><td>plant_5 · 14</td><td class=num>3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>17</td><td>B</td><td class=id>S6</td><td class=num>2</td><td class=ins>go to lab_chair</td><td>junction_e1 · 15</td><td class=num>3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>18</td><td>B</td><td class=id>S5</td><td class=num>2</td><td class=ins>take me to the nearest plant</td><td><b>depinde de poză</b> — se notează nodul de pornire</td><td class=num>6</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>19</td><td>B</td><td class=id>S4</td><td class=num>2</td><td class=ins>take me to cb204</td><td>cb204 · 5</td><td class=num>2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>20</td><td>B</td><td class=id>S3o</td><td class=num>2</td><td class=ins>It is too hot in here, take me somewhere I can get some fresh air</td><td>plant_5 · 14</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>21</td><td>B</td><td class=id>S3</td><td class=num>2</td><td class=ins>Take me somewhere I can sit and relax</td><td>radiator · 9</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>22</td><td>B</td><td class=id>S2</td><td class=num>2</td><td class=ins>the washroom got on fire, help me find something to stop the fire</td><td>cb202 · 8</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>23</td><td>B</td><td class=id>S1</td><td class=num>2</td><td class=ins>go to a place to take a short break for personal needs</td><td>toilet_m · 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>XPLORER-B · S1 suplimentar ×2</td></tr><tr><td class=num>24</td><td>B</td><td class=id>S1</td><td class=num>4</td><td class=ins>go to a place to take a short break for personal needs</td><td>toilet_m · 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>25</td><td>B</td><td class=id>S1</td><td class=num>5</td><td class=ins>go to a place to take a short break for personal needs</td><td>toilet_m · 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr></table>
+<div class="gate"><b>ÎNTRE E3-B ȘI E3-C</b><br>
+Se oprește B. Se golește magazia pe <b>XPLORER-C</b>, ca cele două platforme să pornească
+din aceeași stare dinamică — altfel diferența dintre B și C devine parțial o diferență de strat YOLO.</div>
+<div class="gate"><b>GOLIRE MAGAZIE YOLO — înainte de E3-C</b><br>
+Pe <b>XPLORER-C</b>, în această ordine:
+<pre># 1. numara si arhiveaza
+curl -s http://$XPLORER_PLATFORM_ID:8080/dynamic_objects &gt; ~/dyn_arhiva/dyn_$(date +%H%M%S)_inainte.json
+python3 -c &quot;import json,sys;print(&#x27;obiecte brute:&#x27;,len(json.load(open(sys.argv[1]))))&quot; ~/dyn_arhiva/dyn_*_inainte.json | tail -1
+# 2. goleste
+ros2 service call /semantic_localizer/clear_dynamic_store std_srvs/srv/Trigger
+# 3. confirma golirea
+curl -s http://$XPLORER_PLATFORM_ID:8080/dynamic_objects | python3 -c &quot;import json,sys;print(&#x27;dupa golire:&#x27;,len(json.load(sys.stdin)))&quot;</pre>
+<b>Se scrie în fișă numărul dinainte și numărul de după.</b> Dacă numele serviciului diferă la voi,
+se folosește procedura pe care ai aplicat-o ieri — important e că se arhivează, se golește și se notează
+cifra. <b>Nu se oprește <code>semantic_localizer</code>.</b>
+</div>
+<table><tr><th>#</th><th>rob</th><th>intent</th><th>rep</th><th>instrucțiune</th><th>țintă așteptată</th><th>pas</th><th>nod obținut</th><th>xy</th><th>obs</th></tr><tr class=blk><td colspan=10>XPLORER-C · repetiția 1, ordine directă</td></tr><tr><td class=num>26</td><td>C</td><td class=id>S1</td><td class=num>1</td><td class=ins>go to a place to take a short break for personal needs</td><td>toilet_m · 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>27</td><td>C</td><td class=id>S2</td><td class=num>1</td><td class=ins>the washroom got on fire, help me find something to stop the fire</td><td>cb202 · 8</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>28</td><td>C</td><td class=id>S3</td><td class=num>1</td><td class=ins>Take me somewhere I can sit and relax</td><td>radiator · 9</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>29</td><td>C</td><td class=id>S3o</td><td class=num>1</td><td class=ins>It is too hot in here, take me somewhere I can get some fresh air</td><td>plant_5 · 14</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>30</td><td>C</td><td class=id>S4</td><td class=num>1</td><td class=ins>take me to cb204</td><td>cb204 · 5</td><td class=num>2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>31</td><td>C</td><td class=id>S5</td><td class=num>1</td><td class=ins>take me to the nearest plant</td><td><b>depinde de poză</b> — se notează nodul de pornire</td><td class=num>6</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>32</td><td>C</td><td class=id>S6</td><td class=num>1</td><td class=ins>go to lab_chair</td><td>junction_e1 · 15</td><td class=num>3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>33</td><td>C</td><td class=id>S7</td><td class=num>1</td><td class=ins>navigate to window_north</td><td>plant_5 · 14</td><td class=num>3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>34</td><td>C</td><td class=id>S8</td><td class=num>1</td><td class=ins>take me to the women restroom</td><td>toilet_f · 4</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>35</td><td>C</td><td class=id>S9</td><td class=num>1</td><td class=ins>take me to the main entrance of lab CB203</td><td>cb203_entrance · 22</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>36</td><td>C</td><td class=id>S10</td><td class=num>1</td><td class=ins>take me to the exit of lab CB203</td><td>cb203_exit · 23</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>XPLORER-C · S1 suplimentar (H3.5 — aglomerarea la nodul 0)</td></tr><tr><td class=num>37</td><td>C</td><td class=id>S1</td><td class=num>3</td><td class=ins>go to a place to take a short break for personal needs</td><td>toilet_m · 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>XPLORER-C · repetiția 2, ordine inversă</td></tr><tr><td class=num>38</td><td>C</td><td class=id>S10</td><td class=num>2</td><td class=ins>take me to the exit of lab CB203</td><td>cb203_exit · 23</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>39</td><td>C</td><td class=id>S9</td><td class=num>2</td><td class=ins>take me to the main entrance of lab CB203</td><td>cb203_entrance · 22</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>40</td><td>C</td><td class=id>S8</td><td class=num>2</td><td class=ins>take me to the women restroom</td><td>toilet_f · 4</td><td class=num>4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>41</td><td>C</td><td class=id>S7</td><td class=num>2</td><td class=ins>navigate to window_north</td><td>plant_5 · 14</td><td class=num>3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>42</td><td>C</td><td class=id>S6</td><td class=num>2</td><td class=ins>go to lab_chair</td><td>junction_e1 · 15</td><td class=num>3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>43</td><td>C</td><td class=id>S5</td><td class=num>2</td><td class=ins>take me to the nearest plant</td><td><b>depinde de poză</b> — se notează nodul de pornire</td><td class=num>6</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>44</td><td>C</td><td class=id>S4</td><td class=num>2</td><td class=ins>take me to cb204</td><td>cb204 · 5</td><td class=num>2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>45</td><td>C</td><td class=id>S3o</td><td class=num>2</td><td class=ins>It is too hot in here, take me somewhere I can get some fresh air</td><td>plant_5 · 14</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>46</td><td>C</td><td class=id>S3</td><td class=num>2</td><td class=ins>Take me somewhere I can sit and relax</td><td>radiator · 9</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>47</td><td>C</td><td class=id>S2</td><td class=num>2</td><td class=ins>the washroom got on fire, help me find something to stop the fire</td><td>cb202 · 8</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>48</td><td>C</td><td class=id>S1</td><td class=num>2</td><td class=ins>go to a place to take a short break for personal needs</td><td>toilet_m · 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>XPLORER-C · S1 suplimentar ×2</td></tr><tr><td class=num>49</td><td>C</td><td class=id>S1</td><td class=num>4</td><td class=ins>go to a place to take a short break for personal needs</td><td>toilet_m · 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>50</td><td>C</td><td class=id>S1</td><td class=num>5</td><td class=ins>go to a place to take a short break for personal needs</td><td>toilet_m · 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr></table>
+<div class="gate"><b>LA SFÂRȘITUL LUI E3</b><br>
+Se notează numărul de obiecte brute din magazie pe fiecare platformă (dă rata de acumulare).<br>
+B: <span class=fill></span> &nbsp; C: <span class=fill></span><br>
+<b>Măsurători manuale la nodul 0:</b> E3 produce 10 sosiri <code>S1</code>. Se completează
+<code>manual_measurements.csv</code> cu ruleta, la fel ca la nodul 8 ieri.</div>
+
+<h2>C · BLOCUL E7 — set de instrucțiuni sigilat · 28 misiuni, numai pe XPLORER-B</h2>
+
+<div class="gate"><b>ÎNAINTE DE E7</b><br>
+<pre>md5sum E7_set_sigilat_v2.csv     # 1ebb16730b30a1ee8c97f11e6b6f2cdd
+source blocuri.env E7 &amp;&amp; echo $EXPERIMENT_ID</pre>
+Golire magazie pe B. Apoi: <b>instrucțiunile se copiază literal din fișier, cuvânt cu cuvânt,
+inclusiv punctuația.</b> Nu se reformulează, nu se traduce, nu se corectează nimic — nici dacă o formulare pare greșită gramatical.<br><br>Pentru a evita retastarea, folosește <code>E7_instructiuni_de_publicat.txt</code> din pachet: cele 28 de texte în ordinea de rulaj, cu cheia alături, gata de copiat.</div>
+<div class="gate"><b>GOLIRE MAGAZIE YOLO — înainte de E7</b><br>
+Pe <b>XPLORER-B</b>, în această ordine:
+<pre># 1. numara si arhiveaza
+curl -s http://$XPLORER_PLATFORM_ID:8080/dynamic_objects &gt; ~/dyn_arhiva/dyn_$(date +%H%M%S)_inainte.json
+python3 -c &quot;import json,sys;print(&#x27;obiecte brute:&#x27;,len(json.load(open(sys.argv[1]))))&quot; ~/dyn_arhiva/dyn_*_inainte.json | tail -1
+# 2. goleste
+ros2 service call /semantic_localizer/clear_dynamic_store std_srvs/srv/Trigger
+# 3. confirma golirea
+curl -s http://$XPLORER_PLATFORM_ID:8080/dynamic_objects | python3 -c &quot;import json,sys;print(&#x27;dupa golire:&#x27;,len(json.load(sys.stdin)))&quot;</pre>
+<b>Se scrie în fișă numărul dinainte și numărul de după.</b> Dacă numele serviciului diferă la voi,
+se folosește procedura pe care ai aplicat-o ieri — important e că se arhivează, se golește și se notează
+cifra. <b>Nu se oprește <code>semantic_localizer</code>.</b>
+</div>
+<div class="gate stop"><b>TOATE cele 28 se rulează, fără excepție.</b> O instrucțiune care pare
+imposibilă pe hartă <b>se rulează oricum</b> și se raportează ca atare — e informație despre spațiul
+de intenții, nu zgomot. Două celule au ca răspuns corect <b>abținerea</b>: <code>H-P2</code> și
+<code>G-3</code>. Dacă robotul pleacă undeva la ele, e greșeală și se notează nodul.</div>
+<table><tr><th>#</th><th>rob</th><th>intent</th><th>rep</th><th>instrucțiune</th><th>țintă așteptată</th><th>pas</th><th>nod obținut</th><th>xy</th><th>obs</th></tr><tr class=blk><td colspan=10>LABORATOR</td></tr><tr><td class=num>1</td><td>B</td><td class=id>L-P1</td><td class=num>1</td><td class=ins>Where is CB203?</td><td>nod 22 sau 23</td><td class=num>P1</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>2</td><td>B</td><td class=id>L-P2</td><td class=num>1</td><td class=ins>I need to work on a computer.</td><td>nod 5 sau 8 sau 22 sau 23 · <span class=bad>greșit: 0, 4</span></td><td class=num>P2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>3</td><td>B</td><td class=id>L-P3</td><td class=num>1</td><td class=ins>I have to attend a lab.</td><td>nod 5 sau 8 sau 22 · <span class=bad>greșit: 23</span></td><td class=num>P3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>4</td><td>B</td><td class=id>L-P4</td><td class=num>1</td><td class=ins>I&#x27;m late to class.</td><td>nod 5 sau 8 sau 22 · <span class=bad>greșit: 23</span></td><td class=num>P4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>TOALETĂ</td></tr><tr><td class=num>5</td><td>B</td><td class=id>T-P1</td><td class=num>1</td><td class=ins>Where is the men toilet?</td><td>nod 0 · <span class=bad>greșit: 4</span></td><td class=num>P1</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>6</td><td>B</td><td class=id>T-P2</td><td class=num>1</td><td class=ins>How can I get some water?</td><td>nod 0 sau 4 · <span class=bad>greșit: 5</span></td><td class=num>P2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>7</td><td>B</td><td class=id>T-P3</td><td class=num>1</td><td class=ins>Where can I wash my hands?</td><td>nod 0 sau 4</td><td class=num>P3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>8</td><td>B</td><td class=id>T-P4</td><td class=num>1</td><td class=ins>My hands are dirty.</td><td>nod 0 sau 4</td><td class=num>P4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>LOC DE STAT</td></tr><tr><td class=num>9</td><td>B</td><td class=id>S-P1</td><td class=num>1</td><td class=ins>Take me to stay on a chair.</td><td>nod 15</td><td class=num>P1</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>10</td><td>B</td><td class=id>S-P2</td><td class=num>1</td><td class=ins>I&#x27;m waiting for someone.</td><td>nod 9 sau 15</td><td class=num>P2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>11</td><td>B</td><td class=id>S-P3</td><td class=num>1</td><td class=ins>I need to rest a bit.</td><td>nod 9 sau 15</td><td class=num>P3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>12</td><td>B</td><td class=id>S-P4</td><td class=num>1</td><td class=ins>I&#x27;m tired.</td><td>nod 9 sau 15</td><td class=num>P4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>FEREASTRĂ</td></tr><tr><td class=num>13</td><td>B</td><td class=id>W-P1</td><td class=num>1</td><td class=ins>Take me to a window, please.</td><td>nod 14 sau 20</td><td class=num>P1</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>14</td><td>B</td><td class=id>W-P2</td><td class=num>1</td><td class=ins>I&#x27;m looking for a plant or sunlight.</td><td>nod 13 sau 15 sau 19 sau 20 sau 21</td><td class=num>P2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>15</td><td>B</td><td class=id>W-P3</td><td class=num>1</td><td class=ins>Where can I get some fresh air?</td><td>nod 14</td><td class=num>P3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>16</td><td>B</td><td class=id>W-P4</td><td class=num>1</td><td class=ins>Where can I relax a bit?</td><td>nod 9 sau 15</td><td class=num>P4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>PLANTĂ</td></tr><tr><td class=num>17</td><td>B</td><td class=id>P-P1</td><td class=num>1</td><td class=ins>Show me a flower.</td><td>nod 13 sau 15 sau 19 sau 20 sau 21</td><td class=num>P1</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>18</td><td>B</td><td class=id>P-P2</td><td class=num>1</td><td class=ins>Take me to a green zone.</td><td>nod 13 sau 15 sau 19 sau 20 sau 21</td><td class=num>P2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>19</td><td>B</td><td class=id>P-P3</td><td class=num>1</td><td class=ins>Where can I refresh?</td><td>nod 14</td><td class=num>P3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>20</td><td>B</td><td class=id>P-P4</td><td class=num>1</td><td class=ins>I&#x27;m looking for a green spot.</td><td>nod 13 sau 15 sau 19 sau 20 sau 21</td><td class=num>P4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>IEȘIRE / HOL</td></tr><tr><td class=num>21</td><td>B</td><td class=id>H-P1</td><td class=num>1</td><td class=ins>Where is the hall exit?</td><td>nod 2</td><td class=num>P1</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>22</td><td>B</td><td class=id>H-P2</td><td class=num>1</td><td class=ins>I need to go to the other location.</td><td><b>ABȚINERE</b> / clarificare</td><td class=num>P2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>23</td><td>B</td><td class=id>H-P3</td><td class=num>1</td><td class=ins>I need to go out.</td><td>nod 1 sau 2</td><td class=num>P3</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>24</td><td>B</td><td class=id>H-P4</td><td class=num>1</td><td class=ins>I&#x27;m ready to move away.</td><td>nod 1 sau 2</td><td class=num>P4</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>CELULE DE GRANIȚĂ</td></tr><tr><td class=num>25</td><td>B</td><td class=id>G-1</td><td class=num>1</td><td class=ins>Where is the class lab?</td><td>nod 5 sau 8 sau 22 sau 23</td><td class=num>multi</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>26</td><td>B</td><td class=id>G-2</td><td class=num>1</td><td class=ins>I want to wait for someone who is finishing the lab in CB203.</td><td>nod 23 · <span class=bad>greșit: 22</span></td><td class=num>semantic</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>27</td><td>B</td><td class=id>G-3</td><td class=num>1</td><td class=ins>Where is the H sign?</td><td><b>ABȚINERE</b> / clarificare · <span class=bad>greșit: 0, 22, 23, 13, 16</span></td><td class=num>nemapat</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>28</td><td>B</td><td class=id>G-4</td><td class=num>1</td><td class=ins>Where is the closest chair?</td><td>nod 15</td><td class=num>proximitate</td><td class=chk></td><td class=chk></td><td class=note></td></tr></table>
+<div class="gate"><b>LA SFÂRȘITUL LUI E7</b><br>
+Obiecte brute în magazie pe B: <span class=fill></span><br>
+Se verifică <b>din nou</b> <code>md5sum E7_set_sigilat_v2.csv</code> — trebuie
+<code>1ebb16730b30a1ee8c97f11e6b6f2cdd</code>. Dovedește că fișierul n-a fost atins în timpul blocului.</div>
+
+<h2>D · BLOCUL E6 — ablația memoriei · 4 misiuni</h2>
+
+<div class="gate stop"><b>ÎNAINTE DE E6 — cel mai delicat pas al zilei</b><br>
+<pre># 1. se noteaza starea curenta, ca sa se poata verifica restaurarea
+md5sum config/memory_digest.json      # trebuie 97241265217eb4b08e26fb718eb21f40
+
+# 2. se REDIRECTIONEAZA calea, NU se suprascrie fisierul
+export MEMORY_DIGEST_PATH=$HOME/digest_gol/memory_digest_empty.json
+source blocuri.env E6 &amp;&amp; echo $EXPERIMENT_ID
+
+# 3. se confirma ca navigatorul chiar citeste digestul gol:
+#    la prima misiune, in audit, m3_preferences_count trebuie sa fie 0</pre>
+<b>Fișierul înghețat nu se atinge, nu se mută, nu se redenumește.</b> Singura schimbare e variabila
+de mediu.</div>
+<table><tr><th>#</th><th>rob</th><th>intent</th><th>rep</th><th>instrucțiune</th><th>țintă așteptată</th><th>pas</th><th>nod obținut</th><th>xy</th><th>obs</th></tr><tr class=blk><td colspan=10>E6 · ABLAȚIA M3 — digest GOL. Aceleași instrucțiuni ca S1 și S3o din E3.</td></tr><tr><td class=num>1</td><td>B</td><td class=id>AB-S1</td><td class=num>1</td><td class=ins>go to a place to take a short break for personal needs</td><td>escaladează · L3b</td><td class=num>≠0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>2</td><td>B</td><td class=id>AB-S3o</td><td class=num>1</td><td class=ins>It is too hot in here, take me somewhere I can get some fresh air</td><td>escaladează · L3b</td><td class=num>≠0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>3</td><td>C</td><td class=id>AB-S1</td><td class=num>1</td><td class=ins>go to a place to take a short break for personal needs</td><td>escaladează · L3b</td><td class=num>≠0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>4</td><td>C</td><td class=id>AB-S3o</td><td class=num>1</td><td class=ins>It is too hot in here, take me somewhere I can get some fresh air</td><td>escaladează · L3b</td><td class=num>≠0</td><td class=chk></td><td class=chk></td><td class=note></td></tr></table>
+<div class="gate"><b>VERIFICARE ÎN TIMPUL BLOCULUI</b><br>
+La prima misiune E6, în audit: <code>m3_preferences_count = 0</code> și
+<code>digest_content_md5</code> = cel al digestului gol. Dacă apare
+<code>0fd61f9e82e8fe6991f0311014384e0c</code>, redirecționarea nu a funcționat și <b>blocul se oprește</b> —
+ar măsura exact ce măsura E3.</div>
+
+<div class="gate stop"><b>POARTA E6 → E4 — obligatorie, blocantă</b><br>
+<pre>unset MEMORY_DIGEST_PATH          # sau se repune calea originala
+md5sum config/memory_digest.json   # trebuie 97241265217eb4b08e26fb718eb21f40
+# si, la PRIMA misiune E4, in audit:
+#   memory_digest_hash    = 97241265217eb4b08e26fb718eb21f40
+#   digest_content_md5    = 0fd61f9e82e8fe6991f0311014384e0c
+#   m3_preferences_count  = 6</pre>
+Dacă E4 pornește pe digestul gol, blocul măsoară altceva și <b>nu se vede în date până la analiză</b>.
+E exact tiparul care a costat ziua de 19 august.</div>
+
+<h2>E · BLOCUL E4 — memorie inter-robot · 20 misiuni</h2>
+
+<div class="gate"><b>ÎNAINTE DE E4</b><br>
+<pre>source blocuri.env E4</pre>
+Golire magazie pe ambele platforme. Apoi se verifică poarta de mai sus.<br>
+<b>Verificare suplimentară:</b> digestul de pornire nu trebuie să conțină deja
+<code>deliveries</code> sau <code>quiet corner</code>:
+<pre>grep -c -i -e deliver -e quiet -e corner config/memory_digest.json   # trebuie 0</pre>
+</div>
+<div class="gate"><b>GOLIRE MAGAZIE YOLO — înainte de E4</b><br>
+Pe <b>AMBELE platforme</b>, în această ordine:
+<pre># 1. numara si arhiveaza
+curl -s http://$XPLORER_PLATFORM_ID:8080/dynamic_objects &gt; ~/dyn_arhiva/dyn_$(date +%H%M%S)_inainte.json
+python3 -c &quot;import json,sys;print(&#x27;obiecte brute:&#x27;,len(json.load(open(sys.argv[1]))))&quot; ~/dyn_arhiva/dyn_*_inainte.json | tail -1
+# 2. goleste
+ros2 service call /semantic_localizer/clear_dynamic_store std_srvs/srv/Trigger
+# 3. confirma golirea
+curl -s http://$XPLORER_PLATFORM_ID:8080/dynamic_objects | python3 -c &quot;import json,sys;print(&#x27;dupa golire:&#x27;,len(json.load(sys.stdin)))&quot;</pre>
+<b>Se scrie în fișă numărul dinainte și numărul de după.</b> Dacă numele serviciului diferă la voi,
+se folosește procedura pe care ai aplicat-o ieri — important e că se arhivează, se golește și se notează
+cifra. <b>Nu se oprește <code>semantic_localizer</code>.</b>
+</div>
+<table><tr><th>#</th><th>rob</th><th>intent</th><th>rep</th><th>instrucțiune</th><th>țintă așteptată</th><th>pas</th><th>nod obținut</th><th>xy</th><th>obs</th></tr><tr class=blk><td colspan=10>FAZA E4.0 · BAZĂ — <code>EXPERIMENT_PHASE=E4.0</code> · se așteaptă ESCALADARE pe ambii roboți</td></tr><tr><td class=num>1</td><td>C</td><td class=id>P1</td><td class=num>0</td><td class=ins>take me to the place where deliveries arrive</td><td>escaladează · L3b</td><td class=num>≠0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>2</td><td>C</td><td class=id>P2</td><td class=num>0</td><td class=ins>find me a quiet corner to read</td><td>escaladează · L3b</td><td class=num>≠0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>3</td><td>B</td><td class=id>P1</td><td class=num>0</td><td class=ins>take me to the place where deliveries arrive</td><td>escaladează · L3b</td><td class=num>≠0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>4</td><td>B</td><td class=id>P2</td><td class=num>0</td><td class=ins>find me a quiet corner to read</td><td>escaladează · L3b</td><td class=num>≠0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>FAZA E4.1 · INDUCERE PE XPLORER-C — <code>EXPERIMENT_PHASE=E4.1</code> · 4 repetiții, se urmărește CONSISTENȚA alegerii</td></tr><tr><td class=num>5</td><td>C</td><td class=id>P1</td><td class=num>1</td><td class=ins>take me to the place where deliveries arrive</td><td>nod ales de VLM</td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>6</td><td>C</td><td class=id>P2</td><td class=num>1</td><td class=ins>find me a quiet corner to read</td><td>nod ales de VLM</td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>7</td><td>C</td><td class=id>P1</td><td class=num>2</td><td class=ins>take me to the place where deliveries arrive</td><td>nod ales de VLM</td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>8</td><td>C</td><td class=id>P2</td><td class=num>2</td><td class=ins>find me a quiet corner to read</td><td>nod ales de VLM</td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>9</td><td>C</td><td class=id>P1</td><td class=num>3</td><td class=ins>take me to the place where deliveries arrive</td><td>nod ales de VLM</td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>10</td><td>C</td><td class=id>P2</td><td class=num>3</td><td class=ins>find me a quiet corner to read</td><td>nod ales de VLM</td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>11</td><td>C</td><td class=id>P1</td><td class=num>4</td><td class=ins>take me to the place where deliveries arrive</td><td>nod ales de VLM</td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>12</td><td>C</td><td class=id>P2</td><td class=num>4</td><td class=ins>find me a quiet corner to read</td><td>nod ales de VLM</td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>FAZA E4.2 · COMPILARE DIGEST — fără misiuni, vezi instrucțiunea de mai jos</td></tr><tr class=blk><td colspan=10>FAZA E4.3 · TRANSFER PE XPLORER-B — <code>EXPERIMENT_PHASE=E4.3</code> · digest NOU · se așteaptă <code>resolution_step = 0</code>, FĂRĂ apel L3b</td></tr><tr><td class=num>13</td><td>B</td><td class=id>P1</td><td class=num>1</td><td class=ins>take me to the place where deliveries arrive</td><td>= nodul din E4.1 · pas 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>14</td><td>B</td><td class=id>P2</td><td class=num>1</td><td class=ins>find me a quiet corner to read</td><td>= nodul din E4.1 · pas 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>15</td><td>B</td><td class=id>P1</td><td class=num>2</td><td class=ins>take me to the place where deliveries arrive</td><td>= nodul din E4.1 · pas 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>16</td><td>B</td><td class=id>P2</td><td class=num>2</td><td class=ins>find me a quiet corner to read</td><td>= nodul din E4.1 · pas 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>17</td><td>B</td><td class=id>P1</td><td class=num>3</td><td class=ins>take me to the place where deliveries arrive</td><td>= nodul din E4.1 · pas 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>18</td><td>B</td><td class=id>P2</td><td class=num>3</td><td class=ins>find me a quiet corner to read</td><td>= nodul din E4.1 · pas 0</td><td class=num>0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>CONTROALE NEGATIVE — nepromovate, trebuie să escaladeze</td></tr><tr><td class=num>19</td><td>B</td><td class=id>NEG1</td><td class=num>1</td><td class=ins>I need to warm up</td><td>escaladează · L3b</td><td class=num>≠0</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>20</td><td>B</td><td class=id>NEG2</td><td class=num>1</td><td class=ins>take me to the greenest corner of the building</td><td>escaladează · L3b</td><td class=num>≠0</td><td class=chk></td><td class=chk></td><td class=note></td></tr></table>
+
+<div class="gate stop"><b>FAZA E4.2 — COMPILAREA DIGESTULUI · fără misiuni</b><br>
+Se rulează după ce cele 8 misiuni din E4.1 s-au încheiat pe XPLORER-C.
+<pre># 1. arhiveaza digestul inghetat, inainte de orice
+mkdir -p ~/arhiva
+cp config/memory_digest.json ~/arhiva/memory_digest_INGHETAT_$(date +%Y%m%d).json
+
+# 2. IZOLEAZA FAZA E4.1 -- nu ziua 2 in intregime. Vezi caseta de dedesubt.
+mkdir -p ~/logs_E41_only &amp;&amp; rm -f ~/logs_E41_only/*
+for f in &lt;cale_logs&gt;/audit_20260821_*.jsonl; do
+  grep -q '"experiment_phase": "E4.1"' "$f" &amp;&amp; cp "$f" ~/logs_E41_only/
+done
+ls ~/logs_E41_only/ | wc -l    # trebuie 8 -- 2 texte x 4 repetitii, toate pe C
+
+# 3. extractorul INGHETAT
+#    ATENTIE: flag-urile sunt --logs-dir / --geojson / --output,
+#             iar --output este DIRECTOR, nu fisier.
+python3 src/memory_extractor.py \
+    --logs-dir ~/logs_E41_only \
+    --geojson  config/semantic_objects_static_v2.geojson \
+    --output   ~/digest_E4.2</pre></div>
+
+<div class="gate"><b>De ce numai faza E4.1 — D1a, 21 august 2026, înainte de bloc</b><br>
+Trei motive, toate verificate în codul înghețat. <code>extract_m3</code> primește <b>toate</b> deciziile, fără filtru pe metodă, și grupează pe <code>normalize_instruction</code> → <code>sas_text.cluster_key</code>, adică <b>numai pe tokenii textului</b> — nu pe platformă, nu pe bloc, nu pe fază.<br><br>
+<b>1 · E6 contaminează E3.</b> <code>AB-S1</code> și <code>AB-S3o</code> au text <b>identic</b> cu <code>S1</code> și <code>S3o</code> din E3, deci cad în același bucket și le furnizează rezolvarea <code>L3b_vlm</code> care le lipsea. Rulat pe un set care reproduce ziua 2: <code>S1</code> iese cu freq 12, consistency 1.00, 2 rezolvări L3b → <b>promovat</b>; <code>S3o</code> la fel, freq 6 → <b>promovat</b>. Ar rezulta <b>cel puțin patru</b> promovări în loc de două.<br><br>
+<b>2 · E4.0 contaminează chiar preferințele vizate.</b> Faza de bază rulează aceleași două texte cu escaladare, deci intră în același bucket. În simulare, <code>P1</code> iese cu <code>consistency = 0.83</code> — la trei sutimi de prag. Dacă ambele misiuni E4.0 nimeresc alt nod decât E4.1, consistency scade la <b>0.67</b> și <code>P1</code> <b>nu se promovează deloc</b>. Restrâns la E4.1: freq 4, consistency 1.00, L3b 4 — promovat curat, fără marjă de noroc.<br><br>
+<b>3 · Ziua 1 promovează o abținere.</b> Cele zece misiuni de excludere din E2 au înregistrat <code>node_id = -1</code> de zece ori prin L3b. Regula de promovare <b>nu filtrează nodul −1</b>. Verificat rulând extractorul înghețat pe livrarea zilei 1: o singură promovare, <code>nod −1, freq 10</code>. Distanța ei față de <code>S1</code> este <code>J = 0.857</code> — un singur token diferență, <code>not</code>.<br><br>
+<b>Filtrarea pe fișier e sigură:</b> verificat pe cele 90 de audituri ale zilei 1, <b>niciunul nu amestecă două <code>experiment_id</code></b> — 88 cu un singur bloc, 2 fără decizii.</div>
+
+<div class="gate stop"><b>POARTA DE DUPĂ COMPILARE — blocantă</b>
+<pre>python3 -c &quot;
+import json
+d=json.load(open(&#x27;$HOME/digest_E4.2/memory_digest.json&#x27;))
+pr=d.get(&#x27;l3a_promotions_ready&#x27;) or []
+print(&#x27;promovari:&#x27;,len(pr))
+for p in pr: print(&#x27;  nod&#x27;,p[&#x27;node_id&#x27;],&#x27;freq&#x27;,p[&#x27;frequency&#x27;],&#x27;|&#x27;,p[&#x27;instruction_examples&#x27;][0][:70])
+print(&#x27;content_md5:&#x27;,d.get(&#x27;content_md5&#x27;))&quot;
+md5sum ~/digest_E4.2/memory_digest.json</pre><b>Se așteaptă exact 2 promovări</b>, cu valorile:<br>
+<code>frequency = 4</code> fiecare &nbsp;·&nbsp; <code>consistency = 1.00</code> &nbsp;·&nbsp; <code>method_distribution = {L3b_vlm: 4}</code> &nbsp;·&nbsp; <b>niciun <code>node_id = -1</code></b> &nbsp;·&nbsp; nodurile identice cu cele alese de XPLORER-C în faza E4.1.<br><br>
+<b>Verificare suplimentară, gratuită și strictă:</b> digestul produs de extractor <b>conține</b> cheia <code>content_md5</code>. Navigatorul (linia 1058) și extractorul (linia 641) o calculează identic. Deci:
+<pre># valoarea din fisier
+python3 -c &quot;import json;print(json.load(open(&#x27;config/memory_digest.json&#x27;))[&#x27;content_md5&#x27;])&quot;
+# valoarea din audit, la prima misiune E4.3 -- trebuie IDENTICE</pre>Dacă diferă, una dintre cele două implementări a fost atinsă și ipoteza de îngheț cade.<br><br>
+<b>Dacă apar mai mult de două promovări, sau apare nodul −1, E4.3 NU pornește.</b></div>
+
+<div class="gate"><b>Ce trebuie să arate rezultatul — ca să nu fie „reparat"</b><br>
+Digestul de după E4.2 <b>nu</b> este „cel publicat plus două preferințe". <code>memory_extractor.py</code> nu are funcție de îmbinare: construiește un digest <b>complet nou</b> din log-urile date. Cele șase promovări publicate <b>nu se transferă</b> — provin din sesiunile din aprilie, ale căror log-uri nu intră aici.<br>
+<b>Rezultatul așteptat este un digest cu exact două preferințe.</b> Nu e o eroare; e consecința declarată a alegerii „ziua 2 exclusiv" și se scrie în manifest.</div>
+
+<div class="gate"><b>INSTALAREA — numai după ce poarta a trecut</b>
+<pre>cp ~/digest_E4.2/memory_digest.json config/memory_digest.json
+md5sum config/memory_digest.json
+# se copiaza pe AMBELE platforme; md5 IDENTIC pe B si pe C inainte de E4.3
+# MEMORY_DIGEST_PATH ramane NESETAT -- copia inghetata e arhivata la pasul 1</pre><b>De completat în fișă:</b><br>
+digest NOU · md5 = <span class=fill></span> &nbsp;·&nbsp; <code>content_md5</code> = <span class=fill></span><br>
+nod promovat pentru <code>P1</code> = <span class=fill></span> &nbsp;·&nbsp; pentru <code>P2</code> = <span class=fill></span><br>
+frecvență <code>P1</code> = <span class=fill></span> &nbsp;·&nbsp; <code>P2</code> = <span class=fill></span><br>
+număr total de promovări = <span class=fill></span> &nbsp;(trebuie <b>2</b>)<br><br>
+<b>Criteriile de promovare</b>, de verificat pe cele două: <code>ready = True</code> · <code>frequency ≥ 3</code> · <code>consistency ≥ 0.8</code> · cel puțin o rezolvare prin L3b.<br>
+E4.3 măsoară transferul între roboți; dacă B rulează pe alt digest, nu măsoară nimic.</div>
+
+<h2>F · BLOCUL E5 — concurență · 6 misiuni</h2>
+
+<div class="gate"><b>ÎNAINTE DE E5</b>
+<pre>source blocuri.env E5</pre>
+Golire magazie pe ambele platforme. E5 rulează sub digestul <b>NOU</b>, cel regenerat la E4.2 — e normal și e declarat.<br><br>Digestul de atunci are <b>exact două preferințe</b>. Cele șase texte E5 ies <code>below_threshold</code> cu <code>J_top ≤ 0.143</code> — verificat prin <code>match_m3_preference</code>, funcția reală de decizie, cu prag, marjă și agregare pe nod. Verificat <b>și</b> sub ipoteza unui digest cu 8 preferințe (cele 6 publicate + cele 2 induse): rezultat identic, zero potriviri. Escaladarea la L3b e garantată, nu presupusă.</div>
+
+<div class="gate ok"><b>Destinațiile sunt disjuncte prin construcție — nu prin noroc</b><br>
+Cei doi roboți primesc <b>instrucțiuni diferite</b>, alese astfel încât fiecare să escaladeze obligatoriu la
+L3b, dar cu mulțimea de candidați închisă într-o jumătate a holului:
+<ul style="margin:6px 0">
+<li><b>XPLORER-B</b> — instrucțiuni care numesc clasa <code>restroom</code>. În ontologie clasa are
+<b>exact două</b> instanțe, <b>nodurile 0 și 4</b>, amândouă în <b>vest</b>.</li>
+<li><b>XPLORER-C</b> — instrucțiuni care numesc clasa <code>potted plant</code>. Clasa are
+<b>cinci</b> instanțe, <b>nodurile 13, 15, 19, 20, 21</b>, toate în <b>est</b>.</li>
+</ul>
+Mai multe instanțe ale aceleiași clase, fără cuvânt de proximitate în text, înseamnă că pasul 5 al cascadei
+nu se închide și rezolvarea <b>escaladează</b> — verificat pe rezolverul înghețat pentru toate cele șase texte.
+Deci apelul VLM chiar are loc, ceea ce E5 măsoară, dar VLM-ul alege dintr-o mulțime confinată geografic.</div>
+
+<div class="gate"><b>Nodurile de pornire — traseele nu se ating deloc</b><br>
+<b>B pornește din nodul 2</b> (<code>hall_exit</code>) &nbsp;·&nbsp;
+<b>C pornește din nodul 17</b> (<code>junction_e3</code>).<br><br>
+Trasee posibile pentru B: <code>2-1-0</code> sau <code>2-3-4</code>.<br>
+Trasee posibile pentru C: <code>17-16-15</code>, <code>17-16-15-14-13</code>, <code>17-18-19</code>,
+<code>17-18-19-20</code>, <code>17-18-19-20-21</code>.<br><br>
+<b>Zero noduri comune, zero muchii comune, distanță minimă între cele două regiuni ≈ 6 m.</b>
+Nu se pot suprapune pe traseu și nu pot ajunge la aceeași destinație.</div>
+
+<div class="gate"><b>De ce textele diferă între perechi</b><br>
+Cele trei perechi folosesc formulări diferite ale aceleiași intenții, ca să nu se reutilizeze un prompt identic
+și să intervină cache-ul de context al serverului — ceea ce ar face ca <code>prompt_eval</code> să pară
+artificial de rapid la repetițiile 2 și 3. Jaccard între ele: maximum 0.333; față de orice text din E3, E4, E7
+sau din digest: maximum 0.250.</div>
+
+<table><tr><th>#</th><th>rob</th><th>grup</th><th>rep</th><th>instrucțiune</th><th>țintă așteptată</th><th>pas</th><th>nod obținut</th><th>xy</th><th>obs</th></tr><tr class=blk><td colspan=10>E5-pair1 — <code>CONC_GROUP=E5-pair1 CONC_PEERS=2</code> · cele două se pornesc <b>SIMULTAN</b></td></tr><tr><td class=num>1</td><td>B</td><td class=id>pair1</td><td class=num>1</td><td class=ins>I need to use the restroom</td><td>nod 0 sau 4 — <b>zona vest</b><br><span class=meta>pornire: 2 · hall_exit</span></td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>2</td><td>C</td><td class=id>pair1</td><td class=num>1</td><td class=ins>I would like to be near the plants</td><td>nod 13, 15, 19, 20 sau 21 — <b>zona est</b><br><span class=meta>pornire: 17 · junction_e3</span></td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>E5-pair2 — <code>CONC_GROUP=E5-pair2 CONC_PEERS=2</code> · cele două se pornesc <b>SIMULTAN</b></td></tr><tr><td class=num>3</td><td>B</td><td class=id>pair2</td><td class=num>1</td><td class=ins>point me to a restroom please</td><td>nod 0 sau 4 — <b>zona vest</b><br><span class=meta>pornire: 2 · hall_exit</span></td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>4</td><td>C</td><td class=id>pair2</td><td class=num>1</td><td class=ins>take me next to a potted plant</td><td>nod 13, 15, 19, 20 sau 21 — <b>zona est</b><br><span class=meta>pornire: 17 · junction_e3</span></td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr class=blk><td colspan=10>E5-pair3 — <code>CONC_GROUP=E5-pair3 CONC_PEERS=2</code> · cele două se pornesc <b>SIMULTAN</b></td></tr><tr><td class=num>5</td><td>B</td><td class=id>pair3</td><td class=num>1</td><td class=ins>I am looking for a restroom</td><td>nod 0 sau 4 — <b>zona vest</b><br><span class=meta>pornire: 2 · hall_exit</span></td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>6</td><td>C</td><td class=id>pair3</td><td class=num>1</td><td class=ins>show me where the potted plants are</td><td>nod 13, 15, 19, 20 sau 21 — <b>zona est</b><br><span class=meta>pornire: 17 · junction_e3</span></td><td class=num>L3b</td><td class=chk></td><td class=chk></td><td class=note></td></tr></table>
+
+<div class="gate stop"><b>Cele două misiuni ale unei perechi se pornesc SIMULTAN.</b>
+Numărătoare cu voce tare, două terminale, sau un script care lansează ambele. Dacă pornesc decalat cu mai
+mult de câteva secunde, perechea nu măsoară coada de așteptare și <b>se reia</b> — asta e singura reluare
+permisă în ziua 2, fiindcă e cauză de operare, nu de sistem.<br>
+<b>Se notează ora de pornire a fiecăreia, cu secunde.</b></div>
+
+<div class="gate"><b>Plasă de siguranță — nu ar trebui să se declanșeze niciodată</b><br>
+După ce ambele decizii sunt logate, se compară <code>node_id</code>. Dacă, împotriva construcției de mai sus,
+ies identice, se oprește manual <b>B</b> imediat, cu motivul <code>oprit dupa decizie — destinatie comuna</code>,
+și se lasă C să completeze. Măsurătoarea E5 e deja completă în acel moment: câmpul <code>timing</code> conține
+<code>vlm_ms</code> separat de <code>nav_total_s</code>, iar apelul VLM se încheie înainte ca vreun robot să se
+miște semnificativ.</div>
+
+<div class="gate"><b>Segmente fără ocolire — pentru orientare generală</b><br>
+Capete de linie (grad 1): 4 <code>toilet_f</code>, 9 <code>radiator</code>, 13 <code>plant_4</code>,
+21 <code>plant_1</code>, 22 <code>cb203_entrance</code>, 23 <code>cb203_exit</code>.<br>
+Treceri în lanț (grad 2): 0 <code>toilet_m</code>, 5 <code>cb204</code>, 14 <code>plant_5</code>,
+15 <code>junction_e1</code>, 19 <code>plant_3</code>, 20 <code>plant_2</code>.<br>
+Doi roboți nu se pot încrucișa pe niciunul dintre acestea. În E5 problema nu apare, fiindcă regiunile sunt
+disjuncte; nota rămâne pentru orice altă situație în care ambele platforme se mișcă simultan.</div>
+
+<h2>G · ÎNCHIDEREA ZILEI</h2>
+<h3>G1. Ancorele de seară — 2 misiuni</h3>
+<table><tr><th>#</th><th>rob</th><th>intent</th><th>rep</th><th>instrucțiune</th><th>țintă așteptată</th><th>pas</th><th>nod obținut</th><th>xy</th><th>obs</th></tr><tr><td class=num>3</td><td>B</td><td class=id>AS</td><td class=num>1</td><td class=ins>take me to cb202</td><td>cb202 · 8</td><td class=num>2</td><td class=chk></td><td class=chk></td><td class=note></td></tr><tr><td class=num>4</td><td>C</td><td class=id>AS</td><td class=num>1</td><td class=ins>take me to cb202</td><td>cb202 · 8</td><td class=num>2</td><td class=chk></td><td class=chk></td><td class=note></td></tr></table>
+<h3>G2. Ce se aduce înapoi</h3>
+<ul>
+<li><code>logs/</code> complet de pe <b>ambele</b> platforme, cu verificare de dimensiune</li>
+<li><code>content_md5</code> pentru toate artefactele de memorie: înghețat, gol, nou</li>
+<li>arhiva digestului înghețat (<code>~/arhiva/</code>) și directorul <code>~/digest_E4.2/</code> complet, cu fișierele M1–M5</li>
+<li><code>manual_measurements.csv</code> completat — nodul 0, din cele 10 sosiri <code>S1</code></li>
+<li>arhivele magaziei dinamice, cu cele două numere per punct de golire</li>
+<li><b>numărul de reluări, per bloc, cu motivul</b> — se notează pe loc, nu se reconstituie</li>
+<li>orele notate manual, de pe ceasul robotului</li>
+<li>nota de rulaj, în formatul de ieri, cu abaterile de configurație</li>
+</ul>
+<h3>G3. Regula de reluare — neschimbată</h3>
+<div class="gate">O misiune se reia <b>numai</b> pentru cauze externe: baterie, rețea, obstacol uman,
+oprire manuală, plus decalajul de pornire la perechile E5. Se loghează ambele execuții; în analiză
+intră prima execuție completă.<br><br>
+<b>NU se reia</b> pentru: răspuns VLM trunchiat, JSON malformat, confirmare eșuată, rezultat care
+nu convine. Toate acestea sunt comportament al sistemului măsurat — se consemnează cu ora și
+mesajul de eroare verbatim, și se merge mai departe.</div>
+<h3>G4. Eșecuri de VLM — ce se notează</h3>
+<div class="gate">Pentru fiecare: <b>ora, id-ul misiunii, mesajul de eroare copiat integral.</b><br>
+La eroarea de tip <code>done_reason=length</code>, mesajul conține și textul modelului — se păstrează.
+La eroarea de parsare JSON <b>mesajul NU conține răspunsul</b>; se verifică dacă
+<code>mission_*/vlm_decision_response.txt</code> a fost scris, iar dacă nu, se salvează scrollback-ul
+terminalului și se arhivează <code>~/.ros/log/</code>.<br><br>
+Prag declarat înainte de rulare: ziua 1 a avut ≈ 5% <code>vlm_failed</code>.
+<b>Peste 10% pe ansamblul zilei 2</b> se consideră degradare de nivel de sesiune și se consemnează
+în registrul de amendamente, cu ora de început.</div>
+<h3>G5. La analiză — de reținut</h3>
+<div class="gate"><code>at_target</code> <b>nu</b> se citește din <code>audit_*.jsonl</code>: acolo apare
+<code>None</code> când valoarea reală e <code>false</code>. Se citește din
+<code>mission_*/vlm_confirmation_response.txt</code>. Altfel toate respingerile corecte dispar din statistică.</div>
+</html>

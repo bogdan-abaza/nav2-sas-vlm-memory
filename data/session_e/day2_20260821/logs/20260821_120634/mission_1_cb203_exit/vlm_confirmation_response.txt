@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "corridor with door frame at end and exit side visible",
+  "scene_context": "nearby cues include a hallway leading to an open doorway on the left.",
+  "reasoning": "door frame aligns with expected cue for corridor-end navigation target."
+}

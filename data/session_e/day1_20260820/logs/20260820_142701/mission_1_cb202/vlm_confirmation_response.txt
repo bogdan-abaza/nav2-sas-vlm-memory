@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "LOW",
+  "signature_type": "landmark",
+  "scene_description": "tiled floor with brown doors in background",
+  "scene_context": "indoor hallway or corridor area near entrance",
+  "reasoning": "no fire extinguisher visible; only generic interior features present"
+}

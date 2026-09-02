@@ -1,0 +1,487 @@
+{
+ "_policy": "C-prime \u2014 scope-aware publication gate with immutable frozen evidence, digest-bound enumerated exceptions, explicit source-bound supersession, repair-before-exception link handling, separate public-release provenance, and adversarial validation of the exception mechanism. Frozen: Politica_Cprim_FROZEN_20260829.",
+ "_generated_by": {
+  "name": "generate_publication_exceptions.py",
+  "location": "release-gate tooling; not part of the public repository",
+  "sha256": "7c09141bba26f77ea969148efadcd09964df6098f3b6e1652b560ce3196608cd"
+ },
+ "_registry_location": "canonical copies live at docs/ inside the release; the gate consumes the release copies",
+ "_binding": "an exception is honored ONLY while file_sha256 matches the file's current digest AND every matched occurrence's wsn-line sha256 appears in occurrence_line_sha256; any extra occurrence FAILS the gate",
+ "evidence_ids_public": [
+  "A1",
+  "A2",
+  "A3",
+  "R210-AN-02"
+ ],
+ "frozen_record_exceptions": [
+  {
+   "id": "RX1",
+   "class": "R",
+   "rule": "unscoped sub-0.1 ms claim",
+   "file": "analysis/session_e/A1_cascade/A1_cascade_step_report.md",
+   "file_sha256": "ac1fb0618be9cb7836b3a0b88e4ee129cef0b3c8ce766d37fa47a36ebfd9be9d",
+   "pattern": "(under|below|<)\\s*0\\.1\\s*(ms|millisecond)",
+   "occurrence_line_sha256": [
+    "4be7247548742cd76579fdb75aed87a45e122936387f4f38988b8f2e0839d335"
+   ],
+   "classification": "analytical discussion / measured refutation",
+   "authorized": "author, 2026-08-29 (R-context review 6/6; C-prime)",
+   "supersession": {
+    "type": "numeric",
+    "current_interpretation": "the complete deterministic cascade is sub-millisecond: resolve_ms median 0.245 ms, mean 0.281 ms, range 0.072-0.960 ms; 112/112 < 1 ms, only 4/112 < 0.1 ms",
+    "source_path": "analysis/session_e/A1_cascade/A1_cascade_step_results.json",
+    "source_sha256": "44b95bd0078dd049e67f46390030ba84f97f9c808a903f0942e3fb028be22260",
+    "derived_by": {
+     "name": "generate_publication_exceptions.py",
+     "location": "release-gate tooling; not part of the public repository",
+     "sha256": "7c09141bba26f77ea969148efadcd09964df6098f3b6e1652b560ce3196608cd"
+    }
+   }
+  },
+  {
+   "id": "RX2",
+   "class": "R",
+   "rule": "fast-path rate stated as 88%",
+   "file": "analysis/session_e/core/RESULTS_E.md",
+   "file_sha256": "df809f921c7b9fad1c27ea1ed1c9457f4d8a0aa0bc7dde679724e997ef46a12a",
+   "pattern": "\\b88\\s?%",
+   "occurrence_line_sha256": [
+    "170137afe1e72f0f683b69bf0eb2a10a8f8c03c947e7f0b77c61cd9d7257c808"
+   ],
+   "classification": "analytical discussion / superseded claim under review (object of R1-4)",
+   "authorized": "author, 2026-08-29 (R-context review 6/6; C-prime)",
+   "supersession": {
+    "type": "numeric",
+    "current_interpretation": "fast-path 121/226 = 0.5354, 95% CI [0.4703, 0.5993] (all Session E records, E0 included)",
+    "source_path": "analysis/session_e/core/results_E.json",
+    "source_sha256": "12e9ff2e4b664baef2ee60206cb309b5458f2d11fed0f83ac9a73b69b08d430e",
+    "source_key": "points.R1-4.metrics.session_e_all_records.fast_path",
+    "derived_by": {
+     "name": "generate_publication_exceptions.py",
+     "location": "release-gate tooling; not part of the public repository",
+     "sha256": "7c09141bba26f77ea969148efadcd09964df6098f3b6e1652b560ce3196608cd"
+    }
+   }
+  },
+  {
+   "id": "RX3",
+   "class": "R",
+   "rule": "transfer accuracy 33/33",
+   "file": "analysis/session_e/core/RESULTS_E.md",
+   "file_sha256": "df809f921c7b9fad1c27ea1ed1c9457f4d8a0aa0bc7dde679724e997ef46a12a",
+   "pattern": "\\b33\\s*/\\s*33\\b",
+   "occurrence_line_sha256": [
+    "fc8c849971264166ce739cf4b23c0a032626efebf56a69534f4536b09dd125ff"
+   ],
+   "classification": "analytical discussion / pseudo-replication critique (object of UNITS)",
+   "authorized": "author, 2026-08-29 (R-context review 6/6; C-prime)",
+   "supersession": {
+    "type": "evidence_scope",
+    "current_interpretation": "repeated recipient reuse observations; not independent-association transfer accuracy",
+    "source_path": "analysis/session_e/core/results_E.json",
+    "source_sha256": "12e9ff2e4b664baef2ee60206cb309b5458f2d11fed0f83ac9a73b69b08d430e",
+    "source_key": "points.UNITS.metrics",
+    "derived_by": null
+   }
+  },
+  {
+   "id": "RX4",
+   "class": "R",
+   "rule": "operator-preference terminology",
+   "file": "analysis/session_e/core/RESULTS_E.md",
+   "file_sha256": "df809f921c7b9fad1c27ea1ed1c9457f4d8a0aa0bc7dde679724e997ef46a12a",
+   "pattern": "\\b(per-)?operator\\s+preferences?\\b",
+   "occurrence_line_sha256": [
+    "094de08c5b393fd4d209cd413a9e64a56c2e0f114706a21b43846bea300c14f1",
+    "0f121795da01299ba67c66efa793044d2fef8a37f9a846c0728abc67f2833d88"
+   ],
+   "classification": "historical statement / reviewer terminology (title of R1-3)",
+   "authorized": "author, 2026-08-29 (R-context review 6/6; C-prime)",
+   "supersession": {
+    "type": "terminology",
+    "current_interpretation": "learned instruction-node associations: the association is produced by repetition, not declared as a preference by an operator",
+    "source_path": "analysis/session_e/core/results_E.json",
+    "source_sha256": "12e9ff2e4b664baef2ee60206cb309b5458f2d11fed0f83ac9a73b69b08d430e",
+    "source_key": "points.R1-3",
+    "derived_by": null
+   }
+  },
+  {
+   "id": "RX5",
+   "class": "R",
+   "rule": "model-agnosticism claimed as demonstrated",
+   "file": "analysis/session_e/core/RESULTS_E.md",
+   "file_sha256": "df809f921c7b9fad1c27ea1ed1c9457f4d8a0aa0bc7dde679724e997ef46a12a",
+   "pattern": "\\bmodel[- ]agnostic(ism)?\\b",
+   "occurrence_line_sha256": [
+    "42c909e4ef665e8df6d24da550cc80a4793b9b7d7d6c56e3098139ca648724ac",
+    "b24861c6bf5095f9885a348fc57b9e822950905f21852f4ae213c6422b65aa2f"
+   ],
+   "classification": "historical statement / reviewer terminology (title of R2-10)",
+   "authorized": "author, 2026-08-29 (R-context review 6/6; C-prime)",
+   "supersession": {
+    "type": "terminology",
+    "current_interpretation": "interface-level model portability across the evaluated VLMs; not semantic invariance",
+    "source_path": "analysis/session_e/r210_model_replay/R2-10_Final_Controlled_Replay_Analysis_20260824_FROZEN.md",
+    "source_sha256": "45c55018ff14b463e51f27904a7d3a13e40a101d3a042c2f220ec446b39abedd",
+    "derived_by": null
+   }
+  },
+  {
+   "id": "RX6",
+   "class": "R",
+   "rule": "model-agnosticism claimed as demonstrated",
+   "file": "analysis/session_e/r210_model_replay/R2-10_Final_Controlled_Replay_Analysis_20260824_FROZEN.md",
+   "file_sha256": "45c55018ff14b463e51f27904a7d3a13e40a101d3a042c2f220ec446b39abedd",
+   "pattern": "\\bmodel[- ]agnostic(ism)?\\b",
+   "occurrence_line_sha256": [
+    "7666859454de42435bfcf857d3f9e59515feba2c7eee70667b77fd670280fe14"
+   ],
+   "classification": "analytical discussion / explicit terminological rejection - the sentence itself forbids the term",
+   "authorized": "author, 2026-08-29 (R-context review 6/6; C-prime)",
+   "supersession": {
+    "type": "terminology",
+    "current_interpretation": "interface-level model portability across the evaluated VLMs; not semantic invariance",
+    "source_path": "analysis/session_e/r210_model_replay/R2-10_Final_Controlled_Replay_Analysis_20260824_FROZEN.md",
+    "source_sha256": "45c55018ff14b463e51f27904a7d3a13e40a101d3a042c2f220ec446b39abedd",
+    "derived_by": null
+   }
+  },
+  {
+   "id": "RX7",
+   "class": "R",
+   "rule": "superseded decision_lines key",
+   "file": "data/session_e/KNOWN_DISCREPANCIES.md",
+   "file_sha256": "2fa0080f80c67988be1403fa7bc2920fe09eae472b1d951f21499c82af61924f",
+   "pattern": "\\bdecision[ _]lines\\b",
+   "occurrence_line_sha256": [
+    "e2cda6fbe191078485d0627debb93cd65b3ca1dc4ab9089239a37258323d662f",
+    "aaf6080e044252212f1015643a4e29049ccd433125be8ff365a1663aec9480f6"
+   ],
+   "classification": "historical statement / reconstructs the delivery-manifest counting arithmetic (93-4=89, 133-10=123) inside a frozen delivered record",
+   "authorized": "author, 2026-08-29 (R-context review 6/6; C-prime)",
+   "supersession": {
+    "type": "terminology",
+    "current_interpretation": "archived decision cycles minus unresolved escalation records = resolved-or-blocked records (UNITS vocabulary)",
+    "source_path": "analysis/session_e/core/results_E.json",
+    "source_sha256": "12e9ff2e4b664baef2ee60206cb309b5458f2d11fed0f83ac9a73b69b08d430e",
+    "source_key": "points.UNITS.metrics",
+    "derived_by": null
+   }
+  },
+  {
+   "id": "IX1",
+   "class": "I",
+   "rule": "governance codes",
+   "file": "analysis/session_e/A2_m3_sensitivity/A2_FREEZE_MANIFEST_20260825.txt",
+   "file_sha256": "b846b647f4959f582858805af41c9682da8cdb883a631be42e591e57c7742e66",
+   "pattern": "(?<![A-Za-z0-9])(T-DESIGN|T-VERSION|T-C1|R210-AN-02|AC-[1-9])(?![A-Za-z0-9])",
+   "occurrence_line_sha256": [
+    "958ff9da48ceb9b32382f0c2368ab9248ed435b1109a451832f3e15e0da32f1d"
+   ],
+   "classification": "frozen freeze-manifest governance metadata (T-VERSION)",
+   "authorized": "author, 2026-08-29 (C-prime clause 6: governance codes go the enumerated-exception path, never the evidence-ID reclassification)",
+   "supersession": null
+  },
+  {
+   "id": "IX2",
+   "class": "I",
+   "rule": "governance codes",
+   "file": "analysis/session_e/A3_m3_promotion/A3_FREEZE_MANIFEST_20260825.txt",
+   "file_sha256": "a63618d57c7fa0323ad9e29e33bac9cafec10a591f45f5edc6482d46cdad95aa",
+   "pattern": "(?<![A-Za-z0-9])(T-DESIGN|T-VERSION|T-C1|R210-AN-02|AC-[1-9])(?![A-Za-z0-9])",
+   "occurrence_line_sha256": [
+    "618689b773f78e8611a5699d661ec2b23afa19d9d8ada44d046093e02e700795"
+   ],
+   "classification": "frozen freeze-manifest governance metadata (T-VERSION)",
+   "authorized": "author, 2026-08-29 (C-prime clause 6: governance codes go the enumerated-exception path, never the evidence-ID reclassification)",
+   "supersession": null
+  },
+  {
+   "id": "IX3",
+   "class": "I",
+   "rule": "governance codes",
+   "file": "docs/PUBLICATION_SCOPE.md",
+   "file_sha256": "99e8dada42d4d75f2f923b5e2ddc4026d3d4f98c530df5d4142fef18649bee63",
+   "pattern": "(?<![A-Za-z0-9])(T-DESIGN|T-VERSION|T-C1|R210-AN-02|AC-[1-9])(?![A-Za-z0-9])",
+   "occurrence_line_sha256": [
+    "cd559fdef4c84e32443fdc167ba5b57044019f88ec9d73e3555b5349f2171163"
+   ],
+   "classification": "use-mention: the policy document names the governance identifier whose handling it defines (scope section 3)",
+   "authorized": "author, 2026-08-29 (explicit instruction at scope review; declared in scope section 4)",
+   "supersession": null
+  },
+  {
+   "id": "LX1",
+   "class": "L",
+   "file": "data/session_e/KNOWN_DISCREPANCIES.md",
+   "file_sha256": "2fa0080f80c67988be1403fa7bc2920fe09eae472b1d951f21499c82af61924f",
+   "cited_target": "_source/MANIFEST_ro.txt",
+   "n_occurrences": 2,
+   "reason": "target intentionally not published: outside the publication boundary",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX2",
+   "class": "L",
+   "file": "data/session_e/KNOWN_DISCREPANCIES.md",
+   "file_sha256": "2fa0080f80c67988be1403fa7bc2920fe09eae472b1d951f21499c82af61924f",
+   "cited_target": "_outside_delivery/session_notes_day2_ro_superseded_draft.md",
+   "n_occurrences": 1,
+   "reason": "target intentionally not published: outside the publication boundary",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX3",
+   "class": "L",
+   "file": "data/session_e/SOURCE.md",
+   "file_sha256": "69ec8279c31dc4f9e5a059af425ca1f7945eaa4856b78690cab50315f1f54971",
+   "cited_target": "day1_20260820/code/sas_l3a.py",
+   "n_occurrences": 1,
+   "reason": "target is a protected production module, intentionally not published",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX4",
+   "class": "L",
+   "file": "data/session_e/SOURCE.md",
+   "file_sha256": "69ec8279c31dc4f9e5a059af425ca1f7945eaa4856b78690cab50315f1f54971",
+   "cited_target": "day1_20260820/code/executive_contract.py",
+   "n_occurrences": 1,
+   "reason": "target is a protected production module, intentionally not published",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX5",
+   "class": "L",
+   "file": "data/session_e/SOURCE.md",
+   "file_sha256": "69ec8279c31dc4f9e5a059af425ca1f7945eaa4856b78690cab50315f1f54971",
+   "cited_target": "day1_20260820/code/visual_confirmation_v2.py",
+   "n_occurrences": 1,
+   "reason": "target is a protected production module, intentionally not published",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX6",
+   "class": "L",
+   "file": "data/session_e/SOURCE.md",
+   "file_sha256": "69ec8279c31dc4f9e5a059af425ca1f7945eaa4856b78690cab50315f1f54971",
+   "cited_target": "day1_20260820/code/vlm_navigator_node_v4_8_review.py",
+   "n_occurrences": 1,
+   "reason": "target is a protected production module, intentionally not published",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX7",
+   "class": "L",
+   "file": "data/session_e/SOURCE.md",
+   "file_sha256": "69ec8279c31dc4f9e5a059af425ca1f7945eaa4856b78690cab50315f1f54971",
+   "cited_target": "day2_20260821/code/sas_l3a.py",
+   "n_occurrences": 1,
+   "reason": "target is a protected production module, intentionally not published",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX8",
+   "class": "L",
+   "file": "data/session_e/SOURCE.md",
+   "file_sha256": "69ec8279c31dc4f9e5a059af425ca1f7945eaa4856b78690cab50315f1f54971",
+   "cited_target": "day2_20260821/code/executive_contract.py",
+   "n_occurrences": 1,
+   "reason": "target is a protected production module, intentionally not published",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX9",
+   "class": "L",
+   "file": "data/session_e/SOURCE.md",
+   "file_sha256": "69ec8279c31dc4f9e5a059af425ca1f7945eaa4856b78690cab50315f1f54971",
+   "cited_target": "day2_20260821/code/visual_confirmation_v2.py",
+   "n_occurrences": 1,
+   "reason": "target is a protected production module, intentionally not published",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX10",
+   "class": "L",
+   "file": "data/session_e/SOURCE.md",
+   "file_sha256": "69ec8279c31dc4f9e5a059af425ca1f7945eaa4856b78690cab50315f1f54971",
+   "cited_target": "_source/MD5SUMS_TOTAL.txt",
+   "n_occurrences": 1,
+   "reason": "target intentionally not published: outside the publication boundary",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX11",
+   "class": "L",
+   "file": "data/session_e/SOURCE.md",
+   "file_sha256": "69ec8279c31dc4f9e5a059af425ca1f7945eaa4856b78690cab50315f1f54971",
+   "cited_target": "_outside_delivery/terminals_xplorer_b_c_ro.txt",
+   "n_occurrences": 1,
+   "reason": "target intentionally not published: outside the publication boundary",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX12",
+   "class": "L",
+   "file": "data/session_e/SOURCE.md",
+   "file_sha256": "69ec8279c31dc4f9e5a059af425ca1f7945eaa4856b78690cab50315f1f54971",
+   "cited_target": "_outside_delivery/session_notes_day2_ro_superseded_draft.md",
+   "n_occurrences": 1,
+   "reason": "target intentionally not published: outside the publication boundary",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX13",
+   "class": "L",
+   "file": "data/session_e/SOURCE.md",
+   "file_sha256": "69ec8279c31dc4f9e5a059af425ca1f7945eaa4856b78690cab50315f1f54971",
+   "cited_target": "ziua2_20260821/NOTE_ziua2_20260821.md",
+   "n_occurrences": 1,
+   "reason": "pre-rename source path of the delivered notes; the rename is recorded in PROVENANCE.tsv",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "data/session_e/PROVENANCE.tsv",
+    "source_sha256": "e0af1e08f5ed7cbf484f99e5d9af6565443fc3e6dedb65f243ee64f36c3dd40a",
+    "source_location": "this release"
+   }
+  },
+  {
+   "id": "LX14",
+   "class": "L",
+   "file": "analysis/session_e/core/RESULTS_E.md",
+   "file_sha256": "df809f921c7b9fad1c27ea1ed1c9457f4d8a0aa0bc7dde679724e997ef46a12a",
+   "cited_target": "day2_20260821/code/memory_extractor.py",
+   "n_occurrences": 1,
+   "reason": "target is a protected production module, intentionally not published",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "publication_whitelist.json",
+    "source_sha256": "aa15d95e129498243bc30efb2c091eab49437cfae7ea2f57de77a1f5dc10bfd8",
+    "source_location": "release-gate configuration (distributed with the gate)"
+   }
+  },
+  {
+   "id": "LX15",
+   "class": "L",
+   "file": "analysis/session_e/A1_cascade/A1_cascade_step_report.md",
+   "file_sha256": "ac1fb0618be9cb7836b3a0b88e4ee129cef0b3c8ce766d37fa47a36ebfd9be9d",
+   "cited_target": "session_e_v3.zip/session_e/results_E.json",
+   "n_occurrences": 1,
+   "reason": "superseded pre-P-8 archive; canonical exemplar declared 2026-08-29",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "Outputs/analysis/SESSION_E_CANONICAL_FROZEN_20260829.md",
+    "source_sha256": "85567466ce283c0d2ca71b40495dbbec9d28330e75d14ac5ed094717bfa6c936",
+    "source_location": "revision dossier (not part of this release)"
+   }
+  },
+  {
+   "id": "LX16",
+   "class": "L",
+   "file": "analysis/session_e/A1_cascade/A1_cascade_step_report.md",
+   "file_sha256": "ac1fb0618be9cb7836b3a0b88e4ee129cef0b3c8ce766d37fa47a36ebfd9be9d",
+   "cited_target": "E.zip/data/session_e/missions.csv",
+   "n_occurrences": 1,
+   "reason": "delivery archive path; the published exemplar is data/session_e/missions.csv",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "Outputs/analysis/SESSION_E_CANONICAL_FROZEN_20260829.md",
+    "source_sha256": "85567466ce283c0d2ca71b40495dbbec9d28330e75d14ac5ed094717bfa6c936",
+    "source_location": "revision dossier (not part of this release)"
+   }
+  },
+  {
+   "id": "LX17",
+   "class": "L",
+   "file": "analysis/session_e/r210_model_replay/README.md",
+   "file_sha256": "170ee90ac892d406b8a86b8239b70883525dcf614042eb74ab9588d989e670b8",
+   "cited_target": "analyze_r210_v3_final.py",
+   "n_occurrences": 1,
+   "reason": "superseded report generator, replaced by analyze_r210_an02_frozen.py",
+   "authorized": "author policy C-prime, clause 3 (exception as last resort)",
+   "supersession": {
+    "type": "evidence_scope",
+    "source_path": "analysis/session_e/r210_model_replay/SUPERSEDES.txt",
+    "source_sha256": "cd57bc66a9d53e54497e5f23d2d0e0af107ebbbc800b5787d74a989a36fed926",
+    "source_location": "this release"
+   }
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "_policy": "C-prime clause 3: repair-before-exception. Each entry resolves one exact (doc, cited name) pair to the published path of the artifact the frozen doc refers to; the gate verifies the resolved target exists. The two A3 digest entries resolve to the E4b exemplar; the E4.2 siblings are published beside it.",
+ "_generated_by": {
+  "name": "generate_publication_exceptions.py",
+  "location": "release-gate tooling; not part of the public repository",
+  "sha256": "7c09141bba26f77ea969148efadcd09964df6098f3b6e1652b560ce3196608cd"
+ },
+ "map": [
+  {
+   "doc": "analysis/session_e/core/RESULTS_E.md",
+   "cite": "missions.csv",
+   "resolve": "data/session_e/missions.csv"
+  },
+  {
+   "doc": "analysis/session_e/core/RESULTS_E.md",
+   "cite": "sessions.csv",
+   "resolve": "data/session_e/sessions.csv"
+  },
+  {
+   "doc": "analysis/session_e/core/RESULTS_E.md",
+   "cite": "KNOWN_DISCREPANCIES.md",
+   "resolve": "data/session_e/KNOWN_DISCREPANCIES.md"
+  },
+  {
+   "doc": "analysis/session_e/core/RESULTS_E.md",
+   "cite": "external_reference/summary.json",
+   "resolve": "data/session_e/external_reference/summary.json"
+  },
+  {
+   "doc": "analysis/session_e/core/RESULTS_E.md",
+   "cite": "day2_20260821/session/E7_sealed_set_v2.csv",
+   "resolve": "data/session_e/day2_20260821/session/E7_sealed_set_v2.csv"
+  },
+  {
+   "doc": "analysis/session_e/A2_m3_sensitivity/A2_m3_sensitivity_report.md",
+   "cite": "sas_text.py",
+   "resolve": "analysis/session_e/A2_m3_sensitivity/inputs/sas_text.py"
+  },
+  {
+   "doc": "analysis/session_e/A2_m3_sensitivity/A2_m3_sensitivity_report.md",
+   "cite": "missions.csv",
+   "resolve": "analysis/session_e/A2_m3_sensitivity/inputs/missions.csv"
+  },
+  {
+   "doc": "analysis/session_e/A2_m3_sensitivity/A2_m3_sensitivity_report.md",
+   "cite": "sessions.csv",
+   "resolve": "analysis/session_e/A2_m3_sensitivity/inputs/sessions.csv"
+  },
+  {
+   "doc": "analysis/session_e/A2_m3_sensitivity/README.md",
+   "cite": "sas_text.py",
+   "resolve": "analysis/session_e/A2_m3_sensitivity/inputs/sas_text.py"
+  },
+  {
+   "doc": "analysis/session_e/A2_m3_sensitivity/A2_INPUT_PROVENANCE.md",
+   "cite": "missions.csv",
+   "resolve": "analysis/session_e/A2_m3_sensitivity/inputs/missions.csv"
+  },
+  {
+   "doc": "analysis/session_e/A2_m3_sensitivity/A2_INPUT_PROVENANCE.md",
+   "cite": "sessions.csv",
+   "resolve": "analysis/session_e/A2_m3_sensitivity/inputs/sessions.csv"
+  },
+  {
+   "doc": "analysis/session_e/A1_cascade/A1_cascade_step_report.md",
+   "cite": "missions.csv",
+   "resolve": "data/session_e/missions.csv"
+  },
+  {
+   "doc": "analysis/session_e/A1_cascade/A1_cascade_step_report.md",
+   "cite": "results_E.json",
+   "resolve": "analysis/session_e/core/results_E.json"
+  },
+  {
+   "doc": "analysis/session_e/A3_m3_promotion/A3_INPUT_PROVENANCE.md",
+   "cite": "results_E.json",
+   "resolve": "analysis/session_e/core/results_E.json"
+  },
+  {
+   "doc": "analysis/session_e/A3_m3_promotion/A3_INPUT_PROVENANCE.md",
+   "cite": "memory_digest.json",
+   "resolve": "data/session_e/day2_20260821/memory/digest_E4b/memory_digest.json"
+  },
+  {
+   "doc": "analysis/session_e/A3_m3_promotion/A3_INPUT_PROVENANCE.md",
+   "cite": "M3_operator_preferences.jsonl",
+   "resolve": "data/session_e/day2_20260821/memory/digest_E4b/M3_operator_preferences.jsonl"
+  },
+  {
+   "doc": "analysis/session_e/r210_model_replay/R2-10_Final_Controlled_Replay_Analysis_20260824_FROZEN.md",
+   "cite": "audit_20260821_144154.jsonl",
+   "resolve": "data/session_e/day2_20260821/logs/audit_20260821_144154.jsonl"
+  },
+  {
+   "doc": "data/session_e/README.md",
+   "cite": "analyze_session_e.py",
+   "resolve": "analysis/session_e/core/analyze_session_e.py"
+  },
+  {
+   "doc": "data/session_e/README.md",
+   "cite": "build_dataset.py",
+   "resolve": "tools/build_dataset.py"
+  },
+  {
+   "doc": "data/session_e/README.md",
+   "cite": "apriltag_reference.py",
+   "resolve": "data/session_e/external_reference/apriltag_reference.py"
+  },
+  {
+   "doc": "data/session_e/README.md",
+   "cite": "analysis/results_E.json",
+   "resolve": "analysis/session_e/core/results_E.json"
+  },
+  {
+   "doc": "data/session_e/README.md",
+   "cite": "CHECKSUMS_source.md5",
+   "resolve": "data/session_e/day1_20260820/CHECKSUMS_source.md5"
+  },
+  {
+   "doc": "data/session_e/README.md",
+   "cite": "sas_text.py",
+   "resolve": "data/session_e/public_code/sas_text.py"
+  }
+ ]
+}

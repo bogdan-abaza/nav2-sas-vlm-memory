@@ -1,0 +1,29 @@
+cell_id,categorie,nivel,instructiune_en_v2,v1_minimal,original_ro,provenienta,acceptabil,incorect,referent_real
+L-P1,laborator,P1,Where is CB203?,CB203,CB203,RO-first-blind,22|23,,"cb203, ambele usi"
+L-P2,laborator,P2,I need to work on a computer.,computer,computer,RO-first-blind,5|8|22|23,0|4,laborator
+L-P3,laborator,P3,I have to attend a lab.,attend a lab,sa urmez un laborator la o disciplina,RO-first-blind,5|8|22,23,intrare laborator
+L-P4,laborator,P4,I'm late to class.,late to class,intarziat la activitatea practica,RO-first-blind,5|8|22,23,intrare laborator
+T-P1,toaleta,P1,Where is the men toilet?,men toilet,toaleta barbati,RO-first-blind,0,4,toaleta barbati
+T-P2,toaleta,P2,How can I get some water?,water,apa,RO-first-blind,0|4,5,toaleta
+T-P3,toaleta,P3,Where can I wash my hands?,wash hands,spalat maini,RO-first-blind,0|4,,toaleta
+T-P4,toaleta,P4,My hands are dirty.,My hands are dirty.,sunt murdar pe maini,RO-first-blind,0|4,,toaleta
+S-P1,loc_de_stat,P1,Take me to stay on a chair.,chair,scaun,RO-first-blind,15,,lab_chair
+S-P2,loc_de_stat,P2,I'm waiting for someone.,waiting,asteptare,RO-first-blind,9|15,,loc de stat
+S-P3,loc_de_stat,P3,I need to rest a bit.,resting,odihnesc,RO-first-blind,9|15,,loc de stat
+S-P4,loc_de_stat,P4,I'm tired.,tired,obosit,RO-first-blind,9|15,,loc de stat
+W-P1,fereastra,P1,"Take me to a window, please.",window,,EN-direct,14|20,,fereastra
+W-P2,fereastra,P2,I'm looking for a plant or sunlight.,plant or sunlight,,EN-direct,13|15|19|20|21,,planta (referent migrat)
+W-P3,fereastra,P3,Where can I get some fresh air?,fresh air,,EN-direct,14,,fereastra care se deschide
+W-P4,fereastra,P4,Where can I relax a bit?,relax,,EN-direct,9|15,,loc de stat (referent migrat)
+P-P1,planta,P1,Show me a flower.,flower,floare,RO-first-blind,13|15|19|20|21,,planta
+P-P2,planta,P2,Take me to a green zone.,green zone,,EN-direct,13|15|19|20|21,,planta
+P-P3,planta,P3,Where can I refresh?,refresh,,EN-direct,14,,aer curat (intentie declarata de autor)
+P-P4,planta,P4,I'm looking for a green spot.,looking for a green spot,,EN-direct,13|15|19|20|21,,planta
+H-P1,iesire_hol,P1,Where is the hall exit?,hall exit,,EN-direct,2,,hall_exit
+H-P2,iesire_hol,P2,I need to go to the other location.,other location,,EN-direct,-1,,"fara referent, abtinere"
+H-P3,iesire_hol,P3,I need to go out.,go out,,EN-direct,1|2,,iesire
+H-P4,iesire_hol,P4,I'm ready to move away.,ready to move,,EN-direct,1|2,,iesire
+G-1,granita,multi,Where is the class lab?,lab,laborator,RO-first-blind,5|8|22|23,,destinatii multiple
+G-2,granita,semantic,I want to wait for someone who is finishing the lab in CB203.,I want to wait for someone who is finishing the lab in CB203,vreau sa astept pe cineva care termina laboratorul din CB203,RO-first-blind,23,22,dezambiguizare semantica
+G-3,granita,nemapat,Where is the H sign?,H sign,,EN-direct,-1,0|22|23|13|16,"hidrant, tinta nemapata"
+G-4,granita,proximitate,Where is the closest chair?,closest chair,,EN-direct,15,,cuvant-cheie de proximitate

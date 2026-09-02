@@ -1,0 +1,16 @@
+```json
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "Staircase and exit door ahead in hallway.",
+  "scene_context": "Centered view of corridor end with stairs leading to outside.",
+  "reasoning": "Exit cues visible directly at the corridor's terminus.",
+  "payload": {
+    "neighborhood_cues": [
+      {"cue": "Staircase", "distance": "near", "direction": "center"},
+      {"cue": "Door frame", "distance": "far", "direction": "right"}
+    ]
+  }
+}
+```

@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator on tiled floor with dark strip",
+  "scene_context": "radiator sits above terrazzo flooring in indoor space",
+  "reasoning": "clearly visible white radiators confirm target location reached",
+  "payload": {
+    "identified_objects": [
+      {"label": "radiators", "position": "center", "salience": "high"},
+      {"label": "floor tiles", "position": "bottom", "salience": "medium"},
+      {"label": "legs", "position": "left|right", "salience": "low"}
+    ]
+  }
+}

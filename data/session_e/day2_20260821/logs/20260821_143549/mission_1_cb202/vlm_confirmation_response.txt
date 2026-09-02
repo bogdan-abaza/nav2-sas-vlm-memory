@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "fire extinguisher next to brown doors on speckled floor",
+  "scene_context": "extinguisher stands right of double doors in hallway",
+  "reasoning": "red fire extinguisher clearly visible at expected location cb202"
+}

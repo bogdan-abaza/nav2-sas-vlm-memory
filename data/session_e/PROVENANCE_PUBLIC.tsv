@@ -1,0 +1,15 @@
+# Public-release provenance — files added to the published package after delivery.
+# Separate from the delivered PROVENANCE.tsv by policy C-prime (clause 4): the
+# delivered record is never extended or edited. AprilTag external localization
+# reference package (R1-7 / R2-9 evidence); self-verifying via its own CHECKSUMS.md5.
+dataset_path	source_path	source_mtime	bytes	md5	renamed	content_modified	sealed	in_delivered_archive
+external_reference/CHECKSUMS.md5	Outputs/data/session_e/external_reference/CHECKSUMS.md5	2026-08-22T11:54:44	475	c34d4e3dcb6670720b9deed2f2b2f964	no	no	no	no
+external_reference/README.md	Outputs/data/session_e/external_reference/README.md	2026-08-22T11:54:43	8625	59f951a414b5eab85ce7c91fdeb74187	no	no	no	no
+external_reference/apriltag_reference.py	Outputs/data/session_e/external_reference/apriltag_reference.py	2026-08-22T11:54:43	35512	446879d8636ea83a3909f82657874405	no	no	no	no
+external_reference/detections.csv	Outputs/data/session_e/external_reference/detections.csv	2026-08-22T09:37:11	6076	a4b7f1be36cbda74fd01f2b6626f9b6a	no	no	no	no
+external_reference/hd_pro_webcam_c920_v2.yaml	Outputs/data/session_e/external_reference/hd_pro_webcam_c920_v2.yaml	2026-08-22T09:37:20	665	b6a00bff1421add7c1a92f6f0c4fb3e7	no	no	no	no
+external_reference/platform_extrinsics.csv	Outputs/data/session_e/external_reference/platform_extrinsics.csv	2026-08-22T09:37:12	471	4cfe9bac5c0ac5e21f53d8f1c5b549ac	no	no	no	no
+external_reference/pose_estimates.csv	Outputs/data/session_e/external_reference/pose_estimates.csv	2026-08-22T09:37:09	8582	0a454f9cac382447a9bd32273ca9d0be	no	no	no	no
+external_reference/summary.json	Outputs/data/session_e/external_reference/summary.json	2026-08-22T09:37:10	6679	ad7bc0f5d645d24869b41e3dcd7ed20f	no	no	no	no
+external_reference/tag_survey.csv	Outputs/data/session_e/external_reference/tag_survey.csv	2026-08-22T09:43:01	982	0dcf98c78ab11ad74f2f91ee3dd9262b	no	no	no	no
+external_reference/visibility_analysis.csv	Outputs/data/session_e/external_reference/visibility_analysis.csv	2026-08-22T09:37:10	24128	97146ade9811cbc732a0ea73e9e3148e	no	no	no	no

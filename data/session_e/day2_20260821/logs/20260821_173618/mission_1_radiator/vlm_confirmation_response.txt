@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator fins above tiled floor with dark strip.",
+  "scene_context": "radiator mounted on wall over patterned terrazzo flooring.",
+  "reasoning": "clearly visible white radiators confirm target reached.",
+  "payload": {
+    "identified_objects": [
+      {"label": "radiator", "position": "center", "salience": "high"},
+      {"label": "floor", "position": "bottom", "salience": "medium"},
+      {"label": "wall baseboard", "position": "left", "salience": "low"}
+    ]
+  }
+}

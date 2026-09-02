@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "open doorway with glass partition wall and dark floor strip",
+  "scene_context": "doorway leads to hallway; white walls on left; tiled flooring visible.",
+  "reasoning": "Cues match expected: open door, glass partitions, dark baseboard present.",
+  "payload": {
+    "neighborhood_cues": [
+      {"cue": "open doorway", "distance": "near", "direction": "center"},
+      {"cue": "glass partition wall", "distance": "medium", "direction": "right"},
+      {"cue": "dark floor strip", "distance": "near", "direction": "left"}
+    ]
+  }
+}

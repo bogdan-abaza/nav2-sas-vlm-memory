@@ -1,0 +1,195 @@
+{
+  "sessions": [
+    {
+      "session": "A",
+      "date_from": "2026-04-22",
+      "date_to": "2026-04-23",
+      "platforms": [
+        "xplorer-c"
+      ],
+      "navigator_versions": [
+        "v4.7.4",
+        "v4.8"
+      ],
+      "audit_schema": [
+        "2.0"
+      ],
+      "digests": {
+        "a18b610f": {
+          "prefs": 3,
+          "runs": 9,
+          "records": 83
+        },
+        "41c0a9e7": {
+          "prefs": 0,
+          "runs": 1,
+          "records": 2
+        }
+      },
+      "protocol": "development-stage",
+      "protocol_note": "Constructed scenarios; memory built up incrementally.",
+      "audit_sessions": 10,
+      "decision_bearing_runs": 10,
+      "decision_cycles": 85,
+      "records": 85,
+      "resolved_or_blocked_records": 85,
+      "unresolved_escalation_records": 0,
+      "identity_fields_recorded": 0,
+      "images_referenced": 85
+    },
+    {
+      "session": "B",
+      "date_from": "2026-04-23",
+      "date_to": "2026-04-23",
+      "platforms": [
+        "xplorer-b"
+      ],
+      "navigator_versions": [
+        "v4.8"
+      ],
+      "audit_schema": [
+        "2.0"
+      ],
+      "digests": {
+        "97241265": {
+          "prefs": 6,
+          "runs": 3,
+          "records": 76
+        }
+      },
+      "protocol": "development-stage",
+      "protocol_note": "Constructed scenarios on the second platform using the compiled digest available at startup.",
+      "audit_sessions": 3,
+      "decision_bearing_runs": 3,
+      "decision_cycles": 76,
+      "records": 76,
+      "resolved_or_blocked_records": 76,
+      "unresolved_escalation_records": 0,
+      "identity_fields_recorded": 0,
+      "images_referenced": 76
+    },
+    {
+      "session": "C",
+      "date_from": "2026-04-24",
+      "date_to": "2026-04-24",
+      "platforms": [
+        "xplorer-b",
+        "xplorer-c"
+      ],
+      "navigator_versions": [
+        "v4.8"
+      ],
+      "audit_schema": [
+        "2.0"
+      ],
+      "digests": {
+        "97241265": {
+          "prefs": 6,
+          "runs": 4,
+          "records": 4
+        }
+      },
+      "protocol": "development-stage",
+      "protocol_note": "Concurrent operation of both platforms.",
+      "audit_sessions": 4,
+      "decision_bearing_runs": 4,
+      "decision_cycles": 4,
+      "records": 4,
+      "resolved_or_blocked_records": 4,
+      "unresolved_escalation_records": 0,
+      "identity_fields_recorded": 0,
+      "images_referenced": 4
+    },
+    {
+      "session": "E",
+      "date_from": "2026-08-20",
+      "date_to": "2026-08-21",
+      "platforms": [
+        "xplorer-b",
+        "xplorer-c"
+      ],
+      "navigator_versions": [
+        "v4.8-review"
+      ],
+      "audit_schema": [
+        "2.1"
+      ],
+      "digests": {
+        "97241265": {
+          "prefs": 6,
+          "runs": 201,
+          "records": 214
+        },
+        "aba2b031": {
+          "prefs": 8,
+          "runs": 4,
+          "records": 3
+        },
+        "(none)": {
+          "prefs": 0,
+          "runs": 4,
+          "records": 4
+        },
+        "eca5dbc8": {
+          "prefs": 1,
+          "runs": 5,
+          "records": 5
+        }
+      },
+      "protocol": "confirmatory frozen-system campaign",
+      "protocol_note": "Frozen v4.8-review physical campaign with block-specific experimental units; E7 alone uses the sealed previously unseen instruction set.",
+      "audit_sessions": 214,
+      "decision_bearing_runs": 210,
+      "decision_cycles": 226,
+      "records": 226,
+      "resolved_or_blocked_records": 212,
+      "unresolved_escalation_records": 14,
+      "identity_fields_recorded": 214,
+      "images_referenced": 190
+    }
+  ],
+  "fast_path_reconciliation": [
+    {
+      "set": "Session A, all records",
+      "k": 75,
+      "n": 85,
+      "rate": 0.8824,
+      "note": "the set whose rate is the historical 88.2% figure, formerly quoted without naming its denominator"
+    },
+    {
+      "set": "Sessions A-C, all records",
+      "k": 155,
+      "n": 165,
+      "rate": 0.9394,
+      "note": ""
+    },
+    {
+      "set": "Sessions A-C, scenario subset",
+      "k": 74,
+      "n": 82,
+      "rate": 0.9024,
+      "note": "the subset the published figures are computed on: instructions matching one of seven scenario patterns. Repositioning commands are excluded; including them raises the rate rather than lowering it."
+    },
+    {
+      "set": "Session E, all records",
+      "k": 121,
+      "n": 226,
+      "rate": 0.5354,
+      "note": ""
+    },
+    {
+      "set": "Session E, excluding failed L3b calls",
+      "k": 121,
+      "n": 212,
+      "rate": 0.5708,
+      "note": "the convention sessions A-C were forced into: schema 2.0 could not record a failed L3b call, so no denominator from those sessions contains one"
+    },
+    {
+      "set": "Session E, sealed instruction set (E7) \u2014 record-level",
+      "k": 5,
+      "n": 29,
+      "rate": 0.1724,
+      "note": "written and sealed, with its acceptance criteria, before the system saw it. RECORD-LEVEL descriptive rate over the 29 archived cycles; the primary experimental unit is the sealed cell (28 cells; one cell ran twice), and the primary cell-level rate is documented in the canonical core analysis"
+    }
+  ]
+}

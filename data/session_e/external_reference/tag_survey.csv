@@ -1,0 +1,6 @@
+tag_id,family,side_m,center_x_m,center_y_m,center_z_m,normal_x,normal_y,normal_z,bottom_edge_height_m,nearest_node_name,survey_method,survey_uncertainty_m,notes
+1,tag36h11,0.125,6.330,-1.810,0.0795,0.0,1.0,0.0,0.017,plant_3,tape_measure,0.005,Optically inconsistent with this surveyed pose; see README and KNOWN_DISCREPANCIES D-6. Excluded from the aggregate.
+2,tag36h11,0.125,,,,,,,,junction_w1_or_junction_s2,not_surveyed,unspecified,Position never surveyed. Detected in 2 images at 17-19 px; unusable at any distance observed.
+3,tag36h11,0.125,0.020,0.000,0.0875,1.0,0.0,0.0,0.025,toilet_m,tape_measure,0.005,Mounted on the west wall at the map origin; wall plane x = 0.
+4,tag36h11,0.125,9.300,1.540,0.0795,-1.0,0.0,0.0,0.017,cb203_entrance,tape_measure,0.005,Mounted to the right of the CB203 door frame; wall plane x = 9.30.
+5,tag36h11,0.125,,,,,,,,cb203_exit,not_surveyed,unspecified,Reported present near node 23 but never detected in any of the arrivals at that node.

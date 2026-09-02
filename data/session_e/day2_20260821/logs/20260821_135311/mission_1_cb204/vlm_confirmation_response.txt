@@ -1,0 +1,15 @@
+```json
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "open doorway with glass partition and dark floor strip",
+  "scene_context": "floor tiles lead toward the open room entrance",
+  "reasoning": "The expected cues are clearly visible in front of me.",
+  "payload": {
+    "neighborhood_cues": [
+      {"cue": "open doorway with glass partition wall and dark floor strip", "distance": "near", "direction": "center"}
+    ]
+  }
+}
+```

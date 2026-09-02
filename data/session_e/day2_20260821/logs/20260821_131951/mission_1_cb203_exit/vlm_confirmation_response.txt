@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "corridor end with exit door frame visible ahead",
+  "scene_context": "centered view of corridor leading to stairwell area",
+  "reasoning": "exit cues match expected: door frame at corridor terminus, clear path forward"
+}

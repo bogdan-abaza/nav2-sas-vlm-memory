@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator on tiled floor near wall baseboard.",
+  "scene_context": "radiator sits above dark grout line and terrazzo flooring.",
+  "reasoning": "clearly visible white cast iron radiators confirm target reached."
+}

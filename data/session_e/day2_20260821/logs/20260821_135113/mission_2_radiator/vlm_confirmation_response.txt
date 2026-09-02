@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator on tiled floor with grime near base.",
+  "scene_context": "radiator stands above worn terrazzo flooring against wall.",
+  "reasoning": "clearly visible white cast iron radiators confirm target location.",
+  "payload": {
+    "identified_objects": [
+      {"label": "radiators", "position": "center", "salience": "high"},
+      {"label": "floor tiles", "position": "bottom", "salience": "medium"},
+      {"label": "grime line", "position": "lower center", "salience": "low"}
+    ]
+  }
+}

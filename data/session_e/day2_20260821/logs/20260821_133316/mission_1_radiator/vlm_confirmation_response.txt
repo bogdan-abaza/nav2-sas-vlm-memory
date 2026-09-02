@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator on tiled floor with support leg",
+  "scene_context": "radiator sits above dark baseboard and terrazzo flooring",
+  "reasoning": "clearly visible white cast iron radiator matches expected landmark type"
+}

@@ -1,0 +1,1 @@
+{"node_id": 8, "reason": "The instruction requests help to stop the fire in lab cb203. The semantic data lists a 'fire extinguisher' located at node 8 (lab_cb202), which is the only static object matching this function."}

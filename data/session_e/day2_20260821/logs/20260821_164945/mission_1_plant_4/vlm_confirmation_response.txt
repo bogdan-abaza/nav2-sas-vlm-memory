@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant on windowsill with bright light",
+  "scene_context": "plant sits center near window; other foliage left edge visible.",
+  "reasoning": "clear match to expected landmark via visual confirmation of potted plant at target location.",
+  "payload": {
+    "identified_objects": [
+      {"label": "potted_plant", "position": "center", "salience": "high"},
+      {"label": "window_sill", "position": "background", "salience": "medium"},
+      {"label": "other_foliage", "position": "left", "salience": "low"}
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant on window sill with terrazzo floor below.",
+  "scene_context": "plant sits center; trees and building visible through bright window behind it.",
+  "reasoning": "clearly matches expected landmark 'plant_4' via distinctive monstera leaves in pot.",
+  "payload": {
+    "identified_objects": [
+      {"label": "monstera", "position": "center", "salience": "high"},
+      {"label": "terracotta_pot", "position": "center", "salience": "medium"},
+      {"label": "window_sill", "position": "background", "salience": "low"}
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant near bright window on floor",
+  "scene_context": "plant sits beside office chair by glass pane outdoors greenery visible beyond frame edge left side shows wheel base of furniture nearby wall structure present background includes dark threshold strip separating interior from exterior light floods in creating glare across surface texture appears speckled terrazzo or similar flooring material underfoot object is clearly positioned adjacent to large window opening allowing natural illumination dominates foreground and midground composition",
+  "reasoning": "plant_5 matches expected landmark; high confidence due to clear visual confirmation of potted plant at POI location with surrounding context consistent with office environment near north-facing window.",
+  "payload": {
+    "identified_objects": [
+      {"label": "potted_plant", "position": "center", "salience": "high"},
+      {"label": "window_north", "position": "right", "salience": "medium"},
+      {"label": "office_chair_wheel_base", "position": "left", "salience": "low"}
+    ]
+  }
+}

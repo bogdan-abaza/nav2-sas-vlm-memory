@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "office floor with chair and potted plant near window",
+  "scene_context": "plant in white pot beside glass window on tiled flooring",
+  "reasoning": "white bucket holds green foliage directly adjacent to bright north-facing window opening"
+}

@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white cast iron radiator on concrete floor",
+  "scene_context": "radiator stands against wall with visible legs and grilles",
+  "reasoning": "clearly identifiable radiator structure matches expected landmark features"
+}

@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator on tiled floor with support leg visible.",
+  "scene_context": "radiator positioned against wall above checkered terrazzo flooring.",
+  "reasoning": "clearly identifiable white panel radiator matches expected landmark features and location context.",
+  "payload": {
+    "identified_objects": [
+      {"label": "radiator", "position": "center", "salience": "high"},
+      {"label": "floor tiles", "position": "bottom", "salience": "medium"},
+      {"label": "support leg", "position": "center-bottom", "salience": "low"}
+    ]
+  }
+}

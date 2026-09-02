@@ -1,0 +1,1 @@
+{"instruction_key": ["dry", "gloves", "them", "wet"], "instruction_examples": ["my gloves are wet, where can I dry them"], "resolved_node_id": 9, "frequency": 4, "consistency": 1.0, "method_distribution": {"L3b_vlm": 4}, "last_resolution_method": "L3b_vlm", "last_seen": 1787322563.4003246, "ready_for_l3a_promotion": true}

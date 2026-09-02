@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "fire extinguisher on floor near brown doors",
+  "scene_context": "red fire extinguisher stands against wall beside double doors",
+  "reasoning": "clearly visible red cylinder matches expected landmark cb202",
+  "payload": {
+    "identified_objects": [
+      {"label": "fire_extinguisher", "position": "right", "salience": "high"},
+      {"label": "doors", "position": "center", "salience": "medium"},
+      {"label": "floor_tiles", "position": "left", "salience": "low"}
+    ]
+  }
+}

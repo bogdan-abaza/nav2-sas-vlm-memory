@@ -1,0 +1,1 @@
+{"node_id": 0, "reason": "The instruction asks for hand washing; the 'restroom_men' at node 0 is a restroom and contains a bottle (likely soap/water), making it the appropriate location."}

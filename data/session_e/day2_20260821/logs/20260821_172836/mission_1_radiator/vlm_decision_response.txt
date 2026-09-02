@@ -1,0 +1,4 @@
+{
+"node_id": 9,
+"reason": "The radiator is the only designated resting location suitable for drying wet gloves."
+}

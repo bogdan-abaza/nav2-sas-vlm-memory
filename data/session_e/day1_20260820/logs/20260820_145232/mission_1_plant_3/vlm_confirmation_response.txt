@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant on tiled floor near window",
+  "scene_context": "plant sits beside wall and baseboard in corner area",
+  "reasoning": "clearly visible terracotta pot matches expected landmark location"
+}

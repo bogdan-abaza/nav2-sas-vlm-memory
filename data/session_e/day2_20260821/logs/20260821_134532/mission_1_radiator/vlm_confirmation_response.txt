@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator fins above tiled floor",
+  "scene_context": "radiator mounted on wall near corner",
+  "reasoning": "clearly visible white radiators confirm target reached",
+  "payload": {
+    "identified_objects": [
+      {"label": "radiator_main", "position": "center", "salience": "high"},
+      {"label": "floor_tiles", "position": "bottom", "salience": "medium"},
+      {"label": "wall_corner", "position": "right", "salience": "low"}
+    ]
+  }
+}

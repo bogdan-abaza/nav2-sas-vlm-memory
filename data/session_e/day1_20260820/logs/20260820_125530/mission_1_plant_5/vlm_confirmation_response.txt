@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "potted plant on window sill with bright light outside.",
+  "scene_context": "plant sits near center of frame beside office chair and another pot.",
+  "reasoning": "clear view of target plant at expected location under north-facing window.",
+  "payload": {
+    "identified_objects": [
+      {"label": "white_potted_plant", "position": "center", "salience": "high"},
+      {"label": "window_sill", "position": "background", "salience": "medium"},
+      {"label": "office_chair_wheels", "position": "left", "salience": "low"}
+    ]
+  }
+}

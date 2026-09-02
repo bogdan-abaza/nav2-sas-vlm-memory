@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "office chair base near window and plant pot",
+  "scene_context": "chair positioned in front of bright window with potted plant nearby",
+  "reasoning": "plant_5 is visible to the right, confirmed by leafy green foliage next to white planter"
+}

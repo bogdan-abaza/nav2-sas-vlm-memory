@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "brown doors at corridor end with speckled floor below.",
+  "scene_context": "entrance side visible; door frame marks corridor termination point.",
+  "reasoning": "Door frames and entrance cues align perfectly with expected navigation target location."
+}

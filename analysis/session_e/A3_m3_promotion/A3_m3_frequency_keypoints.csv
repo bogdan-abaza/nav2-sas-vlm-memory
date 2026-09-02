@@ -1,0 +1,7 @@
+min_frequency,consistency_threshold_fixed,promoted_count,promoted_candidates,is_nominal
+1,0.80,1,"[""wet_gloves""]",False
+2,0.80,1,"[""wet_gloves""]",False
+3,0.80,1,"[""wet_gloves""]",True
+4,0.80,1,"[""wet_gloves""]",False
+5,0.80,0,[],False
+6,0.80,0,[],False

@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "Brown door with hinge at right edge.",
+  "scene_context": "Door frame visible; entrance side aligned.",
+  "reasoning": "Cue matches expected: brown door near corridor end."
+}

@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator pipes on tiled floor with support leg visible.",
+  "scene_context": "radiator mounted against wall above checkered terrazzo flooring.",
+  "reasoning": "clearly identifiable white cast iron radiators confirm target location reached.",
+  "payload": {
+    "identified_objects": [
+      {"label": "radiator", "position": "center", "salience": "high"},
+      {"label": "floor tiles", "position": "bottom", "salience": "medium"},
+      {"label": "support leg", "position": "right", "salience": "low"}
+    ]
+  }
+}

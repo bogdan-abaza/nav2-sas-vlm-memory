@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator fins against dark wall",
+  "scene_context": "radiator mounted on floor near tiled baseboard",
+  "reasoning": "clearly visible white cast iron radiator confirms target location"
+}

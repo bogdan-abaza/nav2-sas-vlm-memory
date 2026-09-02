@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator on tiled floor with support leg visible below.",
+  "scene_context": "radiator mounted low against wall above speckled terrazzo flooring patterned in beige and dark gray sections, supported by a single vertical metal bracket extending to the ground level. The unit consists of multiple parallel cylindrical tubes arranged horizontally across its width, typical for convective heating systems found indoors.",
+  "reasoning": "The image clearly shows a standard white cast-iron or steel panel radiator mounted low on the wall above floor tiles; this matches expected landmark 'radiator_main' (node 9).",
+  "payload": {
+    "identified_objects": [
+      {"label": "radiator_tubes", "position": "center", "salience": "high"},
+      {"label": "support_leg", "position": "center", "salience": "medium"},
+      {"label": "floor_tiles", "position": "bottom", "salience": "low"}
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:4b",
+  "created_at": "2026-08-21T13:54:13.668820536Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"node_id\": 0, \"reason\": \"The instruction is to find a restroom; node 0 corresponds to 'toilet_m' which contains the semantic object 'restroom_men', matching the query.\"}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 18919111940,
+  "load_duration": 4700403027,
+  "prompt_eval_count": 2693,
+  "prompt_eval_duration": 5956138000,
+  "eval_count": 46,
+  "eval_duration": 749047000
+}

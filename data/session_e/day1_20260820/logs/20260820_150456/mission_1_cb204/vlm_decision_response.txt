@@ -1,0 +1,3 @@
+Based on the instruction to avoid places for personal needs (toilets), and given that there is no specific destination requested other than avoiding those locations, I will select a neutral landmark node. Node 5 ('cb204') represents 'lab_cb204', which is frequently visited but not a restroom or designated break spot like the radiator mentioned in the negation context (though it's close to the toilet zone).
+
+{"node_id": 5, "reason": "Selected lab location as neutral destination; avoided toilets per instruction."}

@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "open doorway with glass partition and dark floor strip ahead",
+  "scene_context": "centered view through open door into room with terrazzo flooring",
+  "reasoning": "expected cues match observed scene elements precisely in position",
+  "payload": {
+    "neighborhood_cues": [
+      {"cue": "open doorway", "distance": "near", "direction": "center"},
+      {"cue": "glass partition wall", "distance": "medium", "direction": "left-center"},
+      {"cue": "dark floor strip", "distance": "near", "direction": "center"}
+    ]
+  }
+}

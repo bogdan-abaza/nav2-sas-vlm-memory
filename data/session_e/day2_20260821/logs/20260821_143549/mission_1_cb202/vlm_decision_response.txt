@@ -1,0 +1,1 @@
+{"node_id": 8, "reason": "Node 8 (lab_cb202) is the closest location containing a static fire extinguisher ('fire_extinguisher_cb202'), which serves as the standard delivery arrival point in this corridor."}

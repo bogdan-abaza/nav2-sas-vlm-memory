@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "MEDIUM",
+  "signature_type": "landmark",
+  "scene_description": "paper target taped to wall with pixel symbol",
+  "scene_context": "target on white wall above black baseboard near floor",
+  "reasoning": "no plant visible; only paper sign present at location"
+}

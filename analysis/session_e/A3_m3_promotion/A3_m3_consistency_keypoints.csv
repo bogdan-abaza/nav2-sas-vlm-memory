@@ -1,0 +1,8 @@
+min_frequency_fixed,consistency_threshold,promoted_count,promoted_candidates,is_nominal
+3,0.00,3,"[""deliveries"", ""quiet_corner"", ""wet_gloves""]",False
+3,0.50,3,"[""deliveries"", ""quiet_corner"", ""wet_gloves""]",False
+3,0.51,2,"[""quiet_corner"", ""wet_gloves""]",False
+3,0.75,2,"[""quiet_corner"", ""wet_gloves""]",False
+3,0.76,1,"[""wet_gloves""]",False
+3,0.80,1,"[""wet_gloves""]",True
+3,1.00,1,"[""wet_gloves""]",False

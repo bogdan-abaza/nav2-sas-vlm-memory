@@ -1,0 +1,334 @@
+{
+  "images_searched": 345,
+  "detections_total": 29,
+  "detections_included": 11,
+  "min_tag_side_px": 80.0,
+  "aggregate": {
+    "dx_m": {
+      "n": 11,
+      "mean": 0.2079,
+      "sd": 0.0424,
+      "ci95_low": 0.1828,
+      "ci95_high": 0.233
+    },
+    "dy_m": {
+      "n": 11,
+      "mean": 0.0297,
+      "sd": 0.0603,
+      "ci95_low": -0.0059,
+      "ci95_high": 0.0653
+    },
+    "dyaw_deg": {
+      "n": 11,
+      "mean": -2.3017,
+      "sd": 4.2572,
+      "ci95_low": -4.8176,
+      "ci95_high": 0.2141
+    },
+    "residual_after_constant_offset": {
+      "rms_m": 0.0703,
+      "max_m": 0.1038
+    }
+  },
+  "per_tag": {
+    "1": {
+      "detections": 6,
+      "included": 0,
+      "surveyed": true,
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "dx_m": {
+        "n": 0
+      },
+      "dy_m": {
+        "n": 0
+      },
+      "dyaw_deg": {
+        "n": 0
+      },
+      "range_component_m": {
+        "n": 0
+      },
+      "lateral_component_m": {
+        "n": 0
+      },
+      "camera_height_optical_m": {
+        "n": 4,
+        "mean": 0.3309,
+        "sd": 0.0144,
+        "ci95_low": 0.3168,
+        "ci95_high": 0.345
+      },
+      "reprojection_error_px": {
+        "n": 0
+      },
+      "days": [],
+      "platforms": []
+    },
+    "2": {
+      "detections": 0,
+      "included": 0,
+      "surveyed": false,
+      "normal": null,
+      "dx_m": {
+        "n": 0
+      },
+      "dy_m": {
+        "n": 0
+      },
+      "dyaw_deg": {
+        "n": 0
+      },
+      "range_component_m": {
+        "n": 0
+      },
+      "lateral_component_m": {
+        "n": 0
+      },
+      "camera_height_optical_m": {
+        "n": 0
+      },
+      "reprojection_error_px": {
+        "n": 0
+      },
+      "days": [],
+      "platforms": []
+    },
+    "3": {
+      "detections": 12,
+      "included": 10,
+      "surveyed": true,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "dx_m": {
+        "n": 10,
+        "mean": 0.2054,
+        "sd": 0.0438,
+        "ci95_low": 0.1783,
+        "ci95_high": 0.2326
+      },
+      "dy_m": {
+        "n": 10,
+        "mean": 0.0201,
+        "sd": 0.0538,
+        "ci95_low": -0.0133,
+        "ci95_high": 0.0534
+      },
+      "dyaw_deg": {
+        "n": 10,
+        "mean": -2.4167,
+        "sd": 4.4695,
+        "ci95_low": -5.1869,
+        "ci95_high": 0.3535
+      },
+      "range_component_m": {
+        "n": 10,
+        "mean": 0.2054,
+        "sd": 0.0438,
+        "ci95_low": 0.1783,
+        "ci95_high": 0.2326
+      },
+      "lateral_component_m": {
+        "n": 10,
+        "mean": 0.0201,
+        "sd": 0.0538,
+        "ci95_low": -0.0133,
+        "ci95_high": 0.0534
+      },
+      "camera_height_optical_m": {
+        "n": 10,
+        "mean": 0.1497,
+        "sd": 0.0443,
+        "ci95_low": 0.1222,
+        "ci95_high": 0.1772
+      },
+      "reprojection_error_px": {
+        "n": 10,
+        "mean": 0.5825,
+        "sd": 0.7587,
+        "ci95_low": 0.1123,
+        "ci95_high": 1.0528
+      },
+      "days": [
+        "day1_20260820",
+        "day2_20260821"
+      ],
+      "platforms": [
+        "xplorer-b",
+        "xplorer-c"
+      ]
+    },
+    "4": {
+      "detections": 9,
+      "included": 1,
+      "surveyed": true,
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "dx_m": {
+        "n": 1,
+        "mean": 0.2327,
+        "sd": 0.0,
+        "ci95_low": 0.2327,
+        "ci95_high": 0.2327
+      },
+      "dy_m": {
+        "n": 1,
+        "mean": 0.1266,
+        "sd": 0.0,
+        "ci95_low": 0.1266,
+        "ci95_high": 0.1266
+      },
+      "dyaw_deg": {
+        "n": 1,
+        "mean": -1.152,
+        "sd": 0.0,
+        "ci95_low": -1.152,
+        "ci95_high": -1.152
+      },
+      "range_component_m": {
+        "n": 1,
+        "mean": -0.2327,
+        "sd": 0.0,
+        "ci95_low": -0.2327,
+        "ci95_high": -0.2327
+      },
+      "lateral_component_m": {
+        "n": 1,
+        "mean": -0.1266,
+        "sd": 0.0,
+        "ci95_low": -0.1266,
+        "ci95_high": -0.1266
+      },
+      "camera_height_optical_m": {
+        "n": 1,
+        "mean": 0.1397,
+        "sd": 0.0,
+        "ci95_low": 0.1397,
+        "ci95_high": 0.1397
+      },
+      "reprojection_error_px": {
+        "n": 1,
+        "mean": 0.2322,
+        "sd": 0.0,
+        "ci95_low": 0.2322,
+        "ci95_high": 0.2322
+      },
+      "days": [
+        "day2_20260821"
+      ],
+      "platforms": [
+        "xplorer-c"
+      ]
+    }
+  },
+  "visibility": {
+    "predicted_at_least_partly_in_frame": 140,
+    "fully_in_frame_and_large_enough": {
+      "images": 15,
+      "detected": 10,
+      "missed": 5
+    },
+    "fully_in_frame_too_small": {
+      "images": 51,
+      "detected": 10,
+      "missed": 41
+    },
+    "partly_in_frame_large_enough": {
+      "images": 15,
+      "detected": 6,
+      "missed": 9
+    },
+    "partly_in_frame_too_small": {
+      "images": 59,
+      "detected": 0,
+      "missed": 59
+    },
+    "not_detected_though_framed_and_large": [
+      {
+        "image": "day2_20260821/logs/20260821_134402/mission_1_plant_2/finish.jpg",
+        "tag_id": 1,
+        "predicted_side_px": 141.6,
+        "predicted_distance_m": 0.61,
+        "u": [
+          315,
+          459
+        ],
+        "v": [
+          224,
+          369
+        ]
+      },
+      {
+        "image": "day2_20260821/logs/20260821_121718/mission_1_plant_3/finish.jpg",
+        "tag_id": 1,
+        "predicted_side_px": 109.8,
+        "predicted_distance_m": 0.78,
+        "u": [
+          463,
+          586
+        ],
+        "v": [
+          258,
+          377
+        ]
+      },
+      {
+        "image": "day1_20260820/logs/20260820_130331/mission_1_cb203_entrance/finish.jpg",
+        "tag_id": 4,
+        "predicted_side_px": 103.1,
+        "predicted_distance_m": 0.83,
+        "u": [
+          152,
+          258
+        ],
+        "v": [
+          256,
+          362
+        ]
+      },
+      {
+        "image": "day2_20260821/logs/20260821_111411/mission_6_plant_3/finish.jpg",
+        "tag_id": 1,
+        "predicted_side_px": 98.3,
+        "predicted_distance_m": 0.87,
+        "u": [
+          398,
+          502
+        ],
+        "v": [
+          226,
+          328
+        ]
+      },
+      {
+        "image": "day2_20260821/logs/20260821_120446/mission_1_cb203_entrance/finish.jpg",
+        "tag_id": 4,
+        "predicted_side_px": 85.7,
+        "predicted_distance_m": 1.0,
+        "u": [
+          139,
+          229
+        ],
+        "v": [
+          252,
+          340
+        ]
+      }
+    ]
+  },
+  "negative_results": {
+    "tag5_arrivals_at_cb203_exit": 16,
+    "tag5_detections": 0,
+    "tag2_detections": 2,
+    "tag2_max_side_px": 18.7
+  }
+}

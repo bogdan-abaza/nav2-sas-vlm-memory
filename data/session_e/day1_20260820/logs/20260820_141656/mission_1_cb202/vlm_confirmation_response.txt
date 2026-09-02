@@ -1,0 +1,8 @@
+{
+  "at_target": false,
+  "confidence": "LOW",
+  "signature_type": "landmark",
+  "scene_description": "brown doors and speckled floor tiles.",
+  "scene_context": "doors are centered; no fire extinguisher visible nearby.",
+  "reasoning": "no expected landmark detected in current view."
+}

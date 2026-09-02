@@ -1,0 +1,41 @@
+{
+  "analysis_id": "R210-AN-02",
+  "status": "FROZEN",
+  "freeze_date": "2026-08-24",
+  "manuscript": "ROBOT-D-26-01090",
+  "canonical_narrative_report": "R2-10_Final_Controlled_Replay_Analysis_20260824_FROZEN.md",
+  "canonical_analyzer": "analyze_r210_an02_frozen.py",
+  "machine_readable_results": "R210_AN_02_FROZEN_RESULTS.json",
+  "computational_verification_report": "R210_AN_02_FROZEN_RESULTS.md",
+  "session_e_safe_reference": "session_e_r210_reference.json",
+  "session_e_reference_extractor": "extract_session_e_r210_reference.py",
+  "frozen_acquisition": "R2-10_controlled_replay_v3_20260823.tar.gz",
+  "corrected_replay_input": "R2-10_replay_package_20260823_CORRECTED.zip",
+  "executed_runner": "run_replay_v3.py",
+  "core_claim": "L3b interface-level model portability, not semantic model invariance.",
+  "provenance": {
+    "acquisition_sha256": "f59063c0e55fbc9a021c80c97c2e0897f161f620ebb374a887ba0ee4ed54ad04",
+    "replay_input_sha256": "3b5f8c0dc4d596ea9d94a2bb412f2a9e9c07ffc2323780bc737e0b747623e254",
+    "runner_sha256": "58cafa07d7dca62ea249218bb317590fe9d8874c0456f804a12bc9137a4e4c7e",
+    "session_e_reference_sha256": "83bd07360c0b39baada146804a0f81672d6934848ae2da7517b418c42239bac5",
+    "session_e_source_zip_sha256": "9e2f1dbc0269a056efac7594e679c9b643a59b0a22a0916e8dde8c422f945f33",
+    "analyzer_sha256": "730fc591e824c48d5635bcc667e59cf9651491c1a79277eda2a11ecd2f50dc3f",
+    "extractor_sha256": "94ae8e5cf278dd019baf80b18046550fa2d2c417f747e7a7c31abd6bb5533dac",
+    "frozen_report_sha256": "45c55018ff14b463e51f27904a7d3a13e40a101d3a042c2f220ec446b39abedd",
+    "results_json_sha256": "b3f726b8bad7b69a4b4f190640e579522a4795be0b1cb8dac864ada740c974d5",
+    "results_md_sha256": "15609e8e3a95a3cb7a5a5c5cf7b220251239ca2feae5c91480f0edb41d5a6b97"
+  },
+  "validation": {
+    "safe_reference_byte_identical_regeneration_from_E_zip": true,
+    "canonical_analyzer_assertions": "PASS",
+    "zip_integrity": "pending packaging"
+  },
+  "governance": [
+    "The frozen narrative report and canonical analyzer/results jointly define R210-AN-02.",
+    "The analyzer derives 105/91/69/22/14 and 39/35/22/13/4 from the safe Session E reference rather than hard-coding them as results.",
+    "The safe Session E reference is derived from the canonical 226 missions.csv rows and exact audit_file + _seq decision records.",
+    "E.zip is intentionally excluded because it contains protected SAS runtime source. The included extractor can regenerate the safe reference from an authorized local E.zip.",
+    "The previous analyze_r210_v3_final.py is superseded as the canonical report generator.",
+    "Any later arithmetic or interpretation change requires R210-AN-03 or later."
+  ]
+}

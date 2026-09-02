@@ -1,0 +1,4 @@
+{
+"node_id": 23,
+"reason": "The instruction asks for the location of 'CB203'. The semantic objects list identifies node 23 as 'cb203_exit', which is part of the CB203 laboratory zone. This matches the search term directly."
+}

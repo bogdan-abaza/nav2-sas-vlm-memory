@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "office chair and potted plant on tiled floor",
+  "scene_context": "chair near window with bright natural light outside",
+  "reasoning": "clearly visible lab chair matches expected landmark at target location"
+}

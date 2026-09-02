@@ -1,0 +1,86 @@
+A3 M3-PROMOTION SENSITIVITY v1 FREEZE MANIFEST
+Freeze date: 2026-08-25
+Status: FROZEN
+Analysis ID: A3_m3_promotion_sensitivity_v1
+Supersedes: A3_COMPLETE_INTERNAL_20260824/ (candidate), kept alongside as history
+            sha256 8cb32fb11cfc136da5c7c27105364800e0c2757756513c77902afc70f235851a
+
+SCOPE
+  Post-hoc offline sensitivity analysis of the FROZEN Session E M3 promotion gate.
+  Not parameter tuning, not a physical rerun. Reviewer relevance: R1-8, R2-2.
+
+PUBLICATION BOUNDARY
+  This package is public-safe. It contains and imports NO protected SAS production
+  module - in particular not memory_extractor.py. The only SAS source file included is
+  sas_text.py, the single file approved for public release.
+  The candidate archive additionally carried INTERNAL_ONLY/A3_INTERNAL_VALIDATION.
+  That record is deliberately NOT included here; it names the protected extractor and
+  its hash and must not reach the public repository.
+
+ANALYZER
+  analyze_A3_m3_promotion_sensitivity.py
+  sha256 5bdf4f495db952d674fee9b2591195581e47aa76c0fb59cb914cde9e1a38c7f4
+  Candidate was  49d325533136348ebb89cfc83e231289849dd9ab7f1e6b64f1be919de93cf9ad
+  Exactly three cosmetic changes at freeze time, none touching computation:
+    1. STATUS constant  "CANDIDATE / NOT FROZEN" -> "FROZEN 2026-08-25"
+    2. results.json sources.session_e_zip        : absolute path -> file name
+    3. results.json sources.canonical_analysis_zip: absolute path -> file name
+  The candidate recorded "/mnt/data/E.zip", the absolute path inside the sandbox that
+  produced it. The container SHA-256 was and is recorded separately, so the path added
+  nothing but a non-portable, non-reproducible field.
+  All five data artifacts are byte-identical before and after the patch.
+
+SOURCE CHAIN - containers named, not just file names
+  E.zip             sha256 9e2f1dbc0269a056efac7594e679c9b643a59b0a22a0916e8dde8c422f945f33
+    -> 8 E4.1 audit JSONLs and 4 E4b.1 audit JSONLs, day-2 memory folders
+  session_e_v3.zip  sha256 e8d863f1ea748152be67b42788cd15cf8bef782c47c7ae29f18652205948931f
+    -> session_e/results_E.json  (cross-check: PASS)
+  sas_text.py v1.2.0  sha256 aa211dc76cb2f19f3ff3c9b27c7ba56242b04a4a1ef2fc10d6ad6ad14eb005b1
+    Identical to the frozen day1/day2 code snapshot recorded in T-VERSION.
+  Archived extractor outputs used for the reproduction gate:
+    E4.2 and E4b M3_operator_preferences.jsonl plus their compiled memory_digest.json
+
+FROZEN RULE, reproduced from released artifacts
+  frequency >= 3  AND  round(dominant_count / total, 2) >= 0.80  AND  L3b_vlm_count >= 1
+  None node outcomes are retained in the node counter AND in the denominator.
+  Rounding is applied BEFORE the threshold comparison.
+
+POPULATION
+  E4.1  : 8 audit files, 8 decisions, 2 candidate associations
+  E4b.1 : 4 audit files, 4 decisions, 1 candidate association
+  Primary experimental unit: candidate association, N = 3  (not the 12 audit records)
+
+REPRODUCTION GATE
+  reconstructed candidates 3 / archived candidates 3 / mismatches 0 -> PASS
+  canonical session_e_v3 cross-check -> PASS
+
+FROZEN RESULTS at minimum frequency 3, consistency 0.80
+  deliveries    E4.1   nodes [10, None, 10, 5]  freq 4  consistency 0.50  REJECT
+  quiet_corner  E4.1   nodes [9, 15, 9, 9]      freq 4  consistency 0.75  REJECT
+  wet_gloves    E4b.1  nodes [9, 9, 9, 9]       freq 4  consistency 1.00  PROMOTE
+
+SENSITIVITY
+  Consistency is the discriminating parameter, at minimum frequency 3:
+    <= 0.50      all three promote
+    0.51 - 0.75  quiet_corner and wet_gloves promote
+    0.76 - 1.00  only wet_gloves promotes          <- frozen 0.80 sits on this plateau
+  quiet_corner is 0.05 below the threshold; a threshold of exactly 0.75 would promote it.
+  Frequency is weakly identified: all three candidates have frequency 4, so minimum
+  frequency 1, 2, 3 and 4 give the same result, while 5 or more rejects everything.
+  Session E therefore does NOT empirically justify minimum frequency = 3.
+
+INDEPENDENT VALIDATION 2026-08-25
+  All five data artifacts regenerate byte-identically on a different machine from the
+  released archives alone. The full promotion rule was also re-derived directly from the
+  canonical enriched table Outputs\data\session_e\missions.csv
+  (sha256 7759648cf0014de914aae5b87f27edfefdde66e1cb9b0d49f8ffe760884d970a), without this
+  script: the same 12 records group into the same three candidates with the same node
+  outcomes, frequencies, consistencies and promote/reject verdicts.
+
+INTERPRETATION GUARDRAIL
+  The gate measures repeated-output STABILITY, not semantic correctness. A3 does not
+  assess ground-truth correctness of the promoted node. The three candidates are
+  controlled induction cases, not a sample supporting a universally optimal threshold.
+  The ">= 1 L3b_vlm" condition is held fixed and is not ablated.
+  Present A3 as post-hoc robustness characterization of a PRE-frozen rule, never as
+  data-driven threshold selection.

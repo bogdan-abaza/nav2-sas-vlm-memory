@@ -1,0 +1,4 @@
+{
+  "node_id": 9,
+  "reason": "The radiator at node 9 is designated as a resting spot and provides heat for drying wet gloves."
+}

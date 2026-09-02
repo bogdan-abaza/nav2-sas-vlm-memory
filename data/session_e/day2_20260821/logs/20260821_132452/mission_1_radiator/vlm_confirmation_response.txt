@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "white radiator on tiled floor with dark strip",
+  "scene_context": "radiator sits against wall above speckled terrazzo flooring",
+  "reasoning": "clearly visible white radiators match expected landmark features"
+}

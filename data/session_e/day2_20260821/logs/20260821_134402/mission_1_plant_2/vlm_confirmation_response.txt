@@ -1,0 +1,15 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "two potted plants on a tiled floor near window",
+  "scene_context": "plants sit beside bright south-facing window sill",
+  "reasoning": "center pot matches plant_2 POI with expected landmark alignment",
+  "payload": {
+    "identified_objects": [
+      {"label": "pot_center", "position": "center", "salience": "high"},
+      {"label": "plant_left", "position": "left", "salience": "medium"},
+      {"label": "window_south", "position": "background", "salience": "low"}
+    ]
+  }
+}

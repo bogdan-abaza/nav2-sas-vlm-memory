@@ -1,0 +1,1 @@
+{"node_id": 10, "reason": "Node 10 (junction_s1) is the designated delivery arrival point in this corridor layout."}

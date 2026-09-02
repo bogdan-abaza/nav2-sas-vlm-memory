@@ -1,0 +1,16 @@
+```json
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "contextual",
+  "scene_description": "Door frame and entrance sign visible.",
+  "scene_context": "Entrance cues are directly in front of the camera.",
+  "reasoning": "Expected door frame and entrance side signs match observations.",
+  "payload": {
+    "neighborhood_cues": [
+      {"cue": "door frame", "distance": "near", "direction": "left"},
+      {"cue": "entrance sign", "distance": "near", "direction": "right"}
+    ]
+  }
+}
+```

@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "sunlit terrazzo floor with potted plant nearby.",
+  "scene_context": "plant sits on window sill; sunlight casts shadows across foreground surface.",
+  "reasoning": "clear visual match to expected landmark location and context cues present."
+}

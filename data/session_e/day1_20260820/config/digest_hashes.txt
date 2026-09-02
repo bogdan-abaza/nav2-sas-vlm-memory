@@ -1,0 +1,3 @@
+md5 fisier   : 97241265217eb4b08e26fb718eb21f40
+content_md5  : bdc89fcf1e17f8c577a941cd80be70ab  (cel din audit, invariant la generated_at)
+generated_at : 2026-04-23T10:19:36.377832Z

@@ -1,0 +1,18 @@
+md5 fisier   : 97241265217eb4b08e26fb718eb21f40
+content_md5  : 0fd61f9e82e8fe6991f0311014384e0c
+generated_at : 2026-04-23T10:19:36.377832Z
+
+CORECTIE, 21 august 2026.
+Versiunea anterioara a acestui fisier continea content_md5 = bdc89fcf1e17f8c577a941cd80be70ab,
+etichetat "cel din audit". Eticheta era falsa. Auditurile zilei 1 inregistreaza
+digest_content_md5 = 0fd61f9e82e8fe6991f0311014384e0c in 93 din 93 de inregistrari.
+
+De ce nu exista ambiguitate de conventie pe acest fisier:
+digestul publicat NU contine cheia content_md5, deci "exclude generated_at + content_md5" si
+"exclude doar generated_at" dau aceeasi valoare. Verificat.
+
+Ambele implementari exclud ambele chei, cu sort_keys=True si separators=(',',':'):
+  navigator  vlm_navigator_node_v4_8_review.py, linia 1058
+  extractor  memory_extractor.py, linia 641
+Pentru un digest care CONTINE cheia content_md5 -- adica orice digest produs de extractor --
+valoarea scrisa in fisier trebuie sa fie identica cu digest_content_md5 din audit.

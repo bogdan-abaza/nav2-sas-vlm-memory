@@ -1,0 +1,8 @@
+{
+  "at_target": true,
+  "confidence": "HIGH",
+  "signature_type": "landmark",
+  "scene_description": "fire extinguisher next to brown doors on tiled floor",
+  "scene_context": "extinguisher positioned right of center near door frame",
+  "reasoning": "clear fire extinguisher visible at expected location for cb202 node"
+}

@@ -1,0 +1,254 @@
+{
+  "analysis_id": "A3_m3_promotion_sensitivity_v1",
+  "status": "FROZEN 2026-08-25",
+  "scope": "post-hoc offline sensitivity of the frozen M3 promotion gate over controlled Session E induction candidates; not parameter tuning and not a physical rerun",
+  "sources": {
+    "session_e_zip": "E.zip",
+    "session_e_zip_sha256": "9e2f1dbc0269a056efac7594e679c9b643a59b0a22a0916e8dde8c422f945f33",
+    "canonical_analysis_zip": "session_e_v3.zip",
+    "canonical_analysis_zip_sha256": "e8d863f1ea748152be67b42788cd15cf8bef782c47c7ae29f18652205948931f",
+    "sas_text_version": "1.2.0",
+    "sas_text_sha256": "aa211dc76cb2f19f3ff3c9b27c7ba56242b04a4a1ef2fc10d6ad6ad14eb005b1",
+    "raw_audit_files": [
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_143913.jsonl",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144018.jsonl",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144154.jsonl",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144333.jsonl",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144452.jsonl",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144613.jsonl",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144722.jsonl",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144850.jsonl",
+      "data/session_e/day2_20260821/memory/logs_E4b1_only/audit_20260821_172417.jsonl",
+      "data/session_e/day2_20260821/memory/logs_E4b1_only/audit_20260821_172547.jsonl",
+      "data/session_e/day2_20260821/memory/logs_E4b1_only/audit_20260821_172706.jsonl",
+      "data/session_e/day2_20260821/memory/logs_E4b1_only/audit_20260821_172836.jsonl"
+    ],
+    "zip_member_sha256": {
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_143913.jsonl": "832ae1f71cfb3c465552f5329ecb3a1dad221cdf444baee03a94debef69cd279",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144018.jsonl": "e806f95bdf6865fe9be04852743ae5d874b691d189a6767eb8316f4821f0ef6a",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144154.jsonl": "281cb2d618485afeb944489340566d866f5e1e600ee26f1587f145bc19d9f1dd",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144333.jsonl": "aea34637b88adfaa2ece75cf3e8a951a06e16c9dff860b65e39806f1ea9f62e7",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144452.jsonl": "bdac2af09d7f221f4d14289f2cb0766545dd07d038fad0bfe1bc9356d3af9ecc",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144613.jsonl": "f66f953038d02ef965ebacf84b7672192c182585923f9012214a96a6b7bfaedd",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144722.jsonl": "489c4cb6c0e2245cdf10dd180f97ee5892502607ec218b03b8ea4007da5a6dc6",
+      "data/session_e/day2_20260821/memory/logs_E41_only/audit_20260821_144850.jsonl": "be9d4bf760f4e9760b2fcec8f63281afb7f8022f15e99a83063d22d9e5231139",
+      "data/session_e/day2_20260821/memory/logs_E4b1_only/audit_20260821_172417.jsonl": "31d8f31410fa23142953f7d915f7e9c2be5387d6ae5ca2a7c8ee51c899ff4c57",
+      "data/session_e/day2_20260821/memory/logs_E4b1_only/audit_20260821_172547.jsonl": "cc00e3b7ef1ccd3ff991342af34a6539ec5f23d88b19be8bab2281876c836bbf",
+      "data/session_e/day2_20260821/memory/logs_E4b1_only/audit_20260821_172706.jsonl": "294a6840a5a1dcd303c5d4e2ce8a21f3889d1b0ea04762e2aea32c0317e98931",
+      "data/session_e/day2_20260821/memory/logs_E4b1_only/audit_20260821_172836.jsonl": "33bc3eee607512333d75078da7ffe40db5842b7ea785f3772aad864a9b4265d8",
+      "data/session_e/day2_20260821/memory/digest_E4.2/M3_operator_preferences.jsonl": "e6b7e7b68804b09cb2adb2b133d488b00ab4a95a36982746fabda17209d74c09",
+      "data/session_e/day2_20260821/memory/digest_E4b/M3_operator_preferences.jsonl": "5c28e85fecde37356096554c70dbc15be0676a2b6f9063f979139f139a28c566",
+      "data/session_e/day2_20260821/memory/digest_E4.2/memory_digest.json": "4e7159221c0a2eb2110396f012cefb0af2312a975997de4681a2ce0f3d9b0dd4",
+      "data/session_e/day2_20260821/memory/digest_E4b/memory_digest.json": "ee981d9c6fb6b8c8e281d8bb6abc70b537bbb43d324c01b741b8dad694dcdc30"
+    }
+  },
+  "population": {
+    "E4.1_audit_files": 8,
+    "E4.1_decisions": 8,
+    "E4b.1_audit_files": 4,
+    "E4b.1_decisions": 4,
+    "candidate_associations": 3
+  },
+  "frozen_rule": {
+    "min_frequency": 3,
+    "consistency_threshold": 0.8,
+    "consistency_convention": "round(dominant_count / total, 2) before threshold comparison",
+    "requires_at_least_one_L3b_vlm": true,
+    "None_node_outcomes_included_in_denominator": true
+  },
+  "reproduction_gate": {
+    "status": "PASS",
+    "candidate_count_reconstructed": 3,
+    "candidate_count_archived": 3,
+    "mismatch_count": 0,
+    "mismatches": []
+  },
+  "canonical_v3_crosscheck": {
+    "status": "PASS",
+    "observed": {
+      "e4_rejected": [
+        [
+          9,
+          4,
+          0.75,
+          false
+        ],
+        [
+          10,
+          4,
+          0.5,
+          false
+        ]
+      ],
+      "e4b_promoted": [
+        [
+          9,
+          4
+        ]
+      ]
+    },
+    "expected": {
+      "e4_rejected": [
+        [
+          9,
+          4,
+          0.75,
+          false
+        ],
+        [
+          10,
+          4,
+          0.5,
+          false
+        ]
+      ],
+      "e4b_promoted": [
+        [
+          9,
+          4
+        ]
+      ]
+    },
+    "results_E_sha256": "e8d863f1ea748152be67b42788cd15cf8bef782c47c7ae29f18652205948931f"
+  },
+  "candidate_results": [
+    {
+      "source_block": "E4.1",
+      "candidate_label": "deliveries",
+      "instruction": "take me to the place where deliveries arrive",
+      "node_outcomes": [
+        10,
+        null,
+        10,
+        5
+      ],
+      "frequency": 4,
+      "dominant_node": 10,
+      "dominant_count": 2,
+      "consistency_raw": 0.5,
+      "consistency_rounded": 0.5,
+      "l3b_vlm_count": 3,
+      "promoted_at_nominal": false
+    },
+    {
+      "source_block": "E4.1",
+      "candidate_label": "quiet_corner",
+      "instruction": "find me a quiet corner to read",
+      "node_outcomes": [
+        9,
+        15,
+        9,
+        9
+      ],
+      "frequency": 4,
+      "dominant_node": 9,
+      "dominant_count": 3,
+      "consistency_raw": 0.75,
+      "consistency_rounded": 0.75,
+      "l3b_vlm_count": 4,
+      "promoted_at_nominal": false
+    },
+    {
+      "source_block": "E4b.1",
+      "candidate_label": "wet_gloves",
+      "instruction": "my gloves are wet, where can I dry them",
+      "node_outcomes": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "frequency": 4,
+      "dominant_node": 9,
+      "dominant_count": 4,
+      "consistency_raw": 1.0,
+      "consistency_rounded": 1.0,
+      "l3b_vlm_count": 4,
+      "promoted_at_nominal": true
+    }
+  ],
+  "nominal": {
+    "promoted_count": 1,
+    "promoted_candidates": [
+      "wet_gloves"
+    ]
+  },
+  "sensitivity": {
+    "frequency_grid": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "consistency_grid": {
+      "min": 0.0,
+      "max": 1.0,
+      "step": 0.01
+    },
+    "decision_plateaus": [
+      {
+        "consistency_threshold_interval": "0.00–0.50 inclusive",
+        "min_frequency_condition": "<=4",
+        "promoted_count": 3,
+        "promoted_candidates": [
+          "deliveries",
+          "quiet_corner",
+          "wet_gloves"
+        ]
+      },
+      {
+        "consistency_threshold_interval": "0.51–0.75 inclusive",
+        "min_frequency_condition": "<=4",
+        "promoted_count": 2,
+        "promoted_candidates": [
+          "quiet_corner",
+          "wet_gloves"
+        ]
+      },
+      {
+        "consistency_threshold_interval": "0.76–1.00 inclusive",
+        "min_frequency_condition": "<=4",
+        "promoted_count": 1,
+        "promoted_candidates": [
+          "wet_gloves"
+        ]
+      },
+      {
+        "consistency_threshold_interval": "0.00–1.00",
+        "min_frequency_condition": ">=5",
+        "promoted_count": 0,
+        "promoted_candidates": []
+      }
+    ],
+    "key_findings": [
+      "At consistency threshold 0.80, minimum-frequency settings 1 through 4 all reproduce the same outcome: only wet_gloves is promoted; minimum frequency >=5 rejects all three candidates.",
+      "At minimum frequency 3, lowering consistency threshold to 0.75 promotes quiet_corner as well; lowering to 0.50 also promotes deliveries.",
+      "The nominal 0.80 consistency threshold lies in the observed 0.76–1.00 plateau where only the 4/4-consistent wet_gloves association is promoted.",
+      "The quiet_corner candidate is only 0.05 below the nominal consistency threshold (0.75 vs 0.80), so its rejection is boundary-sensitive to the consistency setting.",
+      "All controlled candidates have frequency 4, so Session E does not empirically distinguish minimum frequency 3 from 1, 2, or 4; the frequency parameter is not optimized by this dataset.",
+      "Promotion eligibility measures repeated-output stability, not semantic correctness; A3 provides no semantic ground-truth accuracy claim."
+    ]
+  },
+  "archived_digest_crosscheck": {
+    "E4_promotions_ready": 0,
+    "E4b_promotions_ready": 1,
+    "E4b_promoted_entries": [
+      {
+        "instruction_examples": [
+          "my gloves are wet, where can I dry them"
+        ],
+        "node_id": 9,
+        "frequency": 4
+      }
+    ]
+  },
+  "limitations": [
+    "Only three controlled candidate associations are available (two E4.1 rejection candidates and one E4b.1 promotion candidate).",
+    "All three candidates have frequency 4; therefore the data characterize the threshold boundary but cannot identify an optimal minimum-frequency setting.",
+    "The analysis varies only minimum frequency and consistency threshold while keeping the required >=1 L3b_vlm condition fixed.",
+    "Sensitivity is post-hoc analysis of parameters frozen before Session E, not parameter tuning or a new physical experiment.",
+    "Consistency is a stability criterion over observed outputs; it is not a measure of semantic truth."
+  ]
+}
