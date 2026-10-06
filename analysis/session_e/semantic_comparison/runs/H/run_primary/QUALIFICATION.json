@@ -1,0 +1,943 @@
+{
+ "protocol": "a4_semantic_comparison_20261005",
+ "seal_sha256": "3771cb1660c328a42301d67a03449f58245db60c92a7d3dee43748f2fafc70e0",
+ "started_utc": "2026-10-05T10:00:00Z",
+ "record": "20260821_143713#1",
+ "prompt_sha256": "106e6b6204c171c2666c2e911f506bd82273da9d623ba4f88b1369afbb0738d1",
+ "image_sha256": "885b1bef645077905fe3974cc32ccf81bf4010a5f245b6614fd70f7d2d0373f7",
+ "payload_sha256": "6ca4faa136dfa60b05fcfee97d165406b589ccd8fbcb143499697e19551d10de",
+ "harness_sha256": {
+  "a4_bundle.py": "6502649c69c2f78213dcd8e07dbca57e8cd192603cfcefbdf4c5732b9f4aa5d9",
+  "gate_reports.py": "6bfd0b54b4c040c327d0efd2ce078d900d5a504b59a999c948a36589f4f75374",
+  "sc_analysis_test.py": "82206763ae3a7098db6c797b3fb1146b6aa411e0eb8c7dc61646736bc40a1fa7",
+  "sc_analyze.py": "17b3d60261386ad70f40750d0c865ac72a9d1e9eca0ab2cc987e2abc4148ee16",
+  "sc_deps.py": "49910a66017c971838c94000bb201ada61384cc2be51e92bf5760df520f4210b",
+  "sc_harness.py": "92056cb1bf2eadd0ff8a21580c600f871f3dbb0fd71ac1aaddea0c65afca2350",
+  "sc_schedule.py": "ab21c80c441ed9f82d4fa2350f261191a7e7f40b881f0e23c7dbc112f424ad1e",
+  "sc_seal.py": "37118979e574aad777e46f406b4b63b3a9b1b8808531161f36de4b0afea10ab4",
+  "sc_tests.py": "e230697924950653a99dc2814c28cc01c2461dfed72c1e62471b296c783bb555",
+  "sc_thermal.py": "726a9ff7c4593c9f5206d31eb0d04835b26b6a02fac6677e42e0d0eeafba6561"
+ },
+ "calls": [
+  {
+   "phase": "R",
+   "i": 1,
+   "wall_ns": 6778521117,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "94678",
+     1880575
+    ]
+   ],
+   "prep": {
+    "t_utc": "2026-10-05T10:00:00Z",
+    "previous_stop": null,
+    "system_service_loaded": [],
+    "gpu_compute_pids_before_start": [],
+    "start": {
+     "server": [
+      "94490",
+      1880224
+     ],
+     "version": "0.30.2",
+     "ready_ns": 2577775226,
+     "log": "server_1791194400709917352.log"
+    },
+    "loaded_before_preload": [],
+    "preload_ns": 3230456639,
+    "preload_response": {
+     "model": "qwen3.5:4b",
+     "created_at": "2026-10-05T10:00:06.518203106Z",
+     "response": "",
+     "done": true,
+     "done_reason": "load"
+    },
+    "ps_after_preload": [
+     {
+      "name": "qwen3.5:4b",
+      "digest": "0c8faadc50c205b83c634430c1dae6d1a4896c9b818cb8f290aa34d535265018",
+      "size": 3467661803,
+      "size_vram": 3467661803,
+      "context_length": 16384,
+      "expires_at": "2319-01-15T11:47:23.37316275+02:00"
+     }
+    ],
+    "runners": [
+     [
+      "94678",
+      1880575
+     ]
+    ],
+    "runner_cmds": [
+     "/usr/local/lib/ollama/llama-server --model /usr/share/ollama/.ollama/models/blobs/sha256-81fb60c7daa80fc1123380b98970b320ae233409f0f71a72ed7b9b0d62f40490 --port 38631 --host 127.0.0.1 --no-webui --off"
+    ],
+    "gpu_compute_pids_after_preload": [
+     "94678"
+    ]
+   },
+   "api_total_duration": 6777532363,
+   "api_load_duration": 217263913,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 5788540000,
+   "api_eval_count": 51,
+   "api_eval_duration": 756395000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:00:13.333657787Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 6777532363,
+    "load_duration": 217263913,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 5788540000,
+    "eval_count": 51,
+    "eval_duration": 756395000
+   }
+  },
+  {
+   "phase": "R",
+   "i": 2,
+   "wall_ns": 958524800,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "94678",
+     1880575
+    ]
+   ],
+   "prep": null,
+   "api_total_duration": 957396644,
+   "api_load_duration": 210410514,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 28899000,
+   "api_eval_count": 51,
+   "api_eval_duration": 702382000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:00:14.303199069Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 957396644,
+    "load_duration": 210410514,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 28899000,
+    "eval_count": 51,
+    "eval_duration": 702382000
+   }
+  },
+  {
+   "phase": "R",
+   "i": 3,
+   "wall_ns": 932004846,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "94678",
+     1880575
+    ]
+   ],
+   "prep": null,
+   "api_total_duration": 930918279,
+   "api_load_duration": 179655681,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 29250000,
+   "api_eval_count": 51,
+   "api_eval_duration": 706387000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:00:15.246133579Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 930918279,
+    "load_duration": 179655681,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 29250000,
+    "eval_count": 51,
+    "eval_duration": 706387000
+   }
+  },
+  {
+   "phase": "R",
+   "i": 4,
+   "wall_ns": 951012461,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "94678",
+     1880575
+    ]
+   ],
+   "prep": null,
+   "api_total_duration": 950185104,
+   "api_load_duration": 203424519,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 29207000,
+   "api_eval_count": 51,
+   "api_eval_duration": 701825000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:00:16.208842784Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 950185104,
+    "load_duration": 203424519,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 29207000,
+    "eval_count": 51,
+    "eval_duration": 701825000
+   }
+  },
+  {
+   "phase": "R",
+   "i": 5,
+   "wall_ns": 951226033,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "94678",
+     1880575
+    ]
+   ],
+   "prep": null,
+   "api_total_duration": 950133052,
+   "api_load_duration": 201482466,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 29110000,
+   "api_eval_count": 51,
+   "api_eval_duration": 703026000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:00:17.170896593Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 950133052,
+    "load_duration": 201482466,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 29110000,
+    "eval_count": 51,
+    "eval_duration": 703026000
+   }
+  },
+  {
+   "phase": "R",
+   "i": 6,
+   "wall_ns": 1040677800,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "94678",
+     1880575
+    ]
+   ],
+   "prep": null,
+   "api_total_duration": 1039784149,
+   "api_load_duration": 240889217,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 29639000,
+   "api_eval_count": 51,
+   "api_eval_duration": 754386000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:00:18.222839888Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1039784149,
+    "load_duration": 240889217,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 29639000,
+    "eval_count": 51,
+    "eval_duration": 754386000
+   }
+  },
+  {
+   "phase": "I",
+   "i": 1,
+   "wall_ns": 6875770448,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "94914",
+     1882346
+    ]
+   ],
+   "prep": {
+    "t_utc": "2026-10-05T10:00:18Z",
+    "previous_stop": {
+     "server": [
+      "94490",
+      1880224
+     ],
+     "runners": [
+      [
+       "94678",
+       1880575
+      ]
+     ],
+     "stop_ns": 163677014,
+     "leftover": []
+    },
+    "system_service_loaded": [],
+    "gpu_compute_pids_before_start": [],
+    "start": {
+     "server": [
+      "94727",
+      1881996
+     ],
+     "version": "0.30.2",
+     "ready_ns": 2486383200,
+     "log": "server_1791194418426386983.log"
+    },
+    "loaded_before_preload": [],
+    "preload_ns": 3609623500,
+    "preload_response": {
+     "model": "qwen3.5:4b",
+     "created_at": "2026-10-05T10:00:24.522100691Z",
+     "response": "",
+     "done": true,
+     "done_reason": "load"
+    },
+    "ps_after_preload": [
+     {
+      "name": "qwen3.5:4b",
+      "digest": "0c8faadc50c205b83c634430c1dae6d1a4896c9b818cb8f290aa34d535265018",
+      "size": 3467661803,
+      "size_vram": 3467661803,
+      "context_length": 16384,
+      "expires_at": "2319-01-15T11:47:41.377161629+02:00"
+     }
+    ],
+    "runners": [
+     [
+      "94914",
+      1882346
+     ]
+    ],
+    "runner_cmds": [
+     "/usr/local/lib/ollama/llama-server --model /usr/share/ollama/.ollama/models/blobs/sha256-81fb60c7daa80fc1123380b98970b320ae233409f0f71a72ed7b9b0d62f40490 --port 39921 --host 127.0.0.1 --no-webui --off"
+    ],
+    "gpu_compute_pids_after_preload": [
+     "94914"
+    ]
+   },
+   "api_total_duration": 6874718852,
+   "api_load_duration": 258670800,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 5839797000,
+   "api_eval_count": 51,
+   "api_eval_duration": 760052000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:00:31.434114641Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 6874718852,
+    "load_duration": 258670800,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 5839797000,
+    "eval_count": 51,
+    "eval_duration": 760052000
+   }
+  },
+  {
+   "phase": "I",
+   "i": 2,
+   "wall_ns": 6947315793,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "95139",
+     1883658
+    ]
+   ],
+   "prep": {
+    "t_utc": "2026-10-05T10:00:31Z",
+    "previous_stop": {
+     "server": [
+      "94727",
+      1881996
+     ],
+     "runners": [
+      [
+       "94914",
+       1882346
+      ]
+     ],
+     "stop_ns": 163811620,
+     "leftover": []
+    },
+    "system_service_loaded": [],
+    "gpu_compute_pids_before_start": [],
+    "start": {
+     "server": [
+      "94955",
+      1883317
+     ],
+     "version": "0.30.2",
+     "ready_ns": 2444829000,
+     "log": "server_1791194431637979341.log"
+    },
+    "loaded_before_preload": [],
+    "preload_ns": 3526705455,
+    "preload_response": {
+     "model": "qwen3.5:4b",
+     "created_at": "2026-10-05T10:00:37.609521759Z",
+     "response": "",
+     "done": true,
+     "done_reason": "load"
+    },
+    "ps_after_preload": [
+     {
+      "name": "qwen3.5:4b",
+      "digest": "0c8faadc50c205b83c634430c1dae6d1a4896c9b818cb8f290aa34d535265018",
+      "size": 3467661803,
+      "size_vram": 3467661803,
+      "context_length": 16384,
+      "expires_at": "2319-01-15T11:47:54.464501538+02:00"
+     }
+    ],
+    "runners": [
+     [
+      "95139",
+      1883658
+     ]
+    ],
+    "runner_cmds": [
+     "/usr/local/lib/ollama/llama-server --model /usr/share/ollama/.ollama/models/blobs/sha256-81fb60c7daa80fc1123380b98970b320ae233409f0f71a72ed7b9b0d62f40490 --port 36101 --host 127.0.0.1 --no-webui --off"
+    ],
+    "gpu_compute_pids_after_preload": [
+     "95139"
+    ]
+   },
+   "api_total_duration": 6946111469,
+   "api_load_duration": 220385610,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 5948709000,
+   "api_eval_count": 51,
+   "api_eval_duration": 761161000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:00:44.593903971Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 6946111469,
+    "load_duration": 220385610,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 5948709000,
+    "eval_count": 51,
+    "eval_duration": 761161000
+   }
+  },
+  {
+   "phase": "I",
+   "i": 3,
+   "wall_ns": 6819933216,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "95362",
+     1884984
+    ]
+   ],
+   "prep": {
+    "t_utc": "2026-10-05T10:00:44Z",
+    "previous_stop": {
+     "server": [
+      "94955",
+      1883317
+     ],
+     "runners": [
+      [
+       "95139",
+       1883658
+      ]
+     ],
+     "stop_ns": 163977969,
+     "leftover": []
+    },
+    "system_service_loaded": [],
+    "gpu_compute_pids_before_start": [],
+    "start": {
+     "server": [
+      "95178",
+      1884633
+     ],
+     "version": "0.30.2",
+     "ready_ns": 2531830215,
+     "log": "server_1791194444797620522.log"
+    },
+    "loaded_before_preload": [],
+    "preload_ns": 3554097934,
+    "preload_response": {
+     "model": "qwen3.5:4b",
+     "created_at": "2026-10-05T10:00:50.883432509Z",
+     "response": "",
+     "done": true,
+     "done_reason": "load"
+    },
+    "ps_after_preload": [
+     {
+      "name": "qwen3.5:4b",
+      "digest": "0c8faadc50c205b83c634430c1dae6d1a4896c9b818cb8f290aa34d535265018",
+      "size": 3467661803,
+      "size_vram": 3467661803,
+      "context_length": 16384,
+      "expires_at": "2319-01-15T11:48:07.738400308+02:00"
+     }
+    ],
+    "runners": [
+     [
+      "95362",
+      1884984
+     ]
+    ],
+    "runner_cmds": [
+     "/usr/local/lib/ollama/llama-server --model /usr/share/ollama/.ollama/models/blobs/sha256-81fb60c7daa80fc1123380b98970b320ae233409f0f71a72ed7b9b0d62f40490 --port 40611 --host 127.0.0.1 --no-webui --off"
+    ],
+    "gpu_compute_pids_after_preload": [
+     "95362"
+    ]
+   },
+   "api_total_duration": 6819110847,
+   "api_load_duration": 194393635,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 5846850000,
+   "api_eval_count": 51,
+   "api_eval_duration": 761105000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:00:57.738576014Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 6819110847,
+    "load_duration": 194393635,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 5846850000,
+    "eval_count": 51,
+    "eval_duration": 761105000
+   }
+  },
+  {
+   "phase": "I",
+   "i": 4,
+   "wall_ns": 6875730172,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "95589",
+     1886303
+    ]
+   ],
+   "prep": {
+    "t_utc": "2026-10-05T10:00:57Z",
+    "previous_stop": {
+     "server": [
+      "95178",
+      1884633
+     ],
+     "runners": [
+      [
+       "95362",
+       1884984
+      ]
+     ],
+     "stop_ns": 163612665,
+     "leftover": []
+    },
+    "system_service_loaded": [],
+    "gpu_compute_pids_before_start": [],
+    "start": {
+     "server": [
+      "95402",
+      1885948
+     ],
+     "version": "0.30.2",
+     "ready_ns": 2499909915,
+     "log": "server_1791194457941954556.log"
+    },
+    "loaded_before_preload": [],
+    "preload_ns": 3631923129,
+    "preload_response": {
+     "model": "qwen3.5:4b",
+     "created_at": "2026-10-05T10:01:04.073789586Z",
+     "response": "",
+     "done": true,
+     "done_reason": "load"
+    },
+    "ps_after_preload": [
+     {
+      "name": "qwen3.5:4b",
+      "digest": "0c8faadc50c205b83c634430c1dae6d1a4896c9b818cb8f290aa34d535265018",
+      "size": 3467661803,
+      "size_vram": 3467661803,
+      "context_length": 16384,
+      "expires_at": "2319-01-15T11:48:20.928765774+02:00"
+     }
+    ],
+    "runners": [
+     [
+      "95589",
+      1886303
+     ]
+    ],
+    "runner_cmds": [
+     "/usr/local/lib/ollama/llama-server --model /usr/share/ollama/.ollama/models/blobs/sha256-81fb60c7daa80fc1123380b98970b320ae233409f0f71a72ed7b9b0d62f40490 --port 43809 --host 127.0.0.1 --no-webui --off"
+    ],
+    "gpu_compute_pids_after_preload": [
+     "95589"
+    ]
+   },
+   "api_total_duration": 6874786746,
+   "api_load_duration": 238566819,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 5856578000,
+   "api_eval_count": 51,
+   "api_eval_duration": 762786000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:01:10.985928695Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 6874786746,
+    "load_duration": 238566819,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 5856578000,
+    "eval_count": 51,
+    "eval_duration": 762786000
+   }
+  },
+  {
+   "phase": "I",
+   "i": 5,
+   "wall_ns": 6868959275,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "95812",
+     1887614
+    ]
+   ],
+   "prep": {
+    "t_utc": "2026-10-05T10:01:10Z",
+    "previous_stop": {
+     "server": [
+      "95402",
+      1885948
+     ],
+     "runners": [
+      [
+       "95589",
+       1886303
+      ]
+     ],
+     "stop_ns": 163823730,
+     "leftover": []
+    },
+    "system_service_loaded": [],
+    "gpu_compute_pids_before_start": [],
+    "start": {
+     "server": [
+      "95630",
+      1887272
+     ],
+     "version": "0.30.2",
+     "ready_ns": 2465677275,
+     "log": "server_1791194471189201791.log"
+    },
+    "loaded_before_preload": [],
+    "preload_ns": 3499799339,
+    "preload_response": {
+     "model": "qwen3.5:4b",
+     "created_at": "2026-10-05T10:01:17.154838523Z",
+     "response": "",
+     "done": true,
+     "done_reason": "load"
+    },
+    "ps_after_preload": [
+     {
+      "name": "qwen3.5:4b",
+      "digest": "0c8faadc50c205b83c634430c1dae6d1a4896c9b818cb8f290aa34d535265018",
+      "size": 3467661803,
+      "size_vram": 3467661803,
+      "context_length": 16384,
+      "expires_at": "2319-01-15T11:48:34.00979918+02:00"
+     }
+    ],
+    "runners": [
+     [
+      "95812",
+      1887614
+     ]
+    ],
+    "runner_cmds": [
+     "/usr/local/lib/ollama/llama-server --model /usr/share/ollama/.ollama/models/blobs/sha256-81fb60c7daa80fc1123380b98970b320ae233409f0f71a72ed7b9b0d62f40490 --port 33369 --host 127.0.0.1 --no-webui --off"
+    ],
+    "gpu_compute_pids_after_preload": [
+     "95812"
+    ]
+   },
+   "api_total_duration": 6867998887,
+   "api_load_duration": 255536418,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 5833793000,
+   "api_eval_count": 51,
+   "api_eval_duration": 763220000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:01:24.06004565Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 6867998887,
+    "load_duration": 255536418,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 5833793000,
+    "eval_count": 51,
+    "eval_duration": 763220000
+   }
+  },
+  {
+   "phase": "I",
+   "i": 6,
+   "wall_ns": 7043608588,
+   "contract_ok": true,
+   "node_id": 9,
+   "content_sha256": "41a69a0146897abc646543d58b560d9280555d50c8bbbfe66db84428041bcfcf",
+   "runners_after_call": [
+    [
+     "96038",
+     1888930
+    ]
+   ],
+   "prep": {
+    "t_utc": "2026-10-05T10:01:24Z",
+    "previous_stop": {
+     "server": [
+      "95630",
+      1887272
+     ],
+     "runners": [
+      [
+       "95812",
+       1887614
+      ]
+     ],
+     "stop_ns": 163712643,
+     "leftover": []
+    },
+    "system_service_loaded": [],
+    "gpu_compute_pids_before_start": [],
+    "start": {
+     "server": [
+      "95851",
+      1888580
+     ],
+     "version": "0.30.2",
+     "ready_ns": 2503196522,
+     "log": "server_1791194484263912373.log"
+    },
+    "loaded_before_preload": [],
+    "preload_ns": 3542824743,
+    "preload_response": {
+     "model": "qwen3.5:4b",
+     "created_at": "2026-10-05T10:01:30.309840811Z",
+     "response": "",
+     "done": true,
+     "done_reason": "load"
+    },
+    "ps_after_preload": [
+     {
+      "name": "qwen3.5:4b",
+      "digest": "0c8faadc50c205b83c634430c1dae6d1a4896c9b818cb8f290aa34d535265018",
+      "size": 3467661803,
+      "size_vram": 3467661803,
+      "context_length": 16384,
+      "expires_at": "2319-01-15T11:48:47.164791372+02:00"
+     }
+    ],
+    "runners": [
+     [
+      "96038",
+      1888930
+     ]
+    ],
+    "runner_cmds": [
+     "/usr/local/lib/ollama/llama-server --model /usr/share/ollama/.ollama/models/blobs/sha256-81fb60c7daa80fc1123380b98970b320ae233409f0f71a72ed7b9b0d62f40490 --port 43305 --host 127.0.0.1 --no-webui --off"
+    ],
+    "gpu_compute_pids_after_preload": [
+     "96038"
+    ]
+   },
+   "api_total_duration": 7042770935,
+   "api_load_duration": 206677153,
+   "api_prompt_eval_count": 2734,
+   "api_prompt_eval_cached_count": null,
+   "api_prompt_eval_cached_count_status": "unavailable_in_0.30.2",
+   "api_prompt_eval_duration": 6053749000,
+   "api_eval_count": 51,
+   "api_eval_duration": 765881000,
+   "api_done_reason": "stop",
+   "api_envelope": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-05T10:01:37.3903341Z",
+    "message": {
+     "role": "assistant",
+     "content": "{\"node_id\": 9, \"reason\": \"The radiator at node 9 is explicitly listed in the DESIGNATED SEATING/RESTING LOCATIONS and matches 'quiet corner' (center of corridor) better than dynamic YOLO objects.\"}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 7042770935,
+    "load_duration": 206677153,
+    "prompt_eval_count": 2734,
+    "prompt_eval_duration": 6053749000,
+    "eval_count": 51,
+    "eval_duration": 765881000
+   }
+  }
+ ],
+ "final_stop": {
+  "server": [
+   "95851",
+   1888580
+  ],
+  "runners": [
+   [
+    "96038",
+    1888930
+   ]
+  ],
+  "stop_ns": 164214543,
+  "leftover": []
+ },
+ "ended_utc": "2026-10-05T10:01:37Z",
+ "ended_boot_ns": 18899115684477,
+ "corroboration": {
+  "prompt_eval_cached_count": "unavailable_in_0.30.2",
+  "retained_R2_R6_prompt_eval_ms": [
+   28.899,
+   29.25,
+   29.207,
+   29.11,
+   29.639
+  ],
+  "isolated_prompt_eval_ms": [
+   5839.797,
+   5948.709,
+   5846.85,
+   5856.578,
+   5833.793,
+   6053.749
+  ]
+ },
+ "criteria": {
+  "all_contract_ok": true,
+  "isolated_distinct_servers": true,
+  "isolated_distinct_runners": true,
+  "isolated_nothing_loaded_before_preload": true,
+  "isolated_identity_after_preload": true,
+  "isolated_runner_not_replaced": true,
+  "no_leftover_processes": true,
+  "system_service_idle": true,
+  "cached_count_zero_or_unavailable": true,
+  "thermal_logger_alive": true
+ },
+ "pass": true
+}

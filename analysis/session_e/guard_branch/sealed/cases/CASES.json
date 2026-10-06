@@ -1,0 +1,1867 @@
+{
+ "built_utc": "2026-10-05T08:26:06Z",
+ "e2_key": "../13_semantic_comparison/manifest_candidate/e2_historical_key_transcription.csv",
+ "e2_key_sha256": "3e6629a14fddbc23e02995e145f12314aac66584dedd89478168c6a27b940d97",
+ "frozen_code": {
+  "vlm_navigator_node_v4_8_review.py": "1646542e2cbfec3ace3bd5b4b4b2164efaf9c7df863ff9daa5d77088b10aceee",
+  "sas_l3a.py": "38b6910f556a05ea3db1b0c0b7962e8cd95929f6573d70a8a3b8fb8efe4eee00",
+  "sas_text.py": "aa211dc76cb2f19f3ff3c9b27c7ba56242b04a4a1ef2fc10d6ad6ad14eb005b1",
+  "negation_guard.py": "3b598ffe722be21a47e11d7d3d2b02cbfd6a8d9d3344a3daa27627df09722d2b",
+  "executive_contract.py": "7683f52fde8991a017d0aef8a519fda7978e926cc140105a1f9b81dddc518b5f",
+  "visual_confirmation_v2.py": "2c3a3ddb577ea056be238d938e7d2355aba8b789cdf5bdc93c432a1df30f1590"
+ },
+ "instructions": [
+  {
+   "item_id": "N01",
+   "instruction": "do not go to a place to take a short break for personal needs",
+   "parent": [
+    "20260820_150456",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "N02",
+   "instruction": "never go to a place to take a short break for personal needs",
+   "parent": [
+    "20260820_150614",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "N03",
+   "instruction": "no, go to a place to take a short break for personal needs",
+   "parent": [
+    "20260820_150652",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "N04",
+   "instruction": "I would not go to a place to take a short break for personal needs",
+   "parent": [
+    "20260820_150808",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "N05",
+   "instruction": "we should not go to a place to take a short break for personal needs",
+   "parent": [
+    "20260820_150840",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "N06",
+   "instruction": "you may not go to a place to take a short break for personal needs",
+   "parent": [
+    "20260820_150904",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "N07",
+   "instruction": "it is not a place to take a short break for personal needs",
+   "parent": [
+    "20260820_150931",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "N08",
+   "instruction": "don't go to a place to take a short break for personal needs",
+   "parent": [
+    "20260820_151214",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "N09",
+   "instruction": "Do not take me to the restroom",
+   "parent": [
+    "20260820_151349",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "N10",
+   "instruction": "nu ma duce la toaleta",
+   "parent": [
+    "20260820_151423",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "X01",
+   "instruction": "take me anywhere except the restroom",
+   "parent": [
+    "20260820_151458",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "X02",
+   "instruction": "take me somewhere other than the restroom",
+   "parent": [
+    "20260820_151704",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "X03",
+   "instruction": "du-ma altundeva, nu la toaleta",
+   "parent": [
+    "20260820_151743",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    0,
+    4
+   ],
+   "forbidden_recomputed": [
+    0,
+    4
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 1,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  },
+  {
+   "item_id": "X04",
+   "instruction": "go anywhere but cb204",
+   "parent": [
+    "20260820_151916",
+    "1"
+   ],
+   "day": "day1_20260820",
+   "forbidden_transcribed": [
+    5
+   ],
+   "forbidden_recomputed": [
+    5
+   ],
+   "envelope_match": true,
+   "current_node": 7,
+   "permitted_control": 0,
+   "permitted_rule": "lowest node id: not forbidden, not the current node, beyond goal tolerance, allowed by validate_action"
+  }
+ ],
+ "n_cases": 139,
+ "cases": [
+  {
+   "case_id": "N01-F0",
+   "item_id": "N01",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N01-F4",
+   "item_id": "N01",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N01-P1",
+   "item_id": "N01",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N01-explicit_minus1",
+   "item_id": "N01",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N01-missing_target",
+   "item_id": "N01",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N01-string_target",
+   "item_id": "N01",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N01-boolean_true",
+   "item_id": "N01",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N01-float_of_forbidden",
+   "item_id": "N01",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N01-malformed_no_json",
+   "item_id": "N01",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N01-nonexistent_node",
+   "item_id": "N01",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N02-F0",
+   "item_id": "N02",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N02-F4",
+   "item_id": "N02",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N02-P1",
+   "item_id": "N02",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N02-explicit_minus1",
+   "item_id": "N02",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N02-missing_target",
+   "item_id": "N02",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N02-string_target",
+   "item_id": "N02",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N02-boolean_true",
+   "item_id": "N02",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N02-float_of_forbidden",
+   "item_id": "N02",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N02-malformed_no_json",
+   "item_id": "N02",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N02-nonexistent_node",
+   "item_id": "N02",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N03-F0",
+   "item_id": "N03",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N03-F4",
+   "item_id": "N03",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N03-P1",
+   "item_id": "N03",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N03-explicit_minus1",
+   "item_id": "N03",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N03-missing_target",
+   "item_id": "N03",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N03-string_target",
+   "item_id": "N03",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N03-boolean_true",
+   "item_id": "N03",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N03-float_of_forbidden",
+   "item_id": "N03",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N03-malformed_no_json",
+   "item_id": "N03",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N03-nonexistent_node",
+   "item_id": "N03",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N04-F0",
+   "item_id": "N04",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N04-F4",
+   "item_id": "N04",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N04-P1",
+   "item_id": "N04",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N04-explicit_minus1",
+   "item_id": "N04",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N04-missing_target",
+   "item_id": "N04",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N04-string_target",
+   "item_id": "N04",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N04-boolean_true",
+   "item_id": "N04",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N04-float_of_forbidden",
+   "item_id": "N04",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N04-malformed_no_json",
+   "item_id": "N04",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N04-nonexistent_node",
+   "item_id": "N04",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N05-F0",
+   "item_id": "N05",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N05-F4",
+   "item_id": "N05",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N05-P1",
+   "item_id": "N05",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N05-explicit_minus1",
+   "item_id": "N05",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N05-missing_target",
+   "item_id": "N05",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N05-string_target",
+   "item_id": "N05",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N05-boolean_true",
+   "item_id": "N05",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N05-float_of_forbidden",
+   "item_id": "N05",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N05-malformed_no_json",
+   "item_id": "N05",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N05-nonexistent_node",
+   "item_id": "N05",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N06-F0",
+   "item_id": "N06",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N06-F4",
+   "item_id": "N06",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N06-P1",
+   "item_id": "N06",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N06-explicit_minus1",
+   "item_id": "N06",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N06-missing_target",
+   "item_id": "N06",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N06-string_target",
+   "item_id": "N06",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N06-boolean_true",
+   "item_id": "N06",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N06-float_of_forbidden",
+   "item_id": "N06",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N06-malformed_no_json",
+   "item_id": "N06",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N06-nonexistent_node",
+   "item_id": "N06",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N07-F0",
+   "item_id": "N07",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N07-F4",
+   "item_id": "N07",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N07-P1",
+   "item_id": "N07",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N07-explicit_minus1",
+   "item_id": "N07",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N07-missing_target",
+   "item_id": "N07",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N07-string_target",
+   "item_id": "N07",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N07-boolean_true",
+   "item_id": "N07",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N07-float_of_forbidden",
+   "item_id": "N07",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N07-malformed_no_json",
+   "item_id": "N07",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N07-nonexistent_node",
+   "item_id": "N07",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N08-F0",
+   "item_id": "N08",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N08-F4",
+   "item_id": "N08",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N08-P1",
+   "item_id": "N08",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N08-explicit_minus1",
+   "item_id": "N08",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N08-missing_target",
+   "item_id": "N08",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N08-string_target",
+   "item_id": "N08",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N08-boolean_true",
+   "item_id": "N08",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N08-float_of_forbidden",
+   "item_id": "N08",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N08-malformed_no_json",
+   "item_id": "N08",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N08-nonexistent_node",
+   "item_id": "N08",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N09-F0",
+   "item_id": "N09",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N09-F4",
+   "item_id": "N09",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N09-P1",
+   "item_id": "N09",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N09-explicit_minus1",
+   "item_id": "N09",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N09-missing_target",
+   "item_id": "N09",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N09-string_target",
+   "item_id": "N09",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N09-boolean_true",
+   "item_id": "N09",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N09-float_of_forbidden",
+   "item_id": "N09",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N09-malformed_no_json",
+   "item_id": "N09",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N09-nonexistent_node",
+   "item_id": "N09",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N10-F0",
+   "item_id": "N10",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N10-F4",
+   "item_id": "N10",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N10-P1",
+   "item_id": "N10",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N10-explicit_minus1",
+   "item_id": "N10",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N10-missing_target",
+   "item_id": "N10",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N10-string_target",
+   "item_id": "N10",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N10-boolean_true",
+   "item_id": "N10",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "N10-float_of_forbidden",
+   "item_id": "N10",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N10-malformed_no_json",
+   "item_id": "N10",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "N10-nonexistent_node",
+   "item_id": "N10",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X01-F0",
+   "item_id": "X01",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X01-F4",
+   "item_id": "X01",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X01-P1",
+   "item_id": "X01",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "X01-explicit_minus1",
+   "item_id": "X01",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X01-missing_target",
+   "item_id": "X01",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X01-string_target",
+   "item_id": "X01",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X01-boolean_true",
+   "item_id": "X01",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "X01-float_of_forbidden",
+   "item_id": "X01",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X01-malformed_no_json",
+   "item_id": "X01",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X01-nonexistent_node",
+   "item_id": "X01",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X02-F0",
+   "item_id": "X02",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X02-F4",
+   "item_id": "X02",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X02-P1",
+   "item_id": "X02",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "X02-explicit_minus1",
+   "item_id": "X02",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X02-missing_target",
+   "item_id": "X02",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X02-string_target",
+   "item_id": "X02",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X02-boolean_true",
+   "item_id": "X02",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "X02-float_of_forbidden",
+   "item_id": "X02",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X02-malformed_no_json",
+   "item_id": "X02",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X02-nonexistent_node",
+   "item_id": "X02",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X03-F0",
+   "item_id": "X03",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X03-F4",
+   "item_id": "X03",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X03-P1",
+   "item_id": "X03",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "X03-explicit_minus1",
+   "item_id": "X03",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X03-missing_target",
+   "item_id": "X03",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X03-string_target",
+   "item_id": "X03",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X03-boolean_true",
+   "item_id": "X03",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "X03-float_of_forbidden",
+   "item_id": "X03",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X03-malformed_no_json",
+   "item_id": "X03",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X03-nonexistent_node",
+   "item_id": "X03",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X04-F5",
+   "item_id": "X04",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 5, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X04-P0",
+   "item_id": "X04",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 0
+   }
+  },
+  {
+   "case_id": "X04-explicit_minus1",
+   "item_id": "X04",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X04-missing_target",
+   "item_id": "X04",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X04-string_target",
+   "item_id": "X04",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"0\", \"reason\": \"string id\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X04-boolean_true",
+   "item_id": "X04",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   }
+  },
+  {
+   "case_id": "X04-float_of_forbidden",
+   "item_id": "X04",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 5.0, \"reason\": \"float id\"}",
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X04-malformed_no_json",
+   "item_id": "X04",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 0",
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   }
+  },
+  {
+   "case_id": "X04-nonexistent_node",
+   "item_id": "X04",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   }
+  }
+ ]
+}

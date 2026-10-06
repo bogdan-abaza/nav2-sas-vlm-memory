@@ -1,0 +1,13 @@
+condition,scope,arm,observations,vlm_calls,vlm_items,l3a_resolved,l3a_coverage,resolution_steps,fast_path_error_incidence,fast_path_conditional_error,l3a_error_on_clarification_required,fast_path_counts
+S,FAMILIAR_ASSOCIATION,A,15,0,0,15,1.0,{'0': 15},0.0,0.0,not applicable,0/15/15
+S,FAMILIAR_ASSOCIATION,B,15,12,4,3,0.2,{'5': 3},0.0,0.0,not applicable,0/3/15
+S,FAMILIAR_ASSOCIATION,C,15,15,5,0,0.0,{},0.0,not applicable,not applicable,0/0/15
+S,UNSEEN_FORMULATION,A,81,69,23,12,0.14814814814814814,"{'5': 6, '2': 3, '4': 3}",0.0,0.0,not applicable,0/12/81
+S,UNSEEN_FORMULATION,B,81,69,23,12,0.14814814814814814,"{'5': 6, '2': 3, '4': 3}",0.0,0.0,not applicable,0/12/81
+S,UNSEEN_FORMULATION,C,81,81,27,0,0.0,{},0.0,not applicable,not applicable,0/0/81
+S,CLARIFICATION_REQUIRED,A,18,18,6,0,0.0,{},0.0,not applicable,0.0,0/0/18
+S,CLARIFICATION_REQUIRED,B,18,18,6,0,0.0,{},0.0,not applicable,0.0,0/0/18
+S,CLARIFICATION_REQUIRED,C,18,18,6,0,0.0,{},0.0,not applicable,0.0,0/0/18
+S,ALL,A,114,87,29,27,0.23684210526315788,"{'5': 6, '2': 3, '4': 3, '0': 15}",0.0,0.0,0.0,0/27/114
+S,ALL,B,114,99,33,15,0.13157894736842105,"{'5': 9, '2': 3, '4': 3}",0.0,0.0,0.0,0/15/114
+S,ALL,C,114,114,38,0,0.0,{},0.0,not applicable,0.0,0/0/114

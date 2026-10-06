@@ -1,0 +1,48 @@
+item_id,family,instruction,label_authored,label_final,related,index,band,top_node,top,runner_node,runner,gap
+C001,F1,Too hot in here! Take me somewhere I can get fresh air.,node:14,node:14,h14,H,J=1,14,1/1,9,1/5,4/5
+C002,F1,Take me to a place for a short break for personal needs.,node:0,node:0,h0a,H,J=1,0,1/1,9,1/9,8/9
+C005,F1,"The male ward, please.",node:0,node:0,h0b,H,J=1,0,1/1,4,1/3,2/3
+C006,F1,"It is too hot in here, take me somewhere with fresh air.",node:14,node:14,h14,H,"(3/4,1)",14,7/8,9,2/9,47/72
+C007,F1,Take me to a place for a short personal break.,node:0,node:0,h0a,H,"(3/4,1)",0,5/6,9,1/8,17/24
+C008,F1,"The washroom is on fire, help me find something to stop the fire.",node:8,node:8,h8,H,"(3/4,1)",8,5/6,14,0/1,5/6
+C009,F1,"It's too hot in here, take me somewhere I can get some fresh air quickly.",node:14,node:14,h14,H,"(3/4,1)",14,8/9,9,2/11,70/99
+C011,F1,Take me somewhere I can relax.,node:9,node:9,h9,H,J=3/4,9,3/4,14,2/9,19/36
+C012,F1,"It is too hot, take me somewhere I can get some air.",node:14,node:14,h14,H,J=3/4,14,3/4,9,1/4,1/2
+C013,F1,"The washroom got on fire, help me find something to put out the fire.",node:8,node:8,h8,H,"[1/2,3/4)",8,5/8,14,0/1,5/8
+C015,F1,I need a short break for personal needs.,node:0,node:0,h0a,H,"[1/2,3/4)",0,4/7,14,0/1,4/7
+C016,F1,"Help, the washroom is burning, find something to stop the fire.",node:8,node:8,h8,H,"[1/2,3/4)",8,5/7,14,0/1,5/7
+C017,F1,I want to sit and relax somewhere.,node:9,node:9,h9,H,"[1/2,3/4)",9,3/5,14,1/11,28/55
+C020,F1,I need somewhere to sit and relax for a moment.,node:9,node:9,h9,H,"[1/2,3/4)",9,1/2,14,1/12,5/12
+C021,F1,Please go to the female ward now.,node:4,node:4,h4,H,"[1/2,3/4)",4,2/3,0,1/4,5/12
+C023,F2,"Stop! Something got on fire, help me find the washroom.",abstain,abstain,h8,H,J=1,8,1/1,14,0/1,1/1
+C024,F2,"The washroom got on fire, help me find someone to stop the fire.",abstain,abstain,h8,H,J=1,8,1/1,14,0/1,1/1
+C025,F2,"It is too hot in here, take me somewhere I can get some fresh coffee.",abstain,abstain,h14,H,"(3/4,1)",14,7/9,9,1/5,26/45
+C026,F2,Take me somewhere I can sit and work.,node:15,abstain,h9,H,"[1/2,3/4)",9,3/5,14,1/5,2/5
+C027,F2,Go to a place to take a short break for a coffee.,abstain,abstain,h0a,H,"[1/2,3/4)",0,4/7,9,1/8,25/56
+C028,F2,Take me somewhere I can sit and relax in the sun.,abstain,abstain,h9,H,"(3/4,1)",9,4/5,14,2/11,34/55
+C029,F2,Take me somewhere I can sit and relax next to a plant.,abstain,node:15,h9,H,"[1/2,3/4)",9,2/3,14,1/6,1/2
+C030,F2,"It is too hot in here, take me somewhere I can get some shade.",abstain,abstain,h14,H,"[1/2,3/4)",14,2/3,9,2/9,4/9
+C031,F2,"It is too cold in here, take me somewhere I can get warm.",node:9,node:9,h14,H,"[1/2,3/4)",14,1/2,9,2/9,5/18
+C032,F2,"The washroom got on fire, help me find a way out of the fire.",abstain,abstain,h8,H,"[1/2,3/4)",8,5/8,14,0/1,5/8
+C033,F2,Take me somewhere I can sit.,node:15,abstain,h9,H,J=3/4,9,3/4,14,2/9,19/36
+C034,F2,"The washroom got on fire, help me find something to stop the fire alarm noise.",abstain,abstain,h8,H,J=3/4,8,3/4,14,0/1,3/4
+C043,F3,"Please take me to the big window on the side of the corridor, it is stuffy in here.",abstain,abstain,C:S1,H+C,gap<1/10,14,7/8,20,7/8,0/1
+C044,F3,"I urgently need the main hall restroom, use the closest one.",abstain,abstain,C:S2,H+C,gap<1/10,0,8/9,4,8/9,0/1
+C045,F3,"The fire alarm is ringing, show me the hall emergency exit.",abstain,abstain,C:S3,H+C,gap<1/10,1,7/8,2,7/8,0/1
+C046,F3,"I have a robotics practical class there this morning, take me to the laboratory.",abstain,abstain,C:S4,H+C,gap<1/10,8,7/8,5,7/8,0/1
+C047,F3,"Please take me to the big window on the north side of the corridor, it is stuffy in here.",node:14,node:14,C:S1,H+C,"gap(1/10,1/4]",14,1/1,20,7/9,2/9
+C048,F3,"I urgently need to use the restroom for women, the closest one to the main hall.",node:4,node:4,C:S2,H+C,"gap(1/10,1/4]",4,1/1,0,4/5,1/5
+C049,F3,"Show me the emergency exit at the front of the hall, the fire alarm is ringing.",node:1,node:1,C:S3,H+C,"gap(1/10,1/4]",1,1/1,2,7/9,2/9
+C050,F3,"This morning I have a robotics practical class in laboratory cb202, take me there.",node:8,node:8,C:S4,H+C,"gap(1/10,1/4]",8,1/1,5,7/9,2/9
+C051,F3,"After the long lecture I am tired, find me somewhere quiet to sit down.",node:15,abstain,C:N2,H+C,gap=1/10,15,1/1,9,9/10,1/10
+C052,F3,"After the long lecture I am tired, find me somewhere quiet and warm to sit down.",node:9,node:9,C:N2,H+C,gap=1/10,9,1/1,15,9/10,1/10
+C053,F3,"Show me the tall green potted plant near the window, it is bright today.",abstain,abstain,C:N3,H+C,gap=1/10,20,1/1,14,9/10,1/10
+C054,F3,"Show me the tall green potted plant near the north window, it is bright today.",node:14,abstain,C:N3,H+C,gap=1/10,14,1/1,20,9/10,1/10
+C055,F3,"I forgot my laptop in laboratory cb203, please bring me back to the door I used earlier.",abstain,abstain,C:N1,H+C,gap<1/10,22,8/9,23,4/5,4/45
+C056,F3,Take me to the robotics laboratory where the master students test their mobile robots today.,abstain,abstain,C:N4,H+C,gap<1/10,5,4/5,22,8/11,4/55
+C057,F3,"Bring me back to the door I used, I forgot my laptop in laboratory cb203.",abstain,abstain,C:N1,H+C,"gap(1/10,1/4]",22,1/1,23,8/9,1/9
+C059,F3,"Bring me back to the other door I used, I forgot my laptop in laboratory cb203.",abstain,abstain,C:N1,H+C,"gap(1/10,1/4]",23,1/1,22,8/9,1/9
+C063,F1,"Go to a place to take a short break for personal needs, quickly, I am in a hurry.",node:0,node:0,h0a,H,J=3/4,0,3/4,9,1/11,29/44
+C065,F2,"It is too hot in here, take me somewhere I can get some fresh juice.",abstain,abstain,h14,H,"(3/4,1)",14,7/9,9,1/5,26/45
+C066,F2,Go to a place to take a short break for personal needs and pray.,abstain,abstain,h0a,H,"(3/4,1)",0,6/7,9,1/10,53/70
+C070,F2,Go to a place to take a short break for personal needs and smoke a cigarette.,abstain,abstain,h0a,H,J=3/4,0,3/4,9,1/11,29/44

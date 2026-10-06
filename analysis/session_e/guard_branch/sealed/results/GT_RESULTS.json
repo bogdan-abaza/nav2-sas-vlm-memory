@@ -1,0 +1,6244 @@
+{
+ "run_utc": "2026-10-05T08:26:59Z",
+ "seal_sha256": "9e1141726007afd069f1c80ea72eac3ba95bfba20fb1258defb12753b39a373a",
+ "n": 139,
+ "results": [
+  {
+   "case_id": "N01-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N01-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N01-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N01-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N01-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N01-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N01-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N01-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N01-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N01-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N02-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['never'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N02-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['never'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N02-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['never'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N02-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['never'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N02-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['never'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N02-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['never'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N02-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['never'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N02-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['never'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N02-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['never'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N02-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['never'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N03-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['no'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N03-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['no'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N03-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['no'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N03-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['no'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N03-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['no'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N03-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['no'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N03-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['no'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N03-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['no'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N03-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['no'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N03-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['no'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N04-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N04-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N04-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N04-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N04-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N04-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N04-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N04-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N04-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N04-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N05-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N05-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.2ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N05-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N05-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N05-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N05-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N05-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N05-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N05-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N05-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N06-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N06-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N06-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N06-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N06-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N06-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N06-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N06-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N06-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N06-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N07-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N07-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N07-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N07-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N07-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N07-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N07-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N07-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N07-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N07-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N08-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['dont'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N08-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['dont'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N08-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['dont'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N08-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['dont'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N08-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['dont'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N08-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['dont'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N08-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['dont'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N08-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['dont'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N08-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['dont'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N08-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['dont'] forbidden=[0, 4] via=['stripped_resolve: deterministic: M3 preference match (jaccard=1.0, freq=17, ex=\"go to a place to take a short break for ...\")', 'class_closure: +[4]']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N09-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N09-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N09-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['class_level_match']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N09-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N09-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N09-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['class_level_match']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N09-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['class_level_match']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N09-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N09-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['class_level_match']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N09-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['not'] forbidden=[0, 4] via=['class_level_match']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N10-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N10-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N10-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu'] forbidden=[0, 4] via=['class_level_match']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N10-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N10-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N10-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu'] forbidden=[0, 4] via=['class_level_match']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N10-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu'] forbidden=[0, 4] via=['class_level_match']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "N10-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N10-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu'] forbidden=[0, 4] via=['class_level_match']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "N10-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu'] forbidden=[0, 4] via=['class_level_match']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X01-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['except'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X01-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['except'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X01-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['except'] forbidden=[0, 4] via=['class_level_match']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "X01-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['except'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X01-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['except'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X01-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['except'] forbidden=[0, 4] via=['class_level_match']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X01-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['except'] forbidden=[0, 4] via=['class_level_match']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "X01-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['except'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X01-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['except'] forbidden=[0, 4] via=['class_level_match']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X01-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['except'] forbidden=[0, 4] via=['class_level_match']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X02-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['other than'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X02-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['other than'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X02-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['other than'] forbidden=[0, 4] via=['class_level_match']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "X02-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['other than'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X02-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['other than'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X02-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['other than'] forbidden=[0, 4] via=['class_level_match']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X02-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['other than'] forbidden=[0, 4] via=['class_level_match']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "X02-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['other than'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X02-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['other than'] forbidden=[0, 4] via=['class_level_match']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X02-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['other than'] forbidden=[0, 4] via=['class_level_match']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X03-F0",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu', 'altundeva'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X03-F4",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 4, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 4,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 4,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 4,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu', 'altundeva'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 4)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X03-P1",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 1, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 1,
+   "dispatch": [
+    1
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_1"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu', 'altundeva'] forbidden=[0, 4] via=['class_level_match']",
+    "[L3b] node 1 \"hall_entry\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=1 \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "X03-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu', 'altundeva'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X03-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu', 'altundeva'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X03-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"1\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": "1",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": "1",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu', 'altundeva'] forbidden=[0, 4] via=['class_level_match']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X03-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu', 'altundeva'] forbidden=[0, 4] via=['class_level_match']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "X03-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 0.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 0.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 0.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 0.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.1ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu', 'altundeva'] forbidden=[0, 4] via=['class_level_match']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 0.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X03-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 1",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu', 'altundeva'] forbidden=[0, 4] via=['class_level_match']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 1'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X03-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    0,
+    4
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      0,
+      4
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['nu', 'altundeva'] forbidden=[0, 4] via=['class_level_match']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X04-F5",
+   "kind": "forbidden_proposal",
+   "reply": "{\"node_id\": 5, \"reason\": \"synthetic\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    5
+   ],
+   "proposed": 5,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 5,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      5
+     ],
+     "proposed": 5,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['anywhere but'] forbidden=[5] via=['stripped_resolve: deterministic: node name \"cb204\"', 'explicit_referent: inchiderea pe clasa nu se aplica']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 5)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X04-P0",
+   "kind": "permitted_control",
+   "reply": "{\"node_id\": 0, \"reason\": \"synthetic\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    5
+   ],
+   "proposed": 0,
+   "dispatch": [
+    0
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_0"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['anywhere but'] forbidden=[5] via=['stripped_resolve: deterministic: node name \"cb204\"', 'explicit_referent: inchiderea pe clasa nu se aplica']",
+    "[L3b] node 0 \"toilet_m\" | synthetic",
+    "[Resolution] method=L3b_vlm | node=0 \"toilet_m\" | facing_obj=(0.3,0.0)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 0
+   },
+   "match": true
+  },
+  {
+   "case_id": "X04-explicit_minus1",
+   "kind": "explicit_minus1",
+   "reply": "{\"node_id\": -1, \"reason\": \"unclear\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_requested_clarification",
+   "forbidden_used": [
+    5
+   ],
+   "proposed": -1,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": -1,
+     "guard_state": "vlm_requested_clarification",
+     "forbidden": [
+      5
+     ],
+     "proposed": -1,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_requested_clarification"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['anywhere but'] forbidden=[5] via=['stripped_resolve: deterministic: node name \"cb204\"', 'explicit_referent: inchiderea pe clasa nu se aplica']",
+    "[NEG] actiune blocata: vlm_requested_clarification (VLM propusese -1)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_requested_clarification",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X04-missing_target",
+   "kind": "missing_target",
+   "reply": "{\"reason\": \"no target given\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_no_answer",
+   "forbidden_used": [
+    5
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": null,
+     "guard_state": "vlm_no_answer",
+     "forbidden": [
+      5
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_no_answer"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['anywhere but'] forbidden=[5] via=['stripped_resolve: deterministic: node name \"cb204\"', 'explicit_referent: inchiderea pe clasa nu se aplica']",
+    "[NEG] actiune blocata: vlm_no_answer (VLM propusese None)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_no_answer",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X04-string_target",
+   "kind": "string_target",
+   "reply": "{\"node_id\": \"0\", \"reason\": \"string id\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    5
+   ],
+   "proposed": "0",
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      5
+     ],
+     "proposed": "0",
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['anywhere but'] forbidden=[5] via=['stripped_resolve: deterministic: node name \"cb204\"', 'explicit_referent: inchiderea pe clasa nu se aplica']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X04-boolean_true",
+   "kind": "boolean_true",
+   "reply": "{\"node_id\": true, \"reason\": \"boolean\"}",
+   "outcome": "dispatched",
+   "guard_state": "ok",
+   "forbidden_used": [
+    5
+   ],
+   "proposed": true,
+   "dispatch": [
+    true
+   ],
+   "completed": [],
+   "decisions": [],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "navigating_to_node_True"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['anywhere but'] forbidden=[5] via=['stripped_resolve: deterministic: node name \"cb204\"', 'explicit_referent: inchiderea pe clasa nu se aplica']",
+    "[L3b] node True \"hall_entry\" | boolean",
+    "[Resolution] method=L3b_vlm | node=True \"hall_entry\" | facing_obj=(0.5,1.65)"
+   ],
+   "expected": {
+    "outcome": "dispatched",
+    "guard_state": "ok",
+    "dispatch": true,
+    "dispatch_node": 1
+   },
+   "match": true
+  },
+  {
+   "case_id": "X04-float_of_forbidden",
+   "kind": "float_of_forbidden",
+   "reply": "{\"node_id\": 5.0, \"reason\": \"float id\"}",
+   "outcome": "clarification_requested",
+   "guard_state": "vlm_violated_negation",
+   "forbidden_used": [
+    5
+   ],
+   "proposed": 5.0,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "clarification_requested",
+     "method": "L3b_vlm_negation_blocked",
+     "node_id": 5.0,
+     "guard_state": "vlm_violated_negation",
+     "forbidden": [
+      5
+     ],
+     "proposed": 5.0,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "negation_blocked_vlm_violated_negation"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['anywhere but'] forbidden=[5] via=['stripped_resolve: deterministic: node name \"cb204\"', 'explicit_referent: inchiderea pe clasa nu se aplica']",
+    "[NEG] actiune blocata: vlm_violated_negation (VLM propusese 5.0)"
+   ],
+   "expected": {
+    "outcome": "clarification_requested",
+    "guard_state": "vlm_violated_negation",
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X04-malformed_no_json",
+   "kind": "malformed_no_json",
+   "reply": "I would go to node 0",
+   "outcome": "vlm_failed",
+   "guard_state": null,
+   "forbidden_used": [
+    5
+   ],
+   "proposed": null,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_failed",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": null,
+     "forbidden": [
+      5
+     ],
+     "proposed": null,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_failed"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['anywhere but'] forbidden=[5] via=['stripped_resolve: deterministic: node name \"cb204\"', 'explicit_referent: inchiderea pe clasa nu se aplica']",
+    "VLM failed: raspuns L3b fara JSON (done_reason=stop, eval_count=1): 'I would go to node 0'"
+   ],
+   "expected": {
+    "outcome": "vlm_failed",
+    "guard_state": null,
+    "dispatch": false
+   },
+   "match": true
+  },
+  {
+   "case_id": "X04-nonexistent_node",
+   "kind": "nonexistent_node",
+   "reply": "{\"node_id\": 999, \"reason\": \"not in graph\"}",
+   "outcome": "vlm_invalid_response",
+   "guard_state": "ok",
+   "forbidden_used": [
+    5
+   ],
+   "proposed": 999,
+   "dispatch": [],
+   "completed": [],
+   "decisions": [
+    {
+     "nav_outcome": "vlm_invalid_response",
+     "method": "escalated",
+     "node_id": null,
+     "guard_state": "ok",
+     "forbidden": [
+      5
+     ],
+     "proposed": 999,
+     "escalation": "negation_detected"
+    }
+   ],
+   "status": [
+    "cycle_1_started",
+    "l3b_vlm_thinking",
+    "vlm_invalid_response"
+   ],
+   "error": null,
+   "log": [
+    "--- Navigation Cycle 1 ---",
+    "Graph: 24N | Static: 18 | Dynamic(raw): 0 | Merged(filtered): 18",
+    "[L3a] No match (0.0ms), reason=negation_detected. Escalating to L3b...",
+    "[NEG] markers=['anywhere but'] forbidden=[5] via=['stripped_resolve: deterministic: node name \"cb204\"', 'explicit_referent: inchiderea pe clasa nu se aplica']"
+   ],
+   "expected": {
+    "outcome": "vlm_invalid_response",
+    "guard_state": "ok",
+    "dispatch": false
+   },
+   "match": true
+  }
+ ]
+}

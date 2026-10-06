@@ -1,0 +1,10 @@
+cand_id,family,instruction,label,related,author_note
+C061,F2,Go away from the male ward.,abstain,h0b,leave; destination not stated
+C062,F2,Go past the male ward.,abstain,h0b,pass by; destination not stated
+C063,F1,"Go to a place to take a short break for personal needs, quickly, I am in a hurry.",node:0,h0a,same intent
+C064,F1,"Somewhere to sit and relax, please.",node:9,h9,same intent as stored association
+C065,F2,"It is too hot in here, take me somewhere I can get some fresh juice.",abstain,h14,juice; no node serves it
+C066,F2,Go to a place to take a short break for personal needs and pray.,abstain,h0a,prayer place; no node serves it
+C067,F2,Take me to a place for a short break where I can make personal phone calls.,abstain,h0a,quiet phone spot; no node serves it
+C068,F2,Go to a place to take a short coffee break with personal friends.,abstain,h0a,coffee with friends; no node serves it
+C069,F1,"The male ward, please, I am in a hurry.",node:0,h0b,same intent

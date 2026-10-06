@@ -1,0 +1,283 @@
+{
+ "gate": "GATE_1B_negation",
+ "generated_utc": "2026-10-05T07:21:38Z",
+ "cases": [
+  {
+   "item": "M3-1",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "M3-2",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "M3-3",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "M3-4",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "M3-5",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-L-P1",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-L-P2",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-L-P3",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-L-P4",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-T-P1",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-T-P2",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-T-P3",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-T-P4",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-S-P1",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-S-P3",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-S-P4",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-W-P1",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-W-P2",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-W-P3",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-W-P4",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-P-P1",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-P-P2",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-P-P3",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-H-P1",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-H-P2",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-H-P4",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-G-1",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-G-2",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-G-3",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E7-G-4",
+   "frozen": [],
+   "recomputed_S": [],
+   "pass_": true
+  },
+  {
+   "item": "E2-N01",
+   "frozen": [
+    0,
+    4
+   ],
+   "recomputed_S": [
+    0,
+    4
+   ],
+   "pass_": true
+  },
+  {
+   "item": "E2-N03",
+   "frozen": [
+    0,
+    4
+   ],
+   "recomputed_S": [
+    0,
+    4
+   ],
+   "pass_": true
+  },
+  {
+   "item": "E2-N07",
+   "frozen": [
+    0,
+    4
+   ],
+   "recomputed_S": [
+    0,
+    4
+   ],
+   "pass_": true
+  },
+  {
+   "item": "E2-N08",
+   "frozen": [
+    0,
+    4
+   ],
+   "recomputed_S": [
+    0,
+    4
+   ],
+   "pass_": true
+  },
+  {
+   "item": "E2-X01",
+   "frozen": [
+    0,
+    4
+   ],
+   "recomputed_S": [
+    0,
+    4
+   ],
+   "pass_": true
+  },
+  {
+   "item": "E2-X02",
+   "frozen": [
+    0,
+    4
+   ],
+   "recomputed_S": [
+    0,
+    4
+   ],
+   "pass_": true
+  },
+  {
+   "item": "E2-X03",
+   "frozen": [
+    0,
+    4
+   ],
+   "recomputed_S": [
+    0,
+    4
+   ],
+   "pass_": true
+  },
+  {
+   "item": "E2-X04",
+   "frozen": [
+    5
+   ],
+   "recomputed_S": [
+    5
+   ],
+   "pass_": true
+  }
+ ],
+ "n": 38,
+ "n_pass": 38,
+ "verdict": "PASS"
+}

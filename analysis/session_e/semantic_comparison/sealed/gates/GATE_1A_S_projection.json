@@ -1,0 +1,545 @@
+{
+ "gate": "GATE_1A_S_projection",
+ "generated_utc": "2026-10-05T07:21:38Z",
+ "cases": [
+  {
+   "item": "E7-L-P1",
+   "pass_": true
+  },
+  {
+   "item": "E7-L-P2",
+   "pass_": true
+  },
+  {
+   "item": "E7-L-P3",
+   "pass_": true
+  },
+  {
+   "item": "E7-L-P4",
+   "pass_": true
+  },
+  {
+   "item": "E7-T-P2",
+   "pass_": true
+  },
+  {
+   "item": "E7-T-P3",
+   "pass_": true
+  },
+  {
+   "item": "E7-T-P4",
+   "pass_": true
+  },
+  {
+   "item": "E7-S-P3",
+   "pass_": true
+  },
+  {
+   "item": "E7-S-P4",
+   "pass_": true
+  },
+  {
+   "item": "E7-W-P1",
+   "pass_": true
+  },
+  {
+   "item": "E7-W-P2",
+   "pass_": true
+  },
+  {
+   "item": "E7-W-P3",
+   "pass_": true
+  },
+  {
+   "item": "E7-W-P4",
+   "pass_": true
+  },
+  {
+   "item": "E7-P-P1",
+   "pass_": true
+  },
+  {
+   "item": "E7-P-P2",
+   "pass_": true
+  },
+  {
+   "item": "E7-P-P3",
+   "pass_": true
+  },
+  {
+   "item": "E7-H-P2",
+   "pass_": true
+  },
+  {
+   "item": "E7-H-P4",
+   "pass_": true
+  },
+  {
+   "item": "E7-G-1",
+   "pass_": true
+  },
+  {
+   "item": "E7-G-2",
+   "pass_": true
+  },
+  {
+   "item": "E2-N01",
+   "pass_": true
+  },
+  {
+   "item": "E2-N03",
+   "pass_": true
+  },
+  {
+   "item": "E2-N07",
+   "pass_": true
+  },
+  {
+   "item": "E2-N08",
+   "pass_": true
+  },
+  {
+   "item": "E2-X01",
+   "pass_": true
+  },
+  {
+   "item": "E2-X02",
+   "pass_": true
+  },
+  {
+   "item": "E2-X03",
+   "pass_": true
+  },
+  {
+   "item": "E2-X04",
+   "pass_": true
+  }
+ ],
+ "extended_105": [
+  {
+   "record": "20260820_150456#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_150614#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_150652#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_150808#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_150840#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_150904#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_150931#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151214#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151349#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151423#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151458#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151458#2",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151704#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151743#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151916#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_152059#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_152130#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_152237#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_152411#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_152450#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_153622#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_153654#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_153723#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_153859#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_153927#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_153951#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154012#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154029#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154142#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154206#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154234#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154348#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154422#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154520#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154520#2",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154745#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154819#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154847#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154912#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_155021#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_155048#1",
+   "pass_": true
+  },
+  {
+   "record": "20260820_155612#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_131951#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132139#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132326#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132452#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132710#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132810#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132911#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_133151#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_133316#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_133431#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_133600#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_133732#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_133902#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_134044#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_134202#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_134402#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_134532#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_134645#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_134844#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_135001#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_135113#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_135113#2",
+   "pass_": true
+  },
+  {
+   "record": "20260821_135311#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_135419#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_140457#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_140856#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_142326#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_142441#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_143549#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_143713#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_143913#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144018#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144154#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144333#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144452#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144613#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144722#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144850#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_151342#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_151517#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_151846#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_152359#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_152524#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_152624#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_152624#2",
+   "pass_": true
+  },
+  {
+   "record": "20260821_153019#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_153221#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_153343#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_153343#2",
+   "pass_": true
+  },
+  {
+   "record": "20260821_153503#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_153503#2",
+   "pass_": true
+  },
+  {
+   "record": "20260821_164323#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_164326#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_164941#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_164945#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_165317#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_165320#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_172025#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_172417#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_172547#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_172706#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_172836#1",
+   "pass_": true
+  },
+  {
+   "record": "20260821_173949#1",
+   "pass_": true
+  }
+ ],
+ "n": 28,
+ "n_pass": 28,
+ "extended_n": 105,
+ "extended_pass": 105,
+ "verdict": "PASS"
+}

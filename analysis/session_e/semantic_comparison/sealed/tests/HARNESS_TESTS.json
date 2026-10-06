@@ -1,0 +1,344 @@
+{
+ "utc": "2026-10-05T08:00:03Z",
+ "harness_sha256": {
+  "a4_bundle.py": "6502649c69c2f78213dcd8e07dbca57e8cd192603cfcefbdf4c5732b9f4aa5d9",
+  "gate_reports.py": "6bfd0b54b4c040c327d0efd2ce078d900d5a504b59a999c948a36589f4f75374",
+  "sc_analysis_test.py": "82206763ae3a7098db6c797b3fb1146b6aa411e0eb8c7dc61646736bc40a1fa7",
+  "sc_analyze.py": "17b3d60261386ad70f40750d0c865ac72a9d1e9eca0ab2cc987e2abc4148ee16",
+  "sc_deps.py": "49910a66017c971838c94000bb201ada61384cc2be51e92bf5760df520f4210b",
+  "sc_harness.py": "92056cb1bf2eadd0ff8a21580c600f871f3dbb0fd71ac1aaddea0c65afca2350",
+  "sc_schedule.py": "ab21c80c441ed9f82d4fa2350f261191a7e7f40b881f0e23c7dbc112f424ad1e",
+  "sc_seal.py": "37118979e574aad777e46f406b4b63b3a9b1b8808531161f36de4b0afea10ab4",
+  "sc_tests.py": "e230697924950653a99dc2814c28cc01c2461dfed72c1e62471b296c783bb555",
+  "sc_thermal.py": "726a9ff7c4593c9f5206d31eb0d04835b26b6a02fac6677e42e0d0eeafba6561"
+ },
+ "n": 65,
+ "n_pass": 65,
+ "results": [
+  [
+   "scoring after decision timer M3-1/A",
+   true,
+   ""
+  ],
+  [
+   "stages nonneg and inside decision M3-1/A",
+   true,
+   "{'resolver_ns': 262858, 'image_ns': None, 'prompt_ns': None, 'serialize_ns': None, 'api_ns': None, 'decode_ns': None, 'parse_ns': None, 'guard_validation_ns': 21490, 'decision_ns': 288584}"
+  ],
+  [
+   "resolver null iff C M3-1/A",
+   true,
+   ""
+  ],
+  [
+   "prep evidence M3-1/A",
+   true,
+   ""
+  ],
+  [
+   "scoring after decision timer M3-1/B",
+   true,
+   ""
+  ],
+  [
+   "stages nonneg and inside decision M3-1/B",
+   true,
+   "{'resolver_ns': 738369, 'image_ns': None, 'prompt_ns': None, 'serialize_ns': None, 'api_ns': None, 'decode_ns': None, 'parse_ns': None, 'guard_validation_ns': 18641, 'decision_ns': 760891}"
+  ],
+  [
+   "resolver null iff C M3-1/B",
+   true,
+   ""
+  ],
+  [
+   "prep evidence M3-1/B",
+   true,
+   ""
+  ],
+  [
+   "scoring after decision timer M3-1/C",
+   true,
+   ""
+  ],
+  [
+   "stages nonneg and inside decision M3-1/C",
+   true,
+   "{'resolver_ns': None, 'image_ns': 7133360, 'prompt_ns': 127616, 'serialize_ns': 291338, 'api_ns': 11259394, 'decode_ns': 28288, 'parse_ns': 10236, 'guard_validation_ns': 22546, 'decision_ns': 18878032"
+  ],
+  [
+   "resolver null iff C M3-1/C",
+   true,
+   ""
+  ],
+  [
+   "prep evidence M3-1/C",
+   true,
+   ""
+  ],
+  [
+   "scoring after decision timer E7-L-P1/A",
+   true,
+   ""
+  ],
+  [
+   "stages nonneg and inside decision E7-L-P1/A",
+   true,
+   "{'resolver_ns': 840966, 'image_ns': 5898041, 'prompt_ns': 188815, 'serialize_ns': 386885, 'api_ns': 11091471, 'decode_ns': 29006, 'parse_ns': 10091, 'guard_validation_ns': 20791, 'decision_ns': 184748"
+  ],
+  [
+   "resolver null iff C E7-L-P1/A",
+   true,
+   ""
+  ],
+  [
+   "prep evidence E7-L-P1/A",
+   true,
+   ""
+  ],
+  [
+   "scoring after decision timer E7-L-P1/B",
+   true,
+   ""
+  ],
+  [
+   "stages nonneg and inside decision E7-L-P1/B",
+   true,
+   "{'resolver_ns': 807200, 'image_ns': 7335952, 'prompt_ns': 116313, 'serialize_ns': 228182, 'api_ns': 11332309, 'decode_ns': 71965, 'parse_ns': 10545, 'guard_validation_ns': 20363, 'decision_ns': 199319"
+  ],
+  [
+   "resolver null iff C E7-L-P1/B",
+   true,
+   ""
+  ],
+  [
+   "prep evidence E7-L-P1/B",
+   true,
+   ""
+  ],
+  [
+   "scoring after decision timer E7-L-P1/C",
+   true,
+   ""
+  ],
+  [
+   "stages nonneg and inside decision E7-L-P1/C",
+   true,
+   "{'resolver_ns': None, 'image_ns': 7416604, 'prompt_ns': 126014, 'serialize_ns': 216054, 'api_ns': 11253282, 'decode_ns': 38291, 'parse_ns': 13153, 'guard_validation_ns': 22338, 'decision_ns': 19092404"
+  ],
+  [
+   "resolver null iff C E7-L-P1/C",
+   true,
+   ""
+  ],
+  [
+   "prep evidence E7-L-P1/C",
+   true,
+   ""
+  ],
+  [
+   "scoring after decision timer E2-X02/A",
+   true,
+   ""
+  ],
+  [
+   "stages nonneg and inside decision E2-X02/A",
+   true,
+   "{'resolver_ns': 49665, 'image_ns': 6629828, 'prompt_ns': 154781, 'serialize_ns': 197928, 'api_ns': 10943837, 'decode_ns': 22676, 'parse_ns': 7264, 'guard_validation_ns': 19933, 'decision_ns': 18031414"
+  ],
+  [
+   "resolver null iff C E2-X02/A",
+   true,
+   ""
+  ],
+  [
+   "prep evidence E2-X02/A",
+   true,
+   ""
+  ],
+  [
+   "scoring after decision timer E2-X02/B",
+   true,
+   ""
+  ],
+  [
+   "stages nonneg and inside decision E2-X02/B",
+   true,
+   "{'resolver_ns': 45072, 'image_ns': 8345993, 'prompt_ns': 124328, 'serialize_ns': 186487, 'api_ns': 10956008, 'decode_ns': 22850, 'parse_ns': 6566, 'guard_validation_ns': 18426, 'decision_ns': 19711935"
+  ],
+  [
+   "resolver null iff C E2-X02/B",
+   true,
+   ""
+  ],
+  [
+   "prep evidence E2-X02/B",
+   true,
+   ""
+  ],
+  [
+   "scoring after decision timer E2-X02/C",
+   true,
+   ""
+  ],
+  [
+   "stages nonneg and inside decision E2-X02/C",
+   true,
+   "{'resolver_ns': None, 'image_ns': 17971601, 'prompt_ns': 141007, 'serialize_ns': 190890, 'api_ns': 11091914, 'decode_ns': 22699, 'parse_ns': 6389, 'guard_validation_ns': 18772, 'decision_ns': 29449034"
+  ],
+  [
+   "resolver null iff C E2-X02/C",
+   true,
+   ""
+  ],
+  [
+   "prep evidence E2-X02/C",
+   true,
+   ""
+  ],
+  [
+   "outcome minus1 -> clarification",
+   true,
+   "('clarification', 'vlm_explicit_-1')"
+  ],
+  [
+   "outcome forbidden -> clarification",
+   true,
+   "('clarification', 'guard_blocked:vlm_violated_negation')"
+  ],
+  [
+   "outcome notingraph -> model_or_parser_failure",
+   true,
+   "('model_or_parser_failure', 'node_not_in_graph')"
+  ],
+  [
+   "outcome malformed -> model_or_parser_failure",
+   true,
+   "('model_or_parser_failure', '')"
+  ],
+  [
+   "outcome boolnode -> model_or_parser_failure",
+   true,
+   "('model_or_parser_failure', '')"
+  ],
+  [
+   "target where clarification required -> incorrect_executable",
+   true,
+   "('target', 'incorrect_executable')"
+  ],
+  [
+   "target in acceptable set -> acceptable",
+   true,
+   "acceptable"
+  ],
+  [
+   "clarification where required -> correct",
+   true,
+   "clarification"
+  ],
+  [
+   "parser failure never a correct clarification",
+   true,
+   "model_or_parser_failure"
+  ],
+  [
+   "violation replace raised",
+   true,
+   "runner_replaced"
+  ],
+  [
+   "violation cached raised",
+   true,
+   "cached_prompt_tokens"
+  ],
+  [
+   "violation preloaded raised",
+   true,
+   "model_loaded_before_preload"
+  ],
+  [
+   "violation http500 raised",
+   true,
+   "http_status_500"
+  ],
+  [
+   "violation notobject raised",
+   true,
+   "api_envelope_not_object"
+  ],
+  [
+   "violation badmsg raised",
+   true,
+   "api_envelope_malformed_message"
+  ],
+  [
+   "violation ctx raised",
+   true,
+   "preload_state_unexpected"
+  ],
+  [
+   "leftover runner detected at stop",
+   true,
+   "{'server': ('154', 1189988), 'runners': [('155', 1189993)], 'stop_ns': 5055145116, 'leftover': [('155', 1189993)]}"
+  ],
+  [
+   "continuity gate stops before preparation",
+   true,
+   "continuity_gap"
+  ],
+  [
+   "suspension drift detected",
+   true,
+   "system_suspended_during_observation"
+  ],
+  [
+   "seal mismatch detected",
+   true,
+   "seal_mismatch"
+  ],
+  [
+   "thermal logger samples",
+   true,
+   "{'file': 'thermal.csv', 'sha256': 'c864af6909aed95c9d9dc87e8ace425850635a5bb09e769f126019868162167e', 'samples': 1, 'max_gap_s': None, 'header': '# {\"fields_requested\": [\"temperature.gpu\", \"clocks.sm\""
+  ],
+  [
+   "Latin positions S",
+   true,
+   ""
+  ],
+  [
+   "order counts S",
+   true,
+   ""
+  ],
+  [
+   "seed paired across arms S",
+   true,
+   ""
+  ],
+  [
+   "blocks adjacent S",
+   true,
+   ""
+  ],
+  [
+   "Latin positions H",
+   true,
+   ""
+  ],
+  [
+   "order counts H",
+   true,
+   ""
+  ],
+  [
+   "seed paired across arms H",
+   true,
+   ""
+  ],
+  [
+   "blocks adjacent H",
+   true,
+   ""
+  ]
+ ]
+}

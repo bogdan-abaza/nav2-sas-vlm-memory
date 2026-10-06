@@ -1,0 +1,1107 @@
+{
+ "gate": "GATE_1_prompt_constructor",
+ "generated_utc": "2026-10-05T07:21:38Z",
+ "cases": [
+  {
+   "record": "20260820_150456#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 820; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 0,
+   "pass_": true
+  },
+  {
+   "record": "20260820_150614#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1681; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 1,
+   "pass_": true
+  },
+  {
+   "record": "20260820_150652#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1681; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 1,
+   "pass_": true
+  },
+  {
+   "record": "20260820_150808#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 621; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_150840#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 621; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_150904#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 621; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_150931#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 621; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_151214#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 905; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_151349#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1367; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260820_151423#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1367; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260820_151458#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1367; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260820_151458#2",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1447; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_151704#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 647; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_151743#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 647; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_151916#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 647; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260820_152059#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1142; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_152130#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1142; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_152237#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 721; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_152411#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 841; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260820_152450#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 841; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260820_153622#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 168; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 0,
+   "pass_": true
+  },
+  {
+   "record": "20260820_153654#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 168; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 0,
+   "pass_": true
+  },
+  {
+   "record": "20260820_153723#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 168; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 1,
+   "pass_": true
+  },
+  {
+   "record": "20260820_153859#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 482; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_153927#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 482; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_153951#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 482; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154012#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 482; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154029#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 482; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154142#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 729; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154206#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 729; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154234#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 729; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154348#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 729; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154422#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 729; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154520#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 729; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154520#2",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 758; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154745#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 836; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154819#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 836; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154847#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 836; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260820_154912#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 836; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260820_155021#1",
+   "method": "L3b_vlm_negation_blocked",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 836; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260820_155048#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 836; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260820_155612#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 470; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 6,
+   "pass_": true
+  },
+  {
+   "record": "20260821_131951#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 632; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 1,
+   "pass_": true
+  },
+  {
+   "record": "20260821_132139#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 65; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260821_132326#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1681; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260821_132452#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1203; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260821_132710#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1534; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_132810#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 426; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_132911#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1237; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_133151#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 660; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 6,
+   "pass_": true
+  },
+  {
+   "record": "20260821_133316#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 660; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_133431#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1491; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_133600#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1620; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260821_133732#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1388; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260821_133902#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1639; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260821_134044#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1160; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260821_134202#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 765; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260821_134402#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1640; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 6,
+   "pass_": true
+  },
+  {
+   "record": "20260821_134532#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 714; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 6,
+   "pass_": true
+  },
+  {
+   "record": "20260821_134645#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 287; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 6,
+   "pass_": true
+  },
+  {
+   "record": "20260821_134844#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1462; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 8,
+   "pass_": true
+  },
+  {
+   "record": "20260821_135001#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 779; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 8,
+   "pass_": true
+  },
+  {
+   "record": "20260821_135113#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 779; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 8,
+   "pass_": true
+  },
+  {
+   "record": "20260821_135113#2",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 891; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 8,
+   "pass_": true
+  },
+  {
+   "record": "20260821_135311#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1033; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 8,
+   "pass_": true
+  },
+  {
+   "record": "20260821_135419#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 772; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 7,
+   "pass_": true
+  },
+  {
+   "record": "20260821_140457#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1296; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 0,
+   "pass_": true
+  },
+  {
+   "record": "20260821_140856#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 743; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 1,
+   "pass_": true
+  },
+  {
+   "record": "20260821_142326#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 400; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 0,
+   "pass_": true
+  },
+  {
+   "record": "20260821_142441#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1585; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260821_143549#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 400; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_143713#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1213; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260821_143913#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 585; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260821_144018#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 770; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_144154#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 457; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_144333#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 457; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_144452#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1558; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_144613#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 100; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_144722#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1347; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_144850#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 110; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 5,
+   "pass_": true
+  },
+  {
+   "record": "20260821_151342#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 384; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260821_151517#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 384; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260821_151846#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 384; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 1,
+   "pass_": true
+  },
+  {
+   "record": "20260821_152359#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 384; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 1,
+   "pass_": true
+  },
+  {
+   "record": "20260821_152524#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 652; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 1,
+   "pass_": true
+  },
+  {
+   "record": "20260821_152624#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1628; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260821_152624#2",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 575; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260821_153019#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 746; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 1,
+   "pass_": true
+  },
+  {
+   "record": "20260821_153221#1",
+   "method": "escalated",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 746; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260821_153343#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 746; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260821_153343#2",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 617; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260821_153503#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 449; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260821_153503#2",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 197; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 4,
+   "pass_": true
+  },
+  {
+   "record": "20260821_164323#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 838; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260821_164326#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1327; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 1,
+   "pass_": true
+  },
+  {
+   "record": "20260821_164941#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 524; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260821_164945#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 144; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260821_165317#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1063; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 3,
+   "pass_": true
+  },
+  {
+   "record": "20260821_165320#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1640; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  },
+  {
+   "record": "20260821_172025#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 471; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 0,
+   "pass_": true
+  },
+  {
+   "record": "20260821_172417#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 780; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 6,
+   "pass_": true
+  },
+  {
+   "record": "20260821_172547#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 658; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 6,
+   "pass_": true
+  },
+  {
+   "record": "20260821_172706#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 144; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 6,
+   "pass_": true
+  },
+  {
+   "record": "20260821_172836#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1367; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 6,
+   "pass_": true
+  },
+  {
+   "record": "20260821_173949#1",
+   "method": "L3b_vlm",
+   "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 310; not a unique reconstruction of the AMCL state)",
+   "n_yolo": 2,
+   "pass_": true
+  }
+ ],
+ "copy_check": [
+  {
+   "record": "20260820_150456#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_150456/mission_1_cb204/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_150652#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_150652/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_150931#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_150931/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151214#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_151214/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151458#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_151458/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151458#2",
+   "file": "data/session_e/day1_20260820/logs/20260820_151458/mission_2_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_151916#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_151916/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_152130#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_152130/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_152237#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_152237/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_152450#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_152450/mission_1_cb202/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_153723#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_153723/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154029#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_154029/mission_1_hall_entry/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154520#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_154520/mission_1_junction_e1/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_154520#2",
+   "file": "data/session_e/day1_20260820/logs/20260820_154520/mission_2_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_155048#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_155048/mission_1_cb202/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260820_155612#1",
+   "file": "data/session_e/day1_20260820/logs/20260820_155612/mission_1_hall_entry/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_131951#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_131951/mission_1_cb203_exit/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132139#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_132139/mission_1_junction_e1/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132326#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_132326/mission_1_cb204/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132452#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_132452/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132710#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_132710/mission_1_toilet_m/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132810#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_132810/mission_1_toilet_m/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_132911#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_132911/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_133316#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_133316/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_133431#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_133431/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_133600#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_133600/mission_1_plant_5/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_133732#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_133732/mission_1_plant_5/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_133902#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_133902/mission_1_plant_5/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_134044#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_134044/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_134202#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_134202/mission_1_plant_4/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_134402#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_134402/mission_1_plant_2/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_134532#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_134532/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_134844#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_134844/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_135113#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_135113/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_135113#2",
+   "file": "data/session_e/day2_20260821/logs/20260821_135113/mission_2_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_135311#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_135311/mission_1_cb204/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_135419#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_135419/mission_1_cb203_exit/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_140457#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_140457/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_140856#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_140856/mission_1_junction_e1/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_142326#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_142326/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_142441#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_142441/mission_1_junction_e1/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_143549#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_143549/mission_1_cb202/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_143713#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_143713/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_143913#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_143913/mission_1_junction_s1/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144018#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_144018/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144333#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_144333/mission_1_junction_e1/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144452#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_144452/mission_1_junction_s1/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144613#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_144613/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144722#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_144722/mission_1_cb204/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_144850#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_144850/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_152359#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_152359/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_152524#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_152524/mission_1_cb202/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_152624#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_152624/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_153343#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_153343/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_153343#2",
+   "file": "data/session_e/day2_20260821/logs/20260821_153343/mission_2_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_153503#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_153503/mission_1_plant_5/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_153503#2",
+   "file": "data/session_e/day2_20260821/logs/20260821_153503/mission_2_junction_e1/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_164323#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_164323/mission_1_toilet_m/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_164326#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_164326/mission_1_junction_e1/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_164941#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_164941/mission_1_toilet_m/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_164945#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_164945/mission_1_plant_4/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_165317#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_165317/mission_1_toilet_m/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_165320#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_165320/mission_1_plant_5/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_172025#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_172025/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_172417#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_172417/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_172547#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_172547/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_172706#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_172706/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_172836#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_172836/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  },
+  {
+   "record": "20260821_173949#1",
+   "file": "data/session_e/day2_20260821/logs/20260821_173949/mission_1_radiator/vlm_decision_prompt.txt",
+   "pass_": true
+  }
+ ],
+ "n": 105,
+ "n_pass": 105,
+ "copy_n": 69,
+ "copy_pass": 69,
+ "by_method": {
+  "L3b_vlm": [
+   69,
+   69
+  ],
+  "L3b_vlm_negation_blocked": [
+   22,
+   22
+  ],
+  "escalated": [
+   14,
+   14
+  ]
+ },
+ "verdict": "PASS"
+}

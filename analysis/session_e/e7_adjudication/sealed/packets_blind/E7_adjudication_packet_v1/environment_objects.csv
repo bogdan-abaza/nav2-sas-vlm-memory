@@ -1,0 +1,19 @@
+object,class,attached_node,x_m,y_m
+restroom_men,restroom,0,0.30,0.00
+restroom_women,restroom,4,0.30,6.50
+hall_entrance,emergency_exit,1,0.50,1.65
+hall_exit,emergency_exit,2,0.50,3.20
+lab_cb202,laboratory,8,2.20,0.00
+fire_extinguisher_cb202,fire extinguisher,8,2.10,0.30
+lab_cb203_entrance,laboratory,22,8.20,1.65
+lab_cb203_exit,laboratory,23,8.20,3.67
+lab_cb204,laboratory,5,2.20,4.80
+radiator_main,radiator,9,4.50,-0.80
+plant_1,potted plant,21,7.50,-0.95
+plant_2,potted plant,20,7.00,-0.95
+plant_3,potted plant,19,6.55,-0.95
+plant_4,potted plant,13,7.70,5.40
+plant_5,potted plant,15,6.55,4.80
+lab_chair,chair,15,6.55,4.80
+window_north,window,14,6.55,5.20
+window_south,window,20,6.90,-1.10

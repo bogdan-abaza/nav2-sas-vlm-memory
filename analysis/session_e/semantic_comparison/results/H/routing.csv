@@ -1,0 +1,10 @@
+condition,scope,arm,observations,vlm_calls,vlm_items,l3a_resolved,l3a_coverage,resolution_steps,fast_path_error_incidence,fast_path_conditional_error,l3a_error_on_clarification_required,fast_path_counts
+H,UNSEEN_FORMULATION,A,69,69,23,0,0.0,{},0.0,not applicable,not applicable,0/0/69
+H,UNSEEN_FORMULATION,B,69,69,23,0,0.0,{},0.0,not applicable,not applicable,0/0/69
+H,UNSEEN_FORMULATION,C,69,69,23,0,0.0,{},0.0,not applicable,not applicable,0/0/69
+H,CLARIFICATION_REQUIRED,A,15,15,5,0,0.0,{},0.0,not applicable,0.0,0/0/15
+H,CLARIFICATION_REQUIRED,B,15,15,5,0,0.0,{},0.0,not applicable,0.0,0/0/15
+H,CLARIFICATION_REQUIRED,C,15,15,5,0,0.0,{},0.0,not applicable,0.0,0/0/15
+H,ALL,A,84,84,28,0,0.0,{},0.0,not applicable,0.0,0/0/84
+H,ALL,B,84,84,28,0,0.0,{},0.0,not applicable,0.0,0/0/84
+H,ALL,C,84,84,28,0,0.0,{},0.0,not applicable,0.0,0/0/84

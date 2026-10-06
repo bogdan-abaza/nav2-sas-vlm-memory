@@ -1,0 +1,29 @@
+code,request,acceptable_nodes,no_node_appropriate,clearly_wrong_nodes,confidence,comment
+Q01,I need to rest a bit.,9|15,,,high,The chair and the radiator are the perfect places to rest in this space.
+Q02,My hands are dirty.,0|4,,,high,"Depending on the gender of the person asking, node 0 for male and node 4 for female."
+Q03,Where can I refresh?,0|4|14|20,,,medium,"Depending on the type of refresh a person wants, they can wash their face in the bathroom for a quick refresh or feel a gentle breeze by the window."
+Q04,Where is CB203?,22|23,,,high,"There are two nodes here for CB 203, but node 22 is the best choice because it indicates the entrance."
+Q05,Where is the closest chair?,15,,,high,There is only one chair.
+Q06,I need to go out.,2,,,high,"The exit is through node 2, which leads to the hall exit, or more precisely, the stairs."
+Q07,I need to go to the other location.,,yes,,low,I did not understand the question. Other location compared to which location?
+Q08,I want to wait for someone who is finishing the lab in CB203.,23,,,high,"To wait for someone to leave CB 203, they should wait at the node that leads to the exit of this laboratory."
+Q09,Where is the hall exit?,2,,,high,"The hall exit is at node 2, the node that leads to the stairs."
+Q10,Take me to a green zone.,13|14|19|20|21,,,high,These nodes lead to the potted plants on this floor.
+Q11,I have to attend a lab.,8|22,,5,high,"Node 8 leads to the CB 202 laboratory, while node 22 leads to the entrance of the CB 203 laboratory. I only considered these two because at node 5, room CB 204 is the professors’ office."
+Q12,I'm looking for a plant or sunlight.,13|14|19|20|21,,,high,"At these nodes, we can find both the potted plants and the windows."
+Q13,Where is the H sign?,8,,,high,"At node 8, near the entrance to the CB 202 laboratory, there is a fire extinguisher."
+Q14,Where can I get some fresh air?,14|20,,,high,"Nodes 14 and 20 correspond to the two windows on this floor, which can be opened to let in some fresh air."
+Q15,I'm late to class.,8|22,,5,high,"If someone is late for a class, the only laboratory rooms are at nodes 8 and 22."
+Q16,I'm tired.,9|15,,,high,"If someone gets tired, they can sit on the chair at node 14 or on the radiator at node 9."
+Q17,I'm ready to move away.,,yes,,low,I did not understand the question: “I’m ready to move away” from where and to where?
+Q18,I'm looking for a green spot.,13|14|19|20|21,,,high,"If someone wants to see a green spot, they can find one at the nodes with plants and windows."
+Q19,Where can I relax a bit?,9|15,,,high,You can relax at these nodes.
+Q20,Where is the men toilet?,0,,,high,The men’s restroom is at node 0.
+Q21,Where can I wash my hands?,0|4,,,high,"Depending on the gender of the person asking, node 0 can be used by males and node 4 by females, where they can wash their hands."
+Q22,Show me a flower.,13|14|19|20|21,,,high,The flowers are located at these nodes.
+Q23,Take me to stay on a chair.,15,,,high,There is only one chair.
+Q24,"Take me to a window, please.",14|20,,,high,"To reach a window, they need to get to these two nodes."
+Q25,I'm waiting for someone.,9|15,,,medium,"If you want to wait for someone in this area, you can sit on the chair or the radiator and wait there."
+Q26,Where is the class lab?,8|22,,5,high,"The laboratories can only be at nodes 8 and 22, since the laboratory at node 5 is the professors’ office."
+Q27,I need to work on a computer.,8|22,,,high,"If someone wants to use a computer for the mandatory activities in their schedule, they can go to the laboratories at these nodes to use a computer."
+Q28,How can I get some water?,0|4,,,high,"On this floor, water can be obtained at nodes 0 and 4, which are restrooms, but the correct entrance or indication depends on the person’s gender."

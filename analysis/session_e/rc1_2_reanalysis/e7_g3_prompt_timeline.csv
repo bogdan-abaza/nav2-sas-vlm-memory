@@ -1,0 +1,36 @@
+timestamp_utc,cell,run_id,prompt_file,contains_object,object_line
+2026-08-21T10:21:05.847+00:00,L-P1,20260821_131951,day2_20260821/logs/20260821_131951/mission_1_cb203_exit/vlm_decision_prompt.txt,False,
+2026-08-21T10:22:36.746+00:00,L-P2,20260821_132139,day2_20260821/logs/20260821_132139/mission_1_junction_e1/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.65) -> node 23 (7.5m from robot)"
+2026-08-21T10:24:16.532+00:00,L-P3,20260821_132326,day2_20260821/logs/20260821_132326/mission_1_cb204/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.65) -> node 23 (7.5m from robot)"
+2026-08-21T10:25:51.842+00:00,L-P4,20260821_132452,day2_20260821/logs/20260821_132452/mission_1_radiator/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.65) -> node 23 (7.5m from robot)"
+2026-08-21T10:27:38.985+00:00,T-P2,20260821_132710,day2_20260821/logs/20260821_132710/mission_1_toilet_m/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.65) -> node 23 (7.6m from robot)"
+2026-08-21T10:28:34.234+00:00,T-P3,20260821_132810,day2_20260821/logs/20260821_132810/mission_1_toilet_m/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.65) -> node 23 (7.4m from robot)"
+2026-08-21T10:29:54.835+00:00,T-P4,20260821_132911,day2_20260821/logs/20260821_132911/mission_1_radiator/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.65) -> node 23 (7.4m from robot)"
+2026-08-21T10:33:59.385+00:00,S-P3,20260821_133316,day2_20260821/logs/20260821_133316/mission_1_radiator/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.65) -> node 23 (7.6m from robot)"
+2026-08-21T10:35:19.465+00:00,S-P4,20260821_133431,day2_20260821/logs/20260821_133431/mission_1_radiator/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.65) -> node 23 (7.6m from robot)"
+2026-08-21T10:36:56.800+00:00,W-P1,20260821_133600,day2_20260821/logs/20260821_133600/mission_1_plant_5/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.65) -> node 23 (7.6m from robot)"
+2026-08-21T10:38:24.823+00:00,W-P2,20260821_133732,day2_20260821/logs/20260821_133732/mission_1_plant_5/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.65) -> node 23 (7.5m from robot)"
+2026-08-21T10:39:54.833+00:00,W-P3,20260821_133902,day2_20260821/logs/20260821_133902/mission_1_plant_5/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.70) -> node 23 (7.5m from robot)"
+2026-08-21T10:41:34.433+00:00,W-P4,20260821_134044,day2_20260821/logs/20260821_134044/mission_1_radiator/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.70) -> node 23 (7.4m from robot)"
+2026-08-21T10:43:20.321+00:00,P-P1,20260821_134202,day2_20260821/logs/20260821_134202/mission_1_plant_4/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.70) -> node 23 (7.4m from robot)"
+2026-08-21T10:45:03.103+00:00,P-P2,20260821_134402,day2_20260821/logs/20260821_134402/mission_1_plant_2/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.70) -> node 23 (7.5m from robot)"
+2026-08-21T10:46:18.838+00:00,P-P3,20260821_134532,day2_20260821/logs/20260821_134532/mission_1_radiator/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.70) -> node 23 (7.5m from robot)"
+2026-08-21T10:49:25.544+00:00,H-P2,20260821_134844,day2_20260821/logs/20260821_134844/mission_1_radiator/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.70) -> node 23 (7.6m from robot)"
+2026-08-21T10:51:40.870+00:00,H-P4,20260821_135113,day2_20260821/logs/20260821_135113/mission_1_radiator/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.70) -> node 23 (7.6m from robot)"
+2026-08-21T10:52:12.838+00:00,H-P4,20260821_135113,day2_20260821/logs/20260821_135113/mission_2_radiator/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.70) -> node 23 (5.7m from robot)"
+2026-08-21T10:53:57.689+00:00,G-1,20260821_135311,day2_20260821/logs/20260821_135311/mission_1_cb204/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.70) -> node 23 (7.5m from robot)"
+2026-08-21T10:55:18.256+00:00,G-2,20260821_135419,day2_20260821/logs/20260821_135419/mission_1_cb203_exit/vlm_decision_prompt.txt,True,"- stop sign ""stop sign_8"" (yolo, conf=0.70) -> node 23 (7.5m from robot)"
+2026-08-21T11:05:47.050+00:00,AB-S1,20260821_140457,day2_20260821/logs/20260821_140457/mission_1_radiator/vlm_decision_prompt.txt,False,
+2026-08-21T11:09:48.034+00:00,AB-S3o,20260821_140856,day2_20260821/logs/20260821_140856/mission_1_junction_e1/vlm_decision_prompt.txt,False,
+2026-08-21T12:24:45.908+00:00,P2,20260821_152359,day2_20260821/logs/20260821_152359/mission_1_radiator/vlm_decision_prompt.txt,False,
+2026-08-21T12:25:59.745+00:00,P1,20260821_152524,day2_20260821/logs/20260821_152524/mission_1_cb202/vlm_decision_prompt.txt,False,
+2026-08-21T12:27:08.438+00:00,P2,20260821_152624,day2_20260821/logs/20260821_152624/mission_1_radiator/vlm_decision_prompt.txt,False,
+2026-08-21T12:34:01.990+00:00,NEG1,20260821_153343,day2_20260821/logs/20260821_153343/mission_1_radiator/vlm_decision_prompt.txt,False,
+2026-08-21T12:34:38.609+00:00,NEG1,20260821_153343,day2_20260821/logs/20260821_153343/mission_2_radiator/vlm_decision_prompt.txt,False,
+2026-08-21T12:36:06.372+00:00,NEG2,20260821_153503,day2_20260821/logs/20260821_153503/mission_1_plant_5/vlm_decision_prompt.txt,False,
+2026-08-21T12:36:57.370+00:00,NEG2,20260821_153503,day2_20260821/logs/20260821_153503/mission_2_junction_e1/vlm_decision_prompt.txt,False,
+2026-08-21T13:44:27.703+00:00,pair1,20260821_164323,day2_20260821/logs/20260821_164323/mission_1_toilet_m/vlm_decision_prompt.txt,False,
+2026-08-21T13:50:55.750+00:00,pair2,20260821_164941,day2_20260821/logs/20260821_164941/mission_1_toilet_m/vlm_decision_prompt.txt,False,
+2026-08-21T13:54:30.265+00:00,pair3,20260821_165317,day2_20260821/logs/20260821_165317/mission_1_toilet_m/vlm_decision_prompt.txt,False,
+2026-08-21T14:21:12.569+00:00,E4b-G,20260821_172025,day2_20260821/logs/20260821_172025/mission_1_radiator/vlm_decision_prompt.txt,False,
+2026-08-21T14:41:27.515+00:00,E4b-NEG,20260821_173949,day2_20260821/logs/20260821_173949/mission_1_radiator/vlm_decision_prompt.txt,False,

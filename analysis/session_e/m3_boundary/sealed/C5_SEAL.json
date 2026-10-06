@@ -1,0 +1,27 @@
+{
+ "sealed_utc": "2026-10-05T06:25:00Z",
+ "operator": "Bogdan-Felician Abaza",
+ "n_items": 47,
+ "files": {
+  "C5_CONSTRUCTION_RULE.md": "e436c7ac93140c270434c7438b8552e93c9a1bbc9d93e9df98d22c8fe5c29a1a",
+  "C5_AMENDMENT_01_20261005.md": "8665dfc27a6f173383fec89ed5c34510653ec31f23b3b57c7b38bca01585efa3",
+  "C5_AMENDMENT_02_20261005.md": "8e1a0ad89f46e2949f19329c795a67312d00ea81085ff37bd2e4d63e2c53a2b5",
+  "challenge_index_C.json": "4b598473b2d38378171f998410d98e1be3391b9c20b6e625ca412c794bf49548",
+  "c5_build.py": "c3d35345aa06c54c82d4e9ba9002da9a33fab25b3141e0d5f1b139c453c9cd36",
+  "candidates_log.csv": "82089eef54595bb8a1cbb6bca5a6027da0b8773a74e1b638cc78ff37987cf2bb",
+  "items.csv": "f79504b169c5b6891e2dbeebc0f1b3b29e927d1e4de4d8e97f018c6684c22359",
+  "c5_run.py": "b0f147ee0051887152531d219f42b430fd31cb73257b5963f4c25c22d74fa682",
+  "c5_seal.py": "551369a97c246a5798cafd624d43f8ad6c180c86ebfd96fb8a4185b8b3ede946",
+  "review/C5_LABEL_REVIEW_SHEET.csv": "eb0e9f1c6d4cd1ee0acabdc4b6a88b09355163b73cdf12ffac775c046326d700",
+  "review/C5_LABEL_REVIEW_SHEET.md": "600100390e323b9b2de827895402d5d96f611864eda4f01d2aba2070658939c3",
+  "authoring/batch_001.csv": "3cb09eb7bc5f72d82a7cefd23d84dcd9a0b98091596969ebbc433f3a342c44cc",
+  "authoring/batch_002.csv": "be4c3914250516b79f951a8a999c9a5d3d012544aa7ad2ea863e903e1b63c3e7",
+  "authoring/batch_003.csv": "5c63c3eb23fb36042894145c65309fb9c7a2548feaed3c9df6d79a929affce17"
+ },
+ "rc1_inputs": {
+  "inputs/sas_text.py": "aa211dc76cb2f19f3ff3c9b27c7ba56242b04a4a1ef2fc10d6ad6ad14eb005b1",
+  "inputs/memory_digest_standard.json": "1fe64ed09a96343bac5abd0cae476545bd0100dd496dc25122b1ca4a2cd7c3ab",
+  "analyze_A2_m3_sensitivity.py": "b2bcce5e7850457fd2ea95b8589050354539d8e1e1af38341fa65b063e5cda46"
+ },
+ "note": "Diagnostic set constructed with access to similarity scores; labels assigned before each candidate was scored and reviewed on sheets without scores or decisions. Seal precedes any EXACT/JACCARD run."
+}

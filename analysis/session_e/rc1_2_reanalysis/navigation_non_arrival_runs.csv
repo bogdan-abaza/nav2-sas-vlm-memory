@@ -1,0 +1,3 @@
+audit_file,platform_id,block,intent,instruction,record_outcomes,record_methods,xy_error_m,terminal_outcome
+day1_20260820/logs/audit_20260820_154520.jsonl,xplorer-c,E2,X04,go anywhere but cb204,missed|missed,L3b_vlm|L3b_vlm,4.906|6.485,missed
+day2_20260821/logs/audit_20260821_152624.jsonl,xplorer-b,E4,P2,find me a quiet corner to read,missed|vlm_failed,L3b_vlm|escalated,2.6|,vlm_failed

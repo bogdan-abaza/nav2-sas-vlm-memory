@@ -1,0 +1,18 @@
+E2 — sources of the key transcription (CANDIDATE, not sealed)
+
+A. A4 inputs — reference = https://github.com/bogdan-abaza/nav2-sas-vlm-memory, tag ras-revision-rc1.1, commit cde9307
+   (= main on 4 Oct 2026; 1,802 files; local copy PUBLIC_REPO_WORK/RC1 verified byte-identical, aggregate sha256 list fe10684c3d0a4b50…)
+  data/session_e/missions.csv                              sha256 7759648cf0014de914aae5b87f27edfefdde66e1cb9b0d49f8ffe760884d970a
+  data/session_e/day1_20260820/config/memory_digest.json   sha256 1fe64ed09a96343bac5abd0cae476545bd0100dd496dc25122b1ca4a2cd7c3ab (md5 97241265…)
+  data/session_e/day1_20260820/logs/audit_20260820_*.jsonl  parent records, vlm_prompt_full, negation_forbidden_nodes
+  data/session_e/day1_20260820/mission_index_ro.txt         sha256 9fd7317f321ccd82a39234b3538f12ab55890b5d9a9b5a039610c3aca9d61deb
+  data/session_e/notes/session_notes_day1_20260820_ro.md    sha256 fa92308135ad726cd5e40e217689c935761698fc1cf49437913f9054f27cc65b
+
+B. Historical key (forbidden nodes, expected outcome) — NOT in the public release
+  Review_14.05.2026/Outputs/Dev/12_Protocol_experimental_E1-E5.md  sha256 78f200c3f15b3077d2835e040b6e5f4d84156da6c6cb50fb5bd108709bced351 (§E2, lines 160-228)
+  Review_14.05.2026/Outputs/Dev/E_Fise_rulaj_sesiunea_E.html       sha256 69818c4b8d7b818fc6cb5437ccfae56b6edf710c0cf324f38de610d2743ebb65 (run sheet rows E2-01..E2-18)
+  Both internal documents are in Romanian and cannot be published as such. RC1.2 publishes an English transcription of the key
+  (e2_historical_key_transcription.csv) that cites the internal protocol hash and locator; instruction texts are kept verbatim.
+
+C. Consistency check on public evidence (not an independent ground truth: values are computed by the system)
+  negation_forbidden_nodes in the RC1 audits: N01-N10, X01-X03 = [0,4]; X04 = [5]. Matches the protocol, 14/14.

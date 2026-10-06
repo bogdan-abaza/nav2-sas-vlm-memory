@@ -1,0 +1,17 @@
+{
+ "frozen_utc": "2026-10-05T08:46:08Z",
+ "input_seal_sha256": "9e1141726007afd069f1c80ea72eac3ba95bfba20fb1258defb12753b39a373a",
+ "files": {
+  "seal/GT_SEAL.json": "9e1141726007afd069f1c80ea72eac3ba95bfba20fb1258defb12753b39a373a",
+  "cases/CASES.json": "ef2f191e2ea27969e59f5bc32112d1314f6e9e51703bc2b75930f5e9c1064535",
+  "harness/gt.py": "a37539e27ef00f8b888c913ba9cf83a6e624a963f7c07e34b8911c1c486c80fc",
+  "harness/a4_bundle.py": "6502649c69c2f78213dcd8e07dbca57e8cd192603cfcefbdf4c5732b9f4aa5d9",
+  "results/GT_RESULTS.json": "0e68512a96748fdb0977cf9b34f1603860d1f5e739327ffc82f2e8c0ceb8ac5f",
+  "results/GT_RESULTS.md": "1624ece53a914949d152b2e10fd4a078f2b740a6ed01b9178e9a2aa2e16959ba",
+  "harness/gt_report.py": "1efacd4ea0141704eb0c3cec8bd6570d1731368a58db29349e8a1351e890a939",
+  "GT_NOTE_20261005.md": "b32ec3ee61074bf0d8ada8f9c7308b63885a0a6d3db7b1b679c249589a95f0c1",
+  "GT_INDEPENDENT_REVIEW_20261005.md": "6b3dfb2364c32051b4477e734ff8228eb473c524a2c820da619e45ba63b8d95f",
+  "README.md": "38353b13cb7b5b4ae82dd79fde2305551aa5ecb12f72b30d77c4bc2aee0a8154"
+ },
+ "note": "Result freeze, separate from the input seal (not overwritten). Raw results, summary, post-run formatter, run note, independent review, README. A pre-seal debugging execution of the same deterministic cases took place on an unsealed copy (GT_NOTE); the input seal does not precede every execution of these cases."
+}

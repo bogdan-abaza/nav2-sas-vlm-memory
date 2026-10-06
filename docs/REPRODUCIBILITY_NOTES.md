@@ -97,3 +97,42 @@ but complete regeneration requires the protected memory-extractor production mod
 historical development-log inputs outside the public release. Those materials can be made
 available to the editor and reviewers in confidence through the journal. The published
 digest and startup-digest evidence remain directly inspectable in the release.
+
+## Analyses added in ras-revision-rc1.2
+
+Each new directory under `analysis/session_e/` contains `CHECKSUMS_SHA256.txt`. Sealed input packages are kept byte-identical in `sealed/` subdirectories; frozen run records and results remain byte-identical at their documented component paths. They retain the working labels and directory paths used when they were sealed, and several of them verify the SHA-256 of their inputs before running. `tools/rerun_sealed.py` reproduces the directory layout those scripts expect in a temporary sandbox: it links the repository read-only and copies the sealed files. It does not modify any sealed file or disable any check, and it compares the regenerated outputs with the published ones. Every command below was executed on a clean copy of this release, without access to any other material, and reproduced the published outputs byte for byte.
+
+### E7 outcome classes and navigation denominators — executable from the release
+
+```bash
+PYTHONPATH=data/session_e/public_code python3 analysis/session_e/rc1_2_reanalysis/reanalyze_session_e.py \
+    --dataset data/session_e --core analysis/session_e/core --outdir <your-outdir>
+```
+
+The script reads only published Session E files. It first checks them against `CHECKSUMS_PUBLIC.md5` and stops unless its counts reconcile with `analysis/session_e/core/results_E.json`. The RC1.1 core analysis and its results are not modified.
+
+### M3 decision-boundary challenge — executable from the release
+
+`python3 tools/rerun_sealed.py m3_boundary`. The sealed script verifies the sealed set and its published matcher inputs (the A2 reimplementation), then regenerates `per_item.csv` and `summary.csv`.
+
+### E7 independent adjudication — executable from the release
+
+`python3 tools/rerun_sealed.py e7_adjudication`. The sealed analysis checks the code map, the blind packet and the pinned Session E files before scoring the returned form. The form was returned in Windows-1252 encoding. The analysis reads a UTF-8 transcription, and the original bytes are published next to it.
+
+### Controlled semantic comparison — post-run analysis executable; execution verifiable
+
+`python3 tools/rerun_sealed.py semantic_comparison` re-runs the sealed analyzer on the published run records. The analyzer checks that each run is complete and valid, and that the schedule, the bundles, its own harness and the input seal match the run headers. The run headers are published as redacted copies (`RUN_HEADER.redacted.json`), and the adapter presents them under the name the analyzer reads; the SHA-256 of each original header is recorded in its redacted copy. `python3 tools/rerun_sealed.py reference_sensitivity` re-runs the independent-reference rescoring.
+
+The execution itself is verifiable but not re-executable from this release. It used the protected target-resolution modules, `qwen3.5:4b` on Ollama 0.30.2 and a GPU. The input seal, all per-observation records with complete API envelopes, the qualification reports, and the thermal and server logs are published. `PUBLIC_DEPENDENCY_MAP.csv` maps the seal's external dependencies to their public paths (262 files) or identifies the protected modules by hash (5). The parser-compatibility audit is published as method and results; its script reproduces protected parsing code and is available in confidence.
+
+### Forbidden-node guard branch test — verifiable, not re-executable
+
+The test runs the protected navigator module. The cases, the injected responses, the expected and observed branches, the seal and the result freeze are published.
+
+### AprilTag summary — executable from the release
+
+`python3 analysis/session_e/apriltag_summary/apriltag_summary.py --out <your-outdir>` (standard library only). It reads the published files in `data/session_e/external_reference/` after checking their SHA-256.
+
+### Live image-request transaction — statistics recomputable; measurement requires the robot
+
+The summary statistics can be recomputed from `CAMERA_PROBE.redacted.json` with the command in that directory's README. The timer covers the HTTP request, JSON decoding and base64 extraction; it does not measure frame age, and JPEG decoding is outside the timer. Repeating the measurement requires Xplorer-B and its camera/context server. The published script differs from the executed one only in the private server address, which is replaced by a placeholder.

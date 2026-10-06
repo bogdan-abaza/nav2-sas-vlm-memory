@@ -1,0 +1,180 @@
+{
+ "protocol": "a4_semantic_comparison_20261005",
+ "condition": "H",
+ "run_tag": "primary",
+ "started_utc": "2026-10-05T10:00:00Z",
+ "ended_utc": "2026-10-05T11:01:05Z",
+ "completed": true,
+ "valid": true,
+ "records_expected": 252,
+ "records_written": 252,
+ "schedule_sha256": "716e75fd373700afd774f4ac4fac37744ea469eb2e892328d484abe757777e75",
+ "bundles_sha256": "e9dbcae50065d0af78f6817753cab7eac88ae5deebac3cb6403f52f1b1307417",
+ "harness_sha256": {
+  "a4_bundle.py": "6502649c69c2f78213dcd8e07dbca57e8cd192603cfcefbdf4c5732b9f4aa5d9",
+  "gate_reports.py": "6bfd0b54b4c040c327d0efd2ce078d900d5a504b59a999c948a36589f4f75374",
+  "sc_analysis_test.py": "82206763ae3a7098db6c797b3fb1146b6aa411e0eb8c7dc61646736bc40a1fa7",
+  "sc_analyze.py": "17b3d60261386ad70f40750d0c865ac72a9d1e9eca0ab2cc987e2abc4148ee16",
+  "sc_deps.py": "49910a66017c971838c94000bb201ada61384cc2be51e92bf5760df520f4210b",
+  "sc_harness.py": "92056cb1bf2eadd0ff8a21580c600f871f3dbb0fd71ac1aaddea0c65afca2350",
+  "sc_schedule.py": "ab21c80c441ed9f82d4fa2350f261191a7e7f40b881f0e23c7dbc112f424ad1e",
+  "sc_seal.py": "37118979e574aad777e46f406b4b63b3a9b1b8808531161f36de4b0afea10ab4",
+  "sc_tests.py": "e230697924950653a99dc2814c28cc01c2461dfed72c1e62471b296c783bb555",
+  "sc_thermal.py": "726a9ff7c4593c9f5206d31eb0d04835b26b6a02fac6677e42e0d0eeafba6561"
+ },
+ "runtime_capture": {
+  "captured_utc": "2026-10-05T10:00:00Z",
+  "host": "<redacted>",
+  "os": "Ubuntu 24.04.4 LTS",
+  "kernel": "7.0.0-30-generic",
+  "cpu": "CPU(s):                                  16\nModel name:                              Intel(R) Core(TM) Ultra 7 255H\nCPU(s) scaling MHz:                      43%",
+  "ram_bytes": "33209180160",
+  "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU, 8151 MiB, 580.173.02",
+  "python": "3.12.3",
+  "ollama_bin": "/usr/local/bin/ollama",
+  "ollama_bin_sha256": "496ae9a39db82f2a7c7854a4f87f841bb0fe79c8a7107e80d99014b40927cfc2",
+  "ollama_version": "ollama version is 0.30.2",
+  "server_launch": {
+   "cmd": [
+    "/usr/local/bin/ollama",
+    "serve"
+   ],
+   "env": {
+    "LANG": "en_US.UTF-8",
+    "OLLAMA_HOST": "127.0.0.1:11435",
+    "OLLAMA_MODELS": "/usr/share/ollama/.ollama/models",
+    "OLLAMA_NOPRUNE": "1"
+   }
+  },
+  "models_dir": "/usr/share/ollama/.ollama/models",
+  "port": 11435,
+  "system_url": "http://127.0.0.1:11434",
+  "options": {
+   "num_predict": 500,
+   "temperature": 0.3,
+   "num_ctx": 16384,
+   "top_k": 20,
+   "top_p": 0.95,
+   "presence_penalty": 1.5
+  },
+  "think": false,
+  "model": "qwen3.5:4b",
+  "control_digest": "0c8faadc50c205b83c634430c1dae6d1a4896c9b818cb8f290aa34d535265018",
+  "continuity_limit_s": 60
+ },
+ "frozen_code": {
+  "vlm_navigator_node_v4_8_review.py": "1646542e2cbfec3ace3bd5b4b4b2164efaf9c7df863ff9daa5d77088b10aceee",
+  "sas_l3a.py": "38b6910f556a05ea3db1b0c0b7962e8cd95929f6573d70a8a3b8fb8efe4eee00",
+  "sas_text.py": "aa211dc76cb2f19f3ff3c9b27c7ba56242b04a4a1ef2fc10d6ad6ad14eb005b1",
+  "negation_guard.py": "3b598ffe722be21a47e11d7d3d2b02cbfd6a8d9d3344a3daa27627df09722d2b",
+  "executive_contract.py": "7683f52fde8991a017d0aef8a519fda7978e926cc140105a1f9b81dddc518b5f",
+  "visual_confirmation_v2.py": "2c3a3ddb577ea056be238d938e7d2355aba8b789cdf5bdc93c432a1df30f1590"
+ },
+ "timer": "time.perf_counter_ns",
+ "options": {
+  "num_predict": 500,
+  "temperature": 0.3,
+  "num_ctx": 16384,
+  "top_k": 20,
+  "top_p": 0.95,
+  "presence_penalty": 1.5
+ },
+ "think": false,
+ "policy_sha256": "4d0b904ab37fe36183379b7eb93a78870b66f0a714b19c36956503441cc96d15",
+ "continuity_limit_s": 60,
+ "seal_sha256_before_qualification": "3771cb1660c328a42301d67a03449f58245db60c92a7d3dee43748f2fafc70e0",
+ "qualification": {
+  "file": "QUALIFICATION.json",
+  "sha256": "993d3573d0026bef53cce97e68585923bd29849f3483175c917af01cbece64b0",
+  "passed": true
+ },
+ "seal_sha256_before_measurement": "3771cb1660c328a42301d67a03449f58245db60c92a7d3dee43748f2fafc70e0",
+ "final_stop": {
+  "server": [
+   "152958",
+   2245397
+  ],
+  "runners": [
+   [
+    "153147",
+    2245743
+   ]
+  ],
+  "stop_ns": 163798632,
+  "leftover": []
+ },
+ "thermal": {
+  "file": "thermal.csv",
+  "sha256": "41905339a68ca97d4509d486330936d08b7caa3efd5395e14e5520c58acb1286",
+  "samples": 733,
+  "max_gap_s": 5.127,
+  "header": "# {\"fields_requested\": [\"temperature.gpu\", \"clocks.sm\", \"clocks.mem\", \"clocks.max.sm\", \"utilization.gpu\", \"utilization.memory\", \"power.draw\", \"power.limit\", \"pstate\", \"memory.used\", \"clocks_event_reasons.active\", \"clocks_throttle_reasons.active\", \"clocks_event_reasons.hw_thermal_slowdown\", \"clocks_event_reasons.sw_thermal_slowdown\", \"clocks_event_reasons.sw_power_cap\"], \"fields_supported\": [\"temperature.gpu\", \"clocks.sm\", \"clocks.mem\", \"clocks.max.sm\", \"utilization.gpu\", \"utilization.memory\", \"power.draw\", \"power.limit\", \"pstate\", \"memory.used\", \"clocks_event_reasons.active\", \"clocks_throttle_reasons.active\", \"clocks_event_reasons.hw_thermal_slowdown\", \"clocks_event_reasons.sw_thermal_slowdown\", \"clocks_event_reasons.sw_power_cap\"], \"period_s\": 5.0, \"fake\": false, \"started_utc\": \"2026-10-05T10:00:00Z\"}"
+ },
+ "redaction": {
+  "original_file": "RUN_HEADER.json",
+  "original_sha256": "c6cdedaa35eeda872fb8139220a223b6999de935281499d30520bc2c2bbff044",
+  "rule": "launch environment reduced to OLLAMA_*, CUDA_*, LANG; host name withheld; home-directory prefixes replaced by ~",
+  "removed": [
+   "runtime_capture.server_launch.env.AMENT_PREFIX_PATH",
+   "runtime_capture.server_launch.env.CLUTTER_DISABLE_MIPMAPPED_TEXT",
+   "runtime_capture.server_launch.env.CMAKE_PREFIX_PATH",
+   "runtime_capture.server_launch.env.COLORTERM",
+   "runtime_capture.server_launch.env.DBUS_SESSION_BUS_ADDRESS",
+   "runtime_capture.server_launch.env.DEBUGINFOD_URLS",
+   "runtime_capture.server_launch.env.DESKTOP_SESSION",
+   "runtime_capture.server_launch.env.DISPLAY",
+   "runtime_capture.server_launch.env.GDMSESSION",
+   "runtime_capture.server_launch.env.GNOME_DESKTOP_SESSION_ID",
+   "runtime_capture.server_launch.env.GNOME_SETUP_DISPLAY",
+   "runtime_capture.server_launch.env.GNOME_SHELL_SESSION_MODE",
+   "runtime_capture.server_launch.env.GNOME_TERMINAL_SCREEN",
+   "runtime_capture.server_launch.env.GNOME_TERMINAL_SERVICE",
+   "runtime_capture.server_launch.env.GSM_SKIP_SSH_AGENT_WORKAROUND",
+   "runtime_capture.server_launch.env.GTK_MODULES",
+   "runtime_capture.server_launch.env.GZ_CONFIG_PATH",
+   "runtime_capture.server_launch.env.HOME",
+   "runtime_capture.server_launch.env.IM_CONFIG_PHASE",
+   "runtime_capture.server_launch.env.LD_LIBRARY_PATH",
+   "runtime_capture.server_launch.env.LESSCLOSE",
+   "runtime_capture.server_launch.env.LESSOPEN",
+   "runtime_capture.server_launch.env.LOGNAME",
+   "runtime_capture.server_launch.env.LS_COLORS",
+   "runtime_capture.server_launch.env.MEMORY_PRESSURE_WATCH",
+   "runtime_capture.server_launch.env.MEMORY_PRESSURE_WRITE",
+   "runtime_capture.server_launch.env.OLDPWD",
+   "runtime_capture.server_launch.env.PATH",
+   "runtime_capture.server_launch.env.PWD",
+   "runtime_capture.server_launch.env.PYTHONPATH",
+   "runtime_capture.server_launch.env.QT_ACCESSIBILITY",
+   "runtime_capture.server_launch.env.QT_IM_MODULE",
+   "runtime_capture.server_launch.env.RMW_IMPLEMENTATION",
+   "runtime_capture.server_launch.env.ROS_AUTOMATIC_DISCOVERY_RANGE",
+   "runtime_capture.server_launch.env.ROS_DISTRO",
+   "runtime_capture.server_launch.env.ROS_PYTHON_VERSION",
+   "runtime_capture.server_launch.env.ROS_VERSION",
+   "runtime_capture.server_launch.env.SESSION_MANAGER",
+   "runtime_capture.server_launch.env.SHELL",
+   "runtime_capture.server_launch.env.SHLVL",
+   "runtime_capture.server_launch.env.SSH_AUTH_SOCK",
+   "runtime_capture.server_launch.env.SYSTEMD_EXEC_PID",
+   "runtime_capture.server_launch.env.TERM",
+   "runtime_capture.server_launch.env.USER",
+   "runtime_capture.server_launch.env.USERNAME",
+   "runtime_capture.server_launch.env.VTE_VERSION",
+   "runtime_capture.server_launch.env.WAYLAND_DISPLAY",
+   "runtime_capture.server_launch.env.XAUTHORITY",
+   "runtime_capture.server_launch.env.XDG_CONFIG_DIRS",
+   "runtime_capture.server_launch.env.XDG_CURRENT_DESKTOP",
+   "runtime_capture.server_launch.env.XDG_DATA_DIRS",
+   "runtime_capture.server_launch.env.XDG_MENU_PREFIX",
+   "runtime_capture.server_launch.env.XDG_RUNTIME_DIR",
+   "runtime_capture.server_launch.env.XDG_SESSION_CLASS",
+   "runtime_capture.server_launch.env.XDG_SESSION_DESKTOP",
+   "runtime_capture.server_launch.env.XDG_SESSION_TYPE",
+   "runtime_capture.server_launch.env.XMODIFIERS",
+   "runtime_capture.server_launch.env._",
+   "runtime_capture.host (value)"
+  ],
+  "home_paths_replaced": 0
+ }
+}

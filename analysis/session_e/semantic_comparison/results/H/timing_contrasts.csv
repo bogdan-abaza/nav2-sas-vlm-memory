@@ -1,0 +1,10 @@
+condition,scope,contrast,items,median_paired_diff_ms,value_diff,diff_boot95,mean_paired_diff_ms,ratio_name,median_paired_ratio,ratio_boot95,undefined_ratios
+H,UNSEEN_FORMULATION,A_vs_B,23,A - B,51.354,"(13.1409, 94.7029)",46.314,B/A (>1 means A faster),0.9926,"(0.9868, 0.9986)",0
+H,UNSEEN_FORMULATION,B_vs_C,23,B - C,-27.648,"(-63.1904, 5.5498)",-26.885,C/B (>1 means B faster),1.0039,"(0.9993, 1.0068)",0
+H,UNSEEN_FORMULATION,A_vs_C,23,A - C,21.541,"(-19.4922, 52.3901)",19.428,C/A (>1 means A faster),0.997,"(0.9924, 1.0026)",0
+H,CLARIFICATION_REQUIRED,A_vs_B,5,A - B,-32.678,"(-97.8998, 68.0921)",-19.673,B/A (>1 means A faster),1.0031,"(0.9907, 1.0136)",0
+H,CLARIFICATION_REQUIRED,B_vs_C,5,B - C,2.401,"(-134.0839, 88.0402)",-22.711,C/B (>1 means B faster),0.9997,"(0.9916, 1.0184)",0
+H,CLARIFICATION_REQUIRED,A_vs_C,5,A - C,-44.149,"(-231.9838, 82.5829)",-42.383,C/A (>1 means A faster),1.0049,"(0.9887, 1.0322)",0
+H,ALL,A_vs_B,28,A - B,36.904,"(6.9239, 71.5697)",34.53,B/A (>1 means A faster),0.9949,"(0.9914, 0.9989)",0
+H,ALL,B_vs_C,28,B - C,-17.509,"(-54.6723, 10.0203)",-26.14,C/B (>1 means B faster),1.0024,"(0.9989, 1.0072)",0
+H,ALL,A_vs_C,28,A - C,16.775,"(-44.1492, 53.876)",8.39,C/A (>1 means A faster),0.9976,"(0.9936, 1.0059)",0

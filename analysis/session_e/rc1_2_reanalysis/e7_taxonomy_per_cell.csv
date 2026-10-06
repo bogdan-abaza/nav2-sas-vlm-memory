@@ -1,0 +1,29 @@
+cell,level,instruction,abstention_expected,sealed_acceptable,sealed_flagged_wrong,resolution_method,resolution_step,fast_path,node_id,node_name,chose_flagged_wrong,nav_outcome,outcome_class,correct,run_id,platform_id,timestamp_utc
+G-1,multi,Where is the class lab?,False,5|8|22|23,,L3b_vlm,,False,5,cb204,False,mission_complete,acceptable_selection,True,20260821_135311,xplorer-b,2026-08-21T10:53:57.689+00:00
+G-2,semantic,I want to wait for someone who is finishing the lab in CB203.,False,23,22,L3b_vlm,,False,23,cb203_exit,False,mission_complete,acceptable_selection,True,20260821_135419,xplorer-b,2026-08-21T10:55:18.256+00:00
+G-3,nemapat,Where is the H sign?,True,-1,0|13|16|22|23,L3a_deterministic,5,True,23,cb203_exit,True,mission_complete,executable_where_abstention_expected,False,20260821_135551,xplorer-b,2026-08-21T10:56:33.948+00:00
+G-4,proximitate,Where is the closest chair?,False,15,,L3a_deterministic,5,True,15,junction_e1,False,mission_complete,acceptable_selection,True,20260821_135704,xplorer-b,2026-08-21T10:57:43.318+00:00
+H-P1,P1,Where is the hall exit?,False,2,,L3a_deterministic,2,True,2,hall_exit,False,mission_complete,acceptable_selection,True,20260821_134743,xplorer-b,2026-08-21T10:48:05.403+00:00
+H-P2,P2,I need to go to the other location.,True,-1,,L3b_vlm,,False,9,radiator,False,mission_complete,executable_where_abstention_expected,False,20260821_134844,xplorer-b,2026-08-21T10:49:25.544+00:00
+H-P3,P3,I need to go out.,False,1|2,,escalated,,False,,,False,vlm_failed,model_response_parse_failure,False,20260821_135001,xplorer-b,2026-08-21T10:50:16.325+00:00
+H-P4,P4,I'm ready to move away.,False,1|2,,L3b_vlm,,False,9,radiator,False,missed,incorrect_executable,False,20260821_135113,xplorer-b,2026-08-21T10:51:40.870+00:00
+L-P1,P1,Where is CB203?,False,22|23,,L3b_vlm,,False,23,cb203_exit,False,mission_complete,acceptable_selection,True,20260821_131951,xplorer-b,2026-08-21T10:21:05.847+00:00
+L-P2,P2,I need to work on a computer.,False,5|8|22|23,0|4,L3b_vlm,,False,15,junction_e1,False,mission_complete,incorrect_executable,False,20260821_132139,xplorer-b,2026-08-21T10:22:36.746+00:00
+L-P3,P3,I have to attend a lab.,False,5|8|22,23,L3b_vlm,,False,5,cb204,False,mission_complete,acceptable_selection,True,20260821_132326,xplorer-b,2026-08-21T10:24:16.532+00:00
+L-P4,P4,I'm late to class.,False,5|8|22,23,L3b_vlm,,False,9,radiator,False,mission_complete,incorrect_executable,False,20260821_132452,xplorer-b,2026-08-21T10:25:51.842+00:00
+P-P1,P1,Show me a flower.,False,13|15|19|20|21,,L3b_vlm,,False,13,plant_4,False,mission_complete,acceptable_selection,True,20260821_134202,xplorer-b,2026-08-21T10:43:20.321+00:00
+P-P2,P2,Take me to a green zone.,False,13|15|19|20|21,,L3b_vlm,,False,20,plant_2,False,mission_complete,acceptable_selection,True,20260821_134402,xplorer-b,2026-08-21T10:45:03.103+00:00
+P-P3,P3,Where can I refresh?,False,14,,L3b_vlm,,False,9,radiator,False,mission_complete,incorrect_executable,False,20260821_134532,xplorer-b,2026-08-21T10:46:18.838+00:00
+P-P4,P4,I'm looking for a green spot.,False,13|15|19|20|21,,escalated,,False,,,False,vlm_failed,model_response_parse_failure,False,20260821_134645,xplorer-b,2026-08-21T10:46:58.697+00:00
+S-P1,P1,Take me to stay on a chair.,False,15,,L3a_deterministic,5,True,15,junction_e1,False,mission_complete,acceptable_selection,True,20260821_133032,xplorer-b,2026-08-21T10:31:13.683+00:00
+S-P2,P2,I'm waiting for someone.,False,9|15,,escalated,,False,,,False,vlm_failed,model_response_parse_failure,False,20260821_133151,xplorer-b,2026-08-21T10:32:13.409+00:00
+S-P3,P3,I need to rest a bit.,False,9|15,,L3b_vlm,,False,9,radiator,False,mission_complete,acceptable_selection,True,20260821_133316,xplorer-b,2026-08-21T10:33:59.385+00:00
+S-P4,P4,I'm tired.,False,9|15,,L3b_vlm,,False,9,radiator,False,mission_complete,acceptable_selection,True,20260821_133431,xplorer-b,2026-08-21T10:35:19.465+00:00
+T-P1,P1,Where is the men toilet?,False,0,4,L3a_deterministic,4,True,0,toilet_m,False,mission_complete,acceptable_selection,True,20260821_132616,xplorer-b,2026-08-21T10:26:32.011+00:00
+T-P2,P2,How can I get some water?,False,0|4,5,L3b_vlm,,False,0,toilet_m,False,mission_complete,acceptable_selection,True,20260821_132710,xplorer-b,2026-08-21T10:27:38.985+00:00
+T-P3,P3,Where can I wash my hands?,False,0|4,,L3b_vlm,,False,0,toilet_m,False,mission_complete,acceptable_selection,True,20260821_132810,xplorer-b,2026-08-21T10:28:34.234+00:00
+T-P4,P4,My hands are dirty.,False,0|4,,L3b_vlm,,False,9,radiator,False,mission_complete,incorrect_executable,False,20260821_132911,xplorer-b,2026-08-21T10:29:54.835+00:00
+W-P1,P1,"Take me to a window, please.",False,14|20,,L3b_vlm,,False,14,plant_5,False,mission_complete,acceptable_selection,True,20260821_133600,xplorer-b,2026-08-21T10:36:56.800+00:00
+W-P2,P2,I'm looking for a plant or sunlight.,False,13|15|19|20|21,,L3b_vlm,,False,14,plant_5,False,mission_complete,incorrect_executable,False,20260821_133732,xplorer-b,2026-08-21T10:38:24.823+00:00
+W-P3,P3,Where can I get some fresh air?,False,14,,L3b_vlm,,False,14,plant_5,False,mission_complete,acceptable_selection,True,20260821_133902,xplorer-b,2026-08-21T10:39:54.833+00:00
+W-P4,P4,Where can I relax a bit?,False,9|15,,L3b_vlm,,False,9,radiator,False,mission_complete,acceptable_selection,True,20260821_134044,xplorer-b,2026-08-21T10:41:34.433+00:00

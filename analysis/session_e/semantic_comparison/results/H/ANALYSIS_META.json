@@ -1,0 +1,38 @@
+{
+ "condition": "H",
+ "run": "primary",
+ "header_started": "2026-10-05T10:00:00Z",
+ "header_ended": "2026-10-05T11:01:05Z",
+ "seal_sha256": "3771cb1660c328a42301d67a03449f58245db60c92a7d3dee43748f2fafc70e0",
+ "qualification": {
+  "file": "QUALIFICATION.json",
+  "sha256": "993d3573d0026bef53cce97e68585923bd29849f3483175c917af01cbece64b0",
+  "passed": true
+ },
+ "thermal": {
+  "file": "thermal.csv",
+  "sha256": "41905339a68ca97d4509d486330936d08b7caa3efd5395e14e5520c58acb1286",
+  "samples": 733,
+  "max_gap_s": 5.127,
+  "header": "# {\"fields_requested\": [\"temperature.gpu\", \"clocks.sm\", \"clocks.mem\", \"clocks.max.sm\", \"utilization.gpu\", \"utilization.memory\", \"power.draw\", \"power.limit\", \"pstate\", \"memory.used\", \"clocks_event_reasons.active\", \"clocks_throttle_reasons.active\", \"clocks_event_reasons.hw_thermal_slowdown\", \"clocks_event_reasons.sw_thermal_slowdown\", \"clocks_event_reasons.sw_power_cap\"], \"fields_supported\": [\"temperature.gpu\", \"clocks.sm\", \"clocks.mem\", \"clocks.max.sm\", \"utilization.gpu\", \"utilization.memory\", \"power.draw\", \"power.limit\", \"pstate\", \"memory.used\", \"clocks_event_reasons.active\", \"clocks_throttle_reasons.active\", \"clocks_event_reasons.hw_thermal_slowdown\", \"clocks_event_reasons.sw_thermal_slowdown\", \"clocks_event_reasons.sw_power_cap\"], \"period_s\": 5.0, \"fake\": false, \"started_utc\": \"2026-10-05T10:00:00Z\"}"
+ },
+ "validity_problems": [],
+ "bootstrap": {
+  "resamples": 10000,
+  "seed": 20261005,
+  "scheme": "stratified paired item bootstrap"
+ },
+ "files": {
+  "api.csv": "518a0c426d26d86da7851bd6d8f0f928c36c9f1273e084f5f30047a7e451139d",
+  "contrasts.csv": "96c08d0c33067b972b3d76b1d16fb99c79a3c3197180452db991c90e52a54c93",
+  "outcomes.csv": "91d69aeeceee1f0da02a68da49953043339f4e25b4abb1f2a5f2991b4feba506",
+  "per_item.csv": "88826630bba9ef0817dfc56a0c171546ab19246ac09823e4b04d8797cd381f06",
+  "positions.csv": "2ccbde1bd87b1a02eecaa647a634223f092ada8ee2dcc5580cd7dd59de0d7110",
+  "routing.csv": "75e2d579968fb29a7aa70157596fc044d6bcc7aa54b64ccd146d3ed78c848da6",
+  "seed_agreement.csv": "49f2c4d68d08fd8171f073c74ed2e7c288266d0f9623ca3311bae7b3e14cb310",
+  "stages.csv": "04d949f0f0db6347e4fa7cf0e6476efd92c9578943c2207acf60948c75beb8fd",
+  "timeline.csv": "e9e16f395fa3112f45e71bee5f01585b593a00bb121b7664ae818159f43af541",
+  "timing.csv": "2c3ba7d640021da8c9f0f599c895903e74de22edd9d12a44d8bdb7bb0f751c0f",
+  "timing_contrasts.csv": "eacfe6a2b2f86f9df14840a9711834e5dfd07cc580db3c0f688d73f8aba90122"
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "script_sha256": "c1af5bcf648197cbc0df64685f57adb64c4909eff7b5a6a528c7bbec5776a8e6",
+ "per_cell_sha256": "903db869ba06ad84ce2100e98169b7f89db94dfd24ec4e09d5777baa62a5e7c0",
+ "result_freeze_sha256": "c269efbe0ccd67f68f7b8ddc3e24f34584d24b6d5729ebb7294b62ef31345d6e",
+ "conditions": {
+  "S": {
+   "A": {
+    "e7_items": 25,
+    "correct_items_sealed_key": 15,
+    "correct_items_evaluator_key": 14,
+    "changed_items": [
+     "E7-G-1",
+     "E7-L-P3",
+     "E7-W-P2"
+    ],
+    "observations_sealed_key": {
+     "acceptable": 43,
+     "incorrect_executable": 27,
+     "model_or_parser_failure": 5
+    },
+    "observations_evaluator_key": {
+     "incorrect_executable": 28,
+     "acceptable": 42,
+     "model_or_parser_failure": 5
+    }
+   },
+   "B": {
+    "e7_items": 25,
+    "correct_items_sealed_key": 15,
+    "correct_items_evaluator_key": 14,
+    "changed_items": [
+     "E7-G-1",
+     "E7-L-P3",
+     "E7-W-P2"
+    ],
+    "observations_sealed_key": {
+     "acceptable": 43,
+     "incorrect_executable": 27,
+     "model_or_parser_failure": 5
+    },
+    "observations_evaluator_key": {
+     "incorrect_executable": 28,
+     "acceptable": 42,
+     "model_or_parser_failure": 5
+    }
+   },
+   "C": {
+    "e7_items": 25,
+    "correct_items_sealed_key": 15,
+    "correct_items_evaluator_key": 14,
+    "changed_items": [
+     "E7-G-1",
+     "E7-L-P3",
+     "E7-W-P2"
+    ],
+    "observations_sealed_key": {
+     "acceptable": 43,
+     "incorrect_executable": 27,
+     "model_or_parser_failure": 5
+    },
+    "observations_evaluator_key": {
+     "incorrect_executable": 28,
+     "acceptable": 42,
+     "model_or_parser_failure": 5
+    }
+   },
+   "A_vs_B": {
+    "better": 0,
+    "worse": 0,
+    "tied": 25
+   },
+   "B_vs_C": {
+    "better": 0,
+    "worse": 0,
+    "tied": 25
+   },
+   "A_vs_C": {
+    "better": 0,
+    "worse": 0,
+    "tied": 25
+   }
+  },
+  "H": {
+   "A": {
+    "e7_items": 20,
+    "correct_items_sealed_key": 12,
+    "correct_items_evaluator_key": 10,
+    "changed_items": [
+     "E7-G-1",
+     "E7-L-P3",
+     "E7-P-P2",
+     "E7-W-P2"
+    ],
+    "observations_sealed_key": {
+     "acceptable": 37,
+     "incorrect_executable": 20,
+     "model_or_parser_failure": 3
+    },
+    "observations_evaluator_key": {
+     "incorrect_executable": 26,
+     "acceptable": 31,
+     "model_or_parser_failure": 3
+    }
+   },
+   "B": {
+    "e7_items": 20,
+    "correct_items_sealed_key": 12,
+    "correct_items_evaluator_key": 10,
+    "changed_items": [
+     "E7-G-1",
+     "E7-L-P3",
+     "E7-P-P2",
+     "E7-W-P2"
+    ],
+    "observations_sealed_key": {
+     "acceptable": 37,
+     "incorrect_executable": 20,
+     "model_or_parser_failure": 3
+    },
+    "observations_evaluator_key": {
+     "incorrect_executable": 26,
+     "acceptable": 31,
+     "model_or_parser_failure": 3
+    }
+   },
+   "C": {
+    "e7_items": 20,
+    "correct_items_sealed_key": 12,
+    "correct_items_evaluator_key": 10,
+    "changed_items": [
+     "E7-G-1",
+     "E7-L-P3",
+     "E7-P-P2",
+     "E7-W-P2"
+    ],
+    "observations_sealed_key": {
+     "acceptable": 37,
+     "incorrect_executable": 20,
+     "model_or_parser_failure": 3
+    },
+    "observations_evaluator_key": {
+     "incorrect_executable": 26,
+     "acceptable": 31,
+     "model_or_parser_failure": 3
+    }
+   },
+   "A_vs_B": {
+    "better": 0,
+    "worse": 0,
+    "tied": 20
+   },
+   "B_vs_C": {
+    "better": 0,
+    "worse": 0,
+    "tied": 20
+   },
+   "A_vs_C": {
+    "better": 0,
+    "worse": 0,
+    "tied": 20
+   }
+  }
+ }
+}

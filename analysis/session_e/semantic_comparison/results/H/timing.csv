@@ -1,0 +1,43 @@
+condition,scope,arm,measure,population,n,median,q1,q3,mean,min,max
+H,UNSEEN_FORMULATION,A,decision_ms,all observations,69,7156.539,6975.463,7415.49,7568.308,6636.141,14057.365
+H,UNSEEN_FORMULATION,A,decision_ms,item medians,23,7156.539,6982.452,7369.557,7447.678,6752.157,11383.657
+H,UNSEEN_FORMULATION,A,resolver_ms,all observations,69,0.292,0.277,0.349,0.32,0.037,0.678
+H,UNSEEN_FORMULATION,A,resolver_ms,item medians,23,0.292,0.283,0.325,0.313,0.039,0.637
+H,UNSEEN_FORMULATION,A,decision_ms,"VLM path only (conditional, descriptive)",69,7156.539,6975.463,7415.49,7568.308,6636.141,14057.365
+H,UNSEEN_FORMULATION,B,decision_ms,all observations,69,7101.557,6923.976,7428.125,7535.98,6495.689,14042.665
+H,UNSEEN_FORMULATION,B,decision_ms,item medians,23,7061.836,6951.619,7398.403,7401.364,6699.714,11297.445
+H,UNSEEN_FORMULATION,B,resolver_ms,all observations,69,0.25,0.238,0.29,0.289,0.038,0.828
+H,UNSEEN_FORMULATION,B,resolver_ms,item medians,23,0.249,0.24,0.281,0.294,0.038,0.816
+H,UNSEEN_FORMULATION,B,decision_ms,"VLM path only (conditional, descriptive)",69,7101.557,6923.976,7428.125,7535.98,6495.689,14042.665
+H,UNSEEN_FORMULATION,C,decision_ms,all observations,69,7131.335,6941.759,7466.248,7541.479,6664.203,13818.189
+H,UNSEEN_FORMULATION,C,decision_ms,item medians,23,7126.373,6985.075,7450.871,7428.249,6770.018,11554.973
+H,UNSEEN_FORMULATION,C,resolver_ms,all,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable
+H,UNSEEN_FORMULATION,C,decision_ms,"VLM path only (conditional, descriptive)",69,7131.335,6941.759,7466.248,7541.479,6664.203,13818.189
+H,CLARIFICATION_REQUIRED,A,decision_ms,all observations,15,8048.069,7406.419,9895.88,9137.976,6651.935,13959.163
+H,CLARIFICATION_REQUIRED,A,decision_ms,item medians,5,7884.172,7321.921,9002.975,8368.884,7199.168,10436.187
+H,CLARIFICATION_REQUIRED,A,resolver_ms,all observations,15,0.052,0.05,0.075,0.153,0.049,0.671
+H,CLARIFICATION_REQUIRED,A,resolver_ms,item medians,5,0.052,0.051,0.053,0.175,0.049,0.668
+H,CLARIFICATION_REQUIRED,A,decision_ms,"VLM path only (conditional, descriptive)",15,8048.069,7406.419,9895.88,9137.976,6651.935,13959.163
+H,CLARIFICATION_REQUIRED,B,decision_ms,all observations,15,8035.171,7286.515,9899.765,9123.106,6691.58,13956.414
+H,CLARIFICATION_REQUIRED,B,decision_ms,item medians,5,7873.498,7297.068,9049.525,8388.557,7253.828,10468.865
+H,CLARIFICATION_REQUIRED,B,resolver_ms,all observations,15,0.053,0.049,0.09,0.099,0.047,0.27
+H,CLARIFICATION_REQUIRED,B,resolver_ms,item medians,5,0.052,0.048,0.055,0.094,0.048,0.269
+H,CLARIFICATION_REQUIRED,B,decision_ms,"VLM path only (conditional, descriptive)",15,8035.171,7286.515,9899.765,9123.106,6691.58,13956.414
+H,CLARIFICATION_REQUIRED,C,decision_ms,all observations,15,8026.126,7387.022,9878.623,9155.576,6692.305,13918.727
+H,CLARIFICATION_REQUIRED,C,decision_ms,item medians,5,7957.9,7431.152,9047.124,8411.268,7239.338,10380.825
+H,CLARIFICATION_REQUIRED,C,resolver_ms,all,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable
+H,CLARIFICATION_REQUIRED,C,decision_ms,"VLM path only (conditional, descriptive)",15,8026.126,7387.022,9878.623,9155.576,6692.305,13918.727
+H,ALL,A,decision_ms,all observations,84,7198.714,7012.208,7889.451,7848.605,6636.141,14057.365
+H,ALL,A,decision_ms,item medians,28,7188.215,7042.067,7649.041,7612.179,6752.157,11383.657
+H,ALL,A,resolver_ms,all observations,84,0.288,0.072,0.316,0.29,0.037,0.678
+H,ALL,A,resolver_ms,item medians,28,0.289,0.053,0.313,0.289,0.039,0.668
+H,ALL,A,decision_ms,"VLM path only (conditional, descriptive)",84,7198.714,7012.208,7889.451,7848.605,6636.141,14057.365
+H,ALL,B,decision_ms,all observations,84,7163.143,6938.616,7879.433,7819.396,6495.689,14042.665
+H,ALL,B,decision_ms,item medians,28,7163.192,6968.252,7665.154,7577.649,6699.714,11297.445
+H,ALL,B,resolver_ms,all observations,84,0.248,0.084,0.263,0.255,0.038,0.828
+H,ALL,B,resolver_ms,item medians,28,0.248,0.072,0.265,0.259,0.038,0.816
+H,ALL,B,decision_ms,"VLM path only (conditional, descriptive)",84,7163.143,6938.616,7879.433,7819.396,6495.689,14042.665
+H,ALL,C,decision_ms,all observations,84,7189.966,6971.25,7884.472,7829.711,6664.203,13918.727
+H,ALL,C,decision_ms,item medians,28,7155.959,7007.307,7674.708,7603.788,6770.018,11554.973
+H,ALL,C,resolver_ms,all,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable
+H,ALL,C,decision_ms,"VLM path only (conditional, descriptive)",84,7189.966,6971.25,7884.472,7829.711,6664.203,13918.727

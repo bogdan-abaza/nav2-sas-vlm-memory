@@ -1,0 +1,10 @@
+condition,scope,arm,items,observations,acceptable,incorrect_executable,clarification,model_or_parser_failure,items_correct,item_correctness,wilson95,wrong_exec_obs,wrong_exec_items_any,wrong_exec_items_2of3,parser_failure_items,clarification_mechanisms
+H,UNSEEN_FORMULATION,A,23,69,44,17,5,3,14,0.6087,"(0.4079, 0.7784)",17,8,5,2,{'vlm_explicit_-1': 5}
+H,UNSEEN_FORMULATION,B,23,69,44,17,5,3,14,0.6087,"(0.4079, 0.7784)",17,8,5,2,{'vlm_explicit_-1': 5}
+H,UNSEEN_FORMULATION,C,23,69,44,17,5,3,14,0.6087,"(0.4079, 0.7784)",17,8,5,2,{'vlm_explicit_-1': 5}
+H,CLARIFICATION_REQUIRED,A,5,15,0,6,6,3,2,0.4,"(0.1176, 0.7693)",6,3,2,3,{'vlm_explicit_-1': 6}
+H,CLARIFICATION_REQUIRED,B,5,15,0,6,6,3,2,0.4,"(0.1176, 0.7693)",6,3,2,3,{'vlm_explicit_-1': 6}
+H,CLARIFICATION_REQUIRED,C,5,15,0,6,6,3,2,0.4,"(0.1176, 0.7693)",6,3,2,3,{'vlm_explicit_-1': 6}
+H,ALL,A,28,84,44,23,11,6,16,0.5714,"(0.3907, 0.7349)",23,11,7,5,{'vlm_explicit_-1': 11}
+H,ALL,B,28,84,44,23,11,6,16,0.5714,"(0.3907, 0.7349)",23,11,7,5,{'vlm_explicit_-1': 11}
+H,ALL,C,28,84,44,23,11,6,16,0.5714,"(0.3907, 0.7349)",23,11,7,5,{'vlm_explicit_-1': 11}

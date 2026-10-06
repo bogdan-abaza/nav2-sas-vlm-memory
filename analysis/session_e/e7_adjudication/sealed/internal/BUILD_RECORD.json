@@ -1,0 +1,28 @@
+{
+ "script_sha256": "325e0d6f4b86bb637d969d0bd39487717871ea60e3735e6f300eab91cec4bb22",
+ "inputs": {
+  "session/E7_sealed_set_v2.csv": "587e7b3644de731b1c4d0e3392002ea27e65a66dbcd559a3d02df768f4ab8704",
+  "config/route_graph_fiir.geojson": "e769d1e8bb72502ffeb88d8a875a3041ac22775db1fdbf9a62fbb13a30de50b5",
+  "config/semantic_objects_static_v2.geojson": "963f81c6c6a2c0eda4e7e99486c00e124136367a7e9f725b8e6e773c022ab4fd"
+ },
+ "seed": 20261004,
+ "packet": "E7_adjudication_packet_v1",
+ "packet_files": {
+  "README_EVALUATOR.md": "78af4f26cf8179b3d45e01f0a8201dc0e4aaf2c0df10d5d3fa8ecdd09e234060",
+  "environment_edges.csv": "496ec269f67cbc71680e3b31dcc2bab91c577e8dd743274e76597d96795e9115",
+  "environment_nodes.csv": "742170e1a6c303ff5fe43c60b87e727a2ad6e2aedb51f9e995eab4e9f52aba6c",
+  "environment_objects.csv": "617af46838bdfee5aa8d047f5ff14e3487ac787e75e05d102601705f8f2935a3",
+  "evaluator.txt": "16cafe1836b1b50b9d4a02df442b44dce5786db06ecab301a2d6f8f68c125720",
+  "items.csv": "7f55dfd2d316577ce0ccd1fbd2a6fa607757ff7c114ea5d2d4308c673641b81d",
+  "map.png": "1168387b7083bf416db4a5fa6697b8fb91c879754253769f0172b058267a11a6",
+  "response_form.csv": "c16ee394aa28d4b73eb51b33d1bcbffd94a762db9fbd0bc7f63895d1cbd48422"
+ },
+ "packet_zip_sha256": "483e5b64c952e923dbb7766c94b810d921f8932f1af07189d187f898e1f83cae",
+ "code_map_sha256": "08348b898720193ba0e0f7628d8c179f40f5040441dc7f85c9d5e155e4fdbc78",
+ "leak_check": {
+  "patterns": 74,
+  "hits": 0,
+  "rule": "cell ids, categories, and original_ro / referent_real strings not already legitimate content; column and file-set check"
+ },
+ "map_label_decision": "node and object labels given exactly as served on day 2, including node 14 named plant_5 while hosting window_north (plant_5 attached to node 15)"
+}

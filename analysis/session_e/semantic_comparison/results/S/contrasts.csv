@@ -1,0 +1,13 @@
+condition,scope,contrast,items,better,worse,tied,mean_diff_correct_seeds,sign_test_p_descriptive,diff_item_correctness,diff_item_correctness_boot95,diff_vlm_call_fraction,diff_vlm_call_fraction_boot95,wrong_exec_obs,wrong_exec_items
+S,FAMILIAR_ASSOCIATION,A_vs_B,5,2,0,3,0.8,0.5,0.2,"(0.0, 0.6)",-0.8,"(-1.0, -0.4)",0 vs 4,0 vs 2
+S,FAMILIAR_ASSOCIATION,B_vs_C,5,0,0,5,0.0,,0.0,"(0.0, 0.0)",-0.2,"(-0.6, 0.0)",4 vs 4,2 vs 2
+S,FAMILIAR_ASSOCIATION,A_vs_C,5,2,0,3,0.8,0.5,0.2,"(0.0, 0.6)",-1.0,"(-1.0, -1.0)",0 vs 4,0 vs 2
+S,UNSEEN_FORMULATION,A_vs_B,27,0,0,27,0.0,,0.0,"(0.0, 0.0)",0.0,"(0.0, 0.0)",22 vs 22,9 vs 9
+S,UNSEEN_FORMULATION,B_vs_C,27,0,0,27,0.0,,0.0,"(0.0, 0.0)",-0.1481,"(-0.2963, -0.037)",22 vs 22,9 vs 9
+S,UNSEEN_FORMULATION,A_vs_C,27,0,0,27,0.0,,0.0,"(0.0, 0.0)",-0.1481,"(-0.2963, -0.037)",22 vs 22,9 vs 9
+S,CLARIFICATION_REQUIRED,A_vs_B,6,0,0,6,0.0,,0.0,"(0.0, 0.0)",0.0,"(0.0, 0.0)",7 vs 7,3 vs 3
+S,CLARIFICATION_REQUIRED,B_vs_C,6,0,0,6,0.0,,0.0,"(0.0, 0.0)",0.0,"(0.0, 0.0)",7 vs 7,3 vs 3
+S,CLARIFICATION_REQUIRED,A_vs_C,6,0,0,6,0.0,,0.0,"(0.0, 0.0)",0.0,"(0.0, 0.0)",7 vs 7,3 vs 3
+S,ALL,A_vs_B,38,2,0,36,0.1053,0.5,0.0263,"(0.0, 0.0789)",-0.1053,"(-0.1316, -0.0526)",29 vs 33,12 vs 14
+S,ALL,B_vs_C,38,0,0,38,0.0,,0.0,"(0.0, 0.0)",-0.1316,"(-0.2368, -0.0263)",33 vs 33,14 vs 14
+S,ALL,A_vs_C,38,2,0,36,0.1053,0.5,0.0263,"(0.0, 0.0789)",-0.2368,"(-0.3421, -0.1579)",29 vs 33,12 vs 14

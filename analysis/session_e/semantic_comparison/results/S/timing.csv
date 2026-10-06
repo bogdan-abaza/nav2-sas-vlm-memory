@@ -1,0 +1,57 @@
+condition,scope,arm,measure,population,n,median,q1,q3,mean,min,max
+S,FAMILIAR_ASSOCIATION,A,decision_ms,all observations,15,0.134,0.126,0.146,0.14,0.115,0.219
+S,FAMILIAR_ASSOCIATION,A,decision_ms,item medians,5,0.133,0.127,0.145,0.134,0.117,0.146
+S,FAMILIAR_ASSOCIATION,A,resolver_ms,all observations,15,0.118,0.11,0.129,0.122,0.097,0.189
+S,FAMILIAR_ASSOCIATION,A,resolver_ms,item medians,5,0.116,0.11,0.128,0.117,0.1,0.13
+S,FAMILIAR_ASSOCIATION,A,decision_ms,"VLM path only (conditional, descriptive)",0,,,,,,
+S,FAMILIAR_ASSOCIATION,B,decision_ms,all observations,15,6897.803,6500.639,7068.484,5543.247,0.279,7203.897
+S,FAMILIAR_ASSOCIATION,B,decision_ms,item medians,5,6948.456,6578.887,7060.498,5532.919,0.285,7076.47
+S,FAMILIAR_ASSOCIATION,B,resolver_ms,all observations,15,0.25,0.246,0.262,0.296,0.236,0.591
+S,FAMILIAR_ASSOCIATION,B,resolver_ms,item medians,5,0.249,0.246,0.264,0.255,0.246,0.27
+S,FAMILIAR_ASSOCIATION,B,decision_ms,"VLM path only (conditional, descriptive)",12,6968.318,6827.934,7100.989,6928.96,6422.391,7203.897
+S,FAMILIAR_ASSOCIATION,C,decision_ms,all observations,15,6883.223,6786.083,7119.88,6918.549,6528.908,7226.687
+S,FAMILIAR_ASSOCIATION,C,decision_ms,item medians,5,7054.761,6775.128,7114.385,6926.774,6556.525,7133.074
+S,FAMILIAR_ASSOCIATION,C,resolver_ms,all,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable
+S,FAMILIAR_ASSOCIATION,C,decision_ms,"VLM path only (conditional, descriptive)",15,6883.223,6786.083,7119.88,6918.549,6528.908,7226.687
+S,UNSEEN_FORMULATION,A,decision_ms,all observations,81,7004.428,6804.11,7227.209,6374.837,0.153,13975.755
+S,UNSEEN_FORMULATION,A,decision_ms,item medians,27,6996.319,6853.481,7178.627,6319.194,0.161,13798.41
+S,UNSEEN_FORMULATION,A,resolver_ms,all observations,81,0.276,0.265,0.289,0.286,0.038,0.85
+S,UNSEEN_FORMULATION,A,resolver_ms,item medians,27,0.275,0.266,0.287,0.245,0.042,0.392
+S,UNSEEN_FORMULATION,A,decision_ms,"VLM path only (conditional, descriptive)",69,7085.867,6906.067,7294.873,7483.449,6561.893,13975.755
+S,UNSEEN_FORMULATION,B,decision_ms,all observations,81,7007.063,6746.555,7184.944,6374.731,0.121,13962.718
+S,UNSEEN_FORMULATION,B,decision_ms,item medians,27,7046.374,6910.029,7158.1,6329.411,0.24,13926.284
+S,UNSEEN_FORMULATION,B,resolver_ms,all observations,81,0.236,0.23,0.25,0.258,0.036,0.554
+S,UNSEEN_FORMULATION,B,resolver_ms,item medians,27,0.238,0.23,0.241,0.213,0.042,0.326
+S,UNSEEN_FORMULATION,B,decision_ms,"VLM path only (conditional, descriptive)",69,7080.759,6910.157,7210.582,7483.325,6620.908,13962.718
+S,UNSEEN_FORMULATION,C,decision_ms,all observations,81,7058.611,6889.341,7239.826,7419.093,6626.933,13912.081
+S,UNSEEN_FORMULATION,C,decision_ms,item medians,27,7045.735,6924.594,7213.164,7356.196,6678.791,13776.47
+S,UNSEEN_FORMULATION,C,resolver_ms,all,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable
+S,UNSEEN_FORMULATION,C,decision_ms,"VLM path only (conditional, descriptive)",81,7058.611,6889.341,7239.826,7419.093,6626.933,13912.081
+S,CLARIFICATION_REQUIRED,A,decision_ms,all observations,18,9044.605,7111.805,10943.813,9313.829,6610.924,13908.642
+S,CLARIFICATION_REQUIRED,A,decision_ms,item medians,6,9447.636,7547.338,9987.076,9143.557,6997.716,11887.556
+S,CLARIFICATION_REQUIRED,A,resolver_ms,all observations,18,0.073,0.051,0.275,0.153,0.047,0.63
+S,CLARIFICATION_REQUIRED,A,resolver_ms,item medians,6,0.053,0.051,0.22,0.128,0.05,0.284
+S,CLARIFICATION_REQUIRED,A,decision_ms,"VLM path only (conditional, descriptive)",18,9044.605,7111.805,10943.813,9313.829,6610.924,13908.642
+S,CLARIFICATION_REQUIRED,B,decision_ms,all observations,18,9026.501,7160.295,10980.213,9352.29,6590.093,13989.472
+S,CLARIFICATION_REQUIRED,B,decision_ms,item medians,6,9408.325,7588.025,10132.712,9174.785,7015.003,11861.626
+S,CLARIFICATION_REQUIRED,B,resolver_ms,all observations,18,0.058,0.053,0.233,0.135,0.051,0.517
+S,CLARIFICATION_REQUIRED,B,resolver_ms,item medians,6,0.053,0.053,0.188,0.114,0.051,0.241
+S,CLARIFICATION_REQUIRED,B,decision_ms,"VLM path only (conditional, descriptive)",18,9026.501,7160.295,10980.213,9352.29,6590.093,13989.472
+S,CLARIFICATION_REQUIRED,C,decision_ms,all observations,18,9028.408,7038.111,10891.634,9326.027,6675.671,13904.379
+S,CLARIFICATION_REQUIRED,C,decision_ms,item medians,6,9500.059,7513.668,10017.454,9138.613,6928.591,11861.513
+S,CLARIFICATION_REQUIRED,C,resolver_ms,all,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable
+S,CLARIFICATION_REQUIRED,C,decision_ms,"VLM path only (conditional, descriptive)",18,9028.408,7038.111,10891.634,9326.027,6675.671,13904.379
+S,ALL,A,decision_ms,all observations,114,6989.895,6576.124,7349.086,6000.112,0.115,13975.755
+S,ALL,A,decision_ms,item medians,38,6997.017,6798.751,7189.205,5933.69,0.117,13798.41
+S,ALL,A,resolver_ms,all observations,114,0.272,0.111,0.285,0.243,0.038,0.85
+S,ALL,A,resolver_ms,item medians,38,0.272,0.112,0.284,0.21,0.042,0.392
+S,ALL,A,decision_ms,"VLM path only (conditional, descriptive)",87,7122.683,6907.929,7430.427,7862.148,6561.893,13975.755
+S,ALL,B,decision_ms,all observations,114,7048.569,6788.489,7293.784,6735.466,0.121,13989.472
+S,ALL,B,decision_ms,item medians,38,7068.484,6910.418,7179.797,6673.879,0.24,13926.284
+S,ALL,B,resolver_ms,all observations,114,0.236,0.22,0.25,0.244,0.036,0.591
+S,ALL,B,resolver_ms,item medians,38,0.238,0.221,0.245,0.203,0.042,0.326
+S,ALL,B,decision_ms,"VLM path only (conditional, descriptive)",99,7109.277,6911.577,7424.793,7755.941,6422.391,13989.472
+S,ALL,C,decision_ms,all observations,114,7077.63,6881.486,7317.57,7654.327,6528.908,13912.081
+S,ALL,C,decision_ms,item medians,38,7052.699,6925.838,7233.287,7581.127,6556.525,13776.47
+S,ALL,C,resolver_ms,all,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable,not applicable
+S,ALL,C,decision_ms,"VLM path only (conditional, descriptive)",114,7077.63,6881.486,7317.57,7654.327,6528.908,13912.081

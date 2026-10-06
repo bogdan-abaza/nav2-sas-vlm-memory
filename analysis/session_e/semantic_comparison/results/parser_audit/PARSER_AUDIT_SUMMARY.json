@@ -1,0 +1,39 @@
+{
+ "audit_script_sha256": "765d758222b7bd55386f0e108041444a7caca666379a9bed640cb710a9c4037b",
+ "summary": [
+  {
+   "condition": "S",
+   "run_header_sha256": "588edfe41006c3b77f450c68659e48941b13da97a42d3c8358d69b13e8ef6bd0",
+   "records_sha256": "0e14a505e9a6017bed5a35b7a68f2f1745f91700c85594e59380c9bd7c7e317e",
+   "vlm_observations": 300,
+   "changed_class": 0,
+   "changed_correctness": 0,
+   "transitions": {},
+   "changed_by_arm": {},
+   "deployed_details": {
+    "type:int": 231,
+    "no_json": 18,
+    "guard:vlm_requested_clarification": 45,
+    "extracted_block_not_json": 6
+   },
+   "changed_items": []
+  },
+  {
+   "condition": "H",
+   "run_header_sha256": "c6cdedaa35eeda872fb8139220a223b6999de935281499d30520bc2c2bbff044",
+   "records_sha256": "1c84f5562371568dc50cd0ef0f764778fc8cee4b8e28508e267bfcc962d4f01e",
+   "vlm_observations": 252,
+   "changed_class": 0,
+   "changed_correctness": 0,
+   "transitions": {},
+   "changed_by_arm": {},
+   "deployed_details": {
+    "guard:vlm_requested_clarification": 33,
+    "no_json": 9,
+    "type:int": 201,
+    "extracted_block_not_json": 9
+   },
+   "changed_items": []
+  }
+ ]
+}

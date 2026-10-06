@@ -1,0 +1,107 @@
+{
+ "n": 20,
+ "n_pass": 20,
+ "analyze_sha256": "17b3d60261386ad70f40750d0c865ac72a9d1e9eca0ab2cc987e2abc4148ee16",
+ "results": [
+  [
+   "F1 A 3 acceptable",
+   true,
+   ""
+  ],
+  [
+   "F1 B item correct (2/3)",
+   true,
+   ""
+  ],
+  [
+   "F1 C item not correct",
+   true,
+   ""
+  ],
+  [
+   "U1 A item correct with 2/3 despite same_node error",
+   true,
+   ""
+  ],
+  [
+   "K1 A clarification counted correct",
+   true,
+   ""
+  ],
+  [
+   "K1 B parser failure never correct",
+   true,
+   ""
+  ],
+  [
+   "K1 B parser-failure items = 1",
+   true,
+   ""
+  ],
+  [
+   "ALL A 3/3 items correct",
+   true,
+   ""
+  ],
+  [
+   "four classes sum to observations",
+   true,
+   ""
+  ],
+  [
+   "A vs B ALL: better 2 (F1, K1), worse 1 (U1), tied 0",
+   true,
+   "{'condition': 'S', 'scope': 'ALL', 'contrast': 'A_vs_B', 'items': 3, 'better': 2, 'worse': 1, 'tied': 0, 'mean_diff_correct_seeds': 1.0, 'sign_test_p_descriptive': 1.0, 'diff_item_correctness': 0.3333"
+  ],
+  [
+   "B vs C F1: better 1",
+   true,
+   ""
+  ],
+  [
+   "B vs C K1: tied (both 0 correct seeds)",
+   true,
+   ""
+  ],
+  [
+   "single-item stratum bootstrap degenerate",
+   true,
+   "(0.0, 0.0)"
+  ],
+  [
+   "A fast-path conditional error = 1/4 on ALL",
+   true,
+   "{'condition': 'S', 'scope': 'ALL', 'arm': 'A', 'observations': 9, 'vlm_calls': 5, 'vlm_items': 2, 'l3a_resolved': 4, 'l3a_coverage': 0.4444444444444444, 'resolution_steps': {'5': 4}, 'fast_path_error_"
+  ],
+  [
+   "C fast-path conditional error not applicable",
+   true,
+   ""
+  ],
+  [
+   "CLARIFICATION scope: L3a coverage 0 -> conditional n/a",
+   true,
+   ""
+  ],
+  [
+   "resolver not applicable in C",
+   true,
+   ""
+  ],
+  [
+   "F1 paired diff A-B = -990 ms",
+   true,
+   "{'condition': 'S', 'scope': 'FAMILIAR_ASSOCIATION', 'contrast': 'A_vs_B', 'items': 1, 'median_paired_diff_ms': 'A - B', 'value_diff': -990.0, 'diff_boot95': (-990.0, -990.0), 'mean_paired_diff_ms': -9"
+  ],
+  [
+   "F1 ratio B/A = 100 named A faster",
+   true,
+   "{'condition': 'S', 'scope': 'FAMILIAR_ASSOCIATION', 'contrast': 'A_vs_B', 'items': 1, 'median_paired_diff_ms': 'A - B', 'value_diff': -990.0, 'diff_boot95': (-990.0, -990.0), 'mean_paired_diff_ms': -9"
+  ],
+  [
+   "U1 equal times -> diff 0, ratio 1",
+   true,
+   "{'condition': 'S', 'scope': 'UNSEEN_FORMULATION', 'contrast': 'B_vs_C', 'items': 1, 'median_paired_diff_ms': 'B - C', 'value_diff': 0.0, 'diff_boot95': (0.0, 0.0), 'mean_paired_diff_ms': 0.0, 'ratio_n"
+  ]
+ ]
+}

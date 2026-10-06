@@ -1,0 +1,147 @@
+{
+ "name": "challenge_index_C",
+ "synthetic": true,
+ "note": "Synthetic stored associations written for the M3 Decision-Boundary Challenge, family F3 only; scored together with the historical index H (memory_digest_standard.json). Not observed in any session. Same structure as l3a_promotions_ready; frequency is a placeholder (1) and does not affect matching.",
+ "written_utc": "2026-10-05",
+ "written_by": "Claude (assistant), under C5_CONSTRUCTION_RULE.md e436c7ac",
+ "pairs": {
+  "S1": "sibling",
+  "S2": "sibling",
+  "S3": "sibling",
+  "S4": "sibling",
+  "N1": "nested",
+  "N2": "nested",
+  "N3": "nested",
+  "N4": "nested"
+ },
+ "l3a_promotions_ready": [
+  {
+   "pair": "S1",
+   "instruction_examples": [
+    "it is stuffy in here, please take me to the big window on the north side of the corridor"
+   ],
+   "node_id": 14,
+   "frequency": 1
+  },
+  {
+   "pair": "S1",
+   "instruction_examples": [
+    "it is stuffy in here, please take me to the big window on the south side of the corridor"
+   ],
+   "node_id": 20,
+   "frequency": 1
+  },
+  {
+   "pair": "S2",
+   "instruction_examples": [
+    "I urgently need to use the restroom for men, the one closest to the main hall"
+   ],
+   "node_id": 0,
+   "frequency": 1
+  },
+  {
+   "pair": "S2",
+   "instruction_examples": [
+    "I urgently need to use the restroom for women, the one closest to the main hall"
+   ],
+   "node_id": 4,
+   "frequency": 1
+  },
+  {
+   "pair": "S3",
+   "instruction_examples": [
+    "the fire alarm is ringing, show me the emergency exit at the front of the hall"
+   ],
+   "node_id": 1,
+   "frequency": 1
+  },
+  {
+   "pair": "S3",
+   "instruction_examples": [
+    "the fire alarm is ringing, show me the emergency exit at the rear of the hall"
+   ],
+   "node_id": 2,
+   "frequency": 1
+  },
+  {
+   "pair": "S4",
+   "instruction_examples": [
+    "take me to laboratory cb204, I have a robotics practical class there this morning"
+   ],
+   "node_id": 5,
+   "frequency": 1
+  },
+  {
+   "pair": "S4",
+   "instruction_examples": [
+    "take me to laboratory cb202, I have a robotics practical class there this morning"
+   ],
+   "node_id": 8,
+   "frequency": 1
+  },
+  {
+   "pair": "N1",
+   "instruction_examples": [
+    "I forgot my laptop in laboratory cb203, bring me back to the door I used"
+   ],
+   "node_id": 22,
+   "frequency": 1
+  },
+  {
+   "pair": "N1",
+   "instruction_examples": [
+    "I forgot my laptop in laboratory cb203, bring me back to the other door I used"
+   ],
+   "node_id": 23,
+   "frequency": 1
+  },
+  {
+   "pair": "N2",
+   "instruction_examples": [
+    "I am tired after the long lecture, find me somewhere quiet to sit down"
+   ],
+   "node_id": 15,
+   "frequency": 1
+  },
+  {
+   "pair": "N2",
+   "instruction_examples": [
+    "I am tired after the long lecture, find me somewhere quiet and warm to sit down"
+   ],
+   "node_id": 9,
+   "frequency": 1
+  },
+  {
+   "pair": "N3",
+   "instruction_examples": [
+    "it is bright today, show me the tall green potted plant near the window"
+   ],
+   "node_id": 20,
+   "frequency": 1
+  },
+  {
+   "pair": "N3",
+   "instruction_examples": [
+    "it is bright today, show me the tall green potted plant near the north window"
+   ],
+   "node_id": 14,
+   "frequency": 1
+  },
+  {
+   "pair": "N4",
+   "instruction_examples": [
+    "take me to the robotics laboratory where the master students test mobile robots"
+   ],
+   "node_id": 5,
+   "frequency": 1
+  },
+  {
+   "pair": "N4",
+   "instruction_examples": [
+    "take me to the entrance of the robotics laboratory where the master students test mobile robots"
+   ],
+   "node_id": 22,
+   "frequency": 1
+  }
+ ]
+}

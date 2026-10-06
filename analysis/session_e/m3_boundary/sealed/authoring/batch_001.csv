@@ -1,0 +1,61 @@
+cand_id,family,instruction,label,related,author_note
+C001,F1,Too hot in here! Take me somewhere I can get fresh air.,node:14,h14,"reworded, same intent"
+C002,F1,Take me to a place for a short break for personal needs.,node:0,h0a,same intent
+C003,F1,"Help me find something to stop the fire, the washroom got on fire.",node:8,h8,"same intent, reordered"
+C004,F1,"Female ward, please.",node:4,h4,same intent
+C005,F1,"The male ward, please.",node:0,h0b,same intent
+C006,F1,"It is too hot in here, take me somewhere with fresh air.",node:14,h14,same intent
+C007,F1,Take me to a place for a short personal break.,node:0,h0a,same intent
+C008,F1,"The washroom is on fire, help me find something to stop the fire.",node:8,h8,same intent
+C009,F1,"It's too hot in here, take me somewhere I can get some fresh air quickly.",node:14,h14,same intent
+C010,F1,Take me somewhere I can sit down and relax.,node:9,h9,same intent as stored association (radiator area)
+C011,F1,Take me somewhere I can relax.,node:9,h9,same intent as stored association
+C012,F1,"It is too hot, take me somewhere I can get some air.",node:14,h14,same intent
+C013,F1,"The washroom got on fire, help me find something to put out the fire.",node:8,h8,same intent
+C014,F1,"Go to a place where I can take a short break for personal needs, it is urgent.",node:0,h0a,same intent
+C015,F1,I need a short break for personal needs.,node:0,h0a,same intent
+C016,F1,"Help, the washroom is burning, find something to stop the fire.",node:8,h8,same intent
+C017,F1,I want to sit and relax somewhere.,node:9,h9,same intent as stored association
+C018,F1,"It is really hot in here, take me somewhere I can breathe fresh air.",node:14,h14,same intent
+C019,F1,"There is a fire in the washroom, help me find something to stop it.",node:8,h8,same intent
+C020,F1,I need somewhere to sit and relax for a moment.,node:9,h9,same intent as stored association
+C021,F1,Please go to the female ward now.,node:4,h4,same intent
+C022,F1,Go to the ward for men.,node:0,h0b,same intent (men = male ward)
+C023,F2,"Stop! Something got on fire, help me find the washroom.",abstain,h8,wants a washroom; men/women not stated
+C024,F2,"The washroom got on fire, help me find someone to stop the fire.",abstain,h8,asks for a person; not served by any stored association
+C025,F2,"It is too hot in here, take me somewhere I can get some fresh coffee.",abstain,h14,coffee; no node serves it
+C026,F2,Take me somewhere I can sit and work.,node:15,h9,work seat: lab chair
+C027,F2,Go to a place to take a short break for a coffee.,abstain,h0a,coffee; no node serves it
+C028,F2,Take me somewhere I can sit and relax in the sun.,abstain,h9,sunny spot: either window (14 or 20)
+C029,F2,Take me somewhere I can sit and relax next to a plant.,abstain,h9,five plant nodes
+C030,F2,"It is too hot in here, take me somewhere I can get some shade.",abstain,h14,shade; no node serves it
+C031,F2,"It is too cold in here, take me somewhere I can get warm.",node:9,h14,warmth: radiator
+C032,F2,"The washroom got on fire, help me find a way out of the fire.",abstain,h8,"an exit; two exit nodes (1, 2)"
+C033,F2,Take me somewhere I can sit.,node:15,h9,a seat: lab chair
+C034,F2,"The washroom got on fire, help me find something to stop the fire alarm noise.",abstain,h8,silence the alarm; no node serves it
+C035,F2,"The washroom got on fire, help me find the exit.",abstain,h8,"two exit nodes (1, 2)"
+C036,F2,"It is too hot in here, take me somewhere I can get some cold water.",abstain,h14,"water: either restroom (0, 4)"
+C037,F2,Go to the female ward and bring a nurse.,abstain,h4,asks for a person
+C038,F2,Go to a place to take a short break for personal reading.,abstain,h0a,reading spot; no node serves it
+C039,F2,Go next to the male ward window.,abstain,h0b,"a window; ambiguous (14, 20)"
+C040,F2,Take me somewhere I can get some fresh air and charge my phone.,abstain,h14,two goals; charging not served
+C041,F2,Help me find something to stop the fire in laboratory cb202.,node:8,h8,fire in lab cb202: extinguisher there (node 8)
+C042,F2,Take me somewhere I can sit and relax with my colleagues from cb204.,node:5,h9,meet colleagues in lab cb204
+C043,F3,"Please take me to the big window on the side of the corridor, it is stuffy in here.",abstain,C:S1,which window not stated (14 or 20)
+C044,F3,"I urgently need the main hall restroom, use the closest one.",abstain,C:S2,men/women not stated
+C045,F3,"The fire alarm is ringing, show me the hall emergency exit.",abstain,C:S3,which exit not stated (1 or 2)
+C046,F3,"I have a robotics practical class there this morning, take me to the laboratory.",abstain,C:S4,which laboratory not stated (5 or 8)
+C047,F3,"Please take me to the big window on the north side of the corridor, it is stuffy in here.",node:14,C:S1,north window
+C048,F3,"I urgently need to use the restroom for women, the closest one to the main hall.",node:4,C:S2,women
+C049,F3,"Show me the emergency exit at the front of the hall, the fire alarm is ringing.",node:1,C:S3,front exit = hall entry
+C050,F3,"This morning I have a robotics practical class in laboratory cb202, take me there.",node:8,C:S4,lab cb202
+C051,F3,"After the long lecture I am tired, find me somewhere quiet to sit down.",node:15,C:N2,a quiet seat: lab chair
+C052,F3,"After the long lecture I am tired, find me somewhere quiet and warm to sit down.",node:9,C:N2,warm seat: radiator
+C053,F3,"Show me the tall green potted plant near the window, it is bright today.",abstain,C:N3,which window not stated
+C054,F3,"Show me the tall green potted plant near the north window, it is bright today.",node:14,C:N3,north window
+C055,F3,"I forgot my laptop in laboratory cb203, please bring me back to the door I used earlier.",abstain,C:N1,which door of cb203 not stated
+C056,F3,Take me to the robotics laboratory where the master students test their mobile robots today.,abstain,C:N4,robotics lab not identified by number; the stored associations point to two different nodes
+C057,F3,"Bring me back to the door I used, I forgot my laptop in laboratory cb203.",abstain,C:N1,which door not stated
+C058,F3,"The master students test mobile robots in the robotics laboratory, take me there.",abstain,C:N4,lab not identified by number
+C059,F3,"Bring me back to the other door I used, I forgot my laptop in laboratory cb203.",abstain,C:N1,"""other"" door undetermined"
+C060,F3,"The master students test mobile robots in the robotics laboratory, take me to its entrance.",abstain,C:N4,entrance of an unidentified lab

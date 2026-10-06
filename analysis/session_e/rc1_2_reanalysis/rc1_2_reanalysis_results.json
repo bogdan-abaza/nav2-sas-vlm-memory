@@ -1,0 +1,746 @@
+{
+ "meta": {
+  "script": "analysis/session_e/rc1_2_reanalysis/reanalyze_session_e.py",
+  "script_sha256": "5ef4cab37b7b5e569b0817e6526abad3294588e85763f95d1cb6ed9e67759ffb",
+  "rc1_1_inputs_sha256": {
+   "core/analyze_session_e.py": "a69324ce3dde64677178f90441d47fefebd8f98df3764188d53511fd3f5d6d4b",
+   "core/results_E.json": "12e9ff2e4b664baef2ee60206cb309b5458f2d11fed0f83ac9a73b69b08d430e",
+   "dataset/missions.csv": "7759648cf0014de914aae5b87f27edfefdde66e1cb9b0d49f8ffe760884d970a",
+   "dataset/day2_20260821/session/E7_sealed_set_v2.csv": "587e7b3644de731b1c4d0e3392002ea27e65a66dbcd559a3d02df768f4ab8704"
+  },
+  "dataset_files_verified_against_CHECKSUMS_PUBLIC": 55
+ },
+ "e7_outcome_taxonomy": {
+  "unit": "sealed cell, first observation (the scoring unit of the RC1.1 core analysis)",
+  "cells": 28,
+  "records_in_block": 29,
+  "classes": {
+   "acceptable_selection": {
+    "n": 17,
+    "cells": [
+     "G-1",
+     "G-2",
+     "G-4",
+     "H-P1",
+     "L-P1",
+     "L-P3",
+     "P-P1",
+     "P-P2",
+     "S-P1",
+     "S-P3",
+     "S-P4",
+     "T-P1",
+     "T-P2",
+     "T-P3",
+     "W-P1",
+     "W-P3",
+     "W-P4"
+    ]
+   },
+   "incorrect_executable": {
+    "n": 6,
+    "cells": [
+     "H-P4",
+     "L-P2",
+     "L-P4",
+     "P-P3",
+     "T-P4",
+     "W-P2"
+    ]
+   },
+   "executable_where_abstention_expected": {
+    "n": 2,
+    "cells": [
+     "G-3",
+     "H-P2"
+    ]
+   },
+   "model_response_parse_failure": {
+    "n": 3,
+    "cells": [
+     "H-P3",
+     "P-P4",
+     "S-P2"
+    ]
+   },
+   "clarification_request": {
+    "n": 0,
+    "cells": []
+   }
+  },
+  "correct": {
+   "k": 17,
+   "n": 28,
+   "rate": 0.6071,
+   "low": 0.4241,
+   "high": 0.7643
+  },
+  "scoring_rule": "acceptable_selection is correct; for an abstention-expected cell only an explicit clarification request is correct. A model-response parse failure is never scored as an abstention.",
+  "definitions": {
+   "acceptable_selection": "executable node in the sealed acceptable set",
+   "incorrect_executable": "executable node outside the sealed acceptable set, abstention not expected",
+   "executable_where_abstention_expected": "executable node for a cell whose sealed acceptable set is -1",
+   "model_response_parse_failure": "L3b escalation that returned a model response the parser could not decode (nav_outcome = vlm_failed, no node)",
+   "clarification_request": "nav_outcome = clarification_requested"
+  },
+  "abstention_expected_cells": {
+   "n": 2,
+   "clarification_requested": 0
+  },
+  "nav_outcome_of_scored_executable_records": {
+   "mission_complete": 24,
+   "missed": 1
+  },
+  "additional_records_not_scored": [
+   {
+    "cell": "H-P4",
+    "run_id": "20260821_135113",
+    "record_seq": "2",
+    "same_run_as_scored_record": true,
+    "node_id": "9",
+    "same_node_as_scored_record": true,
+    "nav_outcome": "mission_complete"
+   }
+  ]
+ },
+ "e7_fast_path": {
+  "false_fast_resolution_incidence": {
+   "k": 1,
+   "n": 28,
+   "rate": 0.0357,
+   "low": 0.0063,
+   "high": 0.1771
+  },
+  "error_among_fast_path_decisions": {
+   "k": 1,
+   "n": 5,
+   "rate": 0.2,
+   "low": 0.0362,
+   "high": 0.6245
+  },
+  "fast_path_correctness": {
+   "k": 4,
+   "n": 5,
+   "rate": 0.8,
+   "low": 0.3755,
+   "high": 0.9638
+  },
+  "fast_path_cells": [
+   "G-3",
+   "G-4",
+   "H-P1",
+   "S-P1",
+   "T-P1"
+  ],
+  "false_fast_cells": [
+   "G-3"
+  ],
+  "definition": "fast path = resolved deterministically at L3a, with no VLM call. False fast resolution = a fast-path decision that is not correct under the scoring rule.",
+  "note": "Small denominators; both figures are reported with their Wilson 95% intervals."
+ },
+ "e7_g3_context_evidence": {
+  "cell": "G-3",
+  "instruction": "Where is the H sign?",
+  "sealed_acceptable": "-1",
+  "decision": {
+   "resolution_method": "L3a_deterministic",
+   "resolution_step": "5",
+   "node_id": 23,
+   "node_name": "cb203_exit",
+   "node_in_sealed_flagged_wrong": true,
+   "platform_id": "xplorer-b",
+   "timestamp_utc": "2026-08-21T10:56:33.948+00:00",
+   "run_id": "20260821_135551"
+  },
+  "static_object_classes_day2": [
+   "chair",
+   "emergency_exit",
+   "fire extinguisher",
+   "laboratory",
+   "potted plant",
+   "radiator",
+   "restroom",
+   "window"
+  ],
+  "static_class_stop_sign_present": false,
+  "dynamic_archives_containing_object": [
+   {
+    "archive": "day2_20260821/dynamic_graph_archive/20260821_1102_ubuntu.geojson",
+    "obj_id": "stop sign_8",
+    "class_name": "stop sign",
+    "confidence": 0.699,
+    "first_seen": "2026-08-21T10:20:42.965430+00:00",
+    "last_seen": "2026-08-21T10:38:06.114138+00:00",
+    "xy": [
+     9.2865,
+     4.2336
+    ]
+   },
+   {
+    "archive": "day2_20260821/dynamic_graph_archive/20260821_1416_saim-desktop.geojson",
+    "obj_id": "stop sign_8",
+    "class_name": "stop sign",
+    "confidence": 0.548,
+    "first_seen": "2026-08-21T08:56:06.173093+00:00",
+    "last_seen": "2026-08-21T09:01:58.802177+00:00",
+    "xy": [
+     9.2841,
+     4.1845
+    ]
+   }
+  ],
+  "l3b_prompts_same_platform_day": {
+   "n": 35,
+   "n_containing_object": 20,
+   "confidence_values_in_prompts": [
+    "0.65",
+    "0.70"
+   ],
+   "last_before_g3": {
+    "timestamp_utc": "2026-08-21T10:55:18.256+00:00",
+    "cell": "G-2",
+    "run_id": "20260821_135419",
+    "prompt_file": "day2_20260821/logs/20260821_135419/mission_1_cb203_exit/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.70) -> node 23 (7.5m from robot)"
+   },
+   "first_after_g3": {
+    "timestamp_utc": "2026-08-21T11:05:47.050+00:00",
+    "cell": "AB-S1",
+    "run_id": "20260821_140457",
+    "prompt_file": "day2_20260821/logs/20260821_140457/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   }
+  },
+  "status": "reconstruction from the surrounding context, not direct per-cycle provenance: G-3 was resolved deterministically (no VLM call), and its exact per-cycle context was not persisted.",
+  "prompts": [
+   {
+    "timestamp_utc": "2026-08-21T10:21:05.847+00:00",
+    "cell": "L-P1",
+    "run_id": "20260821_131951",
+    "prompt_file": "day2_20260821/logs/20260821_131951/mission_1_cb203_exit/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:22:36.746+00:00",
+    "cell": "L-P2",
+    "run_id": "20260821_132139",
+    "prompt_file": "day2_20260821/logs/20260821_132139/mission_1_junction_e1/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.65) -> node 23 (7.5m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:24:16.532+00:00",
+    "cell": "L-P3",
+    "run_id": "20260821_132326",
+    "prompt_file": "day2_20260821/logs/20260821_132326/mission_1_cb204/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.65) -> node 23 (7.5m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:25:51.842+00:00",
+    "cell": "L-P4",
+    "run_id": "20260821_132452",
+    "prompt_file": "day2_20260821/logs/20260821_132452/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.65) -> node 23 (7.5m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:27:38.985+00:00",
+    "cell": "T-P2",
+    "run_id": "20260821_132710",
+    "prompt_file": "day2_20260821/logs/20260821_132710/mission_1_toilet_m/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.65) -> node 23 (7.6m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:28:34.234+00:00",
+    "cell": "T-P3",
+    "run_id": "20260821_132810",
+    "prompt_file": "day2_20260821/logs/20260821_132810/mission_1_toilet_m/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.65) -> node 23 (7.4m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:29:54.835+00:00",
+    "cell": "T-P4",
+    "run_id": "20260821_132911",
+    "prompt_file": "day2_20260821/logs/20260821_132911/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.65) -> node 23 (7.4m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:33:59.385+00:00",
+    "cell": "S-P3",
+    "run_id": "20260821_133316",
+    "prompt_file": "day2_20260821/logs/20260821_133316/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.65) -> node 23 (7.6m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:35:19.465+00:00",
+    "cell": "S-P4",
+    "run_id": "20260821_133431",
+    "prompt_file": "day2_20260821/logs/20260821_133431/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.65) -> node 23 (7.6m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:36:56.800+00:00",
+    "cell": "W-P1",
+    "run_id": "20260821_133600",
+    "prompt_file": "day2_20260821/logs/20260821_133600/mission_1_plant_5/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.65) -> node 23 (7.6m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:38:24.823+00:00",
+    "cell": "W-P2",
+    "run_id": "20260821_133732",
+    "prompt_file": "day2_20260821/logs/20260821_133732/mission_1_plant_5/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.65) -> node 23 (7.5m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:39:54.833+00:00",
+    "cell": "W-P3",
+    "run_id": "20260821_133902",
+    "prompt_file": "day2_20260821/logs/20260821_133902/mission_1_plant_5/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.70) -> node 23 (7.5m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:41:34.433+00:00",
+    "cell": "W-P4",
+    "run_id": "20260821_134044",
+    "prompt_file": "day2_20260821/logs/20260821_134044/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.70) -> node 23 (7.4m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:43:20.321+00:00",
+    "cell": "P-P1",
+    "run_id": "20260821_134202",
+    "prompt_file": "day2_20260821/logs/20260821_134202/mission_1_plant_4/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.70) -> node 23 (7.4m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:45:03.103+00:00",
+    "cell": "P-P2",
+    "run_id": "20260821_134402",
+    "prompt_file": "day2_20260821/logs/20260821_134402/mission_1_plant_2/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.70) -> node 23 (7.5m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:46:18.838+00:00",
+    "cell": "P-P3",
+    "run_id": "20260821_134532",
+    "prompt_file": "day2_20260821/logs/20260821_134532/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.70) -> node 23 (7.5m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:49:25.544+00:00",
+    "cell": "H-P2",
+    "run_id": "20260821_134844",
+    "prompt_file": "day2_20260821/logs/20260821_134844/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.70) -> node 23 (7.6m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:51:40.870+00:00",
+    "cell": "H-P4",
+    "run_id": "20260821_135113",
+    "prompt_file": "day2_20260821/logs/20260821_135113/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.70) -> node 23 (7.6m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:52:12.838+00:00",
+    "cell": "H-P4",
+    "run_id": "20260821_135113",
+    "prompt_file": "day2_20260821/logs/20260821_135113/mission_2_radiator/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.70) -> node 23 (5.7m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:53:57.689+00:00",
+    "cell": "G-1",
+    "run_id": "20260821_135311",
+    "prompt_file": "day2_20260821/logs/20260821_135311/mission_1_cb204/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.70) -> node 23 (7.5m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T10:55:18.256+00:00",
+    "cell": "G-2",
+    "run_id": "20260821_135419",
+    "prompt_file": "day2_20260821/logs/20260821_135419/mission_1_cb203_exit/vlm_decision_prompt.txt",
+    "contains_object": true,
+    "object_line": "- stop sign \"stop sign_8\" (yolo, conf=0.70) -> node 23 (7.5m from robot)"
+   },
+   {
+    "timestamp_utc": "2026-08-21T11:05:47.050+00:00",
+    "cell": "AB-S1",
+    "run_id": "20260821_140457",
+    "prompt_file": "day2_20260821/logs/20260821_140457/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T11:09:48.034+00:00",
+    "cell": "AB-S3o",
+    "run_id": "20260821_140856",
+    "prompt_file": "day2_20260821/logs/20260821_140856/mission_1_junction_e1/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T12:24:45.908+00:00",
+    "cell": "P2",
+    "run_id": "20260821_152359",
+    "prompt_file": "day2_20260821/logs/20260821_152359/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T12:25:59.745+00:00",
+    "cell": "P1",
+    "run_id": "20260821_152524",
+    "prompt_file": "day2_20260821/logs/20260821_152524/mission_1_cb202/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T12:27:08.438+00:00",
+    "cell": "P2",
+    "run_id": "20260821_152624",
+    "prompt_file": "day2_20260821/logs/20260821_152624/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T12:34:01.990+00:00",
+    "cell": "NEG1",
+    "run_id": "20260821_153343",
+    "prompt_file": "day2_20260821/logs/20260821_153343/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T12:34:38.609+00:00",
+    "cell": "NEG1",
+    "run_id": "20260821_153343",
+    "prompt_file": "day2_20260821/logs/20260821_153343/mission_2_radiator/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T12:36:06.372+00:00",
+    "cell": "NEG2",
+    "run_id": "20260821_153503",
+    "prompt_file": "day2_20260821/logs/20260821_153503/mission_1_plant_5/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T12:36:57.370+00:00",
+    "cell": "NEG2",
+    "run_id": "20260821_153503",
+    "prompt_file": "day2_20260821/logs/20260821_153503/mission_2_junction_e1/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T13:44:27.703+00:00",
+    "cell": "pair1",
+    "run_id": "20260821_164323",
+    "prompt_file": "day2_20260821/logs/20260821_164323/mission_1_toilet_m/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T13:50:55.750+00:00",
+    "cell": "pair2",
+    "run_id": "20260821_164941",
+    "prompt_file": "day2_20260821/logs/20260821_164941/mission_1_toilet_m/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T13:54:30.265+00:00",
+    "cell": "pair3",
+    "run_id": "20260821_165317",
+    "prompt_file": "day2_20260821/logs/20260821_165317/mission_1_toilet_m/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T14:21:12.569+00:00",
+    "cell": "E4b-G",
+    "run_id": "20260821_172025",
+    "prompt_file": "day2_20260821/logs/20260821_172025/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   },
+   {
+    "timestamp_utc": "2026-08-21T14:41:27.515+00:00",
+    "cell": "E4b-NEG",
+    "run_id": "20260821_173949",
+    "prompt_file": "day2_20260821/logs/20260821_173949/mission_1_radiator/vlm_decision_prompt.txt",
+    "contains_object": false,
+    "object_line": ""
+   }
+  ]
+ },
+ "navigation_denominators": {
+  "unit": "run (terminal record = last decision record of the run)",
+  "basis": "protocol-valid runs: block E0 and the run invalidated by the session protocol are excluded, as in RC1.1",
+  "dispatched_definition": "a run with at least one record whose nav_outcome is in ['missed', 'mission_complete', 'mission_complete_fallback']",
+  "arrival_definition": "terminal nav_outcome in ['mission_complete', 'mission_complete_fallback']",
+  "terminal_outcomes": {
+   "total": {
+    "mission_complete": 162,
+    "clarification_requested": 22,
+    "vlm_failed": 14,
+    "missed": 1
+   },
+   "xplorer-b": {
+    "mission_complete": 87,
+    "clarification_requested": 9,
+    "vlm_failed": 10
+   },
+   "xplorer-c": {
+    "mission_complete": 75,
+    "clarification_requested": 13,
+    "vlm_failed": 4,
+    "missed": 1
+   },
+   "runs": {
+    "total": 199,
+    "xplorer-b": 106,
+    "xplorer-c": 93
+   }
+  },
+  "dispatched_runs": {
+   "total": 164,
+   "xplorer-b": 88,
+   "xplorer-c": 76
+  },
+  "measures": {
+   "terminal_miss_all_valid_runs": {
+    "definition": "terminal miss / all protocol-valid runs",
+    "total": {
+     "k": 1,
+     "n": 199,
+     "rate": 0.005,
+     "low": 0.0009,
+     "high": 0.0279
+    },
+    "xplorer-b": {
+     "k": 0,
+     "n": 106,
+     "rate": 0.0,
+     "low": 0.0,
+     "high": 0.035
+    },
+    "xplorer-c": {
+     "k": 1,
+     "n": 93,
+     "rate": 0.0108,
+     "low": 0.0019,
+     "high": 0.0584
+    },
+    "fisher_exact_two_sided": {
+     "comparison": "xplorer-b vs xplorer-c",
+     "table": [
+      [
+       0,
+       106
+      ],
+      [
+       1,
+       92
+      ]
+     ],
+     "p": 0.4673
+    }
+   },
+   "terminal_miss_dispatched_runs": {
+    "definition": "terminal miss / runs with at least one dispatched navigation goal",
+    "total": {
+     "k": 1,
+     "n": 164,
+     "rate": 0.0061,
+     "low": 0.0011,
+     "high": 0.0337
+    },
+    "xplorer-b": {
+     "k": 0,
+     "n": 88,
+     "rate": 0.0,
+     "low": 0.0,
+     "high": 0.0418
+    },
+    "xplorer-c": {
+     "k": 1,
+     "n": 76,
+     "rate": 0.0132,
+     "low": 0.0023,
+     "high": 0.0708
+    },
+    "fisher_exact_two_sided": {
+     "comparison": "xplorer-b vs xplorer-c",
+     "table": [
+      [
+       0,
+       88
+      ],
+      [
+       1,
+       75
+      ]
+     ],
+     "p": 0.4634
+    }
+   },
+   "non_arrival_dispatched_runs": {
+    "definition": "no arrival / runs with at least one dispatched navigation goal",
+    "total": {
+     "k": 2,
+     "n": 164,
+     "rate": 0.0122,
+     "low": 0.0034,
+     "high": 0.0434
+    },
+    "xplorer-b": {
+     "k": 1,
+     "n": 88,
+     "rate": 0.0114,
+     "low": 0.002,
+     "high": 0.0616
+    },
+    "xplorer-c": {
+     "k": 1,
+     "n": 76,
+     "rate": 0.0132,
+     "low": 0.0023,
+     "high": 0.0708
+    },
+    "fisher_exact_two_sided": {
+     "comparison": "xplorer-b vs xplorer-c",
+     "table": [
+      [
+       1,
+       87
+      ],
+      [
+       1,
+       75
+      ]
+     ],
+     "p": 1.0
+    }
+   }
+  },
+  "non_arrival_runs": [
+   {
+    "audit_file": "day1_20260820/logs/audit_20260820_154520.jsonl",
+    "platform_id": "xplorer-c",
+    "block": "E2",
+    "intent": "X04",
+    "instruction": "go anywhere but cb204",
+    "record_outcomes": [
+     "missed",
+     "missed"
+    ],
+    "record_methods": [
+     "L3b_vlm",
+     "L3b_vlm"
+    ],
+    "xy_error_m": [
+     "4.906",
+     "6.485"
+    ],
+    "terminal_outcome": "missed"
+   },
+   {
+    "audit_file": "day2_20260821/logs/audit_20260821_152624.jsonl",
+    "platform_id": "xplorer-b",
+    "block": "E4",
+    "intent": "P2",
+    "instruction": "find me a quiet corner to read",
+    "record_outcomes": [
+     "missed",
+     "vlm_failed"
+    ],
+    "record_methods": [
+     "L3b_vlm",
+     "escalated"
+    ],
+    "xy_error_m": [
+     "2.6",
+     ""
+    ],
+    "terminal_outcome": "vlm_failed"
+   }
+  ],
+  "note": "Few events; the Fisher tests are descriptive and have almost no power."
+ },
+ "reconciliation": {
+  "e7": {
+   "published_correct": {
+    "k": 17,
+    "n": 28,
+    "rate": 0.6071,
+    "low": 0.4241,
+    "high": 0.7643
+   },
+   "reanalysis_correct": {
+    "k": 17,
+    "n": 28,
+    "rate": 0.6071,
+    "low": 0.4241,
+    "high": 0.7643
+   },
+   "correct_count_unchanged": true,
+   "published_false_fast_incidence": {
+    "k": 1,
+    "n": 28,
+    "rate": 0.0357,
+    "low": 0.0063,
+    "high": 0.1771
+   },
+   "published_fast_path_correctness": {
+    "k": 4,
+    "n": 5,
+    "rate": 0.8,
+    "low": 0.3755,
+    "high": 0.9638
+   },
+   "fast_path_figures_unchanged": true,
+   "published_abstained_field_true": [
+    "H-P3",
+    "P-P4",
+    "S-P2"
+   ],
+   "published_abstained_cells_are_parse_failures": true,
+   "note": "In the RC1.1 output, abstained = (no node). The cells carrying abstained = true are the model-response parse failures; no E7 record is a clarification request. The RC1.1 files are unchanged; this layer reports the corrected classification."
+  },
+  "navigation": {
+   "published_terminal_failures_protocol_valid": {
+    "n": 1,
+    "runs": 199
+   },
+   "reanalysis": {
+    "n": 1,
+    "runs": 199
+   },
+   "unchanged": true
+  }
+ }
+}

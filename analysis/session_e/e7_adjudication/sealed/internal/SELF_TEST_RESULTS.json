@@ -1,0 +1,75 @@
+{
+ "analysis_sha256": "f322c427085fe78e0558958ef58ae9e289dfb1d576a1dc80313518000cf136c7",
+ "n": 17,
+ "n_pass": 17,
+ "tests": [
+  [
+   "identical key: verdict agreement 28/28",
+   true
+  ],
+  [
+   "identical key: all both-node cells identical, Jaccard 1",
+   true
+  ],
+  [
+   "identical key: rescoring 17/28, no change",
+   true
+  ],
+  [
+   "all no-node: rescoring 0/28 (no E7 clarification request exists)",
+   true
+  ],
+  [
+   "all no-node: verdict agreement = number of sealed no-node cells",
+   true
+  ],
+  [
+   "two evaluators: strict key 0/28, lenient key 17/28",
+   true
+  ],
+  [
+   "refuses: nodes and no-node together",
+   true
+  ],
+  [
+   "refuses: neither nodes nor no-node",
+   true
+  ],
+  [
+   "refuses: node id 99",
+   true
+  ],
+  [
+   "refuses: node both acceptable and wrong",
+   true
+  ],
+  [
+   "refuses: request text edited",
+   true
+  ],
+  [
+   "refuses: confidence missing",
+   true
+  ],
+  [
+   "refuses: confidence not in high/medium/low",
+   true
+  ],
+  [
+   "refuses: declaration file missing",
+   true
+  ],
+  [
+   "refuses: independence not confirmed",
+   true
+  ],
+  [
+   "refuses: evaluator name empty",
+   true
+  ],
+  [
+   "refuses: missing code",
+   true
+  ]
+ ]
+}

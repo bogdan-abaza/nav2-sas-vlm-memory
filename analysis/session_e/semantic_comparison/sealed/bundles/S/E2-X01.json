@@ -1,0 +1,74 @@
+{
+ "item_id": "E2-X01",
+ "condition": "S",
+ "stratum": "UNSEEN_FORMULATION",
+ "key_ref": "e2_historical_key_transcription.csv",
+ "data_reference": "github.com/bogdan-abaza/nav2-sas-vlm-memory @ ras-revision-rc1.1 (cde9307)",
+ "parent": {
+  "run_id": "20260820_151458",
+  "record_seq": "1",
+  "audit": {
+   "path": "data/session_e/day1_20260820/logs/audit_20260820_151458.jsonl",
+   "sha256": "fed9e4b307f35d8a304cfcd40fc491f00b4e5e5bbb75d160487f7fa046d89168"
+  },
+  "timestamp_utc": "2026-08-20T12:15:38.111+00:00",
+  "platform": "xplorer-b"
+ },
+ "instruction": "take me anywhere except the restroom",
+ "pose": {
+  "x": 2.23,
+  "y": 1.54,
+  "yaw": -1.58
+ },
+ "pose_source": "prompt_equivalent_decision_time_pose (feasible grid points in the 0.01 m rounding cell: 1367; not a unique reconstruction of the AMCL state)",
+ "route_graph": {
+  "path": "data/session_e/day1_20260820/config/route_graph_fiir.geojson",
+  "sha256": "e769d1e8bb72502ffeb88d8a875a3041ac22775db1fdbf9a62fbb13a30de50b5"
+ },
+ "static_objects": {
+  "path": "data/session_e/day1_20260820/config/semantic_objects_static_v2.geojson",
+  "sha256": "963f81c6c6a2c0eda4e7e99486c00e124136367a7e9f725b8e6e773c022ab4fd"
+ },
+ "memory_digest": {
+  "path": "data/session_e/day1_20260820/config/memory_digest.json",
+  "sha256": "1fe64ed09a96343bac5abd0cae476545bd0100dd496dc25122b1ca4a2cd7c3ab",
+  "content_md5": "0fd61f9e82e8fe6991f0311014384e0c"
+ },
+ "image_start": {
+  "path": "data/session_e/day1_20260820/logs/20260820_151458/mission_1_radiator/start.jpg",
+  "sha256": "c1aed0f000fef486c4690be53f34e819ec10ac46e182acdb2d478e437b56e8f5",
+  "md5": "ef28cd0295bff35016d950b5374c8716"
+ },
+ "dynamic": "empty (standardized post-reset state)",
+ "current_node": {
+  "node_id": 7,
+  "derived_from": "frozen context pose (this bundle: prompt_equivalent_decision_time_pose)"
+ },
+ "negation_envelope": {
+  "active": true,
+  "negation_markers": [
+   "except"
+  ],
+  "intent": "exclusion_request",
+  "forbidden_nodes": [
+   0,
+   4
+  ],
+  "rendered_notice": "NEGATION NOTICE:\n  The operator instruction contains negation markers: except.\n  The instruction expresses what the operator does NOT want.\n  The following nodes are the targets the operator is REFUSING: 0 ('toilet_m'), 4 ('toilet_f'). You MUST NOT select any of them.\n  This instruction DOES request an alternative destination, excluding the refused nodes above. Choose the most reasonable node that is not in the refused list.\n  If no acceptable alternative is clear, respond with node_id = -1 to request clarification.\n  This notice does NOT change the required output format: reply with the JSON object only, no prose, no explanation.\n---\n",
+  "rendered_notice_sha256": "a3e06c7f09b1cba7d7fa498dda0d0b0ec6e8f8dd31a5adc2c73aac21594dde2c",
+  "provenance": "frozen before arm execution; forbidden_nodes = parent audit negation_forbidden_nodes; markers and intent from the frozen lexical negation detector; notice rendered once by the frozen build_negation_notice. Identical in arms A, B, C; arms neither rebuild it nor run M3 to derive it. GATE 1B validates its provenance by recomputation under the historical digest."
+ },
+ "l3b_prompt": {
+  "file": "E2-X01.prompt.txt",
+  "sha256": "50b980940fd5f666ce2845eae8dccd6ee1827f871a0fc7bc6a41438e2b798b6a",
+  "historical_reference": "canonical S projection of audit prompt (gate 1a)"
+ },
+ "frozen_code": {
+  "vlm_navigator_node_v4_8_review.py": "1646542e2cbfec3ace3bd5b4b4b2164efaf9c7df863ff9daa5d77088b10aceee",
+  "sas_l3a.py": "38b6910f556a05ea3db1b0c0b7962e8cd95929f6573d70a8a3b8fb8efe4eee00",
+  "sas_text.py": "aa211dc76cb2f19f3ff3c9b27c7ba56242b04a4a1ef2fc10d6ad6ad14eb005b1",
+  "negation_guard.py": "3b598ffe722be21a47e11d7d3d2b02cbfd6a8d9d3344a3daa27627df09722d2b",
+  "executive_contract.py": "7683f52fde8991a017d0aef8a519fda7978e926cc140105a1f9b81dddc518b5f",
+  "visual_confirmation_v2.py": "2c3a3ddb577ea056be238d938e7d2355aba8b789cdf5bdc93c432a1df30f1590"
+ }
+}

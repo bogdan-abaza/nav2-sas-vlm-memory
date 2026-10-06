@@ -1,0 +1,10 @@
+name: DUMITRESCU Andy
+affiliation/role: Master Student
+date: 05.10.2026
+
+I confirm that, before completing this task, I was not shown the original
+acceptable-node key or any annotation of the intended destinations, the robot's
+selections or outcomes for these requests, or any score obtained on them, and that
+I completed the judgement independently.
+
+confirmed (yes/no): yes

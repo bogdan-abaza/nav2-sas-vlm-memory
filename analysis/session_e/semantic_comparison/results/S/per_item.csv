@@ -1,0 +1,115 @@
+condition,item_id,stratum,arm,correct_seeds,outcomes,nodes,paths,median_decision_ms,median_resolver_ms
+S,E2-N01,CLARIFICATION_REQUIRED,A,2,model_or_parser_failure|clarification|clarification,None|-1|-1,L3b|L3b|L3b,10050.133,0.051095
+S,E2-N01,CLARIFICATION_REQUIRED,B,2,model_or_parser_failure|clarification|clarification,None|-1|-1,L3b|L3b|L3b,10242.153,0.053038
+S,E2-N01,CLARIFICATION_REQUIRED,C,2,model_or_parser_failure|clarification|clarification,None|-1|-1,L3b|L3b|L3b,10092.903,not applicable
+S,E2-N03,CLARIFICATION_REQUIRED,A,1,incorrect_executable|clarification|incorrect_executable,9|-1|9,L3b|L3b|L3b,9097.367,0.053387
+S,E2-N03,CLARIFICATION_REQUIRED,B,1,incorrect_executable|clarification|incorrect_executable,9|-1|9,L3b|L3b|L3b,9012.264,0.053312
+S,E2-N03,CLARIFICATION_REQUIRED,C,1,incorrect_executable|clarification|incorrect_executable,9|-1|9,L3b|L3b|L3b,9209.013,not applicable
+S,E2-N07,CLARIFICATION_REQUIRED,A,3,clarification|clarification|clarification,-1|-1|-1,L3b|L3b|L3b,7030.662,0.050451
+S,E2-N07,CLARIFICATION_REQUIRED,B,3,clarification|clarification|clarification,-1|-1|-1,L3b|L3b|L3b,7113.279,0.051178
+S,E2-N07,CLARIFICATION_REQUIRED,C,3,clarification|clarification|clarification,-1|-1|-1,L3b|L3b|L3b,6928.591,not applicable
+S,E2-N08,CLARIFICATION_REQUIRED,A,2,clarification|model_or_parser_failure|clarification,-1|None|-1,L3b|L3b|L3b,6997.716,0.052233
+S,E2-N08,CLARIFICATION_REQUIRED,B,2,clarification|model_or_parser_failure|clarification,-1|None|-1,L3b|L3b|L3b,7015.003,0.052872
+S,E2-N08,CLARIFICATION_REQUIRED,C,2,clarification|model_or_parser_failure|clarification,-1|None|-1,L3b|L3b|L3b,6948.552,not applicable
+S,E2-X01,UNSEEN_FORMULATION,A,2,acceptable|acceptable|clarification,9|9|-1,L3b|L3b|L3b,7183.332,0.049304
+S,E2-X01,UNSEEN_FORMULATION,B,2,acceptable|acceptable|clarification,9|9|-1,L3b|L3b|L3b,7151.635,0.042359
+S,E2-X01,UNSEEN_FORMULATION,C,2,acceptable|acceptable|clarification,9|9|-1,L3b|L3b|L3b,7212.659,not applicable
+S,E2-X02,UNSEEN_FORMULATION,A,2,clarification|acceptable|acceptable,-1|9|5,L3b|L3b|L3b,7503.496,0.045465
+S,E2-X02,UNSEEN_FORMULATION,B,2,clarification|acceptable|acceptable,-1|9|5,L3b|L3b|L3b,7540.233,0.043998
+S,E2-X02,UNSEEN_FORMULATION,C,2,clarification|acceptable|acceptable,-1|9|5,L3b|L3b|L3b,7530.213,not applicable
+S,E2-X03,UNSEEN_FORMULATION,A,0,clarification|clarification|model_or_parser_failure,-1|-1|None,L3b|L3b|L3b,8283.212,0.043501
+S,E2-X03,UNSEEN_FORMULATION,B,0,clarification|clarification|model_or_parser_failure,-1|-1|None,L3b|L3b|L3b,8071.687,0.044263
+S,E2-X03,UNSEEN_FORMULATION,C,0,clarification|clarification|model_or_parser_failure,-1|-1|None,L3b|L3b|L3b,8484.041,not applicable
+S,E2-X04,UNSEEN_FORMULATION,A,0,clarification|clarification|clarification,-1|-1|-1,L3b|L3b|L3b,7843.822,0.041863
+S,E2-X04,UNSEEN_FORMULATION,B,0,clarification|clarification|clarification,-1|-1|-1,L3b|L3b|L3b,7764.104,0.045207
+S,E2-X04,UNSEEN_FORMULATION,C,0,clarification|clarification|clarification,-1|-1|-1,L3b|L3b|L3b,7716.171,not applicable
+S,E7-G-1,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,5|5|5,L3b|L3b|L3b,7227.209,0.272246
+S,E7-G-1,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,5|5|5,L3b|L3b|L3b,7184.944,0.232337
+S,E7-G-1,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,5|5|5,L3b|L3b|L3b,7239.826,not applicable
+S,E7-G-2,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,23|23|23,L3b|L3b|L3b,7107.767,0.392191
+S,E7-G-2,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,23|23|23,L3b|L3b|L3b,7126.428,0.32615
+S,E7-G-2,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,23|23|23,L3b|L3b|L3b,7091.681,not applicable
+S,E7-G-3,CLARIFICATION_REQUIRED,A,0,incorrect_executable|incorrect_executable|incorrect_executable,5|1|8,L3b|L3b|L3b,9797.904,0.275929
+S,E7-G-3,CLARIFICATION_REQUIRED,B,0,incorrect_executable|incorrect_executable|incorrect_executable,5|1|8,L3b|L3b|L3b,9804.387,0.232931
+S,E7-G-3,CLARIFICATION_REQUIRED,C,0,incorrect_executable|incorrect_executable|incorrect_executable,5|1|8,L3b|L3b|L3b,9791.105,not applicable
+S,E7-G-4,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,15|15|15,L3a|L3a|L3a,0.294,0.274807
+S,E7-G-4,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,15|15|15,L3a|L3a|L3a,0.268,0.24552
+S,E7-G-4,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,15|15|15,L3b|L3b|L3b,7404.225,not applicable
+S,E7-H-P1,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,2|2|2,L3a|L3a|L3a,0.161,0.14021
+S,E7-H-P1,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,2|2|2,L3a|L3a|L3a,0.242,0.203707
+S,E7-H-P1,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,2|2|2,L3b|L3b|L3b,6737.695,not applicable
+S,E7-H-P2,CLARIFICATION_REQUIRED,A,0,incorrect_executable|incorrect_executable|model_or_parser_failure,9|9|None,L3b|L3b|L3b,11887.556,0.283558
+S,E7-H-P2,CLARIFICATION_REQUIRED,B,0,incorrect_executable|incorrect_executable|model_or_parser_failure,9|9|None,L3b|L3b|L3b,11861.626,0.241391
+S,E7-H-P2,CLARIFICATION_REQUIRED,C,0,incorrect_executable|incorrect_executable|model_or_parser_failure,9|9|None,L3b|L3b|L3b,11861.513,not applicable
+S,E7-H-P4,UNSEEN_FORMULATION,A,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,7191.163,0.285008
+S,E7-H-P4,UNSEEN_FORMULATION,B,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,7149.593,0.234035
+S,E7-H-P4,UNSEEN_FORMULATION,C,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,7117.551,not applicable
+S,E7-L-P1,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,23|23|23,L3b|L3b|L3b,7122.683,0.340959
+S,E7-L-P1,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,23|23|23,L3b|L3b|L3b,7164.564,0.30294
+S,E7-L-P1,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,23|23|23,L3b|L3b|L3b,7138.916,not applicable
+S,E7-L-P2,UNSEEN_FORMULATION,A,0,incorrect_executable|incorrect_executable|incorrect_executable,15|15|15,L3b|L3b|L3b,6849.661,0.283621
+S,E7-L-P2,UNSEEN_FORMULATION,B,0,incorrect_executable|incorrect_executable|incorrect_executable,15|15|15,L3b|L3b|L3b,6893.376,0.238217
+S,E7-L-P2,UNSEEN_FORMULATION,C,0,incorrect_executable|incorrect_executable|incorrect_executable,15|15|15,L3b|L3b|L3b,6904.267,not applicable
+S,E7-L-P3,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,5|5|5,L3b|L3b|L3b,6919.946,0.271992
+S,E7-L-P3,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,5|5|5,L3b|L3b|L3b,7046.374,0.240798
+S,E7-L-P3,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,5|5|5,L3b|L3b|L3b,6945.018,not applicable
+S,E7-L-P4,UNSEEN_FORMULATION,A,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,7143.371,0.271803
+S,E7-L-P4,UNSEEN_FORMULATION,B,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,7095.736,0.234868
+S,E7-L-P4,UNSEEN_FORMULATION,C,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,6975.303,not applicable
+S,E7-P-P1,UNSEEN_FORMULATION,A,2,acceptable|acceptable|incorrect_executable,13|13|14,L3b|L3b|L3b,7173.922,0.270776
+S,E7-P-P1,UNSEEN_FORMULATION,B,2,acceptable|acceptable|incorrect_executable,13|13|14,L3b|L3b|L3b,7184.875,0.231201
+S,E7-P-P1,UNSEEN_FORMULATION,C,2,acceptable|acceptable|incorrect_executable,13|13|14,L3b|L3b|L3b,7084.13,not applicable
+S,E7-P-P2,UNSEEN_FORMULATION,A,0,model_or_parser_failure|model_or_parser_failure|model_or_parser_failure,None|None|None,L3b|L3b|L3b,13798.41,0.288871
+S,E7-P-P2,UNSEEN_FORMULATION,B,0,model_or_parser_failure|model_or_parser_failure|model_or_parser_failure,None|None|None,L3b|L3b|L3b,13926.284,0.239249
+S,E7-P-P2,UNSEEN_FORMULATION,C,0,model_or_parser_failure|model_or_parser_failure|model_or_parser_failure,None|None|None,L3b|L3b|L3b,13776.47,not applicable
+S,E7-P-P3,UNSEEN_FORMULATION,A,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,6996.319,0.275546
+S,E7-P-P3,UNSEEN_FORMULATION,B,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,6982.762,0.230095
+S,E7-P-P3,UNSEEN_FORMULATION,C,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,7045.735,not applicable
+S,E7-S-P1,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,15|15|15,L3a|L3a|L3a,0.312,0.293258
+S,E7-S-P1,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,15|15|15,L3a|L3a|L3a,0.272,0.249807
+S,E7-S-P1,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,15|15|15,L3b|L3b|L3b,6924.267,not applicable
+S,E7-S-P3,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,6804.11,0.272178
+S,E7-S-P3,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,6746.555,0.2382
+S,E7-S-P3,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,6678.791,not applicable
+S,E7-S-P4,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,6796.964,0.262445
+S,E7-S-P4,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,6911.202,0.23612
+S,E7-S-P4,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,6825.935,not applicable
+S,E7-T-P1,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,0|0|0,L3a|L3a|L3a,0.281,0.26209
+S,E7-T-P1,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,0|0|0,L3a|L3a|L3a,0.24,0.218539
+S,E7-T-P1,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,0|0|0,L3b|L3b|L3b,6791.532,not applicable
+S,E7-T-P2,UNSEEN_FORMULATION,A,0,incorrect_executable|model_or_parser_failure|incorrect_executable,8|None|14,L3b|L3b|L3b,6871.691,0.295873
+S,E7-T-P2,UNSEEN_FORMULATION,B,0,incorrect_executable|model_or_parser_failure|incorrect_executable,8|None|14,L3b|L3b|L3b,6910.157,0.240594
+S,E7-T-P2,UNSEEN_FORMULATION,C,0,incorrect_executable|model_or_parser_failure|incorrect_executable,8|None|14,L3b|L3b|L3b,6934.644,not applicable
+S,E7-T-P3,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,0|0|0,L3b|L3b|L3b,6862.474,0.285145
+S,E7-T-P3,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,0|0|0,L3b|L3b|L3b,6923.228,0.240677
+S,E7-T-P3,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,0|0|0,L3b|L3b|L3b,6879.937,not applicable
+S,E7-T-P4,UNSEEN_FORMULATION,A,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,6977.624,0.269051
+S,E7-T-P4,UNSEEN_FORMULATION,B,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,6958.337,0.230786
+S,E7-T-P4,UNSEEN_FORMULATION,C,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,6961.238,not applicable
+S,E7-W-P1,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,14|14|14,L3b|L3b|L3b,7073.583,0.276027
+S,E7-W-P1,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,14|14|14,L3b|L3b|L3b,7129.351,0.242081
+S,E7-W-P1,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,14|14|14,L3b|L3b|L3b,7213.668,not applicable
+S,E7-W-P2,UNSEEN_FORMULATION,A,0,incorrect_executable|incorrect_executable|incorrect_executable,14|14|14,L3b|L3b|L3b,6857.302,0.287913
+S,E7-W-P2,UNSEEN_FORMULATION,B,0,incorrect_executable|incorrect_executable|incorrect_executable,14|14|14,L3b|L3b|L3b,6909.901,0.247447
+S,E7-W-P2,UNSEEN_FORMULATION,C,0,incorrect_executable|incorrect_executable|incorrect_executable,14|14|14,L3b|L3b|L3b,6924.92,not applicable
+S,E7-W-P3,UNSEEN_FORMULATION,A,2,acceptable|acceptable|incorrect_executable,14|14|8,L3b|L3b|L3b,7045.646,0.288778
+S,E7-W-P3,UNSEEN_FORMULATION,B,2,acceptable|acceptable|incorrect_executable,14|14|8,L3b|L3b|L3b,7114.694,0.244655
+S,E7-W-P3,UNSEEN_FORMULATION,C,2,acceptable|acceptable|incorrect_executable,14|14|8,L3b|L3b|L3b,7027.813,not applicable
+S,E7-W-P4,UNSEEN_FORMULATION,A,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,6983.471,0.28119
+S,E7-W-P4,UNSEEN_FORMULATION,B,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,7007.063,0.237905
+S,E7-W-P4,UNSEEN_FORMULATION,C,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,7050.636,not applicable
+S,M3-1,FAMILIAR_ASSOCIATION,A,3,acceptable|acceptable|acceptable,8|8|8,L3a|L3a|L3a,0.145,0.128026
+S,M3-1,FAMILIAR_ASSOCIATION,B,3,acceptable|acceptable|acceptable,8|8|8,L3a|L3a|L3a,0.285,0.26361
+S,M3-1,FAMILIAR_ASSOCIATION,C,3,acceptable|acceptable|acceptable,8|8|8,L3b|L3b|L3b,6775.128,not applicable
+S,M3-2,FAMILIAR_ASSOCIATION,A,3,acceptable|acceptable|acceptable,0|0|0,L3a|L3a|L3a,0.133,0.115955
+S,M3-2,FAMILIAR_ASSOCIATION,B,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,6948.456,0.246187
+S,M3-2,FAMILIAR_ASSOCIATION,C,0,incorrect_executable|incorrect_executable|incorrect_executable,9|9|9,L3b|L3b|L3b,7054.761,not applicable
+S,M3-3,FAMILIAR_ASSOCIATION,A,3,acceptable|acceptable|acceptable,9|9|9,L3a|L3a|L3a,0.127,0.110435
+S,M3-3,FAMILIAR_ASSOCIATION,B,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,7060.498,0.248948
+S,M3-3,FAMILIAR_ASSOCIATION,C,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,7133.074,not applicable
+S,M3-4,FAMILIAR_ASSOCIATION,A,3,acceptable|acceptable|acceptable,14|14|14,L3a|L3a|L3a,0.146,0.129629
+S,M3-4,FAMILIAR_ASSOCIATION,B,2,acceptable|acceptable|incorrect_executable,14|14|15,L3b|L3b|L3b,7076.47,0.270217
+S,M3-4,FAMILIAR_ASSOCIATION,C,2,acceptable|acceptable|incorrect_executable,14|14|15,L3b|L3b|L3b,7114.385,not applicable
+S,M3-5,FAMILIAR_ASSOCIATION,A,3,acceptable|acceptable|acceptable,9|9|9,L3a|L3a|L3a,0.117,0.099533
+S,M3-5,FAMILIAR_ASSOCIATION,B,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,6578.887,0.245849
+S,M3-5,FAMILIAR_ASSOCIATION,C,3,acceptable|acceptable|acceptable,9|9|9,L3b|L3b|L3b,6556.525,not applicable

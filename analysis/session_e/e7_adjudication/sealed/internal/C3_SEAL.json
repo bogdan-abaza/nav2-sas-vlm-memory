@@ -1,0 +1,11 @@
+{
+ "sealed_utc": "2026-10-04T13:11:04.668592Z",
+ "status": "sealed before dispatch; post-hoc sensitivity analysis",
+ "packet_zip_sha256": "483e5b64c952e923dbb7766c94b810d921f8932f1af07189d187f898e1f83cae",
+ "code_map_sha256": "08348b898720193ba0e0f7628d8c179f40f5040441dc7f85c9d5e155e4fdbc78",
+ "build_script_sha256": "325e0d6f4b86bb637d969d0bd39487717871ea60e3735e6f300eab91cec4bb22",
+ "analysis_sha256": "f322c427085fe78e0558958ef58ae9e289dfb1d576a1dc80313518000cf136c7",
+ "self_test": "17/17",
+ "build_record_sha256": "ea94276679f773f4183a3962821b7c63e6b908d72e2914d7afc7a43982a17c5d",
+ "analysis_plan_sha256": "d5871aa46bc909b3eab421c8e04bdc8960955915d0ffc53b7b724b1d2f50e561"
+}

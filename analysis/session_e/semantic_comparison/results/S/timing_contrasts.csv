@@ -1,0 +1,13 @@
+condition,scope,contrast,items,median_paired_diff_ms,value_diff,diff_boot95,mean_paired_diff_ms,ratio_name,median_paired_ratio,ratio_boot95,undefined_ratios
+S,FAMILIAR_ASSOCIATION,A_vs_B,5,A - B,-6948.323,"(-7076.3233, -0.1404)",-5532.786,B/A (>1 means A faster),52218.9056,"(1.9692, 56321.2674)",0
+S,FAMILIAR_ASSOCIATION,B_vs_C,5,B - C,-72.576,"(-6774.8428, 22.3623)",-1393.855,C/B (>1 means B faster),1.0103,"(0.9966, 23754.709)",0
+S,FAMILIAR_ASSOCIATION,A_vs_C,5,A - C,-7054.627,"(-7132.9462, -6556.4081)",-6926.641,C/A (>1 means A faster),53017.8002,"(46778.5745, 56129.8254)",0
+S,UNSEEN_FORMULATION,A_vs_B,27,A - B,-10.953,"(-41.8809, 13.5566)",-10.218,B/A (>1 means A faster),1.0026,"(0.9942, 1.0064)",0
+S,UNSEEN_FORMULATION,B_vs_C,27,B - C,-2.902,"(-54.8828, 43.2904)",-1026.784,C/B (>1 means B faster),1.0004,"(0.9938, 1.0076)",0
+S,UNSEEN_FORMULATION,A_vs_C,27,A - C,-26.716,"(-62.9524, 16.0863)",-1037.002,C/A (>1 means A faster),1.0036,"(0.9984, 1.0092)",0
+S,CLARIFICATION_REQUIRED,A_vs_B,6,A - B,-11.885,"(-137.3184, 55.5167)",-31.229,B/A (>1 means A faster),1.0016,"(0.9942, 1.0154)",0
+S,CLARIFICATION_REQUIRED,B_vs_C,6,B - C,39.866,"(-98.3183, 166.9687)",36.172,C/B (>1 means B faster),0.9946,"(0.9797, 1.0109)",0
+S,CLARIFICATION_REQUIRED,A_vs_C,6,A - C,16.421,"(-77.2079, 75.6173)",4.943,C/A (>1 means A faster),0.9986,"(0.9892, 1.0083)",0
+S,ALL,A_vs_B,38,A - B,-17.974,"(-43.7149, 0.0257)",-740.189,B/A (>1 means A faster),1.0041,"(0.9981, 1.0078)",0
+S,ALL,B_vs_C,38,B - C,-1.395,"(-46.3989, 32.0421)",-907.248,C/B (>1 means B faster),1.0002,"(0.9955, 1.0062)",0
+S,ALL,A_vs_C,38,A - C,-29.149,"(-65.0592, -12.6178)",-1647.437,C/A (>1 means A faster),1.0042,"(1.0017, 1.0094)",0

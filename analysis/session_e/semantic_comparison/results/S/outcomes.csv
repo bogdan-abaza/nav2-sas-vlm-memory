@@ -1,0 +1,13 @@
+condition,scope,arm,items,observations,acceptable,incorrect_executable,clarification,model_or_parser_failure,items_correct,item_correctness,wilson95,wrong_exec_obs,wrong_exec_items_any,wrong_exec_items_2of3,parser_failure_items,clarification_mechanisms
+S,FAMILIAR_ASSOCIATION,A,5,15,15,0,0,0,5,1.0,"(0.5655, 1.0)",0,0,0,0,{}
+S,FAMILIAR_ASSOCIATION,B,5,15,11,4,0,0,4,0.8,"(0.3755, 0.9638)",4,2,1,0,{}
+S,FAMILIAR_ASSOCIATION,C,5,15,11,4,0,0,4,0.8,"(0.3755, 0.9638)",4,2,1,0,{}
+S,UNSEEN_FORMULATION,A,27,81,47,22,7,5,17,0.6296,"(0.4423, 0.7847)",22,9,7,3,{'vlm_explicit_-1': 7}
+S,UNSEEN_FORMULATION,B,27,81,47,22,7,5,17,0.6296,"(0.4423, 0.7847)",22,9,7,3,{'vlm_explicit_-1': 7}
+S,UNSEEN_FORMULATION,C,27,81,47,22,7,5,17,0.6296,"(0.4423, 0.7847)",22,9,7,3,{'vlm_explicit_-1': 7}
+S,CLARIFICATION_REQUIRED,A,6,18,0,7,8,3,3,0.5,"(0.1876, 0.8124)",7,3,3,3,{'vlm_explicit_-1': 8}
+S,CLARIFICATION_REQUIRED,B,6,18,0,7,8,3,3,0.5,"(0.1876, 0.8124)",7,3,3,3,{'vlm_explicit_-1': 8}
+S,CLARIFICATION_REQUIRED,C,6,18,0,7,8,3,3,0.5,"(0.1876, 0.8124)",7,3,3,3,{'vlm_explicit_-1': 8}
+S,ALL,A,38,114,62,29,15,8,25,0.6579,"(0.4989, 0.7879)",29,12,10,6,{'vlm_explicit_-1': 15}
+S,ALL,B,38,114,58,33,15,8,24,0.6316,"(0.4728, 0.7662)",33,14,11,6,{'vlm_explicit_-1': 15}
+S,ALL,C,38,114,58,33,15,8,24,0.6316,"(0.4728, 0.7662)",33,14,11,6,{'vlm_explicit_-1': 15}

@@ -1,0 +1,18 @@
+{
+ "sealed_utc": "2026-10-05T08:26:10Z",
+ "operator": "Bogdan-Felician Abaza",
+ "files": {
+  "cases/CASES.json": "ef2f191e2ea27969e59f5bc32112d1314f6e9e51703bc2b75930f5e9c1064535",
+  "harness/gt.py": "a37539e27ef00f8b888c913ba9cf83a6e624a963f7c07e34b8911c1c486c80fc",
+  "harness/a4_bundle.py": "6502649c69c2f78213dcd8e07dbca57e8cd192603cfcefbdf4c5732b9f4aa5d9"
+ },
+ "external": {
+  "e2_key": "3e6629a14fddbc23e02995e145f12314aac66584dedd89478168c6a27b940d97",
+  "code/vlm_navigator_node_v4_8_review.py": "1646542e2cbfec3ace3bd5b4b4b2164efaf9c7df863ff9daa5d77088b10aceee",
+  "code/sas_l3a.py": "38b6910f556a05ea3db1b0c0b7962e8cd95929f6573d70a8a3b8fb8efe4eee00",
+  "code/sas_text.py": "aa211dc76cb2f19f3ff3c9b27c7ba56242b04a4a1ef2fc10d6ad6ad14eb005b1",
+  "code/negation_guard.py": "3b598ffe722be21a47e11d7d3d2b02cbfd6a8d9d3344a3daa27627df09722d2b",
+  "code/executive_contract.py": "7683f52fde8991a017d0aef8a519fda7978e926cc140105a1f9b81dddc518b5f",
+  "code/visual_confirmation_v2.py": "2c3a3ddb577ea056be238d938e7d2355aba8b789cdf5bdc93c432a1df30f1590"
+ }
+}
