@@ -1,5 +1,22 @@
 # Changelog
 
+## ras-2027-105822 — 2026-10-24
+
+Post-publication documentation release. The article is published open access in *Robotics and Autonomous Systems* 207 (2027) 105822, [DOI: 10.1016/j.robot.2026.105822](https://doi.org/10.1016/j.robot.2026.105822). All data and analyses are unchanged and byte-identical to `ras-revision-rc1.2`.
+
+### Updated (documentation and citation metadata only)
+
+| Path | Change |
+|---|---|
+| `README.md` | Header, introduction and DOI badge refer to the published article; current interpretation governed by the published article (§1 heading, reading note, legacy figure note); quick start; protected-source statement (§7), with confidential access for the editor and reviewers through the journal unchanged; citation and BibTeX of the published article (§10); author contributions aligned with the published CRediT statement (§12). |
+| `CITATION.cff` | Preferred citation updated to the published article (journal, volume, article number, year, DOI); arXiv identifier retained; ORCID given as a full URI, as required by the CFF 1.2.0 schema. |
+| `docs/REPRODUCIBILITY_NOTES.md` | Reader-oriented wording of the introductory sentence. |
+| `CHANGELOG.md` | This entry. |
+
+### Unchanged
+
+`data/**`, `analysis/**`, `config/**`, `tools/**`, `docs/PUBLICATION_SCOPE.md`, `docs/publication_exceptions.json`, `LICENSE`, `.gitignore`, and all other files of `ras-revision-rc1.2`.
+
 ## ras-revision-rc1.2 — 2026-10-06
 
 This release adds analyses and documentation over `ras-revision-rc1.1`. The Session E dataset under `data/` and the RC1.1 core and supporting analyses are unchanged and byte-identical to `ras-revision-rc1.1`.

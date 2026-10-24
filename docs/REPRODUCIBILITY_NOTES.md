@@ -1,6 +1,6 @@
 # Reproducibility notes for the frozen analyses
 
-These notes record, for a reviewer working from this repository alone, exactly which
+These notes record, for a reader working from this repository alone, exactly which
 reproduction paths are executable from the release, which are not, and why. They change no
 frozen artifact: every limitation below concerns the reproduction environment of a sealed
 package, never the identity or availability of the evidence behind its reported results.

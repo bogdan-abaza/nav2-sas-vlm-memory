@@ -6,7 +6,7 @@ authors:
   - family-names: Abaza
     given-names: Bogdan Felician
     email: bogdan.abaza@upb.ro
-    orcid: "0000-0003-1816-8357"
+    orcid: "https://orcid.org/0000-0003-1816-8357"
     affiliation: "National University of Science and Technology POLITEHNICA Bucharest"
   - family-names: Staicu
     given-names: Andrei-Alexandru
@@ -26,5 +26,16 @@ preferred-citation:
       given-names: Andrei-Alexandru
     - family-names: Doicin
       given-names: Cristian Vasile
-  journal: preprint
-  year: 2026
+  journal: "Robotics and Autonomous Systems"
+  volume: 207
+  start: "105822"
+  year: 2027
+  doi: "10.1016/j.robot.2026.105822"
+  url: "https://doi.org/10.1016/j.robot.2026.105822"
+  identifiers:
+    - type: doi
+      value: "10.1016/j.robot.2026.105822"
+      description: "Published article"
+    - type: other
+      value: "arXiv:2605.02525"
+      description: "arXiv version (v2: published version)"

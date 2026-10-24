@@ -1,12 +1,13 @@
 # A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots
 
-**Public evidence and reproducibility package for the revised manuscript**
+**Public evidence and reproducibility package for the article published in *Robotics and Autonomous Systems* 207 (2027) 105822**
 
 [![ROS 2](https://img.shields.io/badge/ROS_2-Jazzy-blue)](https://docs.ros.org/en/jazzy/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.robot.2026.105822-blue.svg)](https://doi.org/10.1016/j.robot.2026.105822)
 [![arXiv](https://img.shields.io/badge/arXiv-2605.02525-b31b1b.svg)](https://arxiv.org/abs/2605.02525)
 
-This repository accompanies the revised manuscript by **B. F. Abaza, A.-A. Staicu, and C. V. Doicin** on the Semantic Autonomy Stack (SAS) for VLM-integrated indoor mobile robots. It is primarily a **public evidence and reproducibility package**, not a complete source-code release.
+This repository accompanies the article by **B. F. Abaza, A.-A. Staicu, and C. V. Doicin** on the Semantic Autonomy Stack (SAS) for VLM-integrated indoor mobile robots, published open access in *Robotics and Autonomous Systems* 207 (2027) 105822 ([DOI: 10.1016/j.robot.2026.105822](https://doi.org/10.1016/j.robot.2026.105822)). It is primarily a **public evidence and reproducibility package**, not a complete source-code release.
 
 The release contains the development-stage Sessions A–C, the frozen `v4.8-review` Session E confirmatory physical campaign, supporting post-hoc analyses, a controlled L3b model-substitution replay, unified evidence indexes, and the public SAS text-processing module `data/session_e/public_code/sas_text.py`.
 
@@ -23,13 +24,13 @@ See [`CHANGELOG.md`](CHANGELOG.md).
 
 The inherited perception and route-planning foundation (L1–L2) is documented in the companion repository [nav2-semantic-route-server](https://github.com/bogdan-abaza/nav2-semantic-route-server) and the corresponding *Sensors* paper ([DOI: 10.3390/s26072232](https://doi.org/10.3390/s26072232)).
 
-> **Reading note.** Some frozen analytical records preserve wording or quantitative formulations from the original submission because they are immutable audit records. Their presence does not make those formulations current claims. Current interpretation is governed by the revised manuscript, this README, [`docs/PUBLICATION_SCOPE.md`](docs/PUBLICATION_SCOPE.md) and [`docs/RC1_2_SCOPE_NOTES.md`](docs/RC1_2_SCOPE_NOTES.md).
+> **Reading note.** Some frozen analytical records preserve wording or quantitative formulations from the original submission because they are immutable audit records. Their presence does not make those formulations current claims. Current interpretation is governed by the published article, this README, [`docs/PUBLICATION_SCOPE.md`](docs/PUBLICATION_SCOPE.md) and [`docs/RC1_2_SCOPE_NOTES.md`](docs/RC1_2_SCOPE_NOTES.md).
 
-> **Reviewer quick start.** Verify the published Session E package with `cd data/session_e && md5sum -c CHECKSUMS_PUBLIC.md5`; re-run the Session E core analysis with the command in §5; re-run the sealed analyses added in rc1.2 with `python3 tools/rerun_sealed.py all`; every headline value in §3 points to its governing public artifact; and [`docs/REPRODUCIBILITY_NOTES.md`](docs/REPRODUCIBILITY_NOTES.md) states which frozen procedures are executable from this release alone.
+> **Quick start.** Verify the published Session E package with `cd data/session_e && md5sum -c CHECKSUMS_PUBLIC.md5`; re-run the Session E core analysis with the command in §5; re-run the sealed analyses added in rc1.2 with `python3 tools/rerun_sealed.py all`; every headline value in §3 points to its governing public artifact; and [`docs/REPRODUCIBILITY_NOTES.md`](docs/REPRODUCIBILITY_NOTES.md) states which frozen procedures are executable from this release alone.
 
 ---
 
-## 1. What the revised work evaluates
+## 1. What the published work evaluates
 
 SAS is a six-layer reference and integration framework:
 
@@ -247,7 +248,7 @@ The compiled digest used in Sessions B and C is `data/memory/memory_digest.json`
 
 ### Legacy A–C figure scripts
 
-The scripts under `analysis/figures/` reproduce visualizations from the development-stage A–C evidence. They are retained for transparency and reproducibility of that historical evidence stream and are **not** the production figure set of the revised manuscript.
+The scripts under `analysis/figures/` reproduce visualizations from the development-stage A–C evidence. They are retained for transparency and reproducibility of that historical evidence stream and are **not** the production figure set of the published article.
 
 ```bash
 cd analysis/figures
@@ -268,7 +269,7 @@ The repository publishes raw A–C and Session E evidence, unified indexes, publ
 data/session_e/public_code/sas_text.py
 ```
 
-The remaining SAS production modules are deliberately outside the public release. The complete source remains available to the **editor and reviewers in confidence, upon request through the journal**.
+The remaining SAS production modules are protected and deliberately outside the public release. The complete source remains available to the editor and reviewers in confidence, upon request through the journal.
 
 Raw evidence is preserved for provenance and may contain original Romanian-language instructions or session notes and deployment-local identifiers. These records are not rewritten in place. For the publication policy, frozen-record handling, provenance model, language policy, and declared boundary decisions, see [`docs/PUBLICATION_SCOPE.md`](docs/PUBLICATION_SCOPE.md).
 
@@ -364,9 +365,9 @@ The analyses added in rc1.2 each carry `CHECKSUMS_SHA256.txt`. Their `sealed/` s
 
 ## 10. Citation
 
-Current preprint:
+Published article (open access, CC BY 4.0):
 
-> B. F. Abaza, A.-A. Staicu, and C. V. Doicin, “A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots: Hybrid Deterministic Reasoning and Cross-Robot Adaptive Memory,” 2026. arXiv:2605.02525.
+> B. F. Abaza, A.-A. Staicu, and C. V. Doicin, “A Semantic Autonomy Framework for VLM-Integrated Indoor Mobile Robots: Hybrid Deterministic Reasoning and Cross-Robot Adaptive Memory,” *Robotics and Autonomous Systems*, vol. 207, Art. no. 105822, 2027. [DOI: 10.1016/j.robot.2026.105822](https://doi.org/10.1016/j.robot.2026.105822)
 
 ```bibtex
 @article{abaza2026sas,
@@ -375,15 +376,18 @@ Current preprint:
                    Cross-Robot Adaptive Memory},
   author        = {Abaza, Bogdan Felician and Staicu, Andrei-Alexandru
                    and Doicin, Cristian Vasile},
-  year          = {2026},
+  journal       = {Robotics and Autonomous Systems},
+  volume        = {207},
+  pages         = {105822},
+  year          = {2027},
+  doi           = {10.1016/j.robot.2026.105822},
   eprint        = {2605.02525},
   archivePrefix = {arXiv},
   primaryClass  = {cs.RO},
-  note          = {Preprint},
 }
 ```
 
-The repository citation metadata is also provided in [`CITATION.cff`](CITATION.cff). The citation above references the preprint; both entries should be updated together when the revised article is published.
+The published version is also available on arXiv as [arXiv:2605.02525](https://arxiv.org/abs/2605.02525) (v2). The repository citation metadata is provided in [`CITATION.cff`](CITATION.cff).
 
 ---
 
@@ -398,9 +402,11 @@ Companion repository: [nav2-semantic-route-server](https://github.com/bogdan-aba
 
 ## 12. Authors, contributions, and affiliation
 
-- **Bogdan Felician Abaza** — conceptualization, SAS architecture and methodology, software and system integration, analysis, writing, and supervision.
-- **Andrei-Alexandru Staicu** — software implementation, VLM integration, experimental setup, and data collection.
-- **Cristian Vasile Doicin** — validation, formal analysis, resources, funding, and writing–review.
+The contributions below summarize work on the SAS research and its accompanying public evidence and reproducibility package.
+
+- **Bogdan Felician Abaza** — conceptualization, methodology, software (SAS framework, software implementation, and system integration), formal analysis, investigation, resources, data curation, writing – original draft, writing – review & editing, validation, visualization, supervision, and project administration.
+- **Andrei-Alexandru Staicu** — software (software implementation, system integration, and VLM integration), investigation, data curation, writing – review & editing, validation, and visualization.
+- **Cristian Vasile Doicin** — resources, funding acquisition, formal analysis, writing – review & editing, validation, visualization, and supervision.
 
 Faculty of Industrial Engineering and Robotics (FIIR)  
 National University of Science and Technology POLITEHNICA Bucharest
